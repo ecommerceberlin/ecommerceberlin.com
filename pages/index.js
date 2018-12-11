@@ -16,6 +16,9 @@ import {
   WidgetExhibitors,
 } from 'eventjuicer-site-components';
 
+import Schedule from '../src/Schedule';
+import Hero from '../src/Hero';
+
 class PageIndex extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
     return {
@@ -29,9 +32,9 @@ class PageIndex extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetVideoWithEventInfo />
+        <Hero />
 
-        <WidgetSchedule />
+        <Schedule />
 
         <WidgetVisitor
           label="visitors.register"
@@ -40,7 +43,14 @@ class PageIndex extends React.Component {
 
         <WidgetRoleButtons />
 
-        <WidgetPresenters />
+        <WidgetPresenters
+          filter={function(item) {
+            return (
+              item.presentation_description &&
+              item.presentation_description.length > 20
+            );
+          }}
+        />
 
         <WidgetVisitor
           label="visitors.register_alt"
@@ -53,8 +63,21 @@ class PageIndex extends React.Component {
         />
 
         <WidgetFeaturedExhibitors
+          label="exhibitors.premium.networking.name"
+          filter={function(item) {
+            return [1325].indexOf(item.id) > -1;
+          }}
+        />
+
+        <WidgetFeaturedExhibitors
+          label="common.stage-patrons"
+          filter={function(item) {
+            return [1366, 1023].indexOf(item.id) > -1;
+          }}
+        />
+
+        <WidgetFeaturedExhibitors
           label="exhibitors.list_featured"
-          secondaryTitle=""
           links={[
             <Link
               key="all"

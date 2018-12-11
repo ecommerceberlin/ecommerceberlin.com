@@ -1,10 +1,9 @@
-
 import {
   get as _get,
   MyHead as Head,
   connect,
   getInviteOgImage,
-  WidgetVisitor, 
+  WidgetVisitor,
   WidgetSchedule,
   WidgetAllExhibitorsColumnList,
   WidgetSalesMap,
@@ -12,26 +11,16 @@ import {
   TicketDownload,
   Wrapper,
   EventInfo,
-  Invite
-} from 'eventjuicer-site-components'
-
+  Invite,
+} from 'eventjuicer-site-components';
 
 class PageTicket extends React.Component {
-
-  static async getInitialProps({
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
-
+  static async getInitialProps({ query, asPath, isServer, store }) {
     const person = `code/${query.hash}`;
 
     return {
-      preload : [
-        person, "exhibitors"
-      ],
-      code: query.hash
+      preload: [person, 'exhibitors'],
+      code: query.hash,
     };
   }
 
@@ -45,11 +34,11 @@ class PageTicket extends React.Component {
         <Head
           url={`/invite,${_get(person, 'id', 0)}`}
           image={getInviteOgImage(
-            `Będę. ${_get(person, 'fname', '')} z ${_get(person, 'cname2')}.`
+            `Będę. ${_get(person, 'fname', '')} z ${_get(person, 'cname2')}.`,
           )}
           titleLabel={[
             'visitors.opengraph.title',
-            { name: name, location: 'Warszawa', date: '7 listopada 2018' }
+            { name: name, location: 'Kraków', date: '17 kwietnia 2019' },
           ]}
         />
 
@@ -64,49 +53,49 @@ class PageTicket extends React.Component {
               {
                 icon: 'location',
                 secondary: 'event.location',
-                primary: 'EXPO XXI Warszawa, Prądzyńskiego 12/14'
+                primary: 'EXPO Kraków, Galicyjska 9',
               },
 
               {
                 icon: 'date',
                 secondary: 'event.date',
-                primary: '7 listopada 2018'
+                primary: '17 kwietnia 2019',
               },
 
               {
                 icon: 'alarm',
                 secondary: 'event.hours',
-                primary: '10:00-17:00'
-              }
+                primary: '10:00-17:00',
+              },
             ]}
             orientation="h"
             style={{ marginTop: 50 }}
           />
 
           <Invite person={person} />
-
         </Wrapper>
 
         <WidgetSchedule />
 
-      <WidgetSalesMap
-      
-        label="exhibitors.map.title2"
-        secondaryLabel="exhibitors.map.opensales"
-
+        <WidgetSalesMap
+          label="exhibitors.map.title2"
+          secondaryLabel="exhibitors.map.opensales"
         />
-              
+
         <WidgetAllExhibitorsColumnList />
 
-        <WidgetVisitor  label="visitors.register_alt" />
-
+        <WidgetVisitor label="visitors.register_alt" />
       </Layout>
     );
   }
 }
 
-
 export default connect(
   (state, props) => ({
-    person : "code" in props && props.code && `code/${props.code}` in state.resources ? state.resources[`code/${props.code}`] : {}
-  }), null)(PageTicket);
+    person:
+      'code' in props && props.code && `code/${props.code}` in state.resources
+        ? state.resources[`code/${props.code}`]
+        : {},
+  }),
+  null,
+)(PageTicket);

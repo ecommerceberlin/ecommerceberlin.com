@@ -15,7 +15,7 @@ module.exports = {
 
     config.plugins.push(
       new Dotenv({
-        path: path.join(__dirname, dev ? '.env' : '.env.production'),
+        path: path.join(__dirname, '.env'),
         systemvars: true
       })
     )

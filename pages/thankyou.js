@@ -1,5 +1,3 @@
-
-
 import {
   connect,
   MyHead as Head,
@@ -8,25 +6,18 @@ import {
   LayoutMain as Layout,
   Typography,
   Wrapper,
- // WhoIsGonnaBeThere,
+  // WhoIsGonnaBeThere,
   MyTypography,
-  Googlemap
-} from 'eventjuicer-site-components'
-
+  Googlemap,
+} from 'eventjuicer-site-components';
 
 class ThankyouPage extends React.Component {
-  static async getInitialProps({
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
-
+  static async getInitialProps({ query, asPath, isServer, store }) {
     const person = `code/${query.hash}`;
 
     return {
-      preload : [person, "exhibitors"],
-      asPath: asPath
+      preload: [person, 'exhibitors'],
+      asPath: asPath,
     };
   }
 
@@ -37,16 +28,15 @@ class ThankyouPage extends React.Component {
 
     return (
       <Layout>
-
         <Head
           url={asPath}
           titleLabel={[
             'visitors.opengraph.title',
             {
               name: name,
-              location: 'Warszawa',
-              date: '7 listopada 2018'
-            }
+              location: 'Kraków',
+              date: '17 kwietnia 2019',
+            },
           ]}
         />
 
@@ -60,7 +50,7 @@ class ThankyouPage extends React.Component {
         </Wrapper> */}
 
         <WidgetVisitor label="visitors.register_alt" />
- 
+
         {/* <Googlemap /> */}
       </Layout>
     );

@@ -2,30 +2,23 @@
 
 import {
   connect,
-  MyHead as Head, 
+  MyHead as Head,
   MyLink as Link,
   LayoutMain as Layout,
   DatasourceExhibitors,
-  WidgetVisitor, 
+  WidgetVisitor,
   WidgetRoleButtons,
   WidgetAllExhibitorsAvatarlist,
   Wrapper,
   Bookingmap,
   Typography,
-  Gallery
-} from 'eventjuicer-site-components'
-
+  Gallery,
+} from 'eventjuicer-site-components';
 
 class PageExhibitors extends React.Component {
-  static async getInitialProps({
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
-
+  static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      preload : ["exhibitors", "bookingmap"]
+      preload: ['exhibitors', 'bookingmap'],
     };
   }
 
@@ -33,23 +26,19 @@ class PageExhibitors extends React.Component {
     const { exhibitors, booths } = this.props;
 
     return (
-
       <Layout>
-
         <Head />
 
-        <AllExhibitorsAvatarlist label="exhibitors.list_full" first />
+        <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" first />
 
         <Wrapper label="exhibitors.map.title">
           {/* <h1>SCROLL </h1> */}
           <Bookingmap />
         </Wrapper>
 
+        <WidgetRoleButtons />
 
-        <RoleButtons />
-
-        <Visitor label="visitors.are_you_visitor" />
-       
+        <WidgetVisitor label="visitors.are_you_visitor" />
       </Layout>
     );
   }

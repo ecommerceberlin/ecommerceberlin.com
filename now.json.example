@@ -1,17 +1,18 @@
 {
-  "name": "eventjuicer-site",
-  "alias": "targiehandlu.pl",
+  "name": "ecommerceberlin-site",
+  "alias": "next.ecommerceberlin.com",
   "type": "npm",
   "public": false,
+  "version": 1,
   "scale": {
     "bru1": {
-      "min": 2,
-      "max": 7
+      "min": 1,
+      "max": 1
     },
     "sfo1": {
       "min": 1,
-      "max": 3
+      "max": 1
     }
   },
-  "dotenv": false
+  "dotenv": true
 }
