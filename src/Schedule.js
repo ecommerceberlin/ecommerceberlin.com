@@ -22,6 +22,7 @@ const Schedule = () => (
         C: { company_id: 1398 },
         D: { company_id: 1023 }
       }}
+      venueStyle="gold"
     />
 )
 
