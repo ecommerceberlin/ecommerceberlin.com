@@ -1,35 +1,27 @@
-
-
 import {
   connect,
   LayoutMain as Layout,
   WidgetVisitor,
   WidgetFeaturedExhibitors,
   WidgetPresenter,
-  WidgetSchedule,
+  //WidgetSchedule,
   WidgetRoleButtons,
-  WidgetVideoWithEventInfo
-} from 'eventjuicer-site-components'
+  WidgetVideoWithEventInfo,
+} from 'eventjuicer-site-components';
 
+import Schedule from '../src/Schedule';
+import Hero from '../src/Hero';
 
 class PageSpeaker extends React.Component {
-  static async getInitialProps({
-  
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
-
+  static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      preload : ["presenters", "exhibitors"],
+      preload: ['presenters', 'exhibitors'],
       asPath: asPath,
-      speakerId: query.id
+      speakerId: query.id,
     };
   }
 
   render() {
-
     const { speakerId, asPath } = this.props;
 
     // if (!speaker) {
@@ -38,21 +30,17 @@ class PageSpeaker extends React.Component {
 
     return (
       <Layout>
-       
-        <WidgetPresenter id={speakerId } asPath={asPath} />
+        <WidgetPresenter id={speakerId} asPath={asPath} />
 
-        <WidgetSchedule />
-        
-        <WidgetVideoWithEventInfo />
+        <Schedule />
 
-        <WidgetVisitor 
-          label="visitors.register_alt"
-        />
+        <Hero />
+
+        <WidgetVisitor label="visitors.register_alt" />
 
         <WidgetRoleButtons />
 
-        <WidgetFeaturedExhibitors label="exhibitors.list_featured" /> 
-     
+        <WidgetFeaturedExhibitors label="exhibitors.list_featured" />
       </Layout>
     );
   }
