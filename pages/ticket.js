@@ -7,12 +7,13 @@ import {
   WidgetSchedule,
   WidgetAllExhibitorsColumnList,
   WidgetSalesMap,
-  LayoutMain as Layout,
   TicketDownload,
   Wrapper,
   EventInfo,
   Invite,
 } from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageTicket extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

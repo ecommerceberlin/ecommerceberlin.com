@@ -1,13 +1,12 @@
-
-
 import {
   connect,
   MyHead as Head,
-  LayoutMain as Layout,
-  Typography, 
-  Wrapper, 
-  Stage
-} from 'eventjuicer-site-components'
+  Typography,
+  Wrapper,
+  Stage,
+} from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageStage extends React.Component {
   static async getInitialProps({
@@ -18,7 +17,7 @@ class PageStage extends React.Component {
     query,
     asPath,
     isServer,
-    store
+    store,
   }) {
     return { stage: query.stage };
   }

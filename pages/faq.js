@@ -1,24 +1,17 @@
-
-
 import {
   connect,
   MyHead as Head,
   get as _get,
-  LayoutMain as Layout,
-  Typography, 
-  Faq, 
-  FaqLink, 
-  Wrapper
-} from 'eventjuicer-site-components'
+  Typography,
+  Faq,
+  FaqLink,
+  Wrapper,
+} from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageFaq extends React.Component {
-  static async getInitialProps({
-
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
+  static async getInitialProps({ query, asPath, isServer, store }) {
     return {};
   }
 
@@ -35,14 +28,14 @@ class PageFaq extends React.Component {
               {
                 label: 'representatives',
                 important: true,
-                buttons: []
+                buttons: [],
               },
               { label: 'additional_paid_services' },
               { label: 'shipping_of_materials' },
               { label: 'standard_offering' },
               { label: 'how_to_promote' },
               { label: 'promo_benefits' },
-              { label: 'public_profile' }
+              { label: 'public_profile' },
             ]}
           />
 
@@ -63,7 +56,7 @@ class PageFaq extends React.Component {
               { label: 'parking_eventday' },
               { label: 'problems_equipment' },
               { label: 'problems_services' },
-              { label: 'badge_scanner' }
+              { label: 'badge_scanner' },
             ]}
           />
 

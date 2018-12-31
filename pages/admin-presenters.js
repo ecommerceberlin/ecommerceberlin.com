@@ -1,22 +1,16 @@
-
 import {
   connect,
   MyHead as Head,
-  LayoutMain as Layout,
   WidgetPresenters,
   MyTypography,
-} from 'eventjuicer-site-components'
+} from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageAgendaPreview extends React.Component {
-  static async getInitialProps({
-   
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
+  static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      preload : ["presenters"]
+      preload: ['presenters'],
     };
   }
 
@@ -28,7 +22,6 @@ class PageAgendaPreview extends React.Component {
         <Head />
 
         <WidgetPresenters limit={null} filter={null} link={true} />
-    
       </Layout>
     );
   }

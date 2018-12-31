@@ -3,13 +3,14 @@ import {
   MyHead as Head,
   get as _get,
   WidgetVisitor,
-  LayoutMain as Layout,
   Typography,
   Wrapper,
   // WhoIsGonnaBeThere,
   MyTypography,
   Googlemap,
 } from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class ThankyouPage extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

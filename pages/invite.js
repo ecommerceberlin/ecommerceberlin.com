@@ -3,7 +3,6 @@ import {
   MyHead as Head,
   get as _get,
   getInviteOgImage,
-  LayoutMain as Layout,
   WidgetVisitor,
   WidgetFeaturedExhibitors,
   WidgetSchedule,
@@ -12,6 +11,8 @@ import {
   Gallery,
   EventInfo,
 } from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageInvite extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

@@ -2,11 +2,12 @@ import {
   MyHead as Head,
   MyLink as Link,
   connect,
-  LayoutMain as Layout,
   WidgetVisitor,
   WidgetSalesMap,
   WidgetExhibitorsByKeyword,
 } from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageExhibitorsByKeyword extends React.Component {
   static async getInitialProps({ query }) {

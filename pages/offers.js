@@ -1,56 +1,45 @@
- 
 import {
   connect,
-  LayoutMain as Layout,
-  MyHead as Head, 
- // MyLink as Link,
-  WidgetVisitor, 
+  MyHead as Head,
+  // MyLink as Link,
+  WidgetVisitor,
   WidgetOffers,
   WidgetRoleButtons,
   // Wrapper,
   // ColumnList
-} from 'eventjuicer-site-components'
+} from 'eventjuicer-site-components';
 
+import Layout from '../src/Layout';
 
 class PageSpecials extends React.Component {
-
-  static async getInitialProps({
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
-    return { preload : ["exhibitors"]  };
+  static async getInitialProps({ query, asPath, isServer, store }) {
+    return { preload: ['exhibitors'] };
   }
 
   render() {
-    
     const { url } = this.props;
 
     return (
-    
-    <Layout>
-    
+      <Layout>
         <Head />
 
-        <WidgetOffers divider={
+        <WidgetOffers
+          divider={
+            <WidgetVisitor
+              first
+              label="visitors.register_alt"
+              secondaryTitle="Spotkamy się w gronie ponad 3000 osób!"
+            />
+          }
+        />
 
-          <WidgetVisitor 
+        <WidgetVisitor
           first
-          label="visitors.register_alt"
+          label="visitors.register"
           secondaryTitle="Spotkamy się w gronie ponad 3000 osób!"
-          />
-
-        } />
-
-        <WidgetVisitor 
-           first
-           label="visitors.register"
-           secondaryTitle="Spotkamy się w gronie ponad 3000 osób!"
-          />
+        />
 
         <WidgetRoleButtons />
-       
       </Layout>
     );
   }

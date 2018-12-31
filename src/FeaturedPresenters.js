@@ -18,6 +18,7 @@ FeaturedPresenters.defaultProps = {
           item.bio.length > 20
         );
     },
+    bio : false,
     limit : 8
 }
 

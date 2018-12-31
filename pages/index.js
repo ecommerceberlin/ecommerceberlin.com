@@ -1,25 +1,25 @@
 import {
   connect,
-  LayoutMain as Layout,
   MyHead as Head,
-  MyLink as Link,
-  FsVideo,
-  WidgetVideoWithEventInfo,
+  // MyLink as Link,
+  // FsVideo,
+  // WidgetVideoWithEventInfo,
   WidgetVideoWithReviews,
   WidgetVisitor,
-  WidgetFeaturedExhibitors,
+  // WidgetFeaturedExhibitors,
   WidgetAllExhibitorsColumnList,
   WidgetRoleButtons,
   WidgetSalesMap,
-  WidgetPresenters,
-  WidgetSchedule,
-  WidgetExhibitors,
+  // WidgetPresenters,
+  // WidgetSchedule,
+  // WidgetExhibitors,
 } from 'eventjuicer-site-components';
 
 import Schedule from '../src/Schedule';
 import Hero from '../src/Hero';
 import FeaturedExhibitors from '../src/FeaturedExhibitors';
 import FeaturedPresenters from '../src/FeaturedPresenters';
+import Layout from '../src/Layout';
 
 class PageIndex extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
@@ -50,7 +50,7 @@ class PageIndex extends React.Component {
 
         <WidgetRoleButtons />
 
-        <FeaturedPresenters />
+        <FeaturedPresenters bio={false} />
 
         <WidgetVisitor
           label="visitors.register_alt"

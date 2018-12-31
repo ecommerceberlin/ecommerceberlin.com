@@ -4,21 +4,20 @@ import {
   get as _get,
   connect,
   MyHead as Head,
-  LayoutMain as Layout,
-  WidgetSupport, 
+  WidgetSupport,
   MyTypography as Typography,
   // Faq,
   // FaqLink,
   Wrapper,
   Benefits,
-  TwoColsLayout as Section
-} from 'eventjuicer-site-components'
+  TwoColsLayout as Section,
+} from 'eventjuicer-site-components';
 
+import Layout from '../src/Layout';
 
 const Bookingmap = dynamic(
-  import('eventjuicer-site-components/dist/components/Bookingmap/Bookingmap')
+  import('eventjuicer-site-components/dist/components/Bookingmap/Bookingmap'),
 );
-
 
 class PagePremium extends React.Component {
   static async getInitialProps({
@@ -29,7 +28,7 @@ class PagePremium extends React.Component {
     query,
     asPath,
     isServer,
-    store
+    store,
   }) {
     return {};
   }
@@ -78,7 +77,7 @@ class PagePremium extends React.Component {
 
                     'exhibitors.premium.networking.branding',
                     'exhibitors.premium.networking.attractions',
-                    'exhibitors.premium.networking.fullservice'
+                    'exhibitors.premium.networking.fullservice',
                   ]}
                   orientation="v"
                 />
@@ -101,7 +100,7 @@ class PagePremium extends React.Component {
               // cname2 : name,
               // loc : selectedBoothNames.join(","),
               // smart_count : selectedBoothNames.length
-            }
+            },
           ]}
         >
           <Bookingmap

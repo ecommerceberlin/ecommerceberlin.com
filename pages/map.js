@@ -1,14 +1,13 @@
-
-
 import {
   connect,
   MyHead as Head,
-  Typography, 
-  Wrapper, 
+  Typography,
+  Wrapper,
   Bookingmap,
-  LayoutMain as Layout,
   //WidgetVisitor
-} from 'eventjuicer-site-components'
+} from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageMap extends React.Component {
   static async getInitialProps({
@@ -19,7 +18,7 @@ class PageMap extends React.Component {
     query,
     asPath,
     isServer,
-    store
+    store,
   }) {
     return {};
   }

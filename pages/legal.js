@@ -1,16 +1,14 @@
-
-
 import {
   connect,
   get as _get,
-  LayoutMain as Layout,
   MyHead as Head,
-  // Typography, 
-  // Faq, 
-  // FaqLink, 
-  Wrapper
-} from 'eventjuicer-site-components'
+  // Typography,
+  // Faq,
+  // FaqLink,
+  Wrapper,
+} from 'eventjuicer-site-components';
 
+import Layout from '../src/Layout';
 
 class PageFaq extends React.Component {
   static async getInitialProps({
@@ -21,7 +19,7 @@ class PageFaq extends React.Component {
     query,
     asPath,
     isServer,
-    store
+    store,
   }) {
     return {};
   }

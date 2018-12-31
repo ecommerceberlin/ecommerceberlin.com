@@ -1,30 +1,23 @@
-
-
 import {
   connect,
   _get as get,
   Divider,
-  MyHead as Head, 
+  MyHead as Head,
   MyLink as Link,
-  LayoutMain as Layout,
-  getPresenterFbAd, 
+  getPresenterFbAd,
   generateLinkParams,
   MyTypography as Typography,
   TwoColsLayout as Section,
-  Wrapper
-} from 'eventjuicer-site-components'
+  Wrapper,
+} from 'eventjuicer-site-components';
 
+import Layout from '../src/Layout';
 
 class PageSpeakerSocial extends React.Component {
-  static async getInitialProps({
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
+  static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      preload : ["presenters"],
-      asPath: asPath
+      preload: ['presenters'],
+      asPath: asPath,
     };
   }
 
@@ -39,24 +32,27 @@ class PageSpeakerSocial extends React.Component {
           {presenters.map((presenter, idx) => {
             const name = `${_get(presenter, 'fname')} ${_get(
               presenter,
-              'lname'
+              'lname',
             )}`;
             const job = `${_get(presenter, 'position')} ${_get(
               presenter,
-              'cname2'
+              'cname2',
             )}`;
             const bio = `${_get(presenter, 'bio')}`;
             const title = `${_get(presenter, 'presentation_title')}`;
             const description = `${_get(
               presenter,
-              'presentation_description'
+              'presentation_description',
             )}`;
 
-            const ogImage = getPresenterFbAd(presenter, 'template_speaker_teh15_square');
+            const ogImage = getPresenterFbAd(
+              presenter,
+              'template_speaker_teh15_square',
+            );
             const linkParams = generateLinkParams(
               name,
               'speaker',
-              presenter.id
+              presenter.id,
             );
 
             return (
@@ -107,4 +103,6 @@ class PageSpeakerSocial extends React.Component {
   }
 }
 
-export default connect(state => ({presenters : state.resources.presenters}))(PageSpeakerSocial);
+export default connect(state => ({ presenters: state.resources.presenters }))(
+  PageSpeakerSocial,
+);

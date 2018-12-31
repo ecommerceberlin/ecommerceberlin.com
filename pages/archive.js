@@ -1,10 +1,7 @@
-
-
 import {
   connect,
-  LayoutMain as Layout,
   WidgetVisitor,
-  MyHead as Head, 
+  MyHead as Head,
   MyLink as Link,
   Wrapper,
   Avatarlist,
@@ -12,23 +9,17 @@ import {
   Gallery,
   WidthAwareInfo,
   People,
-  MyTable as Table
-} from 'eventjuicer-site-components'
- 
-class PageArchive extends React.Component {
-  static async getInitialProps({
-   
-    
-    query,
-    asPath,
-    isServer,
-    store
-  }) {
+  MyTable as Table,
+} from 'eventjuicer-site-components';
 
+import Layout from '../src/Layout';
+
+class PageArchive extends React.Component {
+  static async getInitialProps({ query, asPath, isServer, store }) {
     const presenters = `presenters?event_id=${query.id}`;
-    
+
     return {
-      preload : ["events", presenters],
+      preload: ['events', presenters],
       eventId: query.id,
     };
   }
@@ -65,7 +56,7 @@ class PageArchive extends React.Component {
               name: {},
               loc: {},
               starts: { transform: v => v },
-              show: { button: true, label: 'common.details' }
+              show: { button: true, label: 'common.details' },
             }}
           />
         </Wrapper>

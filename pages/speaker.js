@@ -1,6 +1,5 @@
 import {
   connect,
-  LayoutMain as Layout,
   WidgetVisitor,
   WidgetFeaturedExhibitors,
   WidgetPresenter,
@@ -11,6 +10,7 @@ import {
 
 import Schedule from '../src/Schedule';
 import Hero from '../src/Hero';
+import Layout from '../src/Layout';
 
 class PageSpeaker extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -32,7 +32,7 @@ class PageSpeaker extends React.Component {
       <Layout>
         <WidgetPresenter id={speakerId} asPath={asPath} />
 
-        <Schedule />
+        <Schedule selected={speakerId} />
 
         <Hero />
 

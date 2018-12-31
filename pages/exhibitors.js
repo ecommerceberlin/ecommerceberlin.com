@@ -4,7 +4,6 @@ import {
   connect,
   MyHead as Head,
   MyLink as Link,
-  LayoutMain as Layout,
   DatasourceExhibitors,
   WidgetVisitor,
   WidgetRoleButtons,
@@ -14,6 +13,8 @@ import {
   Typography,
   Gallery,
 } from 'eventjuicer-site-components';
+
+import Layout from '../src/Layout';
 
 class PageExhibitors extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
