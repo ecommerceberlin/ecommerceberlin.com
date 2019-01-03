@@ -4,10 +4,9 @@ import {
   Typography,
   Wrapper,
   Bookingmap,
-  //WidgetVisitor
+  //WidgetVisitor,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageMap extends React.Component {
   static async getInitialProps({

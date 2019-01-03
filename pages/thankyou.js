@@ -8,9 +8,8 @@ import {
   // WhoIsGonnaBeThere,
   MyTypography,
   Googlemap,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class ThankyouPage extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

@@ -2,9 +2,8 @@ import {
   MyHead as Head,
   connect,
   WidgetVisitor,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PagePartner extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

@@ -3,14 +3,13 @@ import {
   WidgetVisitor,
   WidgetFeaturedExhibitors,
   WidgetPresenter,
-  //WidgetSchedule,
-  WidgetRoleButtons,
+  WidgetSchedule,
   WidgetVideoWithEventInfo,
+  LayoutMain as Layout,
+  WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-import Schedule from '../src/Schedule';
 import Hero from '../src/Hero';
-import Layout from '../src/Layout';
 
 class PageSpeaker extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -32,7 +31,7 @@ class PageSpeaker extends React.Component {
       <Layout>
         <WidgetPresenter id={speakerId} asPath={asPath} />
 
-        <Schedule selected={speakerId} />
+        <WidgetSchedule selected={speakerId} />
 
         <Hero />
 

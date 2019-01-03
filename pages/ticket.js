@@ -11,9 +11,8 @@ import {
   Wrapper,
   EventInfo,
   Invite,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageTicket extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

@@ -8,23 +8,24 @@ import {
   WidgetVisitor,
   // WidgetFeaturedExhibitors,
   WidgetAllExhibitorsColumnList,
-  WidgetRoleButtons,
   WidgetSalesMap,
   // WidgetPresenters,
-  // WidgetSchedule,
+  WidgetSchedule,
   // WidgetExhibitors,
+  LayoutMain as Layout,
+  WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-import Schedule from '../src/Schedule';
 import Hero from '../src/Hero';
 import FeaturedExhibitors from '../src/FeaturedExhibitors';
 import FeaturedPresenters from '../src/FeaturedPresenters';
-import Layout from '../src/Layout';
+import settings from '../settings';
 
 class PageIndex extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
     return {
       preload: ['exhibitors'],
+      settings: settings,
       //    load : ["bookingmap", "formdata", "ticketgroups"]
     };
   }
@@ -46,7 +47,7 @@ class PageIndex extends React.Component {
           secondaryLabel="event.parties"
         />
 
-        <Schedule />
+        <WidgetSchedule />
 
         <WidgetRoleButtons />
 

@@ -3,9 +3,8 @@ import {
   MyHead as Head,
   WidgetPresenters,
   MyTypography,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageAgendaPreview extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

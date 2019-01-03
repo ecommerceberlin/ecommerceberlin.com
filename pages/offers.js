@@ -4,12 +4,11 @@ import {
   // MyLink as Link,
   WidgetVisitor,
   WidgetOffers,
-  WidgetRoleButtons,
   // Wrapper,
-  // ColumnList
+  // ColumnList,
+  LayoutMain as Layout,
+  WidgetRoleButtons,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageSpecials extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

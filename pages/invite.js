@@ -10,9 +10,8 @@ import {
   Wrapper,
   Gallery,
   EventInfo,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageInvite extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

@@ -11,9 +11,8 @@ import {
   TwoColsLayout as Section,
   MyHead as Head,
   get as _get,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 const Bookingmap = dynamic(
   import('eventjuicer-site-components/dist/components/Bookingmap/Bookingmap'),

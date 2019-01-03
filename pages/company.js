@@ -10,12 +10,11 @@ import {
   WidgetCompany,
   WidgetAllExhibitorsColumnList,
   //SalesMap,
-  WidgetRoleButtons,
   WidgetPresenters,
   WidgetSchedule,
+  LayoutMain as Layout,
+  WidgetRoleButtons,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageCompany extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

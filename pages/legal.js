@@ -6,9 +6,8 @@ import {
   // Faq,
   // FaqLink,
   Wrapper,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageFaq extends React.Component {
   static async getInitialProps({

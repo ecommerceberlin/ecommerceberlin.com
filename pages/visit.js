@@ -9,9 +9,8 @@ import {
   WidgetSchedule,
   WidgetAllExhibitorsAvatarlist,
   DatasourcePhotos as Photos,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageVisit extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

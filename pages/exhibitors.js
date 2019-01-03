@@ -6,12 +6,12 @@ import {
   MyLink as Link,
   DatasourceExhibitors,
   WidgetVisitor,
-  WidgetRoleButtons,
   WidgetAllExhibitorsAvatarlist,
   Wrapper,
   Bookingmap,
   Typography,
   Gallery,
+  WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
 import Layout from '../src/Layout';

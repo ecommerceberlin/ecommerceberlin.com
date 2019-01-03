@@ -4,9 +4,8 @@ import {
   Typography,
   Wrapper,
   Stage,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 class PageStage extends React.Component {
   static async getInitialProps({

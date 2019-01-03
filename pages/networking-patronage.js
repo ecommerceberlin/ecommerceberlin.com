@@ -11,9 +11,8 @@ import {
   Wrapper,
   Benefits,
   TwoColsLayout as Section,
+  LayoutMain as Layout,
 } from 'eventjuicer-site-components';
-
-import Layout from '../src/Layout';
 
 const Bookingmap = dynamic(
   import('eventjuicer-site-components/dist/components/Bookingmap/Bookingmap'),
