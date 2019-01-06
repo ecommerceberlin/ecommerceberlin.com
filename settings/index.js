@@ -1,6 +1,13 @@
 
 const Settings = {
 
+    visitor : {
+        ticket_id : 1385,
+        email_template : "ecommerceberlin-visitor-registration",
+        background : "/static/lanyard.jpg",
+        api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register"
+    },
+
     common : {
 
         organizer_name : 'E-commerce Capitals Sp. z o.o. Sp. k.',
