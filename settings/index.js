@@ -1,6 +1,15 @@
 
-const Settings = {
+exports.default = {
 
+    system : {
+
+        lang_api_endpoint : 'https://localise.biz/api/export/all.json?format=multi&pretty&key=tWMy1RRHuiW6DD9T7AyYtFlQzAeztbBK',
+        available_locales : ["en", "de"],
+        default_locale : "en",
+        api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com",
+    
+    },
+   
     hero : {
 
         videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1544572510/ebe_hero_final.mp4",
@@ -21,7 +30,7 @@ const Settings = {
     },
 
     reviews : {
-        
+
     },
 
     ui : {
@@ -66,7 +75,7 @@ const Settings = {
         organizer_address : 'POLAND, Poznan, Jana Matejki 52/4',
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
-        event_location : 'STATION Berlin',
+        event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
         event_date : '20th February 2019',
         event_hours : '10:00-17:00',
 
@@ -95,7 +104,7 @@ const Settings = {
 
         people : [
             {             
-                name: 'Lucas Zarna',
+                name: 'Lucas',
                 position : 'Business Development Manager',
                 langs : ["de"],
                 avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/v1546386301/ecommerceberlin_support_lz.jpg',
@@ -104,7 +113,7 @@ const Settings = {
                 chatlio : true
             },
             {
-                name: 'Peter Szczepaniak',
+                name: 'Peter',
                 position : 'Project Manager',
                 langs : ["en"],
                 avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/v1546386405/ecommerceberlin_support_psz.jpg',
@@ -125,7 +134,8 @@ const Settings = {
             '13:20': 'presentation',
             '14:00': 'presentation',
             '14:40': 'presentation',
-            '15:20': 'presentation'
+            '15:20': 'presentation',
+            '15:50': 'presentation'
           },    
           venues : {
             A: { company_id: 1365 },
@@ -135,6 +145,5 @@ const Settings = {
           },
           venueStyle : "gold",
     },
-}
+};
 
-export default Settings;

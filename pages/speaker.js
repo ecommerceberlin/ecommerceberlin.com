@@ -9,7 +9,7 @@ import {
   WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-import settings from '../settings';
+const settings = require('../settings').default;
 
 class PageSpeaker extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

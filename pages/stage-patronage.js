@@ -14,7 +14,7 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-import settings from '../settings';
+const settings = require('../settings').default;
 
 const Bookingmap = dynamic(
   import('eventjuicer-site-components/dist/components/Bookingmap/Bookingmap'),

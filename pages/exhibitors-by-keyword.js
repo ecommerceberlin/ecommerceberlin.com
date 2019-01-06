@@ -8,7 +8,7 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-import settings from '../settings';
+const settings = require('../settings').default;
 
 class PageExhibitorsByKeyword extends React.Component {
   static async getInitialProps({ query }) {

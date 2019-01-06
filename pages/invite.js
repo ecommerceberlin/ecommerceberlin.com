@@ -13,7 +13,7 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-import settings from '../settings';
+const settings = require('../settings').default;
 
 class PageInvite extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {

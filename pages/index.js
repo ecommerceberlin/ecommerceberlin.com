@@ -19,7 +19,8 @@ import {
 
 import FeaturedExhibitors from '../src/FeaturedExhibitors';
 import FeaturedPresenters from '../src/FeaturedPresenters';
-import settings from '../settings';
+
+const settings = require('../settings').default;
 
 class PageIndex extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
