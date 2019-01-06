@@ -14,6 +14,7 @@ import {
   // WidgetExhibitors,
   LayoutMain as Layout,
   WidgetRoleButtons,
+  Wrapper,
 } from 'eventjuicer-site-components';
 
 import FeaturedExhibitors from '../src/FeaturedExhibitors';
@@ -72,6 +73,24 @@ class PageIndex extends React.Component {
           label="visitors.register"
           secondaryLabel="event.parties"
         />
+
+        <Wrapper label="partners.media.title">
+          <div style={{ textAlign: 'center' }}>
+            <img
+              src="https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1000/v1546766050/media_partners.jpg"
+              alt=""
+            />
+          </div>
+        </Wrapper>
+
+        <Wrapper label="partners.community.title">
+          <div style={{ textAlign: 'center' }}>
+            <img
+              src="https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1000/v1546766051/community_partners.jpg"
+              alt=""
+            />
+          </div>
+        </Wrapper>
       </Layout>
     );
   }

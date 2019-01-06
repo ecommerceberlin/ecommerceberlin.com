@@ -9,6 +9,21 @@ const Settings = {
         template : "heroGold",
     },
 
+    bookingmap : {
+        height : 510,
+        steps : [
+            "choose_booth",
+            "confirm",
+            "pay",
+            "access"
+        ],
+        allowedGroupIds : [259, 257, 256, 262]
+    },
+
+    reviews : {
+        
+    },
+
     ui : {
         availableLanguages : [],
         menuItems : [
