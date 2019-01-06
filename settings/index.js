@@ -9,7 +9,6 @@ exports.default = {
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com",
     
     },
-   
     hero : {
 
         videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1544572510/ebe_hero_final.mp4",
@@ -65,7 +64,7 @@ exports.default = {
     visitor : {
         ticket_id : 1385,
         email_template : "ecommerceberlin-visitor-registration",
-        background : "/static/lanyard.jpg",
+        background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register"
     },
 
@@ -97,7 +96,11 @@ exports.default = {
     
     ],
 
-    support : {
+    customer_support : {
+
+    },
+
+    sales_support : {
 
         title: 'event.support.hello',
         description: 'event.support.description',
