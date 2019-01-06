@@ -19,7 +19,9 @@ class PageMap extends React.Component {
     isServer,
     store,
   }) {
-    return {};
+    return {
+      settings: settings,
+    };
   }
 
   render() {

@@ -1,6 +1,43 @@
 
 const Settings = {
 
+    hero : {
+
+        videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/v1544572510/ebe_hero_final.mp4",
+        background : "https://res.cloudinary.com/eventjuicer/image/upload/v1544572575/ebe_hero_final_poster.jpg",
+        overlay : "black",
+        template : "heroGold",
+    },
+
+    ui : {
+        availableLanguages : [],
+        menuItems : [
+            {
+              name: 'general',
+              items: [
+                {name: 'home', to: '/'},
+              ]
+            },
+            {
+              name: 'visitors',
+              items: [
+                {name: 'visit', to: '/visit'},
+                {name: 'schedule', to: '/schedule'},
+                {name: 'presenters', to: '/presenters'},
+                {name: 'exhibitors', to: '/exhibitors'},
+                {name: 'offers', to: '/offers'}
+              ]
+            },
+            {
+              name: 'exhibitors',
+              items: [
+                {name: 'exhibitors', to: '/exhibitors'},
+                {name: 'exhibit', to: '/exhibit'},
+                {name: 'faq', to: '/faq'}
+              ]
+            }
+        ]
+    },
     visitor : {
         ticket_id : 1385,
         email_template : "ecommerceberlin-visitor-registration",

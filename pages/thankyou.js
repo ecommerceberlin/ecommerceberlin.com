@@ -11,6 +11,8 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class ThankyouPage extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     const person = `code/${query.hash}`;
@@ -18,6 +20,7 @@ class ThankyouPage extends React.Component {
     return {
       preload: [person, 'exhibitors'],
       asPath: asPath,
+      settings: settings,
     };
   }
 

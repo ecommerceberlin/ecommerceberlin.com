@@ -9,7 +9,7 @@ import {
   WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-import Hero from '../src/Hero';
+import settings from '../settings';
 
 class PageSpeaker extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -17,6 +17,7 @@ class PageSpeaker extends React.Component {
       preload: ['presenters', 'exhibitors'],
       asPath: asPath,
       speakerId: query.id,
+      settings: settings,
     };
   }
 
@@ -33,7 +34,7 @@ class PageSpeaker extends React.Component {
 
         <WidgetSchedule selected={speakerId} />
 
-        <Hero />
+        <WidgetVideoWithEventInfo />
 
         <WidgetVisitor label="visitors.register_alt" />
 

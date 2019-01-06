@@ -29,7 +29,9 @@ class PagePremium extends React.Component {
     isServer,
     store,
   }) {
-    return {};
+    return {
+      settings: settings,
+    };
   }
 
   render() {

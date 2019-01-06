@@ -7,6 +7,8 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class PageStage extends React.Component {
   static async getInitialProps({
     err,
@@ -18,7 +20,10 @@ class PageStage extends React.Component {
     isServer,
     store,
   }) {
-    return { stage: query.stage };
+    return {
+      stage: query.stage,
+      settings: settings,
+    };
   }
 
   render() {

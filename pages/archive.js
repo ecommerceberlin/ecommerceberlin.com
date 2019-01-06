@@ -13,6 +13,8 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class PageArchive extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     const presenters = `presenters?event_id=${query.id}`;
@@ -20,6 +22,7 @@ class PageArchive extends React.Component {
     return {
       preload: ['events', presenters],
       eventId: query.id,
+      settings: settings,
     };
   }
 

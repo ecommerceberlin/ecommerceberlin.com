@@ -14,6 +14,8 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 const Bookingmap = dynamic(
   import('eventjuicer-site-components/dist/components/Bookingmap/Bookingmap'),
 );
@@ -29,7 +31,9 @@ class PagePremium extends React.Component {
     isServer,
     store,
   }) {
-    return {};
+    return {
+      settings: settings,
+    };
   }
 
   render() {

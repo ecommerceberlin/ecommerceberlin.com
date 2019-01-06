@@ -13,6 +13,8 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class PageInvite extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     const resource = `code/${query.id}`;
@@ -21,6 +23,7 @@ class PageInvite extends React.Component {
       preload: [resource, 'exhibitors'],
       asPath: asPath,
       resource: resource,
+      settings: settings,
     };
   }
 

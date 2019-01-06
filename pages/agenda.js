@@ -6,10 +6,13 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class PageAgenda extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['exhibitors', 'presenters'],
+      settings: settings,
     };
   }
 

@@ -12,11 +12,14 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class PageSpeakerSocial extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['presenters'],
       asPath: asPath,
+      settings: settings,
     };
   }
 

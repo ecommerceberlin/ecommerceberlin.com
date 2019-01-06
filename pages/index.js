@@ -3,7 +3,7 @@ import {
   MyHead as Head,
   // MyLink as Link,
   // FsVideo,
-  // WidgetVideoWithEventInfo,
+  WidgetVideoWithEventInfo,
   WidgetVideoWithReviews,
   WidgetVisitor,
   // WidgetFeaturedExhibitors,
@@ -16,7 +16,6 @@ import {
   WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-import Hero from '../src/Hero';
 import FeaturedExhibitors from '../src/FeaturedExhibitors';
 import FeaturedPresenters from '../src/FeaturedPresenters';
 import settings from '../settings';
@@ -35,7 +34,7 @@ class PageIndex extends React.Component {
       <Layout>
         <Head />
 
-        <Hero />
+        <WidgetVideoWithEventInfo />
 
         <WidgetSalesMap
           label="exhibitors.map.title2"

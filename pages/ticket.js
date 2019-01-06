@@ -14,6 +14,8 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class PageTicket extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     const person = `code/${query.hash}`;
@@ -21,6 +23,7 @@ class PageTicket extends React.Component {
     return {
       preload: [person, 'exhibitors'],
       code: query.hash,
+      settings: settings,
     };
   }
 

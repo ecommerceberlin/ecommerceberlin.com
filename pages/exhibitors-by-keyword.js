@@ -8,11 +8,14 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
+import settings from '../settings';
+
 class PageExhibitorsByKeyword extends React.Component {
   static async getInitialProps({ query }) {
     return {
       preload: ['exhibitors', 'bookingmap'],
       keyword: query.keyword,
+      settings: settings,
     };
   }
 
