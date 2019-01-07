@@ -32,7 +32,7 @@ class PageSpecials extends React.Component {
             <WidgetVisitor
               first
               label="visitors.register_alt"
-              secondaryTitle="Spotkamy się w gronie ponad 3000 osób!"
+              secondaryLabel="event.parties"
             />
           }
         />
@@ -40,7 +40,7 @@ class PageSpecials extends React.Component {
         <WidgetVisitor
           first
           label="visitors.register"
-          secondaryTitle="Spotkamy się w gronie ponad 3000 osób!"
+          secondaryLabel="event.parties"
         />
 
         <WidgetRoleButtons />
