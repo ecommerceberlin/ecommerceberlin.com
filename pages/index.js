@@ -38,28 +38,28 @@ class PageIndex extends React.Component {
 
         <WidgetVideoWithEventInfo />
 
-        <WidgetSalesMap
-          label="exhibitors.map.title2"
-          secondaryLabel="exhibitors.map.opensales"
-        />
+        <WidgetRoleButtons first={true} />
 
         <WidgetVisitor
           label="visitors.register"
           secondaryLabel="event.parties"
         />
 
+        <FeaturedPresenters bio={false} />
+
         <WidgetSchedule />
 
-        <WidgetRoleButtons />
+        <WidgetSalesMap
+          label="exhibitors.map.title2"
+          secondaryLabel="exhibitors.map.opensales"
+        />
 
-        <FeaturedPresenters bio={false} />
+        <FeaturedExhibitors />
 
         <WidgetVisitor
           label="visitors.register_alt"
           secondaryLabel="event.parties"
         />
-
-        <FeaturedExhibitors />
 
         {/* <WidgetVideoWithReviews overlay="black" /> */}
 
@@ -80,6 +80,7 @@ class PageIndex extends React.Component {
             <img
               src="https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1000/v1546766050/media_partners.jpg"
               alt=""
+              style={{ width: '100%', maxWidth: 1100 }}
             />
           </div>
         </Wrapper>
@@ -89,6 +90,7 @@ class PageIndex extends React.Component {
             <img
               src="https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1000/v1546766051/community_partners.jpg"
               alt=""
+              style={{ width: '100%', maxWidth: 1100 }}
             />
           </div>
         </Wrapper>
