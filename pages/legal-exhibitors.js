@@ -11,7 +11,7 @@ import {
 
 const settings = require('../settings').default;
 
-class PageLegal extends React.Component {
+class PageLegalExhibitors extends React.Component {
   static async getInitialProps({
     err,
     req,
@@ -198,4 +198,4 @@ class PageLegal extends React.Component {
   }
 }
 
-export default connect()(PageLegal);
+export default connect()(PageLegalExhibitors);

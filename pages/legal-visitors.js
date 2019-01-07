@@ -9,7 +9,7 @@ import {
 
 const settings = require('../settings').default;
 
-class PageVisitorRules extends React.Component {
+class PageLegalVisitors extends React.Component {
   static async getInitialProps({
     err,
     req,
@@ -80,4 +80,4 @@ class PageVisitorRules extends React.Component {
   }
 }
 
-export default connect()(PageVisitorRules);
+export default connect()(PageLegalVisitors);
