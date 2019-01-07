@@ -25,7 +25,16 @@ exports.default = {
             "pay",
             "access"
         ],
-        allowedGroupIds : [259, 257, 256, 262]
+        allowedGroupIds : [259, 257, 256, 262],
+        styles : {
+            light : 258,
+            standard : 256,
+            hot : 257,
+            superhot : 262,
+            ultra : null,
+            grand : 259,
+            stage : 261
+        },
     },
 
     reviews : {
@@ -33,7 +42,6 @@ exports.default = {
     },
 
     ui : {
-        availableLanguages : [],
         menuItems : [
             {
               name: 'general',
