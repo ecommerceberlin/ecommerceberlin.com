@@ -61,7 +61,7 @@ class PageIndex extends React.Component {
 
         <FeaturedExhibitors />
 
-        <WidgetVideoWithReviews overlay="black" />
+        {/* <WidgetVideoWithReviews overlay="black" /> */}
 
         <WidgetAllExhibitorsColumnList />
 

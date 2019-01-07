@@ -70,21 +70,27 @@ class PageLegal extends React.Component {
 </ul>
 
 <p>2.3. Within the Stand "Hot", "Super Hot", for the duration of Fair the Organizer allows Exhibitors to use:</p>
+
 <ul>
 <li>2.3.1 9m2 (nine square meters) of the open-space surface floor of Pavilion (rectangle with dimensions 3m x 3m),</li>
 <li>2.3.2. one round table with a diameter of min. 70 cm placed on the surface as referred to in paragraph 2.2.1.,</li>
 <li>2.3.3. 4 (four) chairs,</li>
 <li>2.3.4 the possibility of placing on the surface as referred to in point. 2.2.1. of rollups prepared by the Exhibitor or advertising walls of the base width of not more than 3 meters (three meters), stand construction height must not exceed 2.5 meters (two and a half meters) and the advertising wall can be placed only in the back of the Stands.</li>
 <li>2.3.5. access to the connection of the power of the maximum power of 500W (voltage 220 volt).</li>
-<li>&lt;2.3.6. Internet access in the Pavilion via WIFI.</li></ul><p></p>
+<li>&lt;2.3.6. Internet access in the Pavilion via WIFI.</li>
+</ul>
+
 <p>2.4. Within the "Grand" Stand Organizer for the duration of Fair allows Exhibitors to use:</p>
-<ul><li>2.4.1 18m2 (eighteen square meters) of the open-space surface floor of Pavilion (rectangle of size with dimensions of 6m x 3m),</li>
+
+<ul>
+<li>2.4.1 18m2 (eighteen square meters) of the open-space surface floor of Pavilion (rectangle of size with dimensions of 6m x 3m),</li>
 <li>2.4.2. two round tables with a diameter of min. 70 cm placed on the surface as referred to in point. </li>
 <li>2.3.3. 6 (six) chairs</li>
 <li>2.3.4. the possibility of placing on the surface as referred to in point. 2.3.1. of rollups prepared by the Exhibitor or advertising walls of the base width of not more than 6 meters (six meters), stand construction height must not exceed 2.5 meters (two and a half meters) and the advertising wall can be placed only in the back of the Stands.</li>
 <li>2.4.5. access to the connection of the power of the maximum power of 1000W (voltage 220 volt).</li>
 <li>2.4.6. Internet access in the Pavilion via WIFI.</li>
 </ul>
+
 <p>2.4. Organizer allows Exhibitors on the terms set out in point. 8 of the Regulations, to make Presentations.</p>
 <p>2.5. The Organizer allows Exhibitors to receive Additional Services related to the Fair, provided that the scope of Additional Services and remuneration payable to the Organizer is previously agreed. To order Additional Services, please contact the Organizer by e-mail (address indicated in Section 1.2.1 of the Regulations).</p>
 <h2>3. Conclusion of the Agreement with the Organizer</h2>
@@ -103,6 +109,7 @@ class PageLegal extends React.Component {
 <p>4.6. The payment date shall be the date of the acceptance of the bank account of the Organiser.</p>
 <p>4.7. Exhibitor authorizes the Organizer to issue VAT invoices and proforma VAT invoices electronically and transmit them as a file in PDF format, to the email address of the Exhibitor provided during registration on the Fair Website.</p>
 <p>4.8. Exhibitor who failed to make timely payment of all remuneration due to Organizer is entitled to conclude another Agreement with the Organizer, but only within successive tranche pricings. However, if the previous Agreement was concluded in the last tranche pricing the Exhibitor is entitled to its conclusion at the same tranche.</p>
+
 <h2>5. Termination of the Agreement.</h2>
 <p>5.1. Each Exhibitor may, without giving any reason, terminate the Agreement in writing, without notice.</p>
 <p>5.2 In the event of termination of Agreement by the Exhibitor by 30 November 2018, payment already made shall settled as follows: the Organizer returns 50% (fifty percent) of the advance payment made, while retaining the remaining 50% (fifty percent) as a fee for making the Exhibitor’s profile available on Fair Website.</p>
@@ -130,6 +137,7 @@ class PageLegal extends React.Component {
 <p>7.7. In the case of remaining of items referred to in point. 7.6. on the Stand or in any other place in the Pavilion, the Organizer will remove these things at the expense of the Exhibitor and store them at the Exhibitor’s expense and risk.</p>
 <p>7.8. Subject to the provisions of point. 8, any activity of Exhibitors within the Fair, and in particular the promotional and marketing should take place only at the Stand of the Exhibitor. Any activity for promotion and marketing outside the Exhibitor’s Stand is only possible on the basis of a separate agreement with the Organizer, concluded in writing, under pain of nullity.</p>
 <p>7.9. Upon completion of Fair the Exhibitor is obliged to return all items that constitute the equipment of Stands without deterioration exceeding the effects of normal use.</p>
+
 <h2>8. Terms of conducting Presentations.</h2>
 <p>8.1. The Exhibitor, who has entered into the Agreement with Organizer, the subject of which is to enable carrying out of Presentations, is obliged:</p>
 
@@ -138,6 +146,7 @@ class PageLegal extends React.Component {
 
 <p>8.2. The Presentation topic must be related to e-commerce, under pain of losing the right to carry it out without any refund and may be associated with the promotion of economic activities carried out by the Exhibitor.</p>
 <p>8.3. The Exhibitor agrees to the free carrying out of Presentation to Organizer for the purpose of educational publication.</p>
+
 <p>8.4. The Organizer:</p>
 <p>8.4.1. will allow Exhibitors to carry out during the Fair a 20-minute Presentation in the conference room located in the Pavilion, within the time specified in detail by the Organizer and specified in the schedule published on the Fair Website no later than one (1) day before the Fair, whereas setting the order of Presentations and possible grouping them in the context of thematic is dependant entirely on the will of the Organizer,</p>
 <p>8.4.2. on the principles set out in point. 10. will place within the Fair Website the profile of the Exhibitor.</p>
