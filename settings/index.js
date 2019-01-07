@@ -156,5 +156,13 @@ exports.default = {
           },
           venueStyle : "gold",
     },
+
+    footer : {
+        links : [
+            {label : "common.pages.imprint", href : "/imprint"},
+            {label : "visitors.agreement.title", href : "/visitor-rules"},
+            {label : "exhibitors.agreement.title", href : "/legal"},
+        ]
+    },
 };
 

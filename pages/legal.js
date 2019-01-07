@@ -32,7 +32,7 @@ class PageLegal extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="exhibitors.agreement">
+        <Wrapper label="exhibitors.agreement.title">
           <div
             dangerouslySetInnerHTML={{
               __html: `

@@ -30,7 +30,7 @@ class PageVisitorRules extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="exhibitors.agreement">
+        <Wrapper label="visitors.agreement.title">
           <div
             dangerouslySetInnerHTML={{
               __html: `<div>
