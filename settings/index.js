@@ -7,6 +7,7 @@ exports.default = {
         available_locales : ["en", "de"],
         default_locale : "en",
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com",
+        og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
     
     },
     hero : {
@@ -35,6 +36,7 @@ exports.default = {
             grand : 259,
             stage : 261
         },
+        api : "https://order.ecommerceberlin.com/preorder"
     },
 
     reviews : {
@@ -161,6 +163,7 @@ exports.default = {
     },
 
     footer : {
+        iconStyle : "black",
         links : [
             {label : "common.pages.imprint", href : "/legal-imprint"},
             {label : "visitors.agreement.title", href : "/legal-visitors"},
