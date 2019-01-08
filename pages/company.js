@@ -39,7 +39,7 @@ class PageCompany extends React.Component {
 
         <WidgetVideoWithEventInfo />
 
-        <WidgetVisitor />
+        <WidgetVisitor secondaryLabel="event.parties" />
 
         <WidgetSchedule />
 
