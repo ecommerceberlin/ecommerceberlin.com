@@ -12,11 +12,12 @@ const FeaturedPresenters = (props) => (
 FeaturedPresenters.defaultProps = {
 
     filter: function(item) {
-        return (
-          item.avatar.indexOf("http") > -1 &&
-          item.logotype.indexOf("http") > -1 &&
-          item.bio.length > 20
-        );
+        return  [84207,84485,84486,84493,84496,84820,84798,85319].indexOf(item.id) > -1;
+
+        //   item.avatar.indexOf("http") > -1 &&
+        //   item.logotype.indexOf("http") > -1 &&
+        //   item.bio.length > 20
+        
     },
     bio : false,
     limit : 8
