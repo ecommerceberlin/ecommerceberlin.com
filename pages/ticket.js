@@ -56,13 +56,13 @@ class PageTicket extends React.Component {
               {
                 icon: 'location',
                 secondary: 'event.location',
-                primary: 'EXPO Kraków, Galicyjska 9',
+                primary: 'Station Berlin',
               },
 
               {
                 icon: 'date',
                 secondary: 'event.date',
-                primary: '17 kwietnia 2019',
+                primary: '20th of Februrary',
               },
 
               {

@@ -78,7 +78,7 @@ class PageIndex extends React.Component {
         <Wrapper label="partners.media.title">
           <div style={{ textAlign: 'center' }}>
             <img
-              src="https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1000/v1546766050/media_partners.jpg"
+              src="https://res.cloudinary.com/eventjuicer/image/upload/c_limit,w_1000,f_auto/v1549990106/media_partners.jpg"
               alt=""
               style={{ width: '100%', maxWidth: 900 }}
             />
@@ -88,9 +88,9 @@ class PageIndex extends React.Component {
         <Wrapper label="partners.community.title">
           <div style={{ textAlign: 'center' }}>
             <img
-              src="https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1000/v1546766051/community_partners.jpg"
+              src="https://res.cloudinary.com/eventjuicer/image/upload/c_limit,w_500,f_auto/v1549990106/community_partners.jpg"
               alt=""
-              style={{ width: '100%', maxWidth: 900 }}
+              style={{ width: '100%', maxWidth: 500 }}
             />
           </div>
         </Wrapper>
