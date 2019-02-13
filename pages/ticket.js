@@ -7,6 +7,7 @@ import {
   WidgetSchedule,
   WidgetAllExhibitorsColumnList,
   WidgetSalesMap,
+  WidgetEventInfo,
   TicketDownload,
   Wrapper,
   EventInfo,
@@ -37,11 +38,18 @@ class PageTicket extends React.Component {
         <Head
           url={`/invite,${_get(person, 'id', 0)}`}
           image={getInviteOgImage(
-            `Będę. ${_get(person, 'fname', '')} z ${_get(person, 'cname2')}.`,
+            `See You! ${_get(person, 'fname', '')} from ${_get(
+              person,
+              'cname2',
+            )}.`,
           )}
           titleLabel={[
             'visitors.opengraph.title',
-            { name: name, location: 'Kraków', date: '17 kwietnia 2019' },
+            {
+              name: name,
+              location: 'STATION Berlin',
+              date: '20th February 2019',
+            },
           ]}
         />
 
@@ -51,29 +59,7 @@ class PageTicket extends React.Component {
         >
           <TicketDownload code={code} />
 
-          <EventInfo
-            items={[
-              {
-                icon: 'location',
-                secondary: 'event.location',
-                primary: 'Station Berlin',
-              },
-
-              {
-                icon: 'date',
-                secondary: 'event.date',
-                primary: '20th of Februrary',
-              },
-
-              {
-                icon: 'alarm',
-                secondary: 'event.hours',
-                primary: '10:00-17:00',
-              },
-            ]}
-            orientation="h"
-            style={{ marginTop: 50 }}
-          />
+          <WidgetEventInfo orientation="h" style={{ marginTop: 50 }} />
 
           <Invite person={person} />
         </Wrapper>

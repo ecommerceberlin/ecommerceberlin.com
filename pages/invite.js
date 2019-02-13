@@ -6,10 +6,11 @@ import {
   WidgetVisitor,
   WidgetFeaturedExhibitors,
   WidgetSchedule,
+  WidgetEventInfo,
   Typography,
   Wrapper,
-  Gallery,
-  EventInfo,
+  // Gallery,
+  // EventInfo,
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
@@ -38,15 +39,18 @@ class PageInvite extends React.Component {
         <Head
           url={asPath}
           image={getInviteOgImage(
-            `Będę. ${_get(person, 'fname', '')} z ${_get(person, 'cname2')}`,
+            `See You! ${_get(person, 'fname', '')} from ${_get(
+              person,
+              'cname2',
+            )}`,
           )}
           titleLabel={[
             'visitors.opengraph.title',
             {
               name: name,
               cname: cname,
-              location: 'Kraków',
-              date: '17 kwietnia 2019',
+              location: 'Berlin STATION',
+              date: '20th February 2019',
             },
           ]}
         />
@@ -54,43 +58,21 @@ class PageInvite extends React.Component {
         <Wrapper
           first
           label={['visitors.invite.title', { name, cname }]}
-          secondaryTitle="22 Prezentacje, 130 Wystawców i prawdziwy networking!"
+          secondaryTitle="140 exhibitors, 40 presentations..."
         >
           <Typography
             template="visitor_invite_join"
             label={['visitors.invite.will_you_join', { name, cname }]}
           />
 
-          <EventInfo
-            items={[
-              {
-                icon: 'location',
-                secondary: 'event.location',
-                primary: 'EXPO Kraków, Galicyjska 9',
-              },
-
-              {
-                icon: 'date',
-                secondary: 'event.date',
-                primary: '17 kwietnia 2019',
-              },
-
-              {
-                icon: 'alarm',
-                secondary: 'event.hours',
-                primary: '10:00-17:00',
-              },
-            ]}
-            orientation="h"
-            style={{ marginTop: 50 }}
-          />
+          <WidgetEventInfo orientation="h" style={{ marginTop: 50 }} />
         </Wrapper>
 
-        <Visitor label="visitors.register" />
+        <WidgetVisitor label="visitors.register" />
 
-        <Schedule />
+        <WidgetSchedule />
 
-        <FeaturedExhibitors
+        <WidgetFeaturedExhibitors
           label="exhibitors.list_featured"
           secondaryTitle=""
         />
