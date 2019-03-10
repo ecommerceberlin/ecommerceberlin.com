@@ -31,19 +31,20 @@ class PageVisit extends React.Component {
 
         <WidgetVisitor label="visitors.register_alt" first />
 
-        <WidgetSchedule />
+        {/* <WidgetSchedule /> */}
 
         <WidgetVideoWithEventInfo />
 
-        <WidgetPresenters />
-
-        <WidgetVisitor label="visitors.register" first />
+        {/* <WidgetPresenters /> */}
 
         <WidgetVisitorBenefits label="visitors.benefits.title" />
 
-        <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
-
         <WidgetVisitor label="visitors.register" first />
+
+
+        {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
+
+        {/* <WidgetVisitor label="visitors.register" first /> */}
 
         <Photos>
           {(photos, size) => (

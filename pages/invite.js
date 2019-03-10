@@ -30,6 +30,11 @@ class PageInvite extends React.Component {
 
   render() {
     const { url, person, exhibitors, asPath } = this.props;
+    
+    /*     
+      resource: "code/90329",
+      person : {}
+    */
 
     const name = `${_get(person, 'fname', '')} ${_get(person, 'lname', '')}`;
     const cname = `${_get(person, 'cname2', '')}`;
@@ -50,7 +55,7 @@ class PageInvite extends React.Component {
               name: name,
               cname: cname,
               location: 'Berlin STATION',
-              date: '20th February 2019',
+              date: '13th February 2020',
             },
           ]}
         />
@@ -70,7 +75,7 @@ class PageInvite extends React.Component {
 
         <WidgetVisitor label="visitors.register" />
 
-        <WidgetSchedule />
+        {/* <WidgetSchedule /> */}
 
         <WidgetFeaturedExhibitors
           label="exhibitors.list_featured"

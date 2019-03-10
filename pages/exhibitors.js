@@ -15,7 +15,7 @@ const settings = require('../settings').default;
 class PageExhibitors extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      preload: ['exhibitors', 'bookingmap'],
+      preload: ['exhibitors', 'allexhibitors', 'bookingmap'],
       settings: settings,
     };
   }
@@ -29,7 +29,7 @@ class PageExhibitors extends React.Component {
 
         <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" first />
 
-        <WidgetSalesMap label="exhibitors.map.title" />
+        {/* <WidgetSalesMap label="exhibitors.map.title" /> */}
 
         <WidgetRoleButtons />
 

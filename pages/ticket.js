@@ -48,7 +48,7 @@ class PageTicket extends React.Component {
             {
               name: name,
               location: 'STATION Berlin',
-              date: '20th February 2019',
+              date: '13th February 2020',
             },
           ]}
         />
@@ -64,12 +64,12 @@ class PageTicket extends React.Component {
           <Invite person={person} />
         </Wrapper>
 
-        <WidgetSchedule />
+        {/* <WidgetSchedule /> */}
 
-        <WidgetSalesMap
+        {/* <WidgetSalesMap
           label="exhibitors.map.title2"
           secondaryLabel="exhibitors.map.opensales"
-        />
+        /> */}
 
         <WidgetAllExhibitorsColumnList />
 

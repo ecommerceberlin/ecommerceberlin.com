@@ -27,13 +27,13 @@ class PageSchedule extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetSchedule first />
+        {/* <WidgetSchedule first /> */}
 
         <WidgetVisitor label="visitors.register_alt" />
 
         <WidgetVideoWithEventInfo />
 
-        <WidgetPresenters filter={null} />
+        {/* <WidgetPresenters filter={null} /> */}
 
         <WidgetVisitor label="visitors.register" />
 

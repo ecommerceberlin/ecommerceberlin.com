@@ -3,15 +3,13 @@ import dynamic from 'next/dynamic';
 import {
   connect,
   MyLink as Link,
-  Wrapper,
-  Avatarlist,
   WidgetVideoWithEventInfo,
   WidgetVisitor,
   WidgetCompany,
   WidgetAllExhibitorsColumnList,
-  //SalesMap,
-  WidgetPresenters,
-  WidgetSchedule,
+  WidgetSalesMap,
+  // WidgetPresenters,
+  // WidgetSchedule,
   LayoutMain as Layout,
   WidgetRoleButtons,
 } from 'eventjuicer-site-components';
@@ -35,19 +33,27 @@ class PageCompany extends React.Component {
 
     return (
       <Layout>
+
         <WidgetCompany id={company_id} asPath={asPath} />
 
+    
         <WidgetVideoWithEventInfo />
+
+        <WidgetSalesMap
+          label="exhibitors.map.title2"
+          secondaryLabel="exhibitors.map.opensales"
+        />
 
         <WidgetVisitor secondaryLabel="event.parties" />
 
-        <WidgetSchedule />
+        {/* <WidgetSchedule />
 
-        <WidgetVisitor />
+        <WidgetVisitor /> */}
 
         <WidgetRoleButtons />
 
         <WidgetAllExhibitorsColumnList />
+
       </Layout>
     );
   }

@@ -26,15 +26,16 @@ exports.default = {
             "pay",
             "access"
         ],
-        allowedGroupIds : [259, 257, 256, 262],
+        allowedGroupIds : [281, 282, 283, 284],
         styles : {
-            light : 258,
-            standard : 256,
-            hot : 257,
-            superhot : 262,
+            light : null,
+            standard : 281,
+            hot : 282,
+            superhot : 283,
             ultra : null,
-            grand : 259,
-            stage : 261
+            grand : 284,
+            stage : 287,
+            networking : 285
         },
         api : "https://order.ecommerceberlin.com/preorder"
     },
@@ -56,10 +57,10 @@ exports.default = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                {name: 'schedule', to: '/schedule'},
-                {name: 'presenters', to: '/presenters'},
+                // {name: 'schedule', to: '/schedule'},
+                // {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
-                {name: 'offers', to: '/offers'}
+                // {name: 'offers', to: '/offers'}
               ]
             },
             {
@@ -73,7 +74,7 @@ exports.default = {
         ]
     },
     visitor : {
-        ticket_id : 1385,
+        ticket_id : 1549,
         email_template : "ecommerceberlin-visitor-registration",
         background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register"
@@ -86,7 +87,7 @@ exports.default = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '20th February 2019',
+        event_date : '13th February 2020',
         event_hours : '10:00-17:00',
 
     },
@@ -154,10 +155,10 @@ exports.default = {
             '15:50': 'presentation'
           },    
           venues : {
-            A: { company_id: 1365 },
-            B: { company_id: 1366 },
-            C: { company_id: 1398 },
-            D: { company_id: 1023 }
+            A: { company_id: 0 },
+            B: { company_id: 0 },
+            C: { company_id: 0 },
+            D: { company_id: 0 }
           },
           venueStyle : "gold",
     },

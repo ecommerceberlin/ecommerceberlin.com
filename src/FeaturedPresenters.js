@@ -12,7 +12,7 @@ const FeaturedPresenters = (props) => (
 FeaturedPresenters.defaultProps = {
 
     filter: function(item) {
-        return  [84495,84485,84486,84493,84816,84820,84821,85319].indexOf(item.id) > -1;
+        return  [0].indexOf(item.id) > -1;
 
         //   item.avatar.indexOf("http") > -1 &&
         //   item.logotype.indexOf("http") > -1 &&

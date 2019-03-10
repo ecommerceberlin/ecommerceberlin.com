@@ -6,7 +6,7 @@ import {
   WidgetVideoWithEventInfo,
   WidgetVideoWithReviews,
   WidgetVisitor,
-  // WidgetFeaturedExhibitors,
+  WidgetFeaturedCompanies,
   WidgetAllExhibitorsColumnList,
   WidgetSalesMap,
   // WidgetPresenters,
@@ -15,7 +15,9 @@ import {
   LayoutMain as Layout,
   WidgetRoleButtons,
   Wrapper,
+  Facebook
 } from 'eventjuicer-site-components';
+
 
 import FeaturedExhibitors from '../src/FeaturedExhibitors';
 import FeaturedPresenters from '../src/FeaturedPresenters';
@@ -25,43 +27,50 @@ const settings = require('../settings').default;
 class PageIndex extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
     return {
-      preload: ['exhibitors'],
+      preload: ['allexhibitors', 'companies'],
       settings: settings,
       //    load : ["bookingmap", "formdata", "ticketgroups"]
     };
   }
 
   render() {
+
     return (
       <Layout>
         <Head />
 
+
+        {/* <WidgetSchedule /> */}
+
+     
+
+    
         <WidgetVideoWithEventInfo />
-
-        <WidgetVisitor
-          label="visitors.register"
-          secondaryLabel="event.parties"
-        />
-
-        <WidgetRoleButtons first={true} />
-
-        <FeaturedPresenters bio={false} />
-
-        <WidgetSchedule />
 
         <WidgetSalesMap
           label="exhibitors.map.title2"
           secondaryLabel="exhibitors.map.opensales"
         />
 
-        <FeaturedExhibitors />
+      
+        <WidgetFeaturedCompanies />
 
-        <WidgetVisitor
+        {/* <FeaturedPresenters bio={false} /> */}
+
+        {/* <FeaturedExhibitors /> */}
+
+        {/* <WidgetVisitor
           label="visitors.register_alt"
           secondaryLabel="event.parties"
-        />
+        /> */}
 
         {/* <WidgetVideoWithReviews overlay="black" /> */}
+
+        
+        <WidgetVisitor
+          label="visitors.register"
+          secondaryLabel="event.parties"
+        />
 
         <WidgetAllExhibitorsColumnList />
 
@@ -69,6 +78,10 @@ class PageIndex extends React.Component {
           background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
           videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
         /> */}
+
+
+        <WidgetRoleButtons first={true} />
+
 
         <WidgetVisitor
           label="visitors.register"
