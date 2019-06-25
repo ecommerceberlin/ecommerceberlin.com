@@ -6,7 +6,7 @@ import {
   MyLink as Link,
   WidgetSalesMap,
   WidgetExhibitorBenefits,
-  WidgetVideoWithReviews,
+  //WidgetVideoWithReviews,
   WidgetAllExhibitorsAvatarlist,
   //DatasourceExhibitors,
   DatasourcePhotos,
@@ -45,7 +45,7 @@ class PageExhibit extends React.Component {
           secondaryLabel="exhibitors.map.opensales"
         />
 
-        <WidgetVideoWithReviews />
+        {/* <WidgetVideoWithReviews /> */}
 
         <Wrapper label="exhibitors.faq.name">
           <Faq

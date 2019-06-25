@@ -4,7 +4,7 @@ import {
   // MyLink as Link,
   // FsVideo,
   WidgetVideoWithEventInfo,
-  WidgetVideoWithReviews,
+  //WidgetVideoWithReviews,
   WidgetVisitor,
   WidgetFeaturedCompanies,
   WidgetAllExhibitorsColumnList,
@@ -15,9 +15,8 @@ import {
   LayoutMain as Layout,
   WidgetRoleButtons,
   Wrapper,
-  Facebook
+  Facebook,
 } from 'eventjuicer-site-components';
-
 
 import FeaturedExhibitors from '../src/FeaturedExhibitors';
 import FeaturedPresenters from '../src/FeaturedPresenters';
@@ -34,17 +33,12 @@ class PageIndex extends React.Component {
   }
 
   render() {
-
     return (
       <Layout>
         <Head />
 
-
         {/* <WidgetSchedule /> */}
 
-     
-
-    
         <WidgetVideoWithEventInfo />
 
         <WidgetSalesMap
@@ -52,7 +46,6 @@ class PageIndex extends React.Component {
           secondaryLabel="exhibitors.map.opensales"
         />
 
-      
         <WidgetFeaturedCompanies />
 
         {/* <FeaturedPresenters bio={false} /> */}
@@ -66,7 +59,6 @@ class PageIndex extends React.Component {
 
         {/* <WidgetVideoWithReviews overlay="black" /> */}
 
-        
         <WidgetVisitor
           label="visitors.register"
           secondaryLabel="event.parties"
@@ -79,9 +71,7 @@ class PageIndex extends React.Component {
           videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
         /> */}
 
-
         <WidgetRoleButtons first={true} />
-
 
         <WidgetVisitor
           label="visitors.register"
