@@ -7,6 +7,10 @@ import {
   DatasourceTickets,
   Markdown,
   TicketBuyButton,
+  TicketPrice,
+  Chatlio,
+  MyTypography,
+  resizeCloudinaryImage,
 } from 'eventjuicer-site-components';
 
 const settings = require('../settings').default;
@@ -43,20 +47,32 @@ class PagePremium extends React.Component {
                   <TwoColsLayout
                     left={
                       <img
-                        src={matchedTicket.image}
+                        src={resizeCloudinaryImage(
+                          matchedTicket.image,
+                          800,
+                          800,
+                        )}
                         alt=""
                         style={{ width: '100%' }}
                       />
                     }
                     right={
-                      <div>
+                      <div style={{ marginLeft: 20 }}>
                         <Markdown
                           label={`resources.upgrades.misc.${ticket}.text`}
                         />
+
+                        <div style={{ marginBottom: 20 }}>
+                          <MyTypography template="price">
+                            <TicketPrice price={matchedTicket.price} />
+                          </MyTypography>
+                        </div>
+
                         <TicketBuyButton
                           id={matchedTicket.id}
                           bookable={matchedTicket.bookable}
                           label="common.buy"
+                          right={<Chatlio label="common.request_more_info" />}
                         />
                       </div>
                     }
