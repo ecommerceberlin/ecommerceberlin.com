@@ -9,6 +9,7 @@ import {
   //WidgetVideoWithReviews,
   WidgetAllExhibitorsAvatarlist,
   //DatasourceExhibitors,
+  WidgetVips,
   DatasourcePhotos,
   Wrapper,
   Gallery,
@@ -46,6 +47,8 @@ class PageExhibit extends React.Component {
         />
 
         {/* <WidgetVideoWithReviews /> */}
+
+        <WidgetVips />
 
         <Wrapper label="exhibitors.faq.name">
           <Faq
