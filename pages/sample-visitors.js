@@ -10,21 +10,14 @@ import {
   WidgetAllExhibitorsAvatarlist,
   //DatasourceExhibitors,
   WidgetVips,
-  DatasourcePhotos,
   Wrapper,
-  Gallery,
   Faq,
-  // Avatarlist,
-  // Typography,
-  // WidthAwareInfo,
-  // People,
-  // GridBenefits
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
 const settings = require('../settings').default;
 
-class PageExhibit extends React.Component {
+class PageSampleVisitors extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['exhibitors', 'allexhibitors'],
@@ -39,7 +32,7 @@ class PageExhibit extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
+        <WidgetVips first limit={10000} include={<div />} />
 
         <WidgetSalesMap
           label="exhibitors.map.title"
@@ -48,7 +41,7 @@ class PageExhibit extends React.Component {
 
         {/* <WidgetVideoWithReviews /> */}
 
-        <WidgetVips limit={12} mobile={4} />
+        <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
 
         <Wrapper label="exhibitors.faq.name">
           <Faq
@@ -77,15 +70,9 @@ class PageExhibit extends React.Component {
         </Wrapper>
 
         <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
-
-        <DatasourcePhotos>
-          {(photos, size) => (
-            <Gallery data={photos} size={size} label="event.gallery" />
-          )}
-        </DatasourcePhotos>
       </Layout>
     );
   }
 }
 
-export default connect()(PageExhibit);
+export default connect()(PageSampleVisitors);

@@ -39,16 +39,63 @@ class PageExhibit extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
+        <Wrapper>
+          {[
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475962/about/visitors-growth.svg',
+            },
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475962/about/visitors-profile.svg',
+            },
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/visitors-branches.svg',
+            },
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475962/about/visitors-position.svg',
+            },
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476005/about/visitors-nationality.svg',
+            },
+
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/exhibitors-nationality.svg',
+            },
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475964/about/exhibitors-growth.svg',
+            },
+            {
+              image:
+                'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/event-promotion.svg',
+            },
+          ].map(item => (
+            <img
+              src={item.image}
+              style={{
+                width: '100%',
+                maxWidth: 1200,
+                margin: '0 auto',
+              }}
+            />
+          ))}
+        </Wrapper>
 
         <WidgetSalesMap
           label="exhibitors.map.title"
           secondaryLabel="exhibitors.map.opensales"
         />
 
-        {/* <WidgetVideoWithReviews /> */}
-
         <WidgetVips limit={12} mobile={4} />
+
+        <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
+
+        {/* <WidgetVideoWithReviews /> */}
 
         <Wrapper label="exhibitors.faq.name">
           <Faq

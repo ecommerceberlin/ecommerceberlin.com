@@ -10,16 +10,17 @@ import {
   WidgetAllExhibitorsColumnList,
   WidgetSalesMap,
   // WidgetPresenters,
-  WidgetSchedule,
+  //WidgetSchedule,
   // WidgetExhibitors,
   LayoutMain as Layout,
   WidgetRoleButtons,
   Wrapper,
   Facebook,
+  WidgetPartners,
 } from 'eventjuicer-site-components';
 
-import FeaturedExhibitors from '../src/FeaturedExhibitors';
-import FeaturedPresenters from '../src/FeaturedPresenters';
+// import FeaturedExhibitors from '../src/FeaturedExhibitors';
+// import FeaturedPresenters from '../src/FeaturedPresenters';
 
 const settings = require('../settings').default;
 
@@ -78,25 +79,21 @@ class PageIndex extends React.Component {
           secondaryLabel="event.parties"
         />
 
-        <Wrapper label="partners.media.title">
-          <div style={{ textAlign: 'center' }}>
-            <img
-              src="https://res.cloudinary.com/eventjuicer/image/upload/c_limit,w_1000,f_auto/v1549990106/media_partners.jpg"
-              alt=""
-              style={{ width: '100%', maxWidth: 900 }}
-            />
-          </div>
-        </Wrapper>
+        <WidgetPartners
+          label="partners.media.title"
+          filter={item =>
+            item['scopes(deprecated)'].indexOf('media') > -1 &&
+            item.logotype.indexOf('cloudinary') > -1
+          }
+        />
 
-        <Wrapper label="partners.community.title">
-          <div style={{ textAlign: 'center' }}>
-            <img
-              src="https://res.cloudinary.com/eventjuicer/image/upload/c_limit,w_500,f_auto/v1549990106/community_partners.jpg"
-              alt=""
-              style={{ width: '100%', maxWidth: 500 }}
-            />
-          </div>
-        </Wrapper>
+        <WidgetPartners
+          label="partners.community.title"
+          filter={item =>
+            item['scopes(deprecated)'].indexOf('community') > -1 &&
+            item.logotype.indexOf('cloudinary') > -1
+          }
+        />
       </Layout>
     );
   }
