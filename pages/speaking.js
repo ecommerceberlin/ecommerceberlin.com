@@ -10,7 +10,7 @@ import {
   Markdown,
 } from 'eventjuicer-site-components';
 
-import SpeakerBenefits from '../compositions/SpeakerBenefits';
+import { SpeakerBenefits, TranslatedContestRules } from '../compositions';
 
 const settings = require('../settings').default;
 
@@ -47,36 +47,31 @@ Relevant visitors, 65% of whom come from retailers & brands
 
         </div> */}
 
-        <WidgetSpeaking />
+        {/*
+
+Website Conversion Rate
+Marketing in E-commerce
+eLogistics / International Expansion
+ePayments
+IT for E-commerce
+New Developments in E-commerce
+
+ */}
+        <WidgetSpeaking
+          categories={[
+            'traffic',
+            'communication',
+            'logistics',
+            'payments',
+            'infrastructure',
+            'branding',
+          ]}
+        />
 
         <SpeakerBenefits label="presenters.steps.title" />
 
         <Wrapper label="presenters.contest-rules.title">
-          <Markdown>{`
-* There are 6 main categories – the presentation that receives the highest number of votes in a given category will be accepted to the Agenda
-
-* The results of the Call for Papers are dependent upon the votes of the online users – each user has 6 votes to cast, one per each category
-
-* To cast a vote, a user has to have a Facebook account
-
-* Once the Call for Papers submissions have been closed, the organisers can cancel down a given category or/and create a new one if the number or quality of the presentation submissions requires any of these actions
-
-* Each company can submit only one presentation proposal in a given category
-
-* Each company can give the maximum of one presentation – if a company wins in more than one category, it has to pick one presentation to deliver. The decision has to be made within a deadline set by the organisers. In this event, in the other category, another company with the second-highest number of votes becomes the winner;
-
-* If a company wins but there is a suspicion regarding the fair participants activity in the contest the Organiser may cancel the submission during or after the contest. In this event, in the other category, another company with the second-highest number of votes becomes the winner
-
-* Submissions can be edited until the deadline, i.e. until the 27th September, 11:59 AM
-
-* By submitting the presentation, the applicant accepts that in the event of winning the Call For Papers contest, they will have to sign a relevant agreement with the organisers to be able to give the presentation
-
-* For information regarding processing CFP participants' personal data read here
-
-* For information regarding processing voters and visitors, personal data read here
-
-* Participation in the Call for Papers and delivering a presentation are FREE OF CHARGE
-`}</Markdown>
+          <Markdown label="presenters.contest-rules.description" />
         </Wrapper>
 
         <WidgetSalesMap
