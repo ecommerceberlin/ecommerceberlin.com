@@ -29,8 +29,9 @@
   "homepage": "https://github.com/eventjuicer/site#readme",
   "dependencies": {
     "dotenv-webpack": "^1.5.7",
-    "eventjuicer-site-components": "^1.4.0",
+    "eventjuicer-site-components": "^1.4.2",
     "next": "^8.0.3",
+    "now": "^16.3.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-icons": "^3.7.0"

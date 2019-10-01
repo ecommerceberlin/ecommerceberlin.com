@@ -23,6 +23,8 @@ import {
   'isServer'
 */
 
+const settings = require('../settings').default;
+
 class PageVisit extends React.Component {
   static async getInitialProps(props) {
     const { query, asPath } = props;
@@ -31,6 +33,7 @@ class PageVisit extends React.Component {
       preload: ['callforpapers'],
       query: query,
       asPath: asPath,
+      settings: settings,
     };
   }
 
