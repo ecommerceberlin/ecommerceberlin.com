@@ -33,7 +33,7 @@ class PageLegalExhibitors extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="exhibitors.agreement.title">
+        <Wrapper first label="exhibitors.agreement.title">
           <Markdown>{`
           
 ## 1. General provisions, definitions.           

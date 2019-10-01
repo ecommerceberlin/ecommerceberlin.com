@@ -32,7 +32,7 @@ class PageLegalImprint extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="common.pages.imprint">
+        <Wrapper first label="common.pages.imprint">
           <div
             dangerouslySetInnerHTML={{
               __html: `

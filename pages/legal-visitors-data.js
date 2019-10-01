@@ -31,7 +31,7 @@ class PageLegalVisitorsData extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="visitors.data-agreement.title">
+        <Wrapper first label="visitors.data-agreement.title">
           <Markdown>{`
           
 ## General information and contact details of the Administrator
@@ -54,11 +54,11 @@ hereinafter referred to as ‘Fair’. Whoever wants to participate in the Fair 
 hereinafter referred to as ‘Guest’, can do so free of charge, but first they have to register at the Fair’s website, 
 providing the following personal data:
  
-1. name,
-2. last name,
-3. email address,
-4. job position and represented brand (the company of the employer or their own company).
-5. photo image and video image
+* name,
+* last name,
+* email address,
+* job position and represented brand (the company of the employer or their own company).
+* photo image and video image
 
 4. The Company is also the organizer of Call for Papers Contest, hereinafter referred to as ‘Fair’, 
 in which anyone who has an active profile on Facebook can give eight votes. 

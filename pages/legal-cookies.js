@@ -30,7 +30,7 @@ class PageLegalCookies extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="common.pages.cookies">
+        <Wrapper first label="common.pages.cookies">
           <div
             dangerouslySetInnerHTML={{
               __html: `

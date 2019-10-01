@@ -8,6 +8,7 @@ import {
   WidgetSalesMap,
   MyHead as Head,
   Markdown,
+  WidgetPresentersAll,
 } from 'eventjuicer-site-components';
 
 import { SpeakerBenefits, TranslatedContestRules } from '../compositions';
@@ -59,16 +60,18 @@ New Developments in E-commerce
  */}
         <WidgetSpeaking
           categories={[
-            'traffic',
-            'communication',
+            'conversion',
+            'marketing',
             'logistics',
             'payments',
-            'infrastructure',
-            'branding',
+            'it',
+            'trends',
           ]}
         />
 
         <SpeakerBenefits label="presenters.steps.title" />
+
+        <WidgetPresentersAll />
 
         <Wrapper label="presenters.contest-rules.title">
           <Markdown label="presenters.contest-rules.description" />

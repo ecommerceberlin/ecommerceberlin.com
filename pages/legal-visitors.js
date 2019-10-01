@@ -30,7 +30,7 @@ class PageLegalVisitors extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="visitors.agreement.title">
+        <Wrapper first label="visitors.agreement.title">
           <div
             dangerouslySetInnerHTML={{
               __html: `<div>

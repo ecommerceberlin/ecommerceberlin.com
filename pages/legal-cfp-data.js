@@ -31,7 +31,7 @@ class PageLegalVisitorsData extends React.Component {
 
     return (
       <Layout>
-        <Wrapper label="visitors.cfp-data-agreement.title">
+        <Wrapper first label="visitors.cfp-data-agreement.title">
           <Markdown>{`
           
 ## General information and contact details of the Administrator
@@ -52,13 +52,13 @@ Email address: office@ecommercecapitals.com, address: ul. Jana Matejki 52/4, 60-
 hereinafter referred to as ‘Fair’. Whoever wants to participate in the Contest can do so free of charge, 
 but first they have to submit a presentation and register as a Contest participant at the Fair’s website, providing the following personal data:
 
-1. email address, 
-2. first name, 
-3. last name, 
-4. telephone no,
-5. brand name,
-6. name of the speaker,
-7. presentation proposition title
+* email address, 
+* first name, 
+* last name, 
+* telephone no,
+* brand name,
+* name of the speaker,
+* presentation proposition title
 
 Provision of personal data is voluntary. However, unless they are provided, it will be impossible to take a part in Contest. 
 
