@@ -49,16 +49,12 @@ class PageVisit extends React.Component {
         <Head />
 
         {id && (
-          <React.Fragment>
-            <WidgetVotable
-              id={id}
-              asPath={asPath}
-              vote={<VoteWithLinkedIn id={id} />}
-              status={<WidgetVoteStatus />}
-            />
-
-            <WidgetVisitor />
-          </React.Fragment>
+          <WidgetVotable
+            id={id}
+            asPath={asPath}
+            vote={<VoteWithLinkedIn id={id} />}
+            status={<WidgetVoteStatus />}
+          />
         )}
 
         <WidgetCallForPapers
@@ -83,17 +79,20 @@ class PageVisit extends React.Component {
               ? 'callforpapers.list.title'
               : 'callforpapers.categories.title'
           }
+          show_votes={true}
         />
 
-        <WidgetVips limit={12} mobile={4} />
+        {id && <WidgetVisitor />}
 
-        <WidgetVisitor />
+        {id && <WidgetVips limit={12} mobile={4} />}
 
-        <WidgetSalesMap
-          label="exhibitors.map.title2"
-          secondaryLabel="exhibitors.map.opensales"
-          disabled={false}
-        />
+        {id && (
+          <WidgetSalesMap
+            label="exhibitors.map.title2"
+            secondaryLabel="exhibitors.map.opensales"
+            disabled={false}
+          />
+        )}
 
         <WidgetRoleButtons />
       </Layout>
