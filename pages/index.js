@@ -94,6 +94,15 @@ class PageIndex extends React.Component {
             item.logotype.indexOf('cloudinary') > -1
           }
         />
+
+        <WidgetPartners
+          label="partners.communication.title"
+          filter={item =>
+            item['scopes(deprecated)'].indexOf('communication') > -1 &&
+            item.logotype.indexOf('cloudinary') > -1
+          }
+          center={true}
+        />
       </Layout>
     );
   }
