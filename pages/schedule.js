@@ -33,7 +33,11 @@ class PageSchedule extends React.Component {
 
         <WidgetVideoWithEventInfo />
 
-        {/* <WidgetPresenters filter={null} /> */}
+        <WidgetPresenters
+          filter={function(item) {
+            return item.bio.length > 10;
+          }}
+        />
 
         <WidgetVisitor label="visitors.register" />
 

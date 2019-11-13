@@ -10,9 +10,12 @@ import {
   WidgetAllExhibitorsAvatarlist,
   DatasourcePhotos as Photos,
   LayoutMain as Layout,
+  WidgetVips,
 } from 'eventjuicer-site-components';
 
 const settings = require('../settings').default;
+
+import FeaturedPresenters from '../src/FeaturedPresenters';
 
 class PageVisit extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -33,6 +36,10 @@ class PageVisit extends React.Component {
 
         {/* <WidgetSchedule /> */}
 
+        <FeaturedPresenters bio={false} />
+
+        <WidgetVips limit={12} mobile={4} />
+
         <WidgetVideoWithEventInfo />
 
         {/* <WidgetPresenters /> */}
@@ -40,7 +47,6 @@ class PageVisit extends React.Component {
         <WidgetVisitorBenefits label="visitors.benefits.title" />
 
         <WidgetVisitor label="visitors.register" first />
-
 
         {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
 

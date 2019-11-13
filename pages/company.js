@@ -8,7 +8,7 @@ import {
   WidgetCompany,
   WidgetAllExhibitorsColumnList,
   WidgetSalesMap,
-  // WidgetPresenters,
+  WidgetPresenters,
   // WidgetSchedule,
   LayoutMain as Layout,
   WidgetRoleButtons,
@@ -33,18 +33,18 @@ class PageCompany extends React.Component {
 
     return (
       <Layout>
-
         <WidgetCompany id={company_id} asPath={asPath} />
 
-    
         <WidgetVideoWithEventInfo />
+
+        <WidgetVisitor secondaryLabel="event.parties" />
+
+        <WidgetPresenters />
 
         <WidgetSalesMap
           label="exhibitors.map.title2"
           secondaryLabel="exhibitors.map.opensales"
         />
-
-        <WidgetVisitor secondaryLabel="event.parties" />
 
         {/* <WidgetSchedule />
 
@@ -53,7 +53,6 @@ class PageCompany extends React.Component {
         <WidgetRoleButtons />
 
         <WidgetAllExhibitorsColumnList />
-
       </Layout>
     );
   }

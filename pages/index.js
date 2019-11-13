@@ -20,7 +20,7 @@ import {
 } from 'eventjuicer-site-components';
 
 // import FeaturedExhibitors from '../src/FeaturedExhibitors';
-// import FeaturedPresenters from '../src/FeaturedPresenters';
+import FeaturedPresenters from '../src/FeaturedPresenters';
 
 const settings = require('../settings').default;
 
@@ -42,14 +42,21 @@ class PageIndex extends React.Component {
 
         <WidgetVideoWithEventInfo />
 
+        <WidgetFeaturedCompanies />
+
         <WidgetSalesMap
           label="exhibitors.map.title2"
           secondaryLabel="exhibitors.map.opensales"
         />
 
-        <WidgetFeaturedCompanies />
+        <FeaturedPresenters bio={false} />
 
-        {/* <FeaturedPresenters bio={false} /> */}
+        <WidgetVisitor
+          label="visitors.register"
+          secondaryLabel="event.parties"
+        />
+
+        <WidgetRoleButtons first={true} />
 
         {/* <FeaturedExhibitors /> */}
 
@@ -60,19 +67,12 @@ class PageIndex extends React.Component {
 
         {/* <WidgetVideoWithReviews overlay="black" /> */}
 
-        <WidgetVisitor
-          label="visitors.register"
-          secondaryLabel="event.parties"
-        />
-
         <WidgetAllExhibitorsColumnList />
 
         {/* <FsVideo
           background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
           videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
         /> */}
-
-        <WidgetRoleButtons first={true} />
 
         <WidgetVisitor
           label="visitors.register"

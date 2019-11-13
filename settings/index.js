@@ -134,7 +134,7 @@ exports.default = {
                 position : 'Project Manager',
                 langs : ["en"],
                 avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/v1546386405/ecommerceberlin_support_psz.jpg',
-                phone: '+48 725 945 403',
+                phone: '+49 302 555 98 75',
                 email: 'peter@ecommerceberlin.com',
                 chatlio : true
             }
