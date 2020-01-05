@@ -10,7 +10,7 @@ import {
   WidgetAllExhibitorsColumnList,
   WidgetSalesMap,
   // WidgetPresenters,
-  //WidgetSchedule,
+  WidgetSchedule,
   // WidgetExhibitors,
   LayoutMain as Layout,
   WidgetRoleButtons,
@@ -38,9 +38,14 @@ class PageIndex extends React.Component {
       <Layout>
         <Head />
 
-        {/* <WidgetSchedule /> */}
-
         <WidgetVideoWithEventInfo />
+
+        <WidgetSchedule />
+
+        <WidgetVisitor
+          label="visitors.register"
+          secondaryLabel="event.parties"
+        />
 
         <WidgetFeaturedCompanies />
 
@@ -50,11 +55,6 @@ class PageIndex extends React.Component {
         />
 
         <FeaturedPresenters bio={false} />
-
-        <WidgetVisitor
-          label="visitors.register"
-          secondaryLabel="event.parties"
-        />
 
         <WidgetRoleButtons first={true} />
 
@@ -85,6 +85,7 @@ class PageIndex extends React.Component {
             item['scopes(deprecated)'].indexOf('media') > -1 &&
             item.logotype.indexOf('cloudinary') > -1
           }
+          limit={50}
         />
 
         <WidgetPartners
@@ -93,6 +94,7 @@ class PageIndex extends React.Component {
             item['scopes(deprecated)'].indexOf('community') > -1 &&
             item.logotype.indexOf('cloudinary') > -1
           }
+          limit={50}
         />
 
         <WidgetPartners
@@ -102,6 +104,7 @@ class PageIndex extends React.Component {
             item.logotype.indexOf('cloudinary') > -1
           }
           center={true}
+          limit={50}
         />
       </Layout>
     );

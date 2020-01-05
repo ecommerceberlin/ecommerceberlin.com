@@ -27,7 +27,16 @@ class PageSchedule extends React.Component {
       <Layout>
         <Head />
 
-        {/* <WidgetSchedule first /> */}
+        <WidgetSchedule
+          first
+          venues={{
+            A: {},
+            B: {},
+            C: {},
+            D: {},
+            E: {},
+          }}
+        />
 
         <WidgetVisitor label="visitors.register_alt" />
 

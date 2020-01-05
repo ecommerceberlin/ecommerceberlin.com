@@ -27,7 +27,7 @@ class PagePresenters extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetPresenters first filter={null} limit={null} />
+        <WidgetPresenters first disableTemps={true} limit={null} />
 
         <WidgetVisitor label="visitors.register_alt" />
 

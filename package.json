@@ -6,14 +6,14 @@
   "scripts": {
     "next": "next",
     "precommit": "lint-staged",
-    "dev": "node server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "dev": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' node server.js",
+    "build": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' next build",
+    "start": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' NODE_ENV=production node server.js",
     "analyze": "cross-env ANALYZE=1 next build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eventjuicer/site.git"
+    "url": "git+https://github.com/ecommerceberlin/site.git"
   },
   "lint-staged": {
     "./pages/*.{js,jsx,json,css}": [
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/eventjuicer/site#readme",
   "dependencies": {
     "dotenv-webpack": "^1.5.7",
-    "eventjuicer-site-components": "^1.4.9",
+    "eventjuicer-site-components": "^1.4.29",
     "next": "^8.0.3",
     "now": "^16.3.0",
     "react": "^16.6.3",

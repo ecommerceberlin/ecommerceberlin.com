@@ -57,8 +57,8 @@ exports.default = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                // {name: 'schedule', to: '/schedule'},
-                // {name: 'presenters', to: '/presenters'},
+                {name: 'schedule', to: '/schedule'},
+                {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'}
               ]
@@ -156,10 +156,12 @@ exports.default = {
           },    
           venues : {
             A: { company_id: 0 },
-            B: { company_id: 0 },
-            C: { company_id: 0 },
-            D: { company_id: 0 }
+            B: { company_id: 1440 },
+            C: { company_id: 1601 },
+            D: { company_id: 0 },
+            E: { company_id: 0 }
           },
+        //   minimized : ["A", "C"],
           venueStyle : "gold",
     },
 
