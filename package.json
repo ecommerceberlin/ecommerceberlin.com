@@ -29,7 +29,7 @@
   "homepage": "https://github.com/eventjuicer/site#readme",
   "dependencies": {
     "dotenv-webpack": "^1.5.7",
-    "eventjuicer-site-components": "^1.4.29",
+    "eventjuicer-site-components": "^1.4.31",
     "next": "^8.0.3",
     "now": "^16.3.0",
     "react": "^16.6.3",

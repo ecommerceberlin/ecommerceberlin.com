@@ -16,6 +16,8 @@ exports.default = {
         background : "https://res.cloudinary.com/eventjuicer/image/upload/v1544572575/ebe_hero_final_poster.jpg",
         overlay : "black",
         template : "heroGold",
+        heading : "event.claim",
+        subheading : "event.description"
     },
 
     bookingmap : {
@@ -51,6 +53,7 @@ exports.default = {
               name: 'general',
               items: [
                 {name: 'home', to: '/'},
+                {name: 'about', to: '/about'},
               ]
             },
             {
@@ -66,9 +69,12 @@ exports.default = {
             {
               name: 'exhibitors',
               items: [
-                {name: 'exhibitors', to: '/exhibitors'},
                 {name: 'exhibit', to: '/exhibit'},
-                {name: 'faq', to: '/faq'}
+                {name: 'sample-visitors', to: '/sample-visitors'},
+                {name: 'exhibitors', to: '/exhibitors'},
+                {name: 'premium', to: '/premium'},
+                {name: 'faq', to: '/faq'},
+              
               ]
             }
         ]
