@@ -209,13 +209,13 @@ exports.default = {
         accent : "gold",
         items : [
         {
-          url: 'https://static.eventjuicer.com/photos/12961446_1288640741145929_7684227399478032531_o.jpg',
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/v1579000835/visit.jpg',
           label: 'common.visitor',
           width: '50%',
           target : "/visit"
         },
         {
-          url: 'https://static.eventjuicer.com/photos/12967348_1288628734480463_3860331543127036065_o.jpg',
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/v1579000835/exhibit.jpg',
           label: 'common.exhibitor',
           width: '50%',
           target : "/exhibit"
