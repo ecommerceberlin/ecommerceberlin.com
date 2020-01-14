@@ -1,4 +1,5 @@
 
+
 exports.default = {
 
     system : {
@@ -42,6 +43,51 @@ exports.default = {
         api : "https://order.ecommerceberlin.com/preorder"
     },
 
+    speakers : {
+
+        benefits : [
+
+            {
+                icon : "FaSearch",
+                label :  'assessment',
+            },
+        
+            {
+                icon : "FaPoll",
+                label : 'contest'
+            },
+        
+            {
+                icon : "FaTrophy",
+                label : 'speaker'
+            }
+
+        ]
+    },
+
+    vips : {
+
+        label : "vips.benefits.title",
+        baseLabel : "vips.benefits",
+        items : [
+
+            {   
+                icon : "FaFastForward",
+                label : 'fastentry'
+            },
+        
+            {   
+                icon : "FaChair",
+                label : 'seats'
+            },
+        
+            {   
+                icon : "FaHandshake",
+                label : 'vipzone'
+            }
+        ]
+    },
+
     reviews : {
 
     },
@@ -79,7 +125,68 @@ exports.default = {
             }
         ]
     },
+
+    exhibitors : {
+        benefits : [
+            {
+                icon : "FaHandshake",
+                label :  'outreach',
+            },
+            {   
+                icon : "FaComments",
+                label : 'feedback'
+            },
+            {   
+                icon : "FaSmile",
+                label : 'organizer'
+            },
+            {   
+                icon : "FaPiggyBank",
+                label : 'all_inclusive'
+            },
+            {
+                icon : "FaLink",
+                label : 'meet_clients'
+            },
+            {
+                icon : "FaLightbulb",
+                label : 'inspiration'
+            }
+        ]
+    },
     visitor : {
+        benefits : [
+
+                {
+                    icon : "FaLockOpen",
+                    label :  'free_entry',
+                },
+            
+                {
+                    icon : "FaPiggyBank",
+                    label : 'special_offers'
+                },
+            
+                {
+                    icon : "FaSearch",
+                    label : 'insight'
+                },
+            
+                {   
+                    icon : "FaWrench",
+                    label : 'case_studies'
+                },
+            
+                {   
+                    icon : "FaHandshake",
+                    label : 'networking'
+                },
+            
+                {   
+                    icon : "FaChartLine",
+                    label : 'future'
+                }
+        ],
         ticket_id : 1549,
         email_template : "ecommerceberlin-visitor-registration",
         background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
@@ -182,3 +289,5 @@ exports.default = {
     },
 };
 
+
+ 
