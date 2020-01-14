@@ -9,9 +9,8 @@ import {
   MyHead as Head,
   Markdown,
   WidgetPresentersAll,
+  WidgetSpeakerBenefits,
 } from 'eventjuicer-site-components';
-
-import { SpeakerBenefits, TranslatedContestRules } from '../compositions';
 
 const settings = require('../settings').default;
 
@@ -69,7 +68,7 @@ New Developments in E-commerce
           ]}
         />
 
-        <SpeakerBenefits label="presenters.steps.title" />
+        <WidgetSpeakerBenefits label="presenters.steps.title" />
 
         <WidgetPresentersAll />
 
