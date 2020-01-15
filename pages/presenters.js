@@ -27,13 +27,26 @@ class PagePresenters extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetPresenters first disableTemps={true} limit={null} />
+        <WidgetPresenters
+          first
+          bio={true}
+          label="presenters.list_all"
+          disableTemps={true}
+          limit={null}
+          filter={function(item) {
+            return (
+              item.avatar.indexOf('http') > -1 &&
+              item.logotype.indexOf('http') > -1 &&
+              item.bio.length > 20
+            );
+          }}
+        />
 
         <WidgetVisitor label="visitors.register_alt" />
 
         <WidgetVideoWithEventInfo />
 
-        {/* <WidgetSchedule /> */}
+        <WidgetSchedule />
 
         <WidgetVisitor label="visitors.register" />
 

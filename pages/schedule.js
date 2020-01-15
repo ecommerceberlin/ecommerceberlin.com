@@ -27,24 +27,23 @@ class PageSchedule extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetSchedule
-          first
-          venues={{
-            A: {},
-            B: {},
-            C: {},
-            D: {},
-            E: {},
-          }}
-        />
+        <WidgetSchedule first />
 
         <WidgetVisitor label="visitors.register_alt" />
 
         <WidgetVideoWithEventInfo />
 
         <WidgetPresenters
+          disableTemps={true}
+          label="presenters.list_all"
+          limit={null}
+          bio={true}
           filter={function(item) {
-            return item.bio.length > 10;
+            return (
+              item.avatar.indexOf('http') > -1 &&
+              item.logotype.indexOf('http') > -1 &&
+              item.bio.length > 20
+            );
           }}
         />
 
