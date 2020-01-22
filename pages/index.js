@@ -54,7 +54,7 @@ class PageIndex extends React.Component {
           secondaryLabel="exhibitors.map.opensales"
         />
 
-        <FeaturedPresenters bio={false} />
+        <FeaturedPresenters bio={true} />
 
         <WidgetRoleButtons first={true} />
 
