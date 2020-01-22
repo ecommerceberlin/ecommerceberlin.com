@@ -2,6 +2,148 @@
 
 exports.default = {
 
+    globals : {
+        filterPresenterWithBio : {
+            type : "condition", 
+            required : ["avatar", "logotype", "bio"]
+        },
+        featuredPresenters : {
+            type : "condition",
+            required : ["avatar", "logotype", "bio", "featured"]
+        },
+        anotherTestGlobal : {type : "widget"},
+        vipVisitor : {
+            type : "props",
+            data : {
+
+            }
+        }
+    },
+
+    pages : {
+
+        speaking : {
+
+            title : "",
+            opengraph : "",
+            widgets : [
+
+            ]
+        },
+
+        vip : {
+            title : "",
+            opengraph : "",
+            widgets : [
+                {name : "WidgetVisitor", props : {
+                    data : { important: 1 },
+                    template : "ecommerceberlin-vip-registration",
+                    label : "vips.register.title",
+                    fields : [
+                        {name: "referral", required: true},
+                        {name: "email", required: true},
+                        {name: "fname", required: true},
+                        {name: "lname", required: true},
+                        {name: "cname2", required: true},
+                        {name: "position", required: true},
+                        {name: "phone", required: true}
+                      ],
+                    start : ['referral', 'email', 'fname'],
+                    first : true
+                }},
+                {name : "WidgetVipVisitorBenefits", props : {
+                    label : "vips.benefits.title" 
+                }},
+                {name : "WidgetVips", props : {
+                    limit: 12,
+                    mobile: 4
+                }},
+                {name : "WidgetSchedule", props : { } },
+                {name : "WidgetVideoWithEventInfo"},
+                {name : "WidgetVisitor", props : {
+                    data : { important: 1 },
+                    template : "ecommerceberlin-vip-registration",
+                    label : "vips.register.title",
+                    fields : [
+                        {name: "referral", required: true},
+                        {name: "email", required: true},
+                        {name: "fname", required: true},
+                        {name: "lname", required: true},
+                        {name: "cname2", required: true},
+                        {name: "position", required: true},
+                        {name: "phone", required: true}
+                      ],
+                    start : ['referral','email', 'cname2'],
+                    // first : true
+                }},
+                {name : "WidgetVisitorBenefits"},
+                {name : "WidgetPresenters", props : {
+                    disableTemps : true,
+                    label : "presenters.list_featured",
+                    limit : null,
+                    bio : true,
+                    filter : "@featuredPresenters"
+                }},
+                {name : "WidgetVisitor", props : {
+                    data : { important: 1 },
+                    template : "ecommerceberlin-vip-registration",
+                    label : "vips.register.title",
+                    fields : [
+                        {name: "referral", required: true},
+                        {name: "email", required: true},
+                        {name: "fname", required: true},
+                        {name: "lname", required: true},
+                        {name: "cname2", required: true},
+                        {name: "position", required: true},
+                        {name: "phone", required: true}
+                      ],
+                    start : ['referral', 'email', 'cname2'],
+                    // first : true
+                }},
+            
+            ],
+        },
+
+        presenters : {
+            title : "",
+            opengraph : "",
+            widgets : [
+                {name : "WidgetPresenters", props : {
+                    first : true,
+                    disableTemps : true,
+                    label : "presenters.list_all",
+                    limit : null,
+                    bio : true,
+                    filter : "@filterPresenterWithBio"
+                }},
+                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
+                {name : "WidgetVideoWithEventInfo"},
+                {name : "WidgetSchedule", props : { } },
+                {name : "WidgetVisitor", props : {label : "visitors.register"} },
+            ]
+        },
+
+        schedule : {
+            title : "",
+            opengraph : "",
+            widgets : [
+                {name : "WidgetSchedule", props : {first : true} },
+                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
+                {name : "WidgetVideoWithEventInfo"},
+                {name : "WidgetPresenters", props : {
+                    disableTemps : true,
+                    label : "presenters.list_all",
+                    limit : null,
+                    bio : true,
+                    filter : "@filterPresenterWithBio"
+                }}
+            ]   
+        }
+
+    },
+
+    
+
     system : {
 
         lang_api_endpoint : 'https://localise.biz/api/export/all.json?format=multi&pretty&key=tWMy1RRHuiW6DD9T7AyYtFlQzAeztbBK',
@@ -187,8 +329,8 @@ exports.default = {
                     label : 'future'
                 }
         ],
-        ticket_id : 1549,
-        email_template : "ecommerceberlin-visitor-registration",
+        default_ticket_id : 1549,
+        default_email_template : "ecommerceberlin-visitor-registration",
         background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register"
     },

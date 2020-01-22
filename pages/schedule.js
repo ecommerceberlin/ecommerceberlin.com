@@ -1,14 +1,4 @@
-import {
-  MyHead as Head,
-  connect,
-  WidgetVisitor,
-  WidgetPresenters,
-  WidgetSchedule,
-  WidgetVideoWithEventInfo,
-  // Typography,
-  // Wrapper,
-  LayoutMain as Layout,
-} from 'eventjuicer-site-components';
+import { connect, DynamicPage } from 'eventjuicer-site-components';
 
 const settings = require('../settings').default;
 
@@ -23,39 +13,7 @@ class PageSchedule extends React.Component {
   render() {
     const { url } = this.props;
 
-    return (
-      <Layout>
-        <Head />
-
-        <WidgetSchedule first />
-
-        <WidgetVisitor label="visitors.register_alt" />
-
-        <WidgetVideoWithEventInfo />
-
-        <WidgetPresenters
-          disableTemps={true}
-          label="presenters.list_all"
-          limit={null}
-          bio={true}
-          filter={function(item) {
-            return (
-              item.avatar.indexOf('http') > -1 &&
-              item.logotype.indexOf('http') > -1 &&
-              item.bio.length > 20
-            );
-          }}
-        />
-
-        <WidgetVisitor label="visitors.register" />
-
-        {/* 
-        <Wrapper label="visitors.attendees">
-          <WhoIsGonnaBeThere />
-         </Wrapper> 
-        */}
-      </Layout>
-    );
+    return <DynamicPage name="schedule" url={url} />;
   }
 }
 
