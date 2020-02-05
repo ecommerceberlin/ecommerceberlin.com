@@ -1,7 +1,7 @@
 
 
 exports.default = {
-
+    
     globals : {
         filterPresenterWithBio : {
             type : "condition", 
@@ -145,7 +145,9 @@ exports.default = {
     
 
     system : {
-
+        passwords : {
+            'admin': '1751bfe48d5ad21fd9d'
+        },
         lang_api_endpoint : 'https://localise.biz/api/export/all.json?format=multi&pretty&key=tWMy1RRHuiW6DD9T7AyYtFlQzAeztbBK',
         available_locales : ["en", "de"],
         default_locale : "en",
