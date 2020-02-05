@@ -30,7 +30,7 @@ class PageInvite extends React.Component {
 
   render() {
     const { url, person, exhibitors, asPath } = this.props;
-    
+
     /*     
       resource: "code/90329",
       person : {}
@@ -63,7 +63,7 @@ class PageInvite extends React.Component {
         <Wrapper
           first
           label={['visitors.invite.title', { name, cname }]}
-          secondaryTitle="140 exhibitors, 40 presentations..."
+          secondaryTitle="visitors.invite.description"
         >
           <Typography
             template="visitor_invite_join"
