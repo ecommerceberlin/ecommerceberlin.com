@@ -412,10 +412,10 @@ exports.default = {
             '15:50': 'presentation'
           },    
           venues : {
-            A: { company_id: 0 },
-            B: { company_id: 1440 },
+            A: { company_id: 1672 },
+            B: { company_id: 1669 },
             C: { company_id: 1601 },
-            D: { company_id: 0 },
+            D: { company_id: 1663 },
             E: { company_id: 0 }
           },
         //   minimized : ["A", "C"],
