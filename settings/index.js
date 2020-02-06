@@ -353,13 +353,13 @@ exports.default = {
         accent : "gold",
         items : [
         {
-          url: 'https://res.cloudinary.com/eventjuicer/image/upload/v1579000835/visit.jpg',
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg',
           label: 'common.visitor',
           width: '50%',
           target : "/visit"
         },
         {
-          url: 'https://res.cloudinary.com/eventjuicer/image/upload/v1579000835/exhibit.jpg',
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/exhibit.jpg',
           label: 'common.exhibitor',
           width: '50%',
           target : "/exhibit"
@@ -381,7 +381,7 @@ exports.default = {
                 name: 'Lucas',
                 position : 'Business Development Manager',
                 langs : ["de"],
-                avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/v1546386301/ecommerceberlin_support_lz.jpg',
+                avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386301/ecommerceberlin_support_lz.jpg',
                 phone: '+49 157 7254 7327',
                 email: 'lucas@ecommerceberlin.com',
                 chatlio : true
@@ -390,7 +390,7 @@ exports.default = {
                 name: 'Peter',
                 position : 'Project Manager',
                 langs : ["en"],
-                avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/v1546386405/ecommerceberlin_support_psz.jpg',
+                avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386405/ecommerceberlin_support_psz.jpg',
                 phone: '+49 302 555 98 75',
                 email: 'peter@ecommerceberlin.com',
                 chatlio : true
