@@ -416,7 +416,7 @@ exports.default = {
             B: { company_id: 1669 },
             C: { company_id: 1601 },
             D: { company_id: 1663 },
-            E: { company_id: 0 }
+            E: { company_id: 1694 }
           },
         //   minimized : ["A", "C"],
           venueStyle : "gold",
