@@ -172,7 +172,7 @@ export default {
             },
             "claim": "Join over 7000 participants",
             "description": "B2B Expo & Conference for e-commerce service providers",
-            "parties": "170 exhibitors, 40 speakers and networking among more than 7000 participants"
+            "parties": "180 exhibitors, 50 speakers and networking among more than 7000 participants"
         },
         "exhibitors": {
             "map": {
@@ -470,12 +470,12 @@ export default {
             "invite": {
                 "title": "%{name} from %{cname} is going to the E-commerce Berlin Expo",
                 "will_you_join": "Do you want a free ticket?",
-                "description": "%{description}"
+                "description": "180 exhibitors, 50 speakers and networking among more than 7000 participants"
             },
             "form": {
                 "register": "Register",
-                "intro": "Find your online ticket in your inbox a few days before the event.",
-                "success": "Success! Check your inbox!",
+                "intro": "Find your online ticket in your inbox.",
+                "success": "Success! Check your e-mail box. We've just sent a link to download and print your ticket.\n\n",
                 "submit": "REGISTER"
             },
             "fields": {
@@ -484,7 +484,8 @@ export default {
                 "cname2": "Your company name",
                 "position": "Position in the company",
                 "phone": "Phone number",
-                "email": "Email"
+                "email": "Email",
+                "referral": "VIP Code"
             },
             "register": "Register for free",
             "register_alt": "Get a free ticket",
@@ -493,7 +494,8 @@ export default {
             "attendees": "See who will be there",
             "thankyou": "%{name}! It will be great to meet you in person!",
             "tickets": {
-                "download": "Download and print a ticket"
+                "download": "YES! I want to download my ticket",
+                "resignation": "I cannot attend. Don't remind me anymore"
             },
             "benefits": {
                 "networking": {
@@ -555,6 +557,9 @@ export default {
             },
             "communication": {
                 "title": "Communication Partner"
+            },
+            "networking": {
+                "title": "Networking Party Sponsor"
             }
         },
         "resources": {
@@ -914,7 +919,7 @@ export default {
             },
             "claim": "Über 7000 Teilnehmer treffen",
             "description": "B2B Expo & Konferenz für E-commerce Dienstleister",
-            "parties": "170 Aussteller, 40 Speaker und Networking mit über 7000 Teilnehmern"
+            "parties": "180 Aussteller, 50 Speaker und Networking mit über 7000 Teilnehmern"
         },
         "exhibitors": {
             "map": {
@@ -1212,12 +1217,12 @@ export default {
             "invite": {
                 "title": "%{name} aus %{cname} nimmt an der E-commerce Berlin Expo teil",
                 "will_you_join": "Willst Du ein kostenloses Ticket?",
-                "description": "%{description}"
+                "description": "170 Aussteller, 40 Speaker und Networking mit über 7000 Teilnehmern"
             },
             "form": {
                 "register": "Anmeldung",
-                "intro": "Finde dein Online-Ticket einige Tage vor der Veranstaltung in deinem Posteingang.",
-                "success": "Erfolg! Überprüfe deinen Posteingang!",
+                "intro": "Finde dein Online-Ticket in deinem Posteingang.",
+                "success": "Erfolg! Check deinen Posteingang. Wir haben gerade einen Link zum downloaden geschickt. Bitte drucke das Ticket aus.\n\n",
                 "submit": "Anmeldung"
             },
             "fields": {
@@ -1226,7 +1231,8 @@ export default {
                 "cname2": "Name der Firma",
                 "position": "Position in der Firma",
                 "phone": "Telefonnummer",
-                "email": "E-Mail"
+                "email": "E-Mail",
+                "referral": "VIP Code"
             },
             "register": "Kostenlos registrieren",
             "register_alt": "Bekomme dein kostenloses Ticket",
@@ -1235,7 +1241,8 @@ export default {
             "attendees": "Sieh wer noch kommt",
             "thankyou": "%{name}! Es wäre toll, Dich persönlich zu treffen!",
             "tickets": {
-                "download": "Ticket herunterladen und drucken"
+                "download": "Ich komme! Ich möchte ein Ticket herunterladen.",
+                "resignation": "Ich werde nicht kommen. Bitte nicht mehr daran erinnern!"
             },
             "benefits": {
                 "networking": {
@@ -1297,6 +1304,9 @@ export default {
             },
             "communication": {
                 "title": "Communication Partner"
+            },
+            "networking": {
+                "title": "Networking Party Sponsor"
             }
         },
         "resources": {
