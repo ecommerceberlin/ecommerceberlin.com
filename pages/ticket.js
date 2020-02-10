@@ -9,6 +9,7 @@ import {
   WidgetSalesMap,
   WidgetEventInfo,
   TicketDownload,
+  Resignation,
   Wrapper,
   EventInfo,
   Invite,
@@ -58,13 +59,14 @@ class PageTicket extends React.Component {
           label={['visitors.thankyou', { name: _get(person, 'fname', '') }]}
         >
           <TicketDownload code={code} />
+          <Resignation code={code} />
 
           <WidgetEventInfo orientation="h" style={{ marginTop: 50 }} />
 
           <Invite person={person} />
         </Wrapper>
 
-        {/* <WidgetSchedule /> */}
+        <WidgetSchedule />
 
         {/* <WidgetSalesMap
           label="exhibitors.map.title2"
