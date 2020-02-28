@@ -43,7 +43,7 @@ class PageLegalExhibitors extends React.Component {
 1.2. The terms used herein, capitalized mean:
 
 * 1.2.1. Organizer - E-commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. (Limited Liability Company limited partnership) with its registered seat in Poznań (postal code 60-770), ul. Jana Matejki 52/4, entered into the register of associations, other social and professional organizations, foundations and independent public health care facilities of the National Court Register and the register of entrepreneurs under KRS number 0000592712 whose registration files are kept by the District Court for Poznań - Nowe Miasto and Wilda in Poznań, VIII Commercial Division of the National Court Register using the given 7792439665 tax identification number and REGON number 36746333; Address for correspondence with the Organizer: ul. Jana Matejki 52/4, 60-770 Poznań; Email Address: hello@ecommerceberlin.com 
-* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 13th February 2020, from 10:00 AM to 5:00 PM;
+* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 18th February 2021, from 10:00 AM to 5:00 PM;
 * 1.2.3. Regulations - the present document constituting the general conditions of the Agreement;
 * 1.2.4. Exhibitor - a natural person, legal person or entity without legal personality, which conducts business activity: related to e-commerce, in particular providing electronic services, whose offer is addressed to operators of online shops or who in the course of its business intends to start running or managing an online store or making offers to entities engaged in these activities; 
 * 1.2.5. Pavilion - "Pavilion" in the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin
@@ -123,9 +123,9 @@ class PageLegalExhibitors extends React.Component {
 
 5.1. Each Exhibitor may, without giving any reason, terminate the Agreement in writing, without notice.
 
-5.2 In the event of termination of Agreement by the Exhibitor by **15 October 2019**, payment already made shall settled as follows: the Organizer returns 50% (fifty percent) of the advance  payment made, while retaining the remaining 50% (fifty percent) as a fee for making  the Exhibitor’s profile available on Fair Website.
+5.2 In the event of termination of Agreement by the Exhibitor by **15 October 2020**, payment already made shall settled as follows: the Organizer returns 50% (fifty percent) of the advance  payment made, while retaining the remaining 50% (fifty percent) as a fee for making  the Exhibitor’s profile available on Fair Website.
 
-5.3. In the event of termination of Agreement by the Exhibitor by **16 October 2019**, the Organizer does not return the payment made, whilst retains 100% (one hundred percent) of the amount paid as a fee for making the Exhibitor’s profile available on Fair Website.
+5.3. In the event of termination of Agreement by the Exhibitor by **16 October 2020**, the Organizer does not return the payment made, whilst retains 100% (one hundred percent) of the amount paid as a fee for making the Exhibitor’s profile available on Fair Website.
 
 5.4. The Organizer reserves the right to cancel the Fair for reasons beyond its control, especially because of the insufficient number of participants, and also due to reasons of force majeure.
 
@@ -176,8 +176,8 @@ class PageLegalExhibitors extends React.Component {
 
 8.1. The Exhibitor, who has entered into the Agreement with Organizer, the subject of which is to enable carrying out of Presentations, is obliged:
 
-* 8.1.1. within the deadline of 15th January 2020, until 8:00 PM by sending an email to the address as referred to in point. 1.2.1., to inform the Organizer on the topic of Presentation, under pain of losing the right to carry it out, without refund.
-* 8.1.2. until January 13, 2020 until 12:00 PM to send to the Organizer, as an attachment to an email sent to the address, as referred to in point. 1.2.1., Presentation slides (in PDF format only), under pain of losing the right to carry it out without refund.
+* 8.1.1. within the deadline of 10th January 2021, until 8:00 PM by sending an email to the address as referred to in point. 1.2.1., to inform the Organizer on the topic of Presentation, under pain of losing the right to carry it out, without refund.
+* 8.1.2. until January 18, 2021 until 12:00 PM to send to the Organizer, as an attachment to an email sent to the address, as referred to in point. 1.2.1., Presentation slides (in PDF format only), under pain of losing the right to carry it out without refund.
 
 8.2. The Presentation topic must be related to e-commerce, under pain of losing the right to carry it out without any refund and may be associated with the promotion of economic activities carried out by the Exhibitor.
 
@@ -218,7 +218,7 @@ class PageLegalExhibitors extends React.Component {
 
 10.4. The data submitted by the Exhibitor as part of the profile, ie. name, logo and description of the activities will be presented by the Organizer in the Virtual Catalogue of Exhibitors accessible on the Fair Website.
 
-10.5. Exhibitor upon the conclusion of the Agreement grants the Organizer free, territorially unlimited license for the period from the date of conclusion of the Agreement until February 13, 2020 to use the materials placed within Exhibitor’s profile to promote Fair, including its further editions, the media, in particular in the press, radio, television, within the Fair Website, in transmissions directed to the general Internet users by any means of communication within the network, in email messages, as well as to promote the activities of the Organizer within the scope described above.
+10.5. Exhibitor upon the conclusion of the Agreement grants the Organizer free, territorially unlimited license for the period from the date of conclusion of the Agreement until February 18, 2021 to use the materials placed within Exhibitor’s profile to promote Fair, including its further editions, the media, in particular in the press, radio, television, within the Fair Website, in transmissions directed to the general Internet users by any means of communication within the network, in email messages, as well as to promote the activities of the Organizer within the scope described above.
 
 10.6. Exhibitor’s profile will be removed from the Virtual Catalogue of Exhibitors immediately after termination of the Agreement. 
  

@@ -58,7 +58,7 @@ exports.default = {
                     limit: 12,
                     mobile: 4
                 }},
-                {name : "WidgetSchedule", props : { } },
+                // {name : "WidgetSchedule", props : { } },
                 {name : "WidgetVideoWithEventInfo"},
                 {name : "WidgetVisitor", props : {
                     data : { important: 1 },
@@ -77,29 +77,29 @@ exports.default = {
                     // first : true
                 }},
                 {name : "WidgetVisitorBenefits"},
-                {name : "WidgetPresenters", props : {
-                    disableTemps : true,
-                    label : "presenters.list_featured",
-                    limit : null,
-                    bio : true,
-                    filter : "@featuredPresenters"
-                }},
-                {name : "WidgetVisitor", props : {
-                    data : { important: 1 },
-                    template : "ecommerceberlin-vip-registration",
-                    label : "vips.register.title",
-                    fields : [
-                        {name: "referral", required: true},
-                        {name: "email", required: true},
-                        {name: "fname", required: true},
-                        {name: "lname", required: true},
-                        {name: "cname2", required: true},
-                        {name: "position", required: true},
-                        {name: "phone", required: true}
-                      ],
-                    start : ['referral', 'email', 'cname2'],
-                    // first : true
-                }},
+                // {name : "WidgetPresenters", props : {
+                //     disableTemps : true,
+                //     label : "presenters.list_featured",
+                //     limit : null,
+                //     bio : true,
+                //     filter : "@featuredPresenters"
+                // }},
+                // {name : "WidgetVisitor", props : {
+                //     data : { important: 1 },
+                //     template : "ecommerceberlin-vip-registration",
+                //     label : "vips.register.title",
+                //     fields : [
+                //         {name: "referral", required: true},
+                //         {name: "email", required: true},
+                //         {name: "fname", required: true},
+                //         {name: "lname", required: true},
+                //         {name: "cname2", required: true},
+                //         {name: "position", required: true},
+                //         {name: "phone", required: true}
+                //       ],
+                //     start : ['referral', 'email', 'cname2'],
+                //     // first : true
+                // }},
             
             ],
         },
@@ -108,18 +108,18 @@ exports.default = {
             title : "",
             opengraph : "",
             widgets : [
-                {name : "WidgetPresenters", props : {
-                    first : true,
-                    disableTemps : true,
-                    label : "presenters.list_all",
-                    limit : null,
-                    bio : true,
-                    filter : "@filterPresenterWithBio"
-                }},
+                // {name : "WidgetPresenters", props : {
+                //     first : true,
+                //     disableTemps : true,
+                //     label : "presenters.list_all",
+                //     limit : null,
+                //     bio : true,
+                //     filter : "@filterPresenterWithBio"
+                // }},
                 {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
                 {name : "WidgetVideoWithEventInfo"},
-                {name : "WidgetSchedule", props : { } },
-                {name : "WidgetVisitor", props : {label : "visitors.register"} },
+                // {name : "WidgetSchedule", props : { } },
+                // {name : "WidgetVisitor", props : {label : "visitors.register"} },
             ]
         },
 
@@ -127,16 +127,16 @@ exports.default = {
             title : "",
             opengraph : "",
             widgets : [
-                {name : "WidgetSchedule", props : {first : true} },
+                // {name : "WidgetSchedule", props : {first : true} },
                 {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
                 {name : "WidgetVideoWithEventInfo"},
-                {name : "WidgetPresenters", props : {
-                    disableTemps : true,
-                    label : "presenters.list_all",
-                    limit : null,
-                    bio : true,
-                    filter : "@filterPresenterWithBio"
-                }}
+                // {name : "WidgetPresenters", props : {
+                //     disableTemps : true,
+                //     label : "presenters.list_all",
+                //     limit : null,
+                //     bio : true,
+                //     filter : "@filterPresenterWithBio"
+                // }}
             ]   
         }
 
@@ -166,23 +166,23 @@ exports.default = {
     },
 
     bookingmap : {
-        height : 510,
+        height : 1000,
         steps : [
             "choose_booth",
             "confirm",
             "pay",
             "access"
         ],
-        allowedGroupIds : [281, 282, 283, 284],
+        allowedGroupIds : [322, 323, 324, 325],
         styles : {
             light : null,
-            standard : 281,
-            hot : 282,
-            superhot : 283,
+            standard : 322,
+            hot : 323,
+            superhot : 324,
             ultra : null,
-            grand : 284,
-            stage : 287,
-            networking : 285
+            grand : 325,
+            stage : 328,
+            networking : 326
         },
         api : "https://order.ecommerceberlin.com/preorder"
     },
@@ -250,9 +250,9 @@ exports.default = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                {name: 'schedule', to: '/schedule'},
-                {name: 'presenters', to: '/presenters'},
-                {name: 'exhibitors', to: '/exhibitors'},
+                // {name: 'schedule', to: '/schedule'},
+                // {name: 'presenters', to: '/presenters'},
+                // {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'}
               ]
             },
@@ -331,7 +331,7 @@ exports.default = {
                     label : 'future'
                 }
         ],
-        default_ticket_id : 1549,
+        default_ticket_id : 1830,
         default_email_template : "ecommerceberlin-visitor-registration",
         background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register"
@@ -344,7 +344,7 @@ exports.default = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '13th February 2020',
+        event_date : '18th February 2021',
         event_hours : '10:00-17:00',
 
     },
@@ -412,11 +412,11 @@ exports.default = {
             '15:50': 'presentation'
           },    
           venues : {
-            A: { company_id: 1672 },
-            B: { company_id: 1669 },
-            C: { company_id: 1601 },
-            D: { company_id: 1663 },
-            E: { company_id: 1694 }
+            A: { company_id: 0 },
+            B: { company_id: 0 },
+            C: { company_id: 0 },
+            D: { company_id: 0 },
+            E: { company_id: 0 }
           },
         //   minimized : ["A", "C"],
           venueStyle : "gold",

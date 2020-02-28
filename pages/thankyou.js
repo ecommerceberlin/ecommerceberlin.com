@@ -38,7 +38,7 @@ class ThankyouPage extends React.Component {
             {
               name: name,
               location: 'STATION Berlin',
-              date: '13 Februrary 2020',
+              date: '18 Februrary 2021',
             },
           ]}
         />

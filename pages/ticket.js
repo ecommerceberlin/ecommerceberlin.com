@@ -49,7 +49,7 @@ class PageTicket extends React.Component {
             {
               name: name,
               location: 'STATION Berlin',
-              date: '13th February 2020',
+              date: '18th February 2021',
             },
           ]}
         />

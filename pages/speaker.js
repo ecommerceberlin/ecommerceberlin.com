@@ -32,7 +32,7 @@ class PageSpeaker extends React.Component {
       <Layout>
         <WidgetPresenter id={speakerId} asPath={asPath} />
 
-        <WidgetSchedule selected={speakerId} />
+        {/* <WidgetSchedule selected={speakerId} /> */}
 
         <WidgetVideoWithEventInfo />
 

@@ -41,10 +41,11 @@ class PageExhibit extends React.Component {
 
         <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
 
-        <WidgetSalesMap
+        {/* <WidgetSalesMap
           label="exhibitors.map.title"
           secondaryLabel="exhibitors.map.opensales"
-        />
+          disabled={true}
+        /> */}
 
         {/* <WidgetVideoWithReviews /> */}
 
@@ -78,11 +79,11 @@ class PageExhibit extends React.Component {
 
         <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
 
-        <DatasourcePhotos>
+        {/* <DatasourcePhotos>
           {(photos, size) => (
             <Gallery data={photos} size={size} label="event.gallery" />
           )}
-        </DatasourcePhotos>
+        </DatasourcePhotos> */}
       </Layout>
     );
   }

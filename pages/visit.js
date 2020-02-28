@@ -36,7 +36,7 @@ class PageVisit extends React.Component {
 
         {/* <WidgetSchedule /> */}
 
-        <FeaturedPresenters bio={false} />
+        {/* <FeaturedPresenters bio={false} /> */}
 
         <WidgetVips limit={12} mobile={4} />
 
@@ -52,11 +52,11 @@ class PageVisit extends React.Component {
 
         {/* <WidgetVisitor label="visitors.register" first /> */}
 
-        <Photos>
+        {/* <Photos>
           {(photos, size) => (
             <Gallery data={photos} size={size} label="event.gallery" />
           )}
-        </Photos>
+        </Photos> */}
       </Layout>
     );
   }

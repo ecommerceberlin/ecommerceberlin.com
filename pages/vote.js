@@ -86,13 +86,13 @@ class PageVisit extends React.Component {
 
         {id && <WidgetVips limit={12} mobile={4} />}
 
-        {id && (
+        {/* {id && (
           <WidgetSalesMap
             label="exhibitors.map.title2"
             secondaryLabel="exhibitors.map.opensales"
             disabled={false}
           />
-        )}
+        )} */}
 
         <WidgetRoleButtons />
       </Layout>

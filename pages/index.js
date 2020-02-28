@@ -17,6 +17,7 @@ import {
   Wrapper,
   Facebook,
   WidgetPartners,
+  WidgetPresentersAll,
 } from 'eventjuicer-site-components';
 
 // import FeaturedExhibitors from '../src/FeaturedExhibitors';
@@ -27,7 +28,7 @@ const settings = require('../settings').default;
 class PageIndex extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
     return {
-      preload: ['allexhibitors', 'companies'],
+      preload: ['allexhibitors', 'companies', 'presenters_all'],
       settings: settings,
       //    load : ["bookingmap", "formdata", "ticketgroups"]
     };
@@ -40,7 +41,7 @@ class PageIndex extends React.Component {
 
         <WidgetVideoWithEventInfo />
 
-        <WidgetSchedule />
+        {/* <WidgetSchedule /> */}
 
         <WidgetVisitor
           label="visitors.register"
@@ -49,12 +50,12 @@ class PageIndex extends React.Component {
 
         <WidgetFeaturedCompanies />
 
-        <WidgetSalesMap
+        {/* <WidgetSalesMap
           label="exhibitors.map.title2"
           secondaryLabel="exhibitors.map.opensales"
-        />
+        /> */}
 
-        <FeaturedPresenters bio={true} />
+        {/* <WidgetPresentersAll /> */}
 
         <WidgetRoleButtons first={true} />
 

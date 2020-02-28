@@ -55,7 +55,7 @@ class PageInvite extends React.Component {
               name: name,
               cname: cname,
               location: 'Berlin STATION',
-              date: '13th February 2020',
+              date: '18th February 2021',
             },
           ]}
         />

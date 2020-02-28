@@ -39,12 +39,12 @@ class PageCompany extends React.Component {
 
         <WidgetVisitor secondaryLabel="event.parties" />
 
-        <WidgetPresenters />
+        {/* <WidgetPresenters />
 
         <WidgetSalesMap
           label="exhibitors.map.title2"
           secondaryLabel="exhibitors.map.opensales"
-        />
+        /> */}
 
         {/* <WidgetSchedule />
 
