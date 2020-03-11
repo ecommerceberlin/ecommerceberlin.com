@@ -1054,7 +1054,7 @@ export default {
                         "q": "Was ist der nächste Schritt nach der Bezahlung?"
                     },
                     "resignation": {
-                        "a": "In the event of termination of Agreement by the Exhibitor by 15 October 2019, payment already made shall settled as follows: the Organizer returns 50% (fifty percent) of the advance payment made, while retaining the remaining 50% (fifty percent) as a fee for making the Exhibitor’s profile available on Fair Website.\n\nIn the event of termination of Agreement by the Exhibitor by 16 October 2019, the Organizer does not return the payment made, whilst retains 100% (one hundred percent) of the amount paid as a fee for making the Exhibitor’s profile available on Fair Website.",
+                        "a": "In the event of termination of Agreement by the Exhibitor by 15 October 2020, payment already made shall settled as follows: the Organizer returns 50% (fifty percent) of the advance payment made, while retaining the remaining 50% (fifty percent) as a fee for making the Exhibitor’s profile available on Fair Website.\n\nIn the event of termination of Agreement by the Exhibitor by 16 October 2019, the Organizer does not return the payment made, whilst retains 100% (one hundred percent) of the amount paid as a fee for making the Exhibitor’s profile available on Fair Website.",
                         "q": "Höhere Gewalt - was, wenn wir nicht ausstellen können?"
                     },
                     "promo_benefits": {

@@ -76,12 +76,11 @@ New Developments in E-commerce
           <Markdown label="presenters.contest-rules.description" />
         </Wrapper>
 
-        {/* <WidgetSalesMap
+        <WidgetSalesMap
           label="exhibitors.map.title3"
           secondaryLabel="exhibitors.map.opensales"
-           disabled={true}
-         />
-       */}
+          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
+        />
 
         <WidgetVideoWithEventInfo
           //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"

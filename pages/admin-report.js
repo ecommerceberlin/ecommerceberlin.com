@@ -10,6 +10,7 @@ import {
 } from 'eventjuicer-site-components';
 
 import sortBy from 'lodash/sortBy';
+import { isNull } from 'util';
 
 const settings = require('../settings').default;
 
@@ -25,29 +26,44 @@ class PageAdminReport extends React.Component {
 
   render() {
     const { query } = this.props;
-    const { range, sort } = query;
+    const { range, sort, service } = query;
 
     const sorting = sort === 'booth' ? 'profile.booth' : 'company.name';
-    const filter =
+
+    let _filter =
       range && range.length > 0
         ? function(item) {
             return (
-              item.profile &&
+              'booth' in item.profile &&
               item.profile.booth &&
-              range.indexOf(item.profile.booth.trim().charAt(0)) > -1
+              range.split(',').includes(item.profile.booth.trim().charAt(0))
             );
           }
-        : null;
+        : function() {
+            return true;
+          };
+
+    const filterByService = function(item) {
+      return (
+        'purchases' in item &&
+        Array.isArray(item.purchases) &&
+        item.purchases.filter(p => p.role === 'service_' + service).length
+      );
+    };
+
+    // if( service && ["internal","external"].includes(service) ){
+    //   _filter = function(item){ return item => _filter(item) && filterByService(item) }
+    // }
 
     return (
       <Layout>
         <Head />
         <Wrapper>
-          <DatasourceAdminReport filter={filter} sort={sorting}>
+          <DatasourceAdminReport filter={_filter} sort={sorting}>
             {data =>
-              data.map(exhibitor => {
-                return <Exhibitor key={exhibitor.id} {...exhibitor} />;
-              })
+              data.map(exhibitor => (
+                <Exhibitor key={exhibitor.id} {...exhibitor} />
+              ))
             }
           </DatasourceAdminReport>
         </Wrapper>

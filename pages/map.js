@@ -33,7 +33,7 @@ class PageMap extends React.Component {
       <Layout>
         <Head />
 
-        <Bookingmap zoom={3} />
+        <Bookingmap zoom={3} disabled={true} />
       </Layout>
     );
   }

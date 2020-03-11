@@ -29,7 +29,10 @@ class PageExhibitors extends React.Component {
 
         <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" first />
 
-        {/* <WidgetSalesMap label="exhibitors.map.title" /> */}
+        <WidgetSalesMap
+          label="exhibitors.map.title"
+          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
+        />
 
         <WidgetRoleButtons />
 

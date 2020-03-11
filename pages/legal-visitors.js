@@ -64,7 +64,7 @@ class PageLegalVisitors extends React.Component {
                 <p>5.1 Any technical problems and complaints related to the operation of the Service and the Application should be submitted to the Organizer at the email address given in Section 2.1.</p>
                 <p>5.2 Organizer immediately, not later than 14 days from the date of receipt of the notification, shall respond by sending an e-mail to the address from which he received the notification.</p>
                 <p><strong>6. Personal data</strong></p>
-                <p>All information about personal data protection and privacy one can find here in our​​ ​<a href="https://ecommerceberlin.com/visitors-data">Information about personal data protection</a>
+                <p>All information about personal data protection and privacy one can find here in our​​ ​<a href="https://ecommerceberlin.com/legal-visitors-data">Information about personal data protection</a>
                 </p>
                 <p><strong>7. Final provisions</strong></p>
                 <p>7.1 These terms and conditions are available on the http://ecommerceberlin.com/visitor-rules, and in the Organizer's office.</p>

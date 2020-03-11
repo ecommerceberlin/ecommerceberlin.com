@@ -39,13 +39,14 @@ class PageExhibit extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
-
         <WidgetSalesMap
           label="exhibitors.map.title"
           secondaryLabel="exhibitors.map.closedsales"
           disabled={false}
+          first={true}
         />
+
+        <WidgetExhibitorBenefits label="exhibitors.benefits.title" />
 
         {/* <WidgetVideoWithReviews /> */}
 

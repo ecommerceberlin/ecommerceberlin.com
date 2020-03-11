@@ -42,8 +42,10 @@ class PageExhibitorsByKeyword extends React.Component {
           ]}
         />
 
-        {/* <WidgetSalesMap label="exhibitors.map.title" /> */}
-
+        <WidgetSalesMap
+          label="exhibitors.map.title"
+          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
+        />
       </Layout>
     );
   }

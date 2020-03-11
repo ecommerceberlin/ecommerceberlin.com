@@ -34,10 +34,11 @@ class PageSampleVisitors extends React.Component {
 
         <WidgetVips first limit={10000} include={<div />} />
 
-        {/* <WidgetSalesMap
+        <WidgetSalesMap
           label="exhibitors.map.title"
           secondaryLabel="exhibitors.map.opensales"
-        /> */}
+          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
+        />
 
         {/* <WidgetVideoWithReviews /> */}
 

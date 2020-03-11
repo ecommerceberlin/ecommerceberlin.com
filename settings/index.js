@@ -166,14 +166,14 @@ exports.default = {
     },
 
     bookingmap : {
-        height : 1000,
+        height : 2600,
         steps : [
             "choose_booth",
             "confirm",
             "pay",
             "access"
         ],
-        allowedGroupIds : [322, 323, 324, 325],
+        allowedGroupIds : [322, 323, 324, 325, 329],
         styles : {
             light : null,
             standard : 322,

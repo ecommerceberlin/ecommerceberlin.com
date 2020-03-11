@@ -89,6 +89,7 @@ class PageExhibit extends React.Component {
         <WidgetSalesMap
           label="exhibitors.map.title"
           secondaryLabel="exhibitors.map.opensales"
+          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
         />
 
         <WidgetVips limit={12} mobile={4} />

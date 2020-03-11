@@ -39,13 +39,14 @@ class PageExhibit extends React.Component {
       <Layout>
         <Head />
 
-        <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
-
-        {/* <WidgetSalesMap
+        <WidgetSalesMap
           label="exhibitors.map.title"
           secondaryLabel="exhibitors.map.opensales"
-          disabled={true}
-        /> */}
+          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
+          first
+        />
+
+        <WidgetExhibitorBenefits label="exhibitors.benefits.title" />
 
         {/* <WidgetVideoWithReviews /> */}
 
