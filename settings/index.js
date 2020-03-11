@@ -425,10 +425,11 @@ exports.default = {
     footer : {
         iconStyle : "black",
         links : [
-            {label : "common.pages.imprint", href : "/legal-imprint"},
-            {label : "visitors.agreement.title", href : "/legal-visitors"},
-            {label : "exhibitors.agreement.title", href : "/legal-exhibitors"},
-            {label : "common.pages.cookies", href : "/legal-cookies"},
+            {label: "common.pages.imprint", href : "/legal-imprint"},
+            {label: "visitors.agreement.title", href : "/legal-visitors"},
+            {label: "exhibitors.agreement.title", href : "/legal-exhibitors"},
+            {label: "common.pages.cookies", href : "/legal-cookies"},
+            {label: "visitors.data-agreement.title", href: "/legal-visitors-data"}
         ]
     },
 };
