@@ -87,7 +87,7 @@ class PagePremium extends React.Component {
           first
           label="resources.upgrades.premium.title"
           filter={function(ticket) {
-            return ticket.group_id == 305;
+            return ticket.group_id == 331;
           }}
         />
       </Layout>
