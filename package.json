@@ -29,7 +29,7 @@
   "homepage": "https://github.com/ecommerceberlin/site#readme",
   "dependencies": {
     "dotenv-webpack": "^2.0.0",
-    "eventjuicer-site-components": "^1.4.52",
+    "eventjuicer-site-components": "^1.4.51",
     "next": "^9.5.0",
     "now": "^19.2.0",
     "react": "^16.6.3",
