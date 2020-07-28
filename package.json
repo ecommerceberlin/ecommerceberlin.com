@@ -1,14 +1,14 @@
 {
   "name": "ecommerceberlin-site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "site",
   "main": "pages/index.js",
   "scripts": {
     "next": "next",
     "precommit": "lint-staged",
-    "dev": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' node server.js",
+    "dev": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' next",
     "build": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' next build",
-    "start": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' NODE_ENV=production node server.js",
+    "start": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' NODE_ENV=production node start",
     "analyze": "cross-env ANALYZE=1 next build"
   },
   "repository": {
@@ -24,9 +24,9 @@
   "author": "adam zygadlewicz <adam.zygadlewicz@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eventjuicer/site/issues"
+    "url": "https://github.com/ecommerceberlin/site/issues"
   },
-  "homepage": "https://github.com/eventjuicer/site#readme",
+  "homepage": "https://github.com/ecommerceberlin/site#readme",
   "dependencies": {
     "dotenv-webpack": "^2.0.0",
     "eventjuicer-site-components": "^1.4.52",

@@ -1,0 +1,7 @@
+
+
+
+# Migration to next 9.5
+
+* custom server with project-specific settings (JSON)
+* 
