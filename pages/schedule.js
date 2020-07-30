@@ -1,12 +1,11 @@
 import { connect, DynamicPage } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageSchedule extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['presenters'],
-      settings: settings,
+    
     };
   }
 
@@ -16,5 +15,8 @@ class PageSchedule extends React.Component {
     return <DynamicPage name="schedule" url={url} />;
   }
 }
+
+PageSchedule.settings = require('../settings').default;
+
 
 export default connect()(PageSchedule);

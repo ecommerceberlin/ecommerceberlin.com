@@ -14,8 +14,7 @@ import {
   WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
-
+ 
 class PageCompany extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     const company = `companies/${query.id}`;
@@ -24,7 +23,7 @@ class PageCompany extends React.Component {
       asPath: asPath,
       preload: [company, 'exhibitors', 'bookingmap'],
       company_id: query.id,
-      settings: settings,
+      
     };
   }
 
@@ -57,5 +56,7 @@ class PageCompany extends React.Component {
     );
   }
 }
+
+PageCompany.settings = require('../settings').default;
 
 export default connect()(PageCompany);

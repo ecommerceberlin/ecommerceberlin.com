@@ -9,7 +9,6 @@ import {
   WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageSpeaker extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -17,7 +16,7 @@ class PageSpeaker extends React.Component {
       preload: ['presenters', 'exhibitors'],
       asPath: asPath,
       speakerId: query.id,
-      settings: settings,
+    
     };
   }
 
@@ -45,5 +44,8 @@ class PageSpeaker extends React.Component {
     );
   }
 }
+
+PageSpeaker.settings = require('../settings').default;
+
 
 export default connect()(PageSpeaker);

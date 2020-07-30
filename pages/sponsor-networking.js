@@ -14,7 +14,6 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 const Bookingmap = dynamic(
   import('eventjuicer-site-components/dist/components/Bookingmap/Bookingmap'),
@@ -32,7 +31,7 @@ class PagePremium extends React.Component {
     store,
   }) {
     return {
-      settings: settings,
+    
     };
   }
 
@@ -130,5 +129,8 @@ class PagePremium extends React.Component {
     );
   }
 }
+
+PagePremium.settings = require('../settings').default;
+
 
 export default connect()(PagePremium);

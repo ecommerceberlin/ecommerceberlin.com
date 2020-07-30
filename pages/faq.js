@@ -9,12 +9,11 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageFaq extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      settings: settings,
+   
     };
   }
 
@@ -73,5 +72,6 @@ class PageFaq extends React.Component {
     );
   }
 }
+PageFaq.settings = require('../settings').default;
 
 export default connect()(PageFaq);

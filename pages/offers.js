@@ -10,13 +10,12 @@ import {
   WidgetRoleButtons,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageSpecials extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['exhibitors'],
-      settings: settings,
+     
     };
   }
 
@@ -48,5 +47,8 @@ class PageSpecials extends React.Component {
     );
   }
 }
+
+PageSpecials.settings = require('../settings').default;
+
 
 export default connect()(PageSpecials);

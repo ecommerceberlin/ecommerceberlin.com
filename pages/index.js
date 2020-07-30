@@ -23,13 +23,12 @@ import {
 // import FeaturedExhibitors from '../src/FeaturedExhibitors';
 import FeaturedPresenters from '../src/FeaturedPresenters';
 
-const settings = require('../settings').default;
 
 class PageIndex extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
     return {
       preload: ['allexhibitors', 'companies', 'presenters_all'],
-      settings: settings,
+ 
       //    load : ["bookingmap", "formdata", "ticketgroups"]
     };
   }
@@ -111,6 +110,9 @@ class PageIndex extends React.Component {
     );
   }
 }
+
+PageIndex.settings = require('../settings').default;
+
 
 export default connect(
   null,

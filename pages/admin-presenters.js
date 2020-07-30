@@ -6,13 +6,12 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
-
+ 
 class PageAgendaPreview extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['presenters'],
-      settings: settings,
+      
     };
   }
 
@@ -28,5 +27,7 @@ class PageAgendaPreview extends React.Component {
     );
   }
 }
+
+PageAgendaPreview = require('../settings').default;
 
 export default connect()(PageAgendaPreview);

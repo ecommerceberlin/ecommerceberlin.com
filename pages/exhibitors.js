@@ -10,13 +10,12 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageExhibitors extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['exhibitors', 'allexhibitors', 'bookingmap'],
-      settings: settings,
+
     };
   }
 
@@ -41,5 +40,7 @@ class PageExhibitors extends React.Component {
     );
   }
 }
+
+PageExhibitors.settings = require('../settings').default;
 
 export default connect()(PageExhibitors);

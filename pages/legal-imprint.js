@@ -9,7 +9,6 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageLegalImprint extends React.Component {
   static async getInitialProps({
@@ -23,7 +22,7 @@ class PageLegalImprint extends React.Component {
     store,
   }) {
     return {
-      settings: settings,
+      
     };
   }
 
@@ -72,5 +71,8 @@ class PageLegalImprint extends React.Component {
     );
   }
 }
+
+PageLegalImprint.settings = require('../settings').default;
+
 
 export default connect()(PageLegalImprint);

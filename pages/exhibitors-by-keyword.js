@@ -8,14 +8,13 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageExhibitorsByKeyword extends React.Component {
   static async getInitialProps({ query }) {
     return {
       preload: ['exhibitors', 'bookingmap', 'ticketgroups'],
       keyword: query.keyword,
-      settings: settings,
+     
     };
   }
 
@@ -50,5 +49,8 @@ class PageExhibitorsByKeyword extends React.Component {
     );
   }
 }
+
+PageExhibitorsByKeyword.settings = require('../settings').default;
+
 
 export default connect()(PageExhibitorsByKeyword);

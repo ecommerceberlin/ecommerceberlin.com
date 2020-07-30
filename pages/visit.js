@@ -13,15 +13,14 @@ import {
   WidgetVips,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 import FeaturedPresenters from '../src/FeaturedPresenters';
 
 class PageVisit extends React.Component {
+  
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      preload: ['exhibitors', 'presenters'],
-      settings: settings,
+      preload: ['exhibitors', 'presenters']
     };
   }
 
@@ -61,5 +60,7 @@ class PageVisit extends React.Component {
     );
   }
 }
+
+PageVisit.settings = require('../settings').default;
 
 export default connect()(PageVisit);

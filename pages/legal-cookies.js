@@ -7,7 +7,6 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageLegalCookies extends React.Component {
   static async getInitialProps({
@@ -21,7 +20,7 @@ class PageLegalCookies extends React.Component {
     store,
   }) {
     return {
-      settings: settings,
+    
     };
   }
 
@@ -73,5 +72,8 @@ The Cookies We Set</p>
     );
   }
 }
+
+PageLegalCookies.settings = require('../settings').default;
+
 
 export default connect()(PageLegalCookies);

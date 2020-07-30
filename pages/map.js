@@ -8,7 +8,6 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageMap extends React.Component {
   static async getInitialProps({
@@ -22,7 +21,7 @@ class PageMap extends React.Component {
     store,
   }) {
     return {
-      settings: settings,
+   
     };
   }
 
@@ -38,5 +37,8 @@ class PageMap extends React.Component {
     );
   }
 }
+
+PageMap.settings = require('../settings').default;
+
 
 export default connect()(PageMap);

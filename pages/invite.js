@@ -14,7 +14,7 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
+
 
 class PageInvite extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -24,7 +24,6 @@ class PageInvite extends React.Component {
       preload: [resource, 'exhibitors'],
       asPath: asPath,
       resource: resource,
-      settings: settings,
     };
   }
 
@@ -85,6 +84,8 @@ class PageInvite extends React.Component {
     );
   }
 }
+
+PageInvite.settings = require('../settings').default;
 
 export default connect(
   (state, props) => ({

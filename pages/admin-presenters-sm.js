@@ -12,14 +12,12 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageSpeakerSocial extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
       preload: ['presenters'],
-      asPath: asPath,
-      settings: settings,
+      asPath: asPath
     };
   }
 
@@ -104,6 +102,8 @@ class PageSpeakerSocial extends React.Component {
     );
   }
 }
+
+PageSpeakerSocial.settings= require('../settings').default;
 
 export default connect(state => ({ presenters: state.resources.presenters }))(
   PageSpeakerSocial,

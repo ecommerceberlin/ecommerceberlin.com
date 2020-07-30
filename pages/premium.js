@@ -13,7 +13,6 @@ import {
   resizeCloudinaryImage,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 const getTicket = (alltickets, ticket) =>
   alltickets.find(item => item.translation_asset_id.indexOf(ticket) > -1);
@@ -23,7 +22,7 @@ class PagePremium extends React.Component {
     return {
       preload: ['tickets', 'ticketgroups'],
       asPath: asPath,
-      settings: settings,
+      
       ticket: 'slug' in query ? query.slug : null,
     };
   }
@@ -94,5 +93,8 @@ class PagePremium extends React.Component {
     );
   }
 }
+
+PagePremium.settings = require('../settings').default;
+
 
 export default connect()(PagePremium);

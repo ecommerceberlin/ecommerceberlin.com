@@ -16,7 +16,6 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageTicket extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -25,7 +24,7 @@ class PageTicket extends React.Component {
     return {
       preload: [person, 'exhibitors'],
       code: query.hash,
-      settings: settings,
+      
     };
   }
 
@@ -80,6 +79,9 @@ class PageTicket extends React.Component {
     );
   }
 }
+
+PageTicket.settings = require('../settings').default;
+
 
 export default connect(
   (state, props) => ({

@@ -7,7 +7,6 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageLegalVisitors extends React.Component {
   static async getInitialProps({
@@ -21,7 +20,7 @@ class PageLegalVisitors extends React.Component {
     store,
   }) {
     return {
-      settings: settings,
+    
     };
   }
 
@@ -79,5 +78,8 @@ class PageLegalVisitors extends React.Component {
     );
   }
 }
+
+PageLegalVisitors.settings = require('../settings').default;
+
 
 export default connect()(PageLegalVisitors);

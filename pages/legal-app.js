@@ -8,7 +8,7 @@ import {
   Markdown,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
+
 
 class PageLegalVisitorsData extends React.Component {
   static async getInitialProps({
@@ -22,7 +22,7 @@ class PageLegalVisitorsData extends React.Component {
     store,
   }) {
     return {
-      settings: settings,
+    
     };
   }
 
@@ -128,5 +128,7 @@ In such a case we will immediately cease to process their personal data for this
     );
   }
 }
+
+PageLegalVisitorsData.settings = require('../settings').default;
 
 export default connect()(PageLegalVisitorsData);

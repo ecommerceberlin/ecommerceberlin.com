@@ -11,7 +11,6 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class ThankyouPage extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -20,7 +19,7 @@ class ThankyouPage extends React.Component {
     return {
       preload: [person, 'exhibitors'],
       asPath: asPath,
-      settings: settings,
+    
     };
   }
 
@@ -59,5 +58,7 @@ class ThankyouPage extends React.Component {
     );
   }
 }
+
+ThankyouPage.settings = require('../settings').default;
 
 export default connect()(ThankyouPage);

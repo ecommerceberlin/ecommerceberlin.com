@@ -5,12 +5,11 @@ import {
   LayoutMain as Layout,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PagePartner extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
     return {
-      settings: settings,
+   
     };
   }
 
@@ -23,5 +22,8 @@ class PagePartner extends React.Component {
     );
   }
 }
+
+PagePartner.settings = require('../settings').default;
+
 
 export default connect()(PagePartner);

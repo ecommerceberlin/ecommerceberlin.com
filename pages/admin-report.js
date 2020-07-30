@@ -12,13 +12,12 @@ import {
 import sortBy from 'lodash/sortBy';
 import { isNull } from 'util';
 
-const settings = require('../settings').default;
+
 
 class PageAdminReport extends React.Component {
   static async getInitialProps({ query, isServer, store }) {
     return {
       preload: [],
-      settings: settings,
       load: ['report'],
       query,
     };
@@ -71,6 +70,8 @@ class PageAdminReport extends React.Component {
     );
   }
 }
+
+PageAdminReport.settings = require('../settings').default;
 
 export default connect(
   null,

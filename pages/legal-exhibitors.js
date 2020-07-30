@@ -10,7 +10,6 @@ import {
   Markdown,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageLegalExhibitors extends React.Component {
   static async getInitialProps({
@@ -24,7 +23,7 @@ class PageLegalExhibitors extends React.Component {
     store,
   }) {
     return {
-      settings: settings,
+    
     };
   }
 
@@ -220,5 +219,8 @@ class PageLegalExhibitors extends React.Component {
     );
   }
 }
+
+PageLegalExhibitors.settings = require('../settings').default;
+
 
 export default connect()(PageLegalExhibitors);

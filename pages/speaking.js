@@ -10,23 +10,29 @@ import {
   Markdown,
   WidgetPresentersAll,
   WidgetSpeakerBenefits,
+  Faq
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
 
 class PageSpeaking extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      //preload : ["exhibitors", "presenters"],
-      settings: settings,
-    };
-  }
+  
+  // static async getInitialProps({ query, asPath, isServer, store }) {
+  //   return {
+  //     //preload : ["exhibitors", "presenters"],
+ 
+  //   };
+  // }
 
   render() {
     const { url } = this.props;
 
     return (
+    
+
+     
+
       <Layout>
+
         <Head />
 
         <Wrapper first label="presenters.competition.title">
@@ -57,6 +63,37 @@ IT for E-commerce
 New Developments in E-commerce
 
  */}
+     
+
+
+          <Wrapper 
+              label="cfp.faq.name" 
+              descriptionLabel="cfp.faq.description">
+          <Faq
+            url={url}
+            baseLabel="cfp.faq"
+            items={[
+              {
+                label: 'exhibitor-status',
+                important: true,
+                buttons: [],
+              },
+              {
+            //    baseLabel: 'exhibitors.faq.before_event',
+                label: 'fee',
+              },
+              { label: 'submission-limits' },
+              { label: 'co-presenter' },
+              { label: 'ranking' },
+              { label: 'fair-play' },
+              {
+              //  baseLabel: 'cfp.faq.before_event',
+                label: 'stage',
+              },
+            ]}
+          />
+        </Wrapper>
+
         <WidgetSpeaking
           categories={[
             'conversion',
@@ -76,6 +113,8 @@ New Developments in E-commerce
           <Markdown label="presenters.contest-rules.description" />
         </Wrapper>
 
+
+
         <WidgetSalesMap
           label="exhibitors.map.title3"
           secondaryLabel="exhibitors.map.opensales"
@@ -93,9 +132,26 @@ New Developments in E-commerce
         {/* <Photos>{
         (photos, size) => <Gallery data={photos} size={size} label="event.gallery" />
       }</Photos> */}
-      </Layout>
+
+    </Layout> 
+     
+     
+   
+
     );
   }
 }
+
+
+PageSpeaking.settings = require('../settings').default;
+
+
+// export async function getStaticProps(context) {
+//   return {
+//     props: {
+//       settings : settings
+//     },
+//   }
+// }
 
 export default connect()(PageSpeaking);
