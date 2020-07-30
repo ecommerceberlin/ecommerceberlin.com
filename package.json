@@ -6,7 +6,7 @@
   "scripts": {
     "next": "next",
     "precommit": "lint-staged",
-    "dev": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' next",
+    "dev": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' NODE_OPTIONS='--inspect' next dev",
     "build": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' next build",
     "start": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' NODE_ENV=production node start",
     "analyze": "cross-env ANALYZE=1 next build"
@@ -29,23 +29,24 @@
   "homepage": "https://github.com/ecommerceberlin/site#readme",
   "dependencies": {
     "dotenv-webpack": "^2.0.0",
-    "eventjuicer-site-components": "^1.4.51",
-    "next": "^9.5.0",
+    "eventjuicer-site-components": "^1.4.53",
+    "next": "^9.5.1",
     "now": "^19.2.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-icons": "^3.7.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "webpack": "^4.29.6",
-    "webpack-bundle-analyzer": "^3.1.0"
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.8.0"
   },
   "browserslist": [
     ">0.2%",
