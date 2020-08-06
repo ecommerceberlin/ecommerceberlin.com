@@ -18,16 +18,15 @@ import {
 
 const settings = require('../../settings').default;
 
-const PageInvite = (props) => {
+const PageInvite = ( { url, person, exhibitors } ) => {
 
-  const { url, person, exhibitors, asPath } =  props;
   const name = `${_get(person, 'fname', '')} ${_get(person, 'lname', '')}`;
     const cname = `${_get(person, 'cname2', '')}`;
 
   return (
     <div>
     <Head
-      url={asPath}
+      url="/invites"
       image={getInviteOgImage(
         `See You! ${_get(person, 'fname', '')} from ${_get(
           person,
@@ -70,17 +69,46 @@ const PageInvite = (props) => {
 
   )
 }
+
+
+
+export async function getStaticPaths() {
+  
+  const request = await fetch(`${settings.system.api}/visitors`)
+  const response = await request.json();
+
+  if(!"data" in response){
+    return
+  }
+
+  return {
+    paths: response.data.map(row => ({ 
+        params: {
+          id : row.id.toString()
+        }
+      })),
+    fallback: true 
+  };
+   
+}
+
  
 export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
 
-  const {code} = params
+  const {id} = params
 
-  const resource = `code/${code}`;
+  const resource = `visitors/${id}`;
 
   await configure(store, {
     settings : settings,
     preload : [resource, "exhibitors"]
   })
+  const props = {props: {
+    id: id.toString(),
+    resource: resource
+  }};
+
+  return props
 
 })
 

@@ -57,6 +57,8 @@ import {
   
 export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
 
+    const {id} = params;
+
     await configure(store, {
       settings : settings,
       preload : ["exhibitors", "presenters"]
@@ -64,7 +66,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
 
     return {
       props : {
-          id : "id" in params ? params.id : 0
+          id : id.toString()
       },
       revalidate : 10
   }

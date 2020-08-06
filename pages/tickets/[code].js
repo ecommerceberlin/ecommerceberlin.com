@@ -50,8 +50,8 @@ const PageTicket = ({code, person, exhibitors }) => {
       first
       label={['visitors.thankyou', { name: _get(person, 'fname', '') }]}
     >
-      <TicketDownload code={code} />
-      <Resignation code={code} />
+      {/* <TicketDownload code={code} />
+      <Resignation code={code} /> */}
 
       <WidgetEventInfo orientation="h" style={{ marginTop: 50 }} />
 
@@ -73,28 +73,40 @@ const PageTicket = ({code, person, exhibitors }) => {
     )
 }
 
-export const getStaticPaths = () => {
-  return {paths : [
-    {params : {code: "adxzye"}}
-    ],
-    fallback: false
+export async function getStaticPaths() {
+  
+  const request = await fetch(`${settings.system.api}/visitors`)
+  const response = await request.json();
+
+  if(!"data" in response){
+    return
   }
+
+  return {
+    paths: response.data.map(row => ({ 
+        params: {
+          code : row.code
+        }
+      })),
+    fallback: true 
+  };
+   
 }
 
 export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
 
-  const {hash} = params;
-  const person = `code/${hash}`;
+  const {code} = params;
+  const resource = `code/${code}`;
 
   await configure(store, {
     settings : settings,
-    preload : [person, "exhibitors"]
+    preload : [resource, "exhibitors"]
   })
 
 
   return {
     props : {
-      code: hash ?? ""
+      code: code
     }
   }
 
