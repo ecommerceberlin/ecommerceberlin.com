@@ -26,7 +26,5 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
   // }
 
 })
-
-
  
 export default connect()(PageAgendaPreview);

@@ -11,58 +11,65 @@ import {
   configure
 } from 'eventjuicer-site-components';
 
+import {useRouter} from 'next/router'
+
 import sortBy from 'lodash/sortBy';
 
 const settings = require('../../settings').default;
 
 
-const PageAdminReport = (props) => {
+const PageAdminReport = ({dispatch}) => {
 
-  console.log(props)
+  const router = useRouter();
+  const {asPath} = router
 
-  const { query } = props;
-  const { range, sort, service } = query;
+  //parse params!
+  
+  return null
 
-  const sorting = sort === 'booth' ? 'profile.booth' : 'company.name';
+//   const { query } = props;
+//   const { range, sort, service } = query;
 
-  let _filter =
-    range && range.length > 0
-      ? function(item) {
-          return (
-            'booth' in item.profile &&
-            item.profile.booth &&
-            range.split(',').includes(item.profile.booth.trim().charAt(0))
-          );
-        }
-      : function() {
-          return true;
-        };
+//   const sorting = sort === 'booth' ? 'profile.booth' : 'company.name';
 
-  const filterByService = function(item) {
-    return (
-      'purchases' in item &&
-      Array.isArray(item.purchases) &&
-      item.purchases.filter(p => p.role === 'service_' + service).length
-    );
-  };
+//   let _filter =
+//     range && range.length > 0
+//       ? function(item) {
+//           return (
+//             'booth' in item.profile &&
+//             item.profile.booth &&
+//             range.split(',').includes(item.profile.booth.trim().charAt(0))
+//           );
+//         }
+//       : function() {
+//           return true;
+//         };
 
-
-
-
-return (
+//   const filterByService = function(item) {
+//     return (
+//       'purchases' in item &&
+//       Array.isArray(item.purchases) &&
+//       item.purchases.filter(p => p.role === 'service_' + service).length
+//     );
+//   };
 
 
-  <Wrapper>
-          <DatasourceAdminReport filter={_filter} sort={sorting}>
-            {data =>
-              data.map(exhibitor => (
-                <Exhibitor key={exhibitor.id} {...exhibitor} />
-              ))
-            }
-          </DatasourceAdminReport>
-        </Wrapper>
 
-)
+
+// return (
+
+
+//   <Wrapper>
+//           <DatasourceAdminReport filter={_filter} sort={sorting}>
+//             {data =>
+//               data.map(exhibitor => (
+//                 <Exhibitor key={exhibitor.id} {...exhibitor} />
+//               ))
+//             }
+//           </DatasourceAdminReport>
+//         </Wrapper>
+
+// )
 
 }
 

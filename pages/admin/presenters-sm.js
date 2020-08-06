@@ -7,22 +7,19 @@ import {
   TwoColsLayout as Section,
   Wrapper,
   Divider,
-  get as _get
+  get as _get,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
 const settings = require('../../settings').default;
 
 
 class PageSpeakerSocial extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      preload: ['presenters'],
-      asPath: asPath
-    };
-  }
+ 
 
   render() {
-    const { presenters, asPath } = this.props;
+    const { presenters } = this.props;
 
     return (
      
@@ -101,6 +98,24 @@ class PageSpeakerSocial extends React.Component {
     );
   }
 }
+
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["presenters"]
+  })
+
+  // return {
+  //   props : {
+  //     id : "id" in params ? params.id : 0 , 
+  //     keyword : "keyword" in params ? params.keyword : ""
+  //   }
+  // }
+
+})
 
 
 export default connect(state => ({ presenters: state.resources.presenters }))(

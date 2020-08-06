@@ -7,20 +7,16 @@ import {
   generateLinkParams,
   MyTypography as Typography,
   TwoColsLayout as Section,
-  Wrapper
+  Wrapper,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
 
 const settings = require('../../settings').default;
 
 class PageSpeakerSocial extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      preload: ['presenters'],
-      asPath: asPath,
-    
-    };
-  }
+
 
   render() {
     const { presenters, asPath } = this.props;
@@ -104,7 +100,21 @@ class PageSpeakerSocial extends React.Component {
 }
 
 
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
 
+  await configure(store, {
+    settings : settings,
+    preload : ["presenters"]
+  })
+
+  // return {
+  //   props : {
+  //     id : "id" in params ? params.id : 0 , 
+  //     keyword : "keyword" in params ? params.keyword : ""
+  //   }
+  // }
+
+})
 
 
 
