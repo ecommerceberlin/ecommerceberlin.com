@@ -60,3 +60,5 @@ typings/
 .next/
 .DS_Store
 now.json
+
+.vercel
