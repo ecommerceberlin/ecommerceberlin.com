@@ -11,7 +11,8 @@ import {
   Wrapper,
   // Gallery,
   // EventInfo,
-  LayoutMain as Layout,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
 
