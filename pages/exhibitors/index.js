@@ -8,7 +8,7 @@ import {
   configure
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
+const settings = require('../../settings').default;
 
 const PageExhibitors = () => (
 
