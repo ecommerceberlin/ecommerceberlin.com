@@ -121,5 +121,5 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
 
  
 export default connect(state => ({ presenters: state.resources.presenters }))(
-  PageSpeakerSocial,
+  PageSpeakerSocial
 );

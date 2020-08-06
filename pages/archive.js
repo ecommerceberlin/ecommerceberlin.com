@@ -19,7 +19,7 @@ import {
 const settings = require('../settings').default;
 
 
-const PageArchive = ({eventId}) => {
+const PageArchive = ({events, eventId}) => {
 
   if(eventId){
     return (
@@ -78,14 +78,14 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
     preload : ["events"]
   })
 
-  return {
-    props : {
-      eventId : "XXXXX"
-    }
-  }
+  // return {
+  //   props : {
+  //     eventId : "XXXXX"
+  //   }
+  // }
 
 })
 
 
 
-export default connect()(PageArchive);
+export default connect((state)=>({events: state.resources.events}))(PageArchive);

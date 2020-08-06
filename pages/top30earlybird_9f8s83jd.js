@@ -38,7 +38,7 @@ const PageTopEarlyBird = () => (
 
   <Wrapper label="exhibitors.faq.name">
     <Faq
-      url={url}
+      url="/exhibit"
       baseLabel="exhibitors.faq.become"
       items={[
         {
