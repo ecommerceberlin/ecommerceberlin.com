@@ -6,9 +6,9 @@
   "scripts": {
     "next": "next",
     "precommit": "lint-staged",
-    "dev": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' NODE_OPTIONS='--inspect' next dev",
-    "build": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' next build",
-    "start": "PROJECT=ecommerceberlin.com GTM='GTM-5RJC4J' NODE_ENV=production node start",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "build": "GTM='GTM-5RJC4J' next build",
+    "start": "NODE_ENV=production node start",
     "analyze": "cross-env ANALYZE=1 next build"
   },
   "repository": {
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
     "dotenv-webpack": "^2.0.0",
-    "eventjuicer-site-components": "^2.0.4",
+    "eventjuicer-site-components": "^2.0.5",
     "next": "^9.5.1",
     "now": "^19.2.0",
     "react": "^16.13.1",
