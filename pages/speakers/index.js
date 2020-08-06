@@ -1,15 +1,15 @@
 import { 
   connect, 
+  DynamicPage,
   reduxWrapper,
-  configure,
-  DynamicPage 
+  configure
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
+const settings = require('../../settings').default;
 
-const PageSchedule = () => (
+const PagePresenters = () => (
 
-<DynamicPage name="schedule" />
+  <DynamicPage name="presenters" url="/presenters" />
 
 )
 
@@ -22,4 +22,4 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
 
 })
 
-export default connect()(PageSchedule);
+export default connect()(PagePresenters);

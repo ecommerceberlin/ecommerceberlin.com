@@ -1,21 +1,26 @@
-import { connect, DynamicPage } from 'eventjuicer-site-components';
+import { 
+  connect, 
+  DynamicPage,
+  reduxWrapper,
+  configure
+} from 'eventjuicer-site-components';
 
- 
-class PageVisit extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      preload: ['exhibitors', 'presenters'],
-       
-    };
-  }
+const settings  = require('../settings').default;
 
-  render() {
-    const { url } = this.props;
 
-    return <DynamicPage name="vip" url={url} />;
-  }
-}
+const PageVip = () => (
 
-PageVisit.settings  = require('../settings').default;
+<DynamicPage name="vip" />
 
-export default connect()(PageVisit);
+) 
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors", 'presenters']
+  })
+
+})
+
+export default connect()(PageVip);

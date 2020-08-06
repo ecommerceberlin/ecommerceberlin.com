@@ -174,6 +174,7 @@ exports.default = {
             "access"
         ],
         allowedGroupIds : [322, 323, 324, 325, 329],
+        disabledTicketIds : [1821, 1822, 1819, 1820, 1836],
         styles : {
             light : null,
             standard : 322,
@@ -268,6 +269,12 @@ exports.default = {
               ]
             }
         ]
+    },
+
+    premium : {
+
+        ticketgroups : [331]
+
     },
 
     exhibitors : {

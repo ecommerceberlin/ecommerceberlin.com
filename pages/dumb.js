@@ -4,40 +4,51 @@ import {
   connect,
   Settings,
   LayoutMain as Layout,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default
 
 
-const PageSpeaking = () => {
-  
- // static async getInitialProps({ query, asPath, isServer, store }) {
-  //   return {
-  //     //preload : ["exhibitors", "presenters"],
- 
-  //   };
-  // }
-
- return  (
+const PageSpeaking = () =>  (
    
-   <Layout>
+  
    <Settings>
 
-{get => get("footer.iconStyle")}
+   {get => get("footer.iconStyle")}
 
- </Settings>
- </Layout>)
+  </Settings>
+  
+ 
+ )
 
-}
 
-// export async function getStaticProps(context) {
-//   return {
-//     props: {
-//       settings : require('../settings').default
-//     },
-//   }
-// }
 
-PageSpeaking.settings = require('../settings').default
+
+//export async function getServerSideProps
+
+/**
+  store: {
+    dispatch: [Function],
+    subscribe: [Function: subscribe],
+    getState: [Function: getState],
+    replaceReducer: [Function: replaceReducer],
+    [Symbol(observable)]: [Function: observable]
+  }
+
+ */
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors"]
+  })
+
+})
+
 
 export default connect((state, props)=>({
     locale : state.app.locale

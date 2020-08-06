@@ -1,42 +1,25 @@
 import {
   connect,
   get as _get,
-  MyHead as Head,
   // Typography,
   // Faq,
   // FaqLink,
   Wrapper,
-  LayoutMain as Layout,
   Markdown,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageLegalExhibitors extends React.Component {
-  static async getInitialProps({
-    err,
-    req,
-    res,
-    pathname,
-    query,
-    asPath,
-    isServer,
-    store,
-  }) {
-    return {
+
+const PageLegalExhibitors = () => (
+ 
+  <Wrapper first label="exhibitors.agreement.title">
+    <Markdown>{`
     
-    };
-  }
-
-  render() {
-    const { url } = this.props;
-
-    return (
-      <Layout>
-        <Wrapper first label="exhibitors.agreement.title">
-          <Markdown>{`
-          
 ## 1. General provisions, definitions.           
-          
+    
 1.1. These regulations constitute the general terms of the agreement within the framework of fair E-commerce Berlin Expo organized by E-commerce Capitals spółka z ograniczoną odpowiedzialnością spółka komandytowa (limited liability company in the organization limited partnership), based in Poznań.
 
 1.2. The terms used herein, capitalized mean:
@@ -65,7 +48,7 @@ class PageLegalExhibitors extends React.Component {
 2.2. The Organizer provides Exhibitors with Additional Services related to the Fair, provided that the scope of Additional Services and remuneration payable to the Organizer is previously agreed. To order Additional Services, please contact the Organizer by email (address indicated in Section 1.2.1 of the Regulations).
 
 
- 
+
 ## 3. Conclusion of the Agreement
 
 3.1. The Agreement is concluded by signing a written copy of the Participation Agreement.
@@ -122,7 +105,7 @@ class PageLegalExhibitors extends React.Component {
 6.3. The Organizer is not liable for any damage caused to Exhibitors by other Exhibitors or other third parties.
 
 6.4. The Organizer is not liable for any of the objects left by the Exhibitor at the Pavilion, in particular in the Exhibition space, including loss or damage.
- 
+
 
 ## 7. The terms of use of the Exhibition space.
 
@@ -146,7 +129,7 @@ class PageLegalExhibitors extends React.Component {
 7.8. If not agreed otherwise, any activity of Exhibitors within the Fair (including advertising, promotion and marketing) should take place only in the Exhibitor's Exhibition space.
 
 7.9. Upon completion of Fair the Exhibitor is obliged to return all items that constitute the provided by the Organizer equipment of Exhibition space without deterioration exceeding the effects of normal use.
- 
+
 
 
 ## 8. Contractual Penalties
@@ -192,17 +175,14 @@ class PageLegalExhibitors extends React.Component {
 
 10.4. Taking pictures and recording video at the Pavilion during the Fair requires the prior written, under pain of nullity, consent of the Organizer.
 
-
 ## 11. Jurisdiction
 
 11.1. Any disputes between Exhibitors and Organizer shall be solved amicably, and if there is no agreement between them, the dispute will be settled by court of law competent ratione loci for the Organizer.
 
- 
 ## 12. Governing law
 
 12.1. The governing law shall be the Law of the Republic of Poland.
 
- 
 ## 13. Entry into force and amendments to the Regulations
 
 13.1. Regulations come into force on 2nd March, 2020.
@@ -210,17 +190,22 @@ class PageLegalExhibitors extends React.Component {
 13.2. The Organizer reserves the right to change the Regulations, the revised Regulations will apply to contracts concluded before the amendments’ date of entry into force.
 
 13.3. Amendments to the Regulations come into force on the date of their publication on the Fair Website.
- 
-
 
 `}</Markdown>
-        </Wrapper>
-      </Layout>
-    );
-  }
-}
+  </Wrapper>
+ 
+) 
 
-PageLegalExhibitors.settings = require('../settings').default;
 
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings: settings,
+    //preload: [""]
+  });
+
+})
 
 export default connect()(PageLegalExhibitors);

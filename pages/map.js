@@ -1,44 +1,28 @@
 import {
   connect,
-  MyHead as Head,
-  Typography,
-  Wrapper,
   Bookingmap,
   //WidgetVisitor,
-  LayoutMain as Layout,
+  configure,
+  reduxWrapper
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageMap extends React.Component {
-  static async getInitialProps({
-    err,
-    req,
-    res,
-    pathname,
-    query,
-    asPath,
-    isServer,
-    store,
-  }) {
-    return {
-   
-    };
-  }
+const PageMap = () => (
 
-  render() {
-    const { url } = this.props;
+  <Bookingmap zoom={3} disabled={true} />
 
-    return (
-      <Layout>
-        <Head />
+)
 
-        <Bookingmap zoom={3} disabled={true} />
-      </Layout>
-    );
-  }
-}
+ 
 
-PageMap.settings = require('../settings').default;
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
 
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors"]
+  })
+
+})
 
 export default connect()(PageMap);

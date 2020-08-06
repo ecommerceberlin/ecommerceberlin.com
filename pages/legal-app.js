@@ -1,42 +1,22 @@
 import {
   connect,
   get as _get,
-  MyHead as Head,
-  // Typography,
   Wrapper,
-  LayoutMain as Layout,
   Markdown,
+  reduxWrapper,
+  configure,
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-
-class PageLegalVisitorsData extends React.Component {
-  static async getInitialProps({
-    err,
-    req,
-    res,
-    pathname,
-    query,
-    asPath,
-    isServer,
-    store,
-  }) {
-    return {
+const PageLegalVisitorsData = () => (
+ 
+  <Wrapper
+    first
+    label="Mobile app for Exhibitors and Visitors Privacy Policy"
+  >
+    <Markdown>{`
     
-    };
-  }
-
-  render() {
-    const { url } = this.props;
-
-    return (
-      <Layout>
-        <Wrapper
-          first
-          label="Mobile app for Exhibitors and Visitors Privacy Policy"
-        >
-          <Markdown>{`
-          
 ## General information and contact details of the Administrator
 
 1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), ul. Jana Matejki 52/4, 60-770 Poznań (Poland), 
@@ -121,14 +101,20 @@ Besides, considering the purposes of processing, the person whom given data conc
 In such a case we will immediately cease to process their personal data for this purpose.
 
 
-
 `}</Markdown>
-        </Wrapper>
-      </Layout>
-    );
-  }
-}
+  </Wrapper>
+ 
 
-PageLegalVisitorsData.settings = require('../settings').default;
+)
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings: settings,
+    //preload: [""]
+  });
+
+})
 
 export default connect()(PageLegalVisitorsData);

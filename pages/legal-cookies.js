@@ -1,39 +1,21 @@
 import {
   connect,
   get as _get,
-  MyHead as Head,
   // Typography,
   Wrapper,
-  LayoutMain as Layout,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageLegalCookies extends React.Component {
-  static async getInitialProps({
-    err,
-    req,
-    res,
-    pathname,
-    query,
-    asPath,
-    isServer,
-    store,
-  }) {
-    return {
-    
-    };
-  }
-
-  render() {
-    const { url } = this.props;
-
-    return (
-      <Layout>
-        <Wrapper first label="common.pages.cookies">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `
-            
+const PageLegalCookies = () => (
+ 
+  <Wrapper first label="common.pages.cookies">
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `
+      
 <div>
 <h1>What Are Cookies</h1>
 <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
@@ -64,16 +46,23 @@ The Cookies We Set</p>
 <h1>Email: hello@ecommerceberlin.com</h1>
 </div>
 
-            `,
-            }}
-          />
-        </Wrapper>
-      </Layout>
-    );
-  }
-}
+      `,
+      }}
+    />
+  </Wrapper>
+ 
+) 
 
-PageLegalCookies.settings = require('../settings').default;
 
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings: settings,
+    //preload: [""]
+  });
+
+})
 
 export default connect()(PageLegalCookies);

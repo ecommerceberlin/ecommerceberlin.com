@@ -1,35 +1,28 @@
 import {
   connect,
-  Gallery,
-  MyHead,
+  //Gallery,
+
   WidgetVideoWithEventInfo,
   WidgetVisitor,
   WidgetVisitorBenefits,
-  WidgetPresenters,
-  WidgetSchedule,
-  WidgetAllExhibitorsAvatarlist,
+  // WidgetPresenters,
+  // WidgetSchedule,
+  // WidgetAllExhibitorsAvatarlist,
   DatasourcePhotos as Photos,
-  LayoutMain as Layout,
+ 
   WidgetVips,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+//import FeaturedPresenters from '../src/FeaturedPresenters';
 
-import FeaturedPresenters from '../src/FeaturedPresenters';
+const settings = require('../settings').default;
 
-class PageVisit extends React.Component {
-  
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      preload: ['exhibitors', 'presenters']
-    };
-  }
+const PageVisit = () => (
 
-  render() {
-    const { url } = this.props;
-
-    return (
-      <Layout>
-        <MyHead />
+        <div>
+      
 
         <WidgetVisitor label="visitors.register_alt" first />
 
@@ -56,11 +49,20 @@ class PageVisit extends React.Component {
             <Gallery data={photos} size={size} label="event.gallery" />
           )}
         </Photos> */}
-      </Layout>
-    );
-  }
-}
+  
+        </div>
 
-PageVisit.settings = require('../settings').default;
+)
 
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors", 'presenters']
+  })
+
+})
+
+ 
 export default connect()(PageVisit);

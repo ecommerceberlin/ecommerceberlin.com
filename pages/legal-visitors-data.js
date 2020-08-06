@@ -1,38 +1,25 @@
 import {
   connect,
   get as _get,
-  MyHead as Head,
+ 
   // Typography,
   Wrapper,
-  LayoutMain as Layout,
+ 
   Markdown,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageLegalVisitorsData extends React.Component {
-  static async getInitialProps({
-    err,
-    req,
-    res,
-    pathname,
-    query,
-    asPath,
-    isServer,
-    store,
-  }) {
-    return {
-     
-    };
-  }
 
-  render() {
-    const { url } = this.props;
+const PageLegalVisitorsData = () => (
+   
 
-    return (
-      <Layout>
-        <Wrapper first label="visitors.data-agreement.title">
-          <Markdown>{`
-          
+
+  <Wrapper first label="visitors.data-agreement.title">
+    <Markdown>{`
+    
 ## General information and contact details of the Administrator
 
 1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), ul. Jana Matejki 52/4, 60-770 Poznań (Poland), 
@@ -42,7 +29,7 @@ whose files are kept by the District Court Poznań Nowe Miasto and Wilda in Pozn
 hereinafter referred to as ‘Company’ or ‘Administrator’, fulfilling the obligation specified in art. 12, sec. 1 of the Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, 
 and repealing Directive 95/46/EC (General Data Protection Regulation), hereinafter referred to as ‘GDPR’, as personal data administrator, 
 hereby presents this information, asking whoever it may concern to get acquainted with it.
- 
+
 2. The Administrator provides the following contact details for communication regarding personal data processing. 
 Email address: office@ecommercecapitals.com, address: ul. Jana Matejki 52/4, 60-770 Poznań (Poland).
 
@@ -52,7 +39,7 @@ Email address: office@ecommercecapitals.com, address: ul. Jana Matejki 52/4, 60-
 hereinafter referred to as ‘Fair’. Whoever wants to participate in the Fair as a guest – a visitor, 
 hereinafter referred to as ‘Guest’, can do so free of charge, but first they have to register at the Fair’s website, 
 providing the following personal data:
- 
+
 * name,
 * last name,
 * email address,
@@ -66,10 +53,10 @@ With regard to the Contest we process email address of the voter.
 5. Provision of personal data is voluntary. However, unless they are provided, 
 it will be impossible to conclude an agreement between the Administrator and the Guest, 
 under which the Guest will receive an admission ticket to the Fair. 
- 
+
 6. With regard to the Contest provision of personal data is voluntary. 
 However, unless they are provided, it will be impossible to vote in the Contest.
- 
+
 ## Purposes for which personal data are processed
 
 7. The personal data mentioned in point 3 above serve exclusively the following purposes:
@@ -146,13 +133,20 @@ machine-readable format – their personal data they have provided and they have
 In such a case we will immediately cease to process their personal data for this purpose.
 
 `}</Markdown>
-        </Wrapper>
-      </Layout>
-    );
-  }
-}
+  </Wrapper>
+ 
+) 
 
-PageLegalVisitorsData.settings = require('../settings').default;
 
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings: settings,
+    //preload: [""]
+  });
+
+})
 
 export default connect()(PageLegalVisitorsData);

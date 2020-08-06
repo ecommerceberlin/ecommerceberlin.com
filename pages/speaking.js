@@ -1,41 +1,26 @@
 import {
   connect,
-  LayoutMain as Layout,
   //WidgetGallery,
   Wrapper,
   WidgetVideoWithEventInfo,
   WidgetSpeaking,
   WidgetSalesMap,
-  MyHead as Head,
   Markdown,
   WidgetPresentersAll,
   WidgetSpeakerBenefits,
-  Faq
+  Faq,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
 
-class PageSpeaking extends React.Component {
-  
-  // static async getInitialProps({ query, asPath, isServer, store }) {
-  //   return {
-  //     //preload : ["exhibitors", "presenters"],
- 
-  //   };
-  // }
+const settings = require('../settings').default;
 
-  render() {
-    const { url } = this.props;
 
-    return (
-    
+const PageSpeaking = () => (
 
-     
-
-      <Layout>
-
-        <Head />
-
-        <Wrapper first label="presenters.competition.title">
+  <div>
+       <Wrapper first label="presenters.competition.title">
           <img
             src="https://res.cloudinary.com/ecommerceberlin/image/upload/v1566860070/cfp-schedule.png"
             style={{ width: '100%', maxWidth: 1600 }}
@@ -70,7 +55,7 @@ New Developments in E-commerce
               label="cfp.faq.name" 
               descriptionLabel="cfp.faq.description">
           <Faq
-            url={url}
+            url="/speaking"
             baseLabel="cfp.faq"
             items={[
               {
@@ -118,7 +103,7 @@ New Developments in E-commerce
         <WidgetSalesMap
           label="exhibitors.map.title3"
           secondaryLabel="exhibitors.map.opensales"
-          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
+ 
         />
 
         <WidgetVideoWithEventInfo
@@ -133,25 +118,20 @@ New Developments in E-commerce
         (photos, size) => <Gallery data={photos} size={size} label="event.gallery" />
       }</Photos> */}
 
-    </Layout> 
-     
-     
-   
-
-    );
-  }
-}
+  </div>
+)
 
 
-PageSpeaking.settings = require('../settings').default;
 
 
-// export async function getStaticProps(context) {
-//   return {
-//     props: {
-//       settings : settings
-//     },
-//   }
-// }
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors"]
+  })
+
+})
 
 export default connect()(PageSpeaking);

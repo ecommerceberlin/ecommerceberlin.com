@@ -1,35 +1,18 @@
 import {
   connect,
   get as _get,
-  MyHead as Head,
   // Typography,
   Wrapper,
-  LayoutMain as Layout,
   Markdown,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageLegalVisitorsData extends React.Component {
-  static async getInitialProps({
-    err,
-    req,
-    res,
-    pathname,
-    query,
-    asPath,
-    isServer,
-    store,
-  }) {
-    return {
-      
-    };
-  }
 
-  render() {
-    const { url } = this.props;
-
-    return (
-      <Layout>
+const PageLegalVisitorsData = () => (
+ 
         <Wrapper first label="visitors.cfp-data-agreement.title">
           <Markdown>{`
           
@@ -119,15 +102,23 @@ Besides, considering the purposes of processing, the person whom given data conc
 7. We process the accumulated personal data for the purpose of direct marketing so the person whom the data concern has the right to oppose – for reasons related to their particular situation – to processing of their personal data, to the scope within which the processing is made for the purpose of direct marketing. 
 In such a case we will immediately cease to process their personal data for this purpose.
 
-
-
 `}</Markdown>
         </Wrapper>
-      </Layout>
-    );
-  }
-}
+ 
+) 
 
-PageLegalVisitorsData.settings = require('../settings').default;
+
+
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings: settings,
+    //preload: [""]
+  });
+
+})
+
 
 export default connect()(PageLegalVisitorsData);

@@ -1,32 +1,23 @@
 import {
   connect,
-  MyHead as Head,
   // MyLink as Link,
   WidgetVisitor,
   WidgetOffers,
   // Wrapper,
   // ColumnList,
-  LayoutMain as Layout,
   WidgetRoleButtons,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
 
-class PageSpecials extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      preload: ['exhibitors'],
-     
-    };
-  }
+const settings = require('../settings').default;
 
-  render() {
-    const { url } = this.props;
+const PageOffers = () => (
 
-    return (
-      <Layout>
-        <Head />
+  <>
 
-        <WidgetOffers
+       <WidgetOffers
           divider={
             <WidgetVisitor
               first
@@ -43,12 +34,19 @@ class PageSpecials extends React.Component {
         />
 
         <WidgetRoleButtons />
-      </Layout>
-    );
-  }
-}
-
-PageSpecials.settings = require('../settings').default;
+    </>
+)
+ 
 
 
-export default connect()(PageSpecials);
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors"]
+  })
+
+})
+
+
+export default connect()(PageOffers);

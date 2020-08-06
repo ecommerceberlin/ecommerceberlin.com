@@ -5,101 +5,99 @@ import {
   WidgetVisitor,
   WidgetCallForPapers,
   WidgetVotable,
-  WidgetSalesMap,
+ // WidgetSalesMap,
   WidgetVoteStatus,
   WidgetRoleButtons,
   LayoutMain as Layout,
   WidgetVips,
   MyTypography as Typography,
   Markdown,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
-/*
-  'err',
-  'req',
-  'res',
-  'pathname',
-  'query',
-  'asPath',
-  'AppTree',
-  'store',
-  'isServer'
-*/
+
+const settings = require('../settings').default;
 
 
-class PageVisit extends React.Component {
-  static async getInitialProps(props) {
-    const { query, asPath } = props;
+const PageVote  = ({id, keyword}) => (
 
-    return {
-      preload: ['callforpapers'],
-      query: query,
-      asPath: asPath,
-     
-    };
+  
+  <div>
+
+  {id && (
+    <WidgetVotable
+      id={id}
+      asPath={asPath}
+      vote={<VoteWithLinkedIn id={id} />}
+      status={<WidgetVoteStatus />}
+    />
+  )}
+
+  <WidgetCallForPapers
+    intro={
+      <div style={{ width: '80%' }}>
+        <WidgetVoteStatus />
+        <Typography template="benefitsText">
+          <Markdown label="callforpapers.voting.general-rules.description" />
+        </Typography>
+      </div>
+    }
+    limit={350}
+    filter={item => "presentation_description" in item &&
+      item.presentation_description.length > 10 &&
+      "avatar" in item &&
+      item.avatar.indexOf('http') > -1 &&
+      "logotype" in item && 
+      item.logotype.indexOf('http') > -1
+    }
+    keyword_source="presentation_category"
+    keyword={keyword}
+    label={
+      keyword
+        ? 'callforpapers.list.title'
+        : 'callforpapers.categories.title'
+    }
+    show_votes={true}
+  />
+
+  {id && <WidgetVisitor />}
+
+  {id && <WidgetVips limit={12} mobile={4} />}
+
+  {/* {id && (
+    <WidgetSalesMap
+      label="exhibitors.map.title2"
+      secondaryLabel="exhibitors.map.opensales"
+      disabled={false}
+    />
+  )} */}
+
+  <WidgetRoleButtons />
+ 
+  </div>
+  
+) 
+
+ 
+
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["callforpapers"]
+  })
+
+  return {
+    props : {
+      id : "id" in params ? params.id : 0 , 
+      keyword : "keyword" in params ? params.keyword : ""
+    }
   }
 
-  render() {
-    const { query, asPath } = this.props;
-    const { id, keyword } = query;
-
-    return (
-      <Layout>
-        <Head />
-
-        {id && (
-          <WidgetVotable
-            id={id}
-            asPath={asPath}
-            vote={<VoteWithLinkedIn id={id} />}
-            status={<WidgetVoteStatus />}
-          />
-        )}
-
-        <WidgetCallForPapers
-          intro={
-            <div style={{ width: '80%' }}>
-              <WidgetVoteStatus />
-              <Typography template="benefitsText">
-                <Markdown label="callforpapers.voting.general-rules.description" />
-              </Typography>
-            </div>
-          }
-          limit={350}
-          filter={item =>
-            item.presentation_description.length > 10 &&
-            item.avatar.indexOf('http') > -1 &&
-            item.logotype.indexOf('http') > -1
-          }
-          keyword_source="presentation_category"
-          keyword={keyword}
-          label={
-            keyword
-              ? 'callforpapers.list.title'
-              : 'callforpapers.categories.title'
-          }
-          show_votes={true}
-        />
-
-        {id && <WidgetVisitor />}
-
-        {id && <WidgetVips limit={12} mobile={4} />}
-
-        {/* {id && (
-          <WidgetSalesMap
-            label="exhibitors.map.title2"
-            secondaryLabel="exhibitors.map.opensales"
-            disabled={false}
-          />
-        )} */}
-
-        <WidgetRoleButtons />
-      </Layout>
-    );
-  }
-}
-
-PageVisit.settings = require('../settings').default;
+})
 
 
-export default connect()(PageVisit);
+
+export default connect()(PageVote);

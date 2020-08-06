@@ -1,5 +1,5 @@
 {
-  "name": "ecommerceberlin-site",
+  "name": "ecommerceberlin-homepage",
   "version": "2.0.0",
   "description": "site",
   "main": "pages/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ecommerceberlin/site.git"
+    "url": "git+https://github.com/ecommerceberlin/homepage.git"
   },
   "lint-staged": {
     "./pages/*.{js,jsx,json,css}": [
@@ -24,12 +24,12 @@
   "author": "adam zygadlewicz <adam.zygadlewicz@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ecommerceberlin/site/issues"
+    "url": "https://github.com/ecommerceberlin/homepage/issues"
   },
-  "homepage": "https://github.com/ecommerceberlin/site#readme",
+  "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
     "dotenv-webpack": "^2.0.0",
-    "eventjuicer-site-components": "^1.4.53",
+    "eventjuicer-site-components": "^2.0.0",
     "next": "^9.5.1",
     "now": "^19.2.0",
     "react": "^16.13.1",

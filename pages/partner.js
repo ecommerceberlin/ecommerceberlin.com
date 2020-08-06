@@ -2,28 +2,27 @@ import {
   MyHead as Head,
   connect,
   WidgetVisitor,
-  LayoutMain as Layout,
+ 
+  reduxWrapper,
+  configure,
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PagePartner extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-   
-    };
-  }
+const PagePartner = () => (
 
-  render() {
-    return (
-      <Layout>
-        <Head />
-        <WidgetVisitor label="visitors.register_alt" />
-      </Layout>
-    );
-  }
-}
+  <WidgetVisitor label="visitors.register_alt" />
+)
 
-PagePartner.settings = require('../settings').default;
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors"]
+  })
+
+})
+
 
 
 export default connect()(PagePartner);

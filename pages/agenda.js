@@ -1,37 +1,33 @@
 import {
   connect,
-  MyHead as Head,
+  
   WidgetVisitor,
   WidgetPresenters,
-  LayoutMain as Layout,
+ 
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageAgenda extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      preload: ['exhibitors', 'presenters'],
-   
-    };
-  }
+const PageAgenda = () => (
+ 
 
-  render() {
-    const { router } = this.props;
+  
 
-    return (
-      <Layout>
-        <Head />
+  <WidgetVisitor label="visitors.register_alt" />
+ 
+) 
 
-        {/* <WidgetPresenters /> */}
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
 
-        <WidgetVisitor label="visitors.register_alt" />
-      </Layout>
-    );
-  }
-}
+  await configure(store, {
+    settings : settings,
+    preload : ["exhibitors", "presenters"]
+  })
 
+})
 
-PageAgenda.settings = require('../settings').default;
 
 export default connect(
   null,

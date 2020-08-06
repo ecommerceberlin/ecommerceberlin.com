@@ -1,34 +1,18 @@
 import {
   connect,
   get as _get,
-  MyHead as Head,
   // Typography,
   Wrapper,
-  LayoutMain as Layout,
+  reduxWrapper,
+  configure
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageLegalVisitors extends React.Component {
-  static async getInitialProps({
-    err,
-    req,
-    res,
-    pathname,
-    query,
-    asPath,
-    isServer,
-    store,
-  }) {
-    return {
-    
-    };
-  }
 
-  render() {
-    const { url } = this.props;
+const PageLegalVisitors = () => (
 
-    return (
-      <Layout>
+ 
         <Wrapper first label="visitors.agreement.title">
           <div
             dangerouslySetInnerHTML={{
@@ -74,12 +58,17 @@ class PageLegalVisitors extends React.Component {
             }}
           />
         </Wrapper>
-      </Layout>
-    );
-  }
-}
-
-PageLegalVisitors.settings = require('../settings').default;
+     
+)
 
 
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  await configure(store, {
+    settings: settings,
+    //preload: [""]
+  });
+
+})
 export default connect()(PageLegalVisitors);

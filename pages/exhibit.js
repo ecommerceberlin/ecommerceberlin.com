@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic';
+
 
 import {
   connect,
@@ -20,76 +20,78 @@ import {
   // People,
   // GridBenefits
   LayoutMain as Layout,
+  resourceFetchRequest,
+  END,
+  reduxWrapper,
+  setSettings
+   
 } from 'eventjuicer-site-components';
 
+const settings = require('../settings').default;
 
-class PageExhibit extends React.Component {
-  static async getInitialProps({ query, asPath, isServer, store }) {
-    return {
-      preload: ['exhibitors', 'allexhibitors'],
-       
-    };
-  }
+const PageExhibit = () => (
 
-  render() {
-    const { url } = this.props;
+ <>
 
-    return (
-      <Layout>
-        <Head />
+  <WidgetSalesMap
+    label="exhibitors.map.title"
+    secondaryLabel="exhibitors.map.opensales"
+ 
+    first
+  />
 
-        <WidgetSalesMap
-          label="exhibitors.map.title"
-          secondaryLabel="exhibitors.map.opensales"
-          disabledTicketIds={[1821, 1822, 1819, 1820, 1836]}
-          first
-        />
+  <WidgetExhibitorBenefits label="exhibitors.benefits.title" />
 
-        <WidgetExhibitorBenefits label="exhibitors.benefits.title" />
+  {/* <WidgetVideoWithReviews /> */}
 
-        {/* <WidgetVideoWithReviews /> */}
+  <WidgetVips limit={12} mobile={4} />
 
-        <WidgetVips limit={12} mobile={4} />
+  <Wrapper label="exhibitors.faq.name">
+    <Faq
+      baseLabel="exhibitors.faq.become"
+      items={[
+        {
+          label: 'included_services',
+          important: true,
+          buttons: [],
+        },
+        {
+          baseLabel: 'exhibitors.faq.before_event',
+          label: 'additional_paid_services',
+        },
+        { label: 'payment' },
+        { label: 'onboarding' },
+        { label: 'resignation' },
+        { label: 'promo_benefits' },
+        {
+          baseLabel: 'exhibitors.faq.before_event',
+          label: 'public_profile',
+        },
+      ]}
+    />
+  </Wrapper>
 
-        <Wrapper label="exhibitors.faq.name">
-          <Faq
-            url={url}
-            baseLabel="exhibitors.faq.become"
-            items={[
-              {
-                label: 'included_services',
-                important: true,
-                buttons: [],
-              },
-              {
-                baseLabel: 'exhibitors.faq.before_event',
-                label: 'additional_paid_services',
-              },
-              { label: 'payment' },
-              { label: 'onboarding' },
-              { label: 'resignation' },
-              { label: 'promo_benefits' },
-              {
-                baseLabel: 'exhibitors.faq.before_event',
-                label: 'public_profile',
-              },
-            ]}
-          />
-        </Wrapper>
+  <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
 
-        <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
+  {/* <DatasourcePhotos>
+    {(photos, size) => (
+      <Gallery data={photos} size={size} label="event.gallery" />
+    )}
+  </DatasourcePhotos> */}
 
-        {/* <DatasourcePhotos>
-          {(photos, size) => (
-            <Gallery data={photos} size={size} label="event.gallery" />
-          )}
-        </DatasourcePhotos> */}
-      </Layout>
-    );
-  }
-}
+</>
+
+)
 
 
-PageExhibit.settings = require('../settings').default;
+
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+
+  store.dispatch(setSettings(settings))
+  store.dispatch(resourceFetchRequest(['allexhibitors', 'exhibitors']))
+  store.dispatch(END)
+  await store.sagaTask.toPromise()
+
+})
 
 export default connect()(PageExhibit);

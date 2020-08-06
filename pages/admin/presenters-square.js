@@ -2,17 +2,16 @@ import {
   connect,
   _get as get,
   Divider,
-  MyHead as Head,
   MyLink as Link,
   getPresenterFbAd,
   generateLinkParams,
   MyTypography as Typography,
   TwoColsLayout as Section,
-  Wrapper,
-  LayoutMain as Layout,
+  Wrapper
 } from 'eventjuicer-site-components';
 
 
+const settings = require('../../settings').default;
 
 class PageSpeakerSocial extends React.Component {
   static async getInitialProps({ query, asPath, isServer, store }) {
@@ -27,8 +26,7 @@ class PageSpeakerSocial extends React.Component {
     const { presenters, asPath } = this.props;
 
     return (
-      <Layout>
-        <Head url={asPath} />
+     <div>
 
         <Wrapper first label="">
           {presenters.map((presenter, idx) => {
@@ -100,13 +98,18 @@ class PageSpeakerSocial extends React.Component {
             );
           })}
         </Wrapper>
-      </Layout>
+        </div>
     );
   }
 }
 
-PageSpeakerSocial.settings = require('../settings').default;
 
+
+
+
+
+
+ 
 export default connect(state => ({ presenters: state.resources.presenters }))(
   PageSpeakerSocial,
 );
