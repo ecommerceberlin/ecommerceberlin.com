@@ -8,9 +8,9 @@ import {
 
 const settings = require('../../settings').default;
 
-const PageStage = ({stage}) => (<>
-<Wrapper first label={`Scena ${stage.toUpperCase()}`}>
-    <Stage stage={stage} />
+const PageStage = ({name}) => (<>
+<Wrapper first label={`Scena ${name.toUpperCase()}`}>
+    {/* <Stage stage={name} /> */}
   </Wrapper>
 </>)
 
@@ -18,11 +18,11 @@ export async function getStaticPaths() {
   
   return {
       paths: [
-        { params: { name: "A" } },
-        { params: { name: "B" } },
-        { params: { name: "C" } },
-        { params: { name: "D" } },
-        { params: { name: "E" } },
+        { params: { name: "a" } },
+        { params: { name: "b" } },
+        { params: { name: "c" } },
+        { params: { name: "d" } },
+        { params: { name: "e" } },
       ],
       fallback: true 
     };
@@ -32,12 +32,12 @@ export async function getStaticPaths() {
   
     await configure(store, {
       settings : settings,
-      //preload : ["exhibitors"])
+      preload : ["exhibitors", "presenters"]
     })
 
     return {
         props : {
-            stage : "name" in params ? params.name : ""
+            name : params.name
         }
     }
   
