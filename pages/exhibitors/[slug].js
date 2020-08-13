@@ -12,7 +12,8 @@ import {
     WidgetRoleButtons,
     configure,
     reduxWrapper,
-    fetch
+    fetch,
+    MyHead as Head
   } from 'eventjuicer-site-components';
   
   const settings = require('../../settings').default;
@@ -21,8 +22,10 @@ import {
     
   return (
     <div>
+
+      <Head />
  
-      <WidgetCompany slug={slug} />
+      <WidgetCompany id={slug} />
   
       <WidgetVideoWithEventInfo />
 
@@ -49,6 +52,9 @@ import {
   
   }
   
+  PageCompany.defaultProps = {
+    company: {}
+  }
   
 
   export async function getStaticPaths() {
@@ -60,13 +66,16 @@ import {
       return
     }
 
+
+    const filtered = slugs.data.filter(item => item.featured)
+
     return {
-      paths: slugs.data.map(row => ({ 
+      paths: filtered.map(row => ({ 
           params: {
             slug : row.slug
           }
         })),
-      fallback: true 
+      fallback: true //do not throw 404 when not cached....
     };
      
   }
@@ -76,24 +85,46 @@ import {
   
     const {slug} = params;
 
-    const company = `companies/${slug}`;
+    const resource = `companies/${slug}`;
 
     await configure(store, {
       settings : settings,
-      preload : [company, "exhibitors", "bookingmap"]
+      preload : [resource, "exhibitors", "bookingmap"]
     })
 
     return {
         props : {
-            slug : "slug" in params ? params.slug : ""
+            slug :slug,
+            resource: resource
         },
-        revalidate : 10
+        revalidate : 1
     }
   
   })
   
 
+  // export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ store, context }) => {
   
+  //   const {params, req, res, query} = context;
+  //   const {slug} = params;
+
+  //   const resource = `companies/${slug}`;
+
+  //   await configure(store, {
+  //     settings : settings,
+  //     preload : [resource]
+  //   })
+
+  //   return {
+  //       props : {
+  //           slug :slug,
+  //           resource: resource
+  //       },
+  //       revalidate : 10
+  //   }
+  
+  // })
+
   
   export default connect()(PageCompany);
   

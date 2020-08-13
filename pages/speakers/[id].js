@@ -43,8 +43,11 @@ import {
       return
     }
 
+
+    const filtered = response.data.filter(item => item.featured)
+
     return {
-      paths: response.data.map(row => ({ 
+      paths: filtered.map(row => ({ 
           params: {
             id : row.id.toString()
           }
@@ -59,16 +62,18 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
 
     const {id} = params;
 
+    const resource = `presenters/${id}`;
+
     await configure(store, {
       settings : settings,
-      preload : ["exhibitors", "presenters"]
+      preload : [resource, "exhibitors", "presenters"]
     })
 
     return {
       props : {
           id : id.toString()
       },
-      revalidate : 10
+      revalidate : 3
   }
   
   })
