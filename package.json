@@ -31,9 +31,7 @@
     "eventjuicer-site-components": "^2.0.8",
     "next": "^9.5.2",
     "now": "^19.2.0",
-    "react-icons": "^3.10.0"
-  },
-  "peerDependencies": {
+    "react-icons": "^3.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
