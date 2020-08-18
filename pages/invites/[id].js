@@ -72,28 +72,8 @@ const PageInvite = ( { url, person, exhibitors } ) => {
 
 
 
-export async function getStaticPaths() {
-  
-  const request = await fetch(`${settings.system.api}/visitors`)
-  const response = await request.json();
-
-  if(!"data" in response){
-    return
-  }
-
-  return {
-    paths: response.data.map(row => ({ 
-        params: {
-          id : row.id.toString()
-        }
-      })),
-    fallback: true 
-  };
-   
-}
-
  
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
+export const getServerSideProps = reduxWrapper.getStaticProps(async ({req, res, query, params, store}) => {
 
   const {id} = params
 
@@ -101,7 +81,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
 
   await configure(store, {
     settings : settings,
-    preload : [resource, "exhibitors"]
+    preload : [resource] //,"exhibitors"
   })
   const props = {props: {
     id: id.toString(),

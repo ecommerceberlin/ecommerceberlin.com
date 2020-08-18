@@ -30,14 +30,17 @@ const PageIndex = (props) => (
 
    
   <React.Fragment>
-  <WidgetVideoWithEventInfo />
+
 
   {/* <WidgetSchedule /> */}
 
   <WidgetVisitor
     label="visitors.register"
     secondaryLabel="event.parties"
+    first
   />
+
+  <WidgetVideoWithEventInfo />
 
   <WidgetFeaturedCompanies />
 
@@ -58,8 +61,6 @@ const PageIndex = (props) => (
   /> */}
 
   {/* <WidgetVideoWithReviews overlay="black" /> */}
-
-  <WidgetAllExhibitorsColumnList />
 
   {/* <FsVideo
     background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
@@ -98,6 +99,9 @@ const PageIndex = (props) => (
     center={true}
     limit={50}
   />
+
+   <WidgetAllExhibitorsColumnList />
+
   </React.Fragment>
  
 ) 
@@ -108,6 +112,11 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
     settings: settings,
     preload: ['allexhibitors', 'companies', 'presenters_all']
   })
+
+  return {
+    props: {}, 
+    revalidate: 1
+  }
   
 })
 

@@ -43,8 +43,9 @@ import {
       return
     }
 
+    //featured OR featured_cfp
 
-    const filtered = response.data.filter(item => item.featured)
+    const filtered = response.data.filter(item => ("featured" in item && parseInt(item.featured)) || ("featured_cfp" in item && parseInt(item.featured_cfp)) )
 
     return {
       paths: filtered.map(row => ({ 

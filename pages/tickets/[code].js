@@ -73,49 +73,10 @@ const PageTicket = ({code, person, exhibitors }) => {
     )
 }
 
-// export async function getStaticPaths() {
-  
-//   const request = await fetch(`${settings.system.api}/visitors`)
-//   const response = await request.json();
+export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ req, res, params, query, store}) => {
 
-//   if(!"data" in response){
-//     return
-//   }
-
-//   return {
-//     paths: response.data.map(row => ({ 
-//         params: {
-//           code : row.code
-//         }
-//       })),
-//     fallback: true 
-//   };
-   
-// }
-
-// export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
-
-//   const {code} = params;
-//   const resource = `code/${code}`;
-
-//   await configure(store, {
-//     settings : settings,
-//     preload : [resource, "exhibitors"]
-//   })
-
-
-//   return {
-//     props : {
-//       code: code
-//     }
-//   }
-
-// })
-
-export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ store, context}) => {
-
-  const {params} = context;
-  const resource = `code/${params.code}`;
+  const {code} = params;
+  const resource = `code/${code}`;
 
   const request = await fetch(`${settings.system.api}/${resource}`)
   const response = await request.json();
@@ -126,7 +87,7 @@ export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ store
   })
 
   return {props: {
-    code: params.code,
+    code: code,
     person: "data" in response ? response.data : {}
   }}
 

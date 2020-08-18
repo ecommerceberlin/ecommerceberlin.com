@@ -52,54 +52,12 @@ import {
     person : {}
   }
 
-// export async function getStaticPaths() {
-  
-//     const request = await fetch(`${settings.system.api}/visitors`)
-//     const response = await request.json();
-  
-//     if(!"data" in response){
-//       return
-//     }
-  
-//     return {
-//       paths: response.data.map(row => ({ 
-//           params: {
-//             code : row.code
-//           }
-//         })),
-//       fallback: true 
-//     };
-     
-//   }
 
   
-  
-  
-// export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ req, res, store, params, query}) => {
 
-//   const resource = `code/${params.code}`;
-
-//   const request = await fetch(`${settings.system.api}/${resource}`)
-//   const response = await request.json();
-
-//   await configure(store, {
-//     settings : settings,
-//     preload : [resource]
-//   })
-
-//   return {props: {
-//     code: params.code,
-//     person: "data" in response ? response.data : {}
-//   }}
-
-// })
-
-
-  
-export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ store, context}) => {
-
-  const {params} = context;
-  const resource = `code/${params.code}`;
+  const {code} = params;
+  const resource = `code/${code}`;
 
   const request = await fetch(`${settings.system.api}/${resource}`)
   const response = await request.json();
@@ -110,7 +68,7 @@ export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ store
   })
 
   return {props: {
-    code: params.code,
+    code: code,
     person: "data" in response ? response.data : {}
   }}
 
