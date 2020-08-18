@@ -92,7 +92,10 @@ New Developments in E-commerce
 
         <WidgetSpeakerBenefits label="presenters.steps.title" />
 
-        <WidgetPresentersAll filter={(item)=> parseInt(item.featured_cfp) } limit="24" />
+        <WidgetPresentersAll 
+          filter={(item)=> parseInt(item.featured_cfp) } limit="24" 
+          label="cfp.featured_presenters"
+        />
 
         <Wrapper label="presenters.contest-rules.title">
           <Markdown label="presenters.contest-rules.description" />
@@ -131,6 +134,11 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
     settings : settings,
     preload : ["exhibitors"]
   })
+
+  return {
+    props: {},
+    revalidate: 1
+  }
 
 })
 
