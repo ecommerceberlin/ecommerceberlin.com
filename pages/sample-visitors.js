@@ -11,7 +11,6 @@ import {
   WidgetVips,
   Wrapper,
   Faq,
-  LayoutMain as Layout,
   reduxWrapper,
   configure
 } from 'eventjuicer-site-components';

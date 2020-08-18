@@ -92,7 +92,7 @@ New Developments in E-commerce
 
         <WidgetSpeakerBenefits label="presenters.steps.title" />
 
-        <WidgetPresentersAll />
+        <WidgetPresentersAll filter={(item)=> parseInt(item.featured_cfp) } limit="12" />
 
         <Wrapper label="presenters.contest-rules.title">
           <Markdown label="presenters.contest-rules.description" />
