@@ -458,6 +458,19 @@ exports.default = {
             {label: "visitors.data-agreement.title", href: "/legal-visitors-data"}
         ]
     },
+
+    photostream : {
+        items : [
+
+            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 2},
+            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 6}
+
+
+
+        ]
+    }
 };
 
 

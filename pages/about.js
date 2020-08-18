@@ -8,7 +8,7 @@ import {
   WidgetVips,
   DatasourcePhotos,
   Wrapper,
-  Gallery,
+ 
   Faq,
   reduxWrapper,
   configure
@@ -37,11 +37,11 @@ const PageAbout = () => (
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475962/about/visitors-position.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597739548/about/theDivisionIntoJobPosition.svg',
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476005/about/visitors-nationality.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597392552/about/top_10_nationalities.svg',
       },
 
       {
@@ -58,6 +58,7 @@ const PageAbout = () => (
       },
     ].map(item => (
       <img
+        key={item.image}
         src={item.image}
         style={{
           width: '100%',
@@ -109,11 +110,7 @@ const PageAbout = () => (
 
   <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
 
-  <DatasourcePhotos>
-    {(photos, size) => (
-      <Gallery data={photos} size={size} label="event.gallery" />
-    )}
-  </DatasourcePhotos>
+ 
   </div>
 
 ) 

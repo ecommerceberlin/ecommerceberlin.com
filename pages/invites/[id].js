@@ -9,7 +9,7 @@ import {
   WidgetEventInfo,
   Typography,
   Wrapper,
-  // Gallery,
+ 
   // EventInfo,
   reduxWrapper,
   configure

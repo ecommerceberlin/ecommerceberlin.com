@@ -1,7 +1,5 @@
 import {
   connect,
-  //Gallery,
-
   WidgetVideoWithEventInfo,
   WidgetVisitor,
   WidgetVisitorBenefits,
@@ -44,11 +42,7 @@ const PageVisit = () => (
 
         {/* <WidgetVisitor label="visitors.register" first /> */}
 
-        {/* <Photos>
-          {(photos, size) => (
-            <Gallery data={photos} size={size} label="event.gallery" />
-          )}
-        </Photos> */}
+       
   
         </div>
 

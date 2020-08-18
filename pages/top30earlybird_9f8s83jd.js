@@ -64,11 +64,7 @@ const PageTopEarlyBird = () => (
 
   <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
 
-  {/* <DatasourcePhotos>
-    {(photos, size) => (
-      <Gallery data={photos} size={size} label="event.gallery" />
-    )}
-  </DatasourcePhotos> */}
+ 
 </div>
 )
 

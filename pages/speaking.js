@@ -1,6 +1,5 @@
 import {
   connect,
-  //WidgetGallery,
   Wrapper,
   WidgetVideoWithEventInfo,
   WidgetSpeaking,
@@ -8,9 +7,11 @@ import {
   Markdown,
   WidgetPresentersAll,
   WidgetSpeakerBenefits,
-  Faq,
+  WidgetFaq,
+  WidgetJurors,
   reduxWrapper,
-  configure
+  configure,
+  WidgetPhotostream
 } from 'eventjuicer-site-components';
 
 
@@ -48,36 +49,32 @@ IT for E-commerce
 New Developments in E-commerce
 
  */}
+
+        {/* <WidgetPhotostream /> */}
      
+        <WidgetJurors minToShow={4} />
 
-
-          <Wrapper 
-              label="cfp.faq.name" 
-              descriptionLabel="cfp.faq.description">
-          <Faq
-            url="/speaking"
-            baseLabel="cfp.faq"
+        <WidgetFaq 
             items={[
-              {
-                label: 'exhibitor-status',
-                important: true,
-                buttons: [],
-              },
-              {
-            //    baseLabel: 'exhibitors.faq.before_event',
-                label: 'fee',
-              },
-              { label: 'submission-limits' },
-              { label: 'co-presenter' },
-              { label: 'ranking' },
-              { label: 'fair-play' },
-              {
-              //  baseLabel: 'cfp.faq.before_event',
-                label: 'stage',
-              },
-            ]}
-          />
-        </Wrapper>
+            {
+              label: 'exhibitor-status',
+              important: true,
+              buttons: [],
+            },
+            {
+          //    baseLabel: 'exhibitors.faq.before_event',
+              label: 'fee',
+            },
+            { label: 'submission-limits' },
+            { label: 'co-presenter' },
+            { label: 'ranking' },
+            { label: 'fair-play' },
+            {
+            //  baseLabel: 'cfp.faq.before_event',
+              label: 'stage',
+            },
+    ]} />
+
 
         <WidgetSpeaking
           categories={[
@@ -117,9 +114,7 @@ New Developments in E-commerce
           subtitle="presenters.claim.description"
         />
 
-        {/* <Photos>{
-        (photos, size) => <Gallery data={photos} size={size} label="event.gallery" />
-      }</Photos> */}
+      
 
   </div>
 )

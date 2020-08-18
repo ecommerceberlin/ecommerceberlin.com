@@ -12,7 +12,7 @@ import {
   WidgetVips,
   DatasourcePhotos,
   Wrapper,
-  Gallery,
+  
   Faq,
   // Avatarlist,
   // Typography,
@@ -73,11 +73,7 @@ const PageExhibit = () => (
 
   <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
 
-  {/* <DatasourcePhotos>
-    {(photos, size) => (
-      <Gallery data={photos} size={size} label="event.gallery" />
-    )}
-  </DatasourcePhotos> */}
+  
 
 </>
 

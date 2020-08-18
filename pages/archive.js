@@ -6,7 +6,7 @@ import {
   Wrapper,
   Avatarlist,
   Typography,
-  Gallery,
+
   WidthAwareInfo,
   People,
   MyTable as Table,
@@ -55,8 +55,7 @@ const PageArchive = ({events, eventId}) => {
     />
   </Wrapper>
 
-  <Gallery label="event.gallery" />
-
+ 
   </>
 
     )
