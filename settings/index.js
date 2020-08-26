@@ -451,27 +451,45 @@ exports.default = {
     footer : {
         iconStyle : "black",
         links : [
-            {label: "common.pages.imprint", href : "/legal-imprint"},
-            {label: "visitors.agreement.title", href : "/legal-visitors"},
-            {label: "exhibitors.agreement.title", href : "/legal-exhibitors"},
-            {label: "common.pages.cookies", href : "/legal-cookies"},
-            {label: "visitors.data-agreement.title", href: "/legal-visitors-data"}
+            {label: "common.pages.imprint", href : "/legal/imprint"},
+            {label: "visitors.agreement.title", href : "/legal/visitors"},
+            {label: "exhibitors.agreement.title", href : "/legal/exhibitors"},
+            {label: "common.pages.cookies", href : "/legal/cookies"},
+            {label: "visitors.data-agreement.title", href: "/legal/visitors-data"}
         ]
     },
 
     photostream : {
         items : [
 
-            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 2},
-            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 3},
-            {src: "https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg", cols: 6}
-
-
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824810/Website/CFP%20-%20gallery/Conference2_MyTheresa.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824808/Website/CFP%20-%20gallery/Conference4_Nivea.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824722/Website/CFP%20-%20gallery/IMG_0782_copy.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824720/Website/CFP%20-%20gallery/IMG_0643.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824718/Website/CFP%20-%20gallery/Conference7_IBM_Isabelle.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824707/Website/CFP%20-%20gallery/IMG_9984.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824703/Website/CFP%20-%20gallery/Conference1_Made.com.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824699/Website/CFP%20-%20gallery/2SH07600.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824698/Website/CFP%20-%20gallery/Conference6_Facebook_Lisa.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824698/Website/CFP%20-%20gallery/Conference10_Douglas.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824685/Website/CFP%20-%20gallery/2SH09325.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824685/Website/CFP%20-%20gallery/Conference5_BabySweets.jpg", cols: 12}
 
         ]
     }
 };
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,21 +1,22 @@
 import {
   connect,
   get as _get,
-  // Typography,
   Wrapper,
   Markdown,
   reduxWrapper,
-  configure
+  configure,
 } from 'eventjuicer-site-components';
 
-const settings = require('../settings').default;
-
+const settings = require('../../settings').default;
 
 const PageLegalVisitorsData = () => (
  
-        <Wrapper first label="visitors.cfp-data-agreement.title">
-          <Markdown>{`
-          
+  <Wrapper
+    first
+    label="Mobile app for Exhibitors and Visitors Privacy Policy"
+  >
+    <Markdown>{`
+    
 ## General information and contact details of the Administrator
 
 1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), ul. Jana Matejki 52/4, 60-770 Poznań (Poland), 
@@ -30,19 +31,16 @@ Email address: office@ecommercecapitals.com, address: ul. Jana Matejki 52/4, 60-
 
 ## Categories of personal data subject to processing and information on the freedom to provide them
 
-3. The Company is the organizer of Call for Papers Contest, hereinafter referred to as ”Contest” related to E-commerce Berlin Expo, 
-hereinafter referred to as ‘Fair’. Whoever wants to participate in the Contest can do so free of charge, 
-but first they have to submit a presentation and register as a Contest participant at the Fair’s website, providing the following personal data:
+3. The Company is the organizer of E-commerce Berlin Expo, hereinafter referred to as "Fair". 
+Whoever wants to participate in the Fair can do so free of charge, but first they have to submit a presentation and register as a Contest participant at the Fair’s website, providing the following personal data:
 
 * email address, 
 * first name, 
 * last name, 
 * telephone no,
 * brand name,
-* name of the speaker,
-* presentation proposition title
 
-Provision of personal data is voluntary. However, unless they are provided, it will be impossible to take a part in Contest. 
+Provision of personal data is voluntary. However, unless they are provided, it will be impossible to take a part in Fair. 
 
 ## Purposes for which personal data are processed
 
@@ -102,13 +100,12 @@ Besides, considering the purposes of processing, the person whom given data conc
 7. We process the accumulated personal data for the purpose of direct marketing so the person whom the data concern has the right to oppose – for reasons related to their particular situation – to processing of their personal data, to the scope within which the processing is made for the purpose of direct marketing. 
 In such a case we will immediately cease to process their personal data for this purpose.
 
+
 `}</Markdown>
-        </Wrapper>
+  </Wrapper>
  
-) 
 
-
-
+)
 
 
 export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
@@ -119,6 +116,5 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
   });
 
 })
-
 
 export default connect()(PageLegalVisitorsData);
