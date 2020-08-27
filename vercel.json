@@ -1,3 +1,13 @@
 {
-    "public": true
-  }
+  "public": false,
+  "redirects": [
+  { "source": "/legal-app", "destination": "/legal/app", "permanent": true },
+  { "source": "/legal-cfp-data", "destination": "/legal/cfp-data", "permanent": true },
+  { "source": "/legal-cookies", "destination": "/legal/cookies", "permanent": true },
+  { "source": "/legal-exhibitors", "destination": "/legal/exhibitors", "permanent": true },
+  { "source": "/legal-imprint", "destination": "/legal/imprint", "permanent": true },
+  { "source": "/legal-visitors-data", "destination": "/legal/visitors-data", "permanent": true },
+  { "source": "/legal-visitors", "destination": "/legal/visitors", "permanent": true },
+  { "source": "/(?<slug>[^,]+),c,(?<id>[0-9]+)", "destination": "/exhibitors/redirect", "permanent": true }
+  ]
+}

@@ -3,7 +3,7 @@ import {
   Wrapper,
   WidgetVideoWithEventInfo,
   WidgetSpeaking,
-  WidgetSalesMap,
+  WidgetRoleButtons,
   Markdown,
   WidgetPresentersAll,
   WidgetSpeakerBenefits,
@@ -11,9 +11,15 @@ import {
   WidgetJurors,
   reduxWrapper,
   configure,
-  WidgetPhotostream
+  WidgetPhotostream,
+  WidgetVerticalTimeline,
+  TwoColsLayout as Section,
+  MyTypography
 } from 'eventjuicer-site-components';
 
+import NoteAdd from '@material-ui/icons/NoteAdd'
+import HowToVote from '@material-ui/icons/HowToVote'
+import Public from '@material-ui/icons/Public'
 
 const settings = require('../settings').default;
 
@@ -21,12 +27,61 @@ const settings = require('../settings').default;
 const PageSpeaking = () => (
 
   <div>
-       <Wrapper first label="presenters.competition.title">
-          <img
-            src="https://res.cloudinary.com/ecommerceberlin/image/upload/v1566860070/cfp-schedule.png"
-            style={{ width: '100%', maxWidth: 1600 }}
-          />
-        </Wrapper>
+       <Wrapper first label="cfp.hello.title">
+       
+       <Section 
+        
+        left={  <div style={{marginTop: '5rem'}}>
+
+          <MyTypography template="h4" label="cfp.hello.submit" />
+         
+          <MyTypography template="subtitle1" label="cfp.hello.needs" />
+  
+          <Markdown label="cfp.hello.details" />
+  
+  
+          </div> }
+        right={ 
+          <WidgetVerticalTimeline 
+          setting="cfptimeline" 
+          icons={{
+            NoteAdd: <NoteAdd />,
+            HowToVote: <HowToVote />,
+            Public: <Public />
+          }} />
+        }
+
+      leftCentered={true}
+
+      />
+
+
+      </Wrapper>
+
+
+  <WidgetPhotostream setting="cfpphotostream" />
+
+  <WidgetSpeaking
+        categories={[
+          'conversion',
+          'marketing',
+          'logistics',
+          'payments',
+          'it',
+          'trends',
+        ]}
+
+      right={
+        <>
+        <MyTypography template="subtitle1" label="presenters.contest-rules.title" /> 
+        <Markdown label="presenters.contest-rules.description" />
+        </>
+      }
+
+      />
+
+
+   
 
         {/* <div>
 
@@ -50,8 +105,9 @@ New Developments in E-commerce
 
  */}
 
-        {/* <WidgetPhotostream /> */}
-     
+      
+        
+  
         <WidgetJurors minToShow={4} />
 
         <WidgetFaq 
@@ -76,17 +132,7 @@ New Developments in E-commerce
     ]} />
 
 
-        <WidgetSpeaking
-          categories={[
-            'conversion',
-            'marketing',
-            'logistics',
-            'payments',
-            'it',
-            'trends',
-          ]}
-        />
-
+      
         <WidgetSpeakerBenefits label="presenters.steps.title" />
 
         <WidgetPresentersAll 
@@ -94,17 +140,7 @@ New Developments in E-commerce
           label="cfp.featured_presenters"
         />
 
-        <Wrapper label="presenters.contest-rules.title">
-          <Markdown label="presenters.contest-rules.description" />
-        </Wrapper>
 
-
-
-        <WidgetSalesMap
-          label="exhibitors.map.title3"
-          secondaryLabel="exhibitors.map.opensales"
- 
-        />
 
         <WidgetVideoWithEventInfo
           //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"
@@ -114,7 +150,7 @@ New Developments in E-commerce
           subtitle="presenters.claim.description"
         />
 
-      
+        <WidgetRoleButtons first={false} />
 
   </div>
 )
