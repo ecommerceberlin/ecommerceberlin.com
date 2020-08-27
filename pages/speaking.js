@@ -20,6 +20,10 @@ import {
 import NoteAdd from '@material-ui/icons/NoteAdd'
 import HowToVote from '@material-ui/icons/HowToVote'
 import Public from '@material-ui/icons/Public'
+import Mic from '@material-ui/icons/Mic'
+import Assessment from '@material-ui/icons/Assessment'
+
+
 
 const settings = require('../settings').default;
 
@@ -47,7 +51,9 @@ const PageSpeaking = () => (
           icons={{
             NoteAdd: <NoteAdd />,
             HowToVote: <HowToVote />,
-            Public: <Public />
+            Public: <Public />,
+            Mic: <Mic />,
+            Assessment: <Assessment />
           }} />
         }
 
