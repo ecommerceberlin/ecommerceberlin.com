@@ -25,6 +25,7 @@ export const getServerSideProps = reduxWrapper.getStaticProps(async ({ store }) 
     preload : ['companies']
   })
 
+  return {props: {}, revalidate: 1}
 
 
 })

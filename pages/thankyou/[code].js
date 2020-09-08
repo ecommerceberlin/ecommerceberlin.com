@@ -70,7 +70,7 @@ export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ req, 
   return {props: {
     code: code,
     person: "data" in response ? response.data : {}
-  }}
+  }, revalidate: 1}
 
 })
 

@@ -56,6 +56,9 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
     preload : ["exhibitors", 'presenters']
   })
 
+  return {props: {}, revalidate: 1}
+
+  
 })
 
  

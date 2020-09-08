@@ -21,9 +21,8 @@ import {
   // GridBenefits
   LayoutMain as Layout,
   resourceFetchRequest,
-  END,
-  reduxWrapper,
-  setSettings
+  configure,
+  reduxWrapper
    
 } from 'eventjuicer-site-components';
 
@@ -83,10 +82,15 @@ const PageExhibit = () => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
 
-  store.dispatch(setSettings(settings))
-  store.dispatch(resourceFetchRequest(['allexhibitors', 'exhibitors']))
-  store.dispatch(END)
-  await store.sagaTask.toPromise()
+  await configure(store, {
+    settings : settings,
+    preload : ["bookingmap", "ticketgroups", "formdata"]
+  })
+
+  return {
+    props: {},
+    revalidate: 1
+  }
 
 })
 

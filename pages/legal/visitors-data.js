@@ -147,6 +147,9 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
     //preload: [""]
   });
 
+  return {props: {}, revalidate: 1}
+
+
 })
 
 export default connect()(PageLegalVisitorsData);

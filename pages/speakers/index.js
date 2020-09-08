@@ -20,6 +20,9 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
     preload : ["presenters"]
   })
 
+  return {props: {}, revalidate: 1}
+
+
 })
 
 export default connect()(PagePresenters);

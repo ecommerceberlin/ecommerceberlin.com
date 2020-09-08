@@ -83,12 +83,11 @@ export const getServerSideProps = reduxWrapper.getStaticProps(async ({req, res, 
     settings : settings,
     preload : [resource] //,"exhibitors"
   })
-  const props = {props: {
+
+  return {props: {
     id: id.toString(),
     resource: resource
-  }};
-
-  return props
+  }, revalidate: 1}
 
 })
 

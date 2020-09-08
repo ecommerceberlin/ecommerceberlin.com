@@ -23,6 +23,9 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
     preload : ["exhibitors"]
   })
 
+  return {props: {}, revalidate: 1}
+
+
 })
 
 export default connect()(PageMap);
