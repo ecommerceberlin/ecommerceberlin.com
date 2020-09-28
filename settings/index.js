@@ -320,6 +320,7 @@ const settings = {
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
                 {name: 'cfp', to: '/speaking'},
+                // {name: 'cfp-vote', to: '/vote'},
               ]
             },
             {
