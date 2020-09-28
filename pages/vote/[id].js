@@ -1,7 +1,7 @@
 import {
   connect,
   MyHead as Head,
-  VoteWithLinkedIn,
+  WidgetVoteWithLinkedIn,
   WidgetVisitor,
   WidgetCallForPapers,
   WidgetVotable,
@@ -35,7 +35,7 @@ const PageVote  = ({id}) => (
   <WidgetVotable
       id={id}
       asPath="/vote"
-      vote={<DynamicVoteWithLinkedIn id={id} />}
+      vote={<WidgetVoteWithLinkedIn id={id} />}
       status={<WidgetVoteStatus />}
     />
 
