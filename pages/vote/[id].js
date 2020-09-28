@@ -21,8 +21,8 @@ import dynamic from 'next/dynamic'
 
 const settings = require('../../settings').default;
 
-const DynamicVoteWithLinkedIn = dynamic(
-  () => import('../../proxy/VoteWithLinkedIn'),
+const DynamicWidgetVoteWithLinkedIn = dynamic(
+  () => import('../../proxy/WidgetVoteWithLinkedIn'),
   { ssr: false }
 )
 
@@ -35,7 +35,7 @@ const PageVote  = ({id}) => (
   <WidgetVotable
       id={id}
       asPath="/vote"
-      vote={<WidgetVoteWithLinkedIn id={id} />}
+      vote={<DynamicWidgetVoteWithLinkedIn id={id} />}
       status={<WidgetVoteStatus />}
     />
 
