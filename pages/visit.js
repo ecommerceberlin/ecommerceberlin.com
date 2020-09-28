@@ -36,7 +36,7 @@ const PageVisit = () => (
 
         <WidgetIconGrid setting="visitor.benefits" />
 
-        <WidgetVisitor label="visitors.register" first />
+        <WidgetVisitor label="visitors.register" />
 
         {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
 

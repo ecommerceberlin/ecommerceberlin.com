@@ -403,6 +403,26 @@ const settings = {
     visitor : {
 
 
+        register: {
+
+            label : "visitors.register",
+            fields : [
+              {name: "email", required: true},
+              {name: "fname", required: true},
+              {name: "lname", required: true},
+              {name: "cname2", required: true},
+              {name: "position", required: true},
+            //   {name: "nip", required: false},
+              {name: "phone", required: true}
+            ],
+
+            start : ['email', 'fname'],
+            ticket_id : 1830,
+            email_template : "ecommerceberlin-visitor-registration",
+            background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
+
+        },
+
         benefits : {
 
             label: "visitors.benefits.title",
