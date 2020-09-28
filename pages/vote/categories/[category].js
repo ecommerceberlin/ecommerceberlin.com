@@ -13,7 +13,8 @@ import {
   MyTypography as Typography,
   Markdown,
   reduxWrapper,
-  configure
+  configure,
+  tagsUsed
 } from 'eventjuicer-site-components';
 
 
@@ -21,8 +22,6 @@ const settings = require('../../../settings').default;
 
 
 const PageVote  = ({category}) => {
-
-    console.log(category)
 
     return (
   
@@ -60,14 +59,30 @@ const PageVote  = ({category}) => {
 
 }
 
-export const getStaticPaths = () => {
+// export const getStaticPaths = () => {
 
-  return {paths: [
+//   return {paths: [
 
-  ], fallback: true}
+//   ], fallback: true}
 
-}
+// }
  
+
+
+export async function getStaticPaths() {
+
+  const request = await fetch(`${settings.system.api}/callforpapers`)
+  const callforpapers = await request.json();
+
+  const cats = tagsUsed(callforpapers.data, "presentation_category")
+  const paths = cats.map(c => ({params: {category: c}}))
+
+  return {
+      paths: paths,
+      fallback: true 
+    };
+}  
+
 
 
 export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
