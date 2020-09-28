@@ -16,8 +16,15 @@ import {
   configure
 } from 'eventjuicer-site-components';
 
+import dynamic from 'next/dynamic'
+
 
 const settings = require('../../settings').default;
+
+const DynamicVoteWithLinkedIn = dynamic(
+  () => import('../../proxy/VoteWithLinkedIn'),
+  { ssr: false }
+)
 
 
 const PageVote  = ({id}) => (
@@ -28,7 +35,7 @@ const PageVote  = ({id}) => (
   <WidgetVotable
       id={id}
       asPath="/vote"
-      vote={<VoteWithLinkedIn id={id} />}
+      vote={<DynamicVoteWithLinkedIn id={id} />}
       status={<WidgetVoteStatus />}
     />
 
