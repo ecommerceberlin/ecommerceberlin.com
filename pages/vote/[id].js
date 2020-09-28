@@ -17,22 +17,20 @@ import {
 } from 'eventjuicer-site-components';
 
 
-const settings = require('../settings').default;
+const settings = require('../../settings').default;
 
 
-const PageVote  = ({id, keyword}) => (
+const PageVote  = ({id}) => (
 
   
   <div>
 
-  {id && (
-    <WidgetVotable
+  <WidgetVotable
       id={id}
-      asPath={asPath}
+      asPath="/vote"
       vote={<VoteWithLinkedIn id={id} />}
       status={<WidgetVoteStatus />}
     />
-  )}
 
   <WidgetCallForPapers
     intro={
@@ -44,26 +42,22 @@ const PageVote  = ({id, keyword}) => (
       </div>
     }
     limit={350}
-    filter={item => "presentation_description" in item &&
-      item.presentation_description.length > 10 &&
-      "avatar" in item &&
-      item.avatar.indexOf('http') > -1 &&
-      "logotype" in item && 
-      item.logotype.indexOf('http') > -1
+    filter={item => "presentation_description" in item       
+    //&& item.presentation_description.length > 10 
+    //&& "avatar" in item 
+    //&& item.avatar.indexOf('http') > -1 
+    //&& "logotype" in item 
+    //&& item.logotype.indexOf('http') > -1
     }
     keyword_source="presentation_category"
-    keyword={keyword}
-    label={
-      keyword
-        ? 'callforpapers.list.title'
-        : 'callforpapers.categories.title'
-    }
-    show_votes={true}
+    keyword={null}
+    label="callforpapers.categories.title"
+    show_votes={false}
   />
 
-  {id && <WidgetVisitor />}
+<WidgetVisitor />
 
-  {id && <WidgetVips limit={12} mobile={4} />}
+ <WidgetVips limit={12} mobile={4} />
 
   {/* {id && (
     <WidgetSalesMap
@@ -79,6 +73,13 @@ const PageVote  = ({id, keyword}) => (
   
 ) 
 
+export const getStaticPaths = () => {
+
+  return {paths: [
+
+  ], fallback: true}
+
+}
  
 
 
@@ -89,10 +90,11 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
     preload : ["callforpapers"]
   })
 
+  const {id} = params;
+
   return {
     props : {
-      id : "id" in params ? params.id : 0 , 
-      keyword : "keyword" in params ? params.keyword : ""
+      id : id
     },
     revalidate: 1
   }

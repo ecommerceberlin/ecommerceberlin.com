@@ -53,8 +53,8 @@ const settings = {
                     start : ['referral', 'email', 'fname'],
                     first : true
                 }},
-                {name : "WidgetVipVisitorBenefits", props : {
-                    label : "vips.benefits.title" 
+                {name : "WidgetIconGrid", props : {
+                    setting : "vips.benefits" 
                 }},
                 {name : "WidgetVips", props : {
                     limit: 12,
@@ -78,7 +78,7 @@ const settings = {
                     start : ['referral','email', 'cname2'],
                     // first : true
                 }},
-                {name : "WidgetVisitorBenefits"},
+             
                 // {name : "WidgetPresenters", props : {
                 //     disableTemps : true,
                 //     label : "presenters.list_featured",
@@ -196,62 +196,115 @@ const settings = {
         ],
         allowedGroupIds : [322, 323, 324, 325, 329],
         disabledTicketIds : [1821, 1822, 1819, 1820, 1836],
-        styles : {
-            light : null,
-            standard : 322,
-            hot : 323,
-            superhot : 324,
-            ultra : null,
-            grand : 325,
-            stage : 328,
-            networking : 326
+        boothStyleMapping: {
+            322: "light", //STD
+            323: "standard", //HOT
+            324: "hot", //SHOT
+            329: "superHot", //GRAND
+            325: "ultra", //PREMIUM GRAND
+
+            328: "stage",
+            326: "networking",
+            // 321: "boothSold"
         },
         api : "https://order.ecommerceberlin.com/preorder"
     },
 
     speakers : {
 
-        benefits : [
 
-            {
-                icon : "FaSearch",
-                label :  'assessment',
-            },
-        
-            {
-                icon : "FaPoll",
-                label : 'contest'
-            },
-        
-            {
-                icon : "FaTrophy",
-                label : 'speaker'
-            }
+        callforpapers: {
+            
+            fields: [
+                {name: "email", required: true},
+                {name: "fname", required: true},
+                {name: "lname", required: true},
+                {name: "cname2", required: true},
+                {name: "phone", required: true},
+                {name: "presenter", required: true},  
+                {
+                  name: "presentation_category", 
+                  required: true,
+                  options : "categories"
+                },
+                {name: "presentation_title", required: true},
+                {name: "presentation_description", required: true}
+            ],
+            
+              start: [
+                'presenter',
+                'presentation_title', 
+                'presentation_description',
+                'presentation_category',
+                'cname2'
+            ],
 
-        ]
+            ticket_id : 1842,
+            email_template : "ebe-presenters-application",
+
+        },
+
+
+        benefits : {
+
+            label: "presenters.steps.title",
+        //    secondaryLabel: "presenters.steps.description",
+            baseLabel: "presenters.steps",
+            typography: "subtitle",
+            dense: true,
+            
+            items: [
+
+                {
+                    icon : "FaSearch",
+                    label :  'assessment',
+                },
+            
+                {
+                    icon : "FaPoll",
+                    label : 'contest'
+                },
+            
+                {
+                    icon : "FaTrophy",
+                    label : 'speaker'
+                }
+
+            ]
+        },
+
+      
     },
 
     vips : {
 
-        label : "vips.benefits.title",
-        baseLabel : "vips.benefits",
-        items : [
+        benefits : {
 
-            {   
-                icon : "FaFastForward",
-                label : 'fastentry'
-            },
-        
-            {   
-                icon : "FaChair",
-                label : 'seats'
-            },
-        
-            {   
-                icon : "FaHandshake",
-                label : 'vipzone'
-            }
-        ]
+            label: "vips.benefits.title",
+     //       secondaryLabel: "vips.benefits.description",
+            baseLabel: "vips.benefits",
+            typography: "subtitle",
+            dense: true,
+            
+            items: [
+
+                {   
+                    icon : "FaFastForward",
+                    label : 'fastentry'
+                },
+            
+                {   
+                    icon : "FaChair",
+                    label : 'seats'
+                },
+            
+                {   
+                    icon : "FaHandshake",
+                    label : 'vipzone'
+                }
+            ]
+        },
+
     },
 
     reviews : {
@@ -300,35 +353,65 @@ const settings = {
     },
 
     exhibitors : {
-        benefits : [
-            {
-                icon : "FaHandshake",
-                label :  'outreach',
-            },
-            {   
-                icon : "FaComments",
-                label : 'feedback'
-            },
-            {   
-                icon : "FaSmile",
-                label : 'organizer'
-            },
-            {   
-                icon : "FaPiggyBank",
-                label : 'all_inclusive'
-            },
-            {
-                icon : "FaLink",
-                label : 'meet_clients'
-            },
-            {
-                icon : "FaLightbulb",
-                label : 'inspiration'
-            }
-        ]
+
+
+     
+
+        benefits : {
+
+            label: "exhibitors.benefits.title",
+            //secondaryLabel: "exhibitors.benefits.description",
+            baseLabel: "exhibitors.benefits",
+            typography: "subtitle",
+            dense: true,
+
+            items: [
+
+                {
+                    icon : "FaHandshake",
+                    label :  'outreach',
+                },
+            
+                {
+                    icon : "FaPiggyBank",
+                    label : 'all_inclusive'
+                },
+            
+                {
+                    icon : "FaComments",
+                    label : 'feedback'
+                },
+
+                {
+                    icon : "FaLink",
+                    label : 'meet_clients'
+                },
+
+                {
+                    icon : "FaSmile",
+                    label : 'organizer'
+                },
+
+                {
+                    icon : "FaLightbulb",
+                    label : 'inspiration'
+                },
+
+            ]
+        }
     },
     visitor : {
-        benefits : [
+
+
+        benefits : {
+
+            label: "visitors.benefits.title",
+            //secondaryLabel: "visitors.benefits.title",
+            baseLabel: "visitors.benefits",
+            typography: "subtitle",
+            dense: true,
+
+            items: [
 
                 {
                     icon : "FaLockOpen",
@@ -359,7 +442,10 @@ const settings = {
                     icon : "FaChartLine",
                     label : 'future'
                 }
-        ],
+    
+            ]
+        }, 
+
         default_ticket_id : 1830,
         default_email_template : "ecommerceberlin-visitor-registration",
         background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
@@ -460,6 +546,12 @@ const settings = {
             {label: "common.pages.cookies", href : "/legal/cookies"},
             {label: "visitors.data-agreement.title", href: "/legal/visitors-data"}
         ]
+    },
+
+    appbar : {
+        links: [
+            {label: "common.menu.exhibitors.exhibit", color: "primary",  href: "/exhibit", as: "/exhibit", variant: "contained"}
+        ],
     },
 
     cfpphotostream : {

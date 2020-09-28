@@ -1,7 +1,7 @@
 import {
   connect,
   WidgetSalesMap,
-  WidgetExhibitorBenefits,
+  WidgetIconGrid,
   //WidgetVideoWithReviews,
   WidgetAllExhibitorsAvatarlist,
   //DatasourceExhibitors,
@@ -77,7 +77,13 @@ const PageAbout = () => (
 
   <WidgetVips limit={12} mobile={4} />
 
-  <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
+
+
+  <WidgetIconGrid setting="exhibitors.benefits" icons={{
+
+  }}/>
+
+
 
   {/* <WidgetVideoWithReviews /> */}
 

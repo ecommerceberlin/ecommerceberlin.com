@@ -5,14 +5,11 @@ import {
   MyHead as Head,
   MyLink as Link,
   WidgetSalesMap,
-  WidgetExhibitorBenefits,
+  WidgetIconGrid,
   //WidgetVideoWithReviews,
   WidgetAllExhibitorsAvatarlist,
-  //DatasourceExhibitors,
   WidgetVips,
-  DatasourcePhotos,
   Wrapper,
-  
   Faq,
   // Avatarlist,
   // Typography,
@@ -20,7 +17,6 @@ import {
   // People,
   // GridBenefits
   LayoutMain as Layout,
-  resourceFetchRequest,
   configure,
   reduxWrapper
    
@@ -39,7 +35,9 @@ const PageExhibit = () => (
     first
   />
 
-  <WidgetExhibitorBenefits label="exhibitors.benefits.title" />
+  <WidgetIconGrid setting="exhibitors.benefits" icons={{
+
+  }}/>
 
   {/* <WidgetVideoWithReviews /> */}
 

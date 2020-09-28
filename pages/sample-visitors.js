@@ -4,7 +4,7 @@ import {
   MyHead as Head,
   MyLink as Link,
   WidgetSalesMap,
-  WidgetExhibitorBenefits,
+  WidgetIconGrid,
   //WidgetVideoWithReviews,
   WidgetAllExhibitorsAvatarlist,
   //DatasourceExhibitors,
@@ -32,7 +32,11 @@ const PageSampleVisitors = () => (
 
   {/* <WidgetVideoWithReviews /> */}
 
-  <WidgetExhibitorBenefits first label="exhibitors.benefits.title" />
+
+  <WidgetIconGrid setting="exhibitors.benefits" icons={{
+
+  }}/>
+
 
   <Wrapper label="exhibitors.faq.name">
     <Faq

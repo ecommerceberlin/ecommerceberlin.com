@@ -2,7 +2,7 @@ import {
   connect,
   WidgetVideoWithEventInfo,
   WidgetVisitor,
-  WidgetVisitorBenefits,
+  WidgetIconGrid,
   // WidgetPresenters,
   // WidgetSchedule,
   // WidgetAllExhibitorsAvatarlist,
@@ -34,7 +34,7 @@ const PageVisit = () => (
 
         {/* <WidgetPresenters /> */}
 
-        <WidgetVisitorBenefits label="visitors.benefits.title" />
+        <WidgetIconGrid setting="visitor.benefits" />
 
         <WidgetVisitor label="visitors.register" first />
 

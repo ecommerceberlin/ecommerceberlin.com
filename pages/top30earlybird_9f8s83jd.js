@@ -1,7 +1,7 @@
 import {
   connect,
   WidgetSalesMap,
-  WidgetExhibitorBenefits,
+  WidgetIconGrid,
   //WidgetVideoWithReviews,
   WidgetAllExhibitorsAvatarlist,
   //DatasourceExhibitors,
@@ -30,7 +30,10 @@ const PageTopEarlyBird = () => (
     first={true}
   />
 
-  <WidgetExhibitorBenefits label="exhibitors.benefits.title" />
+
+  <WidgetIconGrid setting="exhibitors.benefits" icons={{
+
+  }}/>
 
   {/* <WidgetVideoWithReviews /> */}
 

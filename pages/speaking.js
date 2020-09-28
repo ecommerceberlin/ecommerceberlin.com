@@ -6,7 +6,7 @@ import {
   WidgetRoleButtons,
   Markdown,
   WidgetPresentersAll,
-  WidgetSpeakerBenefits,
+  WidgetIconGrid,
   WidgetFaq,
   WidgetJurors,
   reduxWrapper,
@@ -68,14 +68,17 @@ const PageSpeaking = () => (
   <WidgetPhotostream setting="cfpphotostream" />
 
   <WidgetSpeaking
-        categories={[
+
+      options={{
+        "categories": [
           'conversion',
           'marketing',
           'logistics',
           'payments',
           'it',
           'trends',
-        ]}
+        ]
+      }} 
 
       right={
         <>
@@ -140,8 +143,10 @@ New Developments in E-commerce
     ]} />
 
 
-      
-        <WidgetSpeakerBenefits label="presenters.steps.title" />
+    <WidgetIconGrid setting="speakers.benefits" icons={{
+
+    }}/>
+
 
         <WidgetPresentersAll 
           filter={(item)=> parseInt(item.featured_cfp) } limit="24" 
