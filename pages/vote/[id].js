@@ -1,6 +1,6 @@
 import {
   connect,
-  MyHead as Head,
+  MyHead,
   WidgetVoteWithLinkedIn,
   WidgetVisitor,
   WidgetCallForPapers,
@@ -13,11 +13,12 @@ import {
   MyTypography as Typography,
   Markdown,
   reduxWrapper,
-  configure
+  configure,
+  HeadVote
 } from 'eventjuicer-site-components';
 
 import dynamic from 'next/dynamic'
-
+import Head from 'next/head'
 
 const settings = require('../../settings').default;
 
@@ -32,6 +33,8 @@ const PageVote  = ({id}) => (
   
   <div>
 
+  <HeadVote id={id}>{(data) => <Head>{data}</Head>}</HeadVote> 
+   
   <WidgetVotable
       id={id}
       asPath="/vote"

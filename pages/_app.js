@@ -1,3 +1,8 @@
-import { NextApp } from 'eventjuicer-site-components';
+import { NextApp, MyHead } from 'eventjuicer-site-components';
+import Head from 'next/head'
 
-export default NextApp
+const MyCustomApp = (props) => <NextApp {...props} head={
+    <MyHead url="/">{(data) => <Head>{data}</Head>}</MyHead> 
+} />
+
+export default MyCustomApp
