@@ -37,7 +37,7 @@ const PageVote  = ({id}) => (
    
   <WidgetVotable
       id={id}
-      asPath="/vote"
+      asPath={`/vote/${id}`}
       vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} />}
       status={<WidgetVoteStatus max_votes={6} />}
       show_votes={false}
@@ -84,15 +84,14 @@ const PageVote  = ({id}) => (
   
 ) 
 
-// export const getStaticPaths = () => {
+export const getStaticPaths = () => {
 
-//   return {paths: [
+  return {paths: [
 
-//   ], fallback: true}
+  ], fallback: true}
 
-// }
+}
  
-
 
 export const getServerSideProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
 
@@ -107,7 +106,7 @@ export const getServerSideProps = reduxWrapper.getStaticProps(async ({ store, pa
     props : {
       id : id
     },
-    // revalidate: 1
+    revalidate: 1
   }
 
 })
