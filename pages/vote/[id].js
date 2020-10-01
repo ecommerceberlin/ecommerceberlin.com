@@ -84,17 +84,17 @@ const PageVote  = ({id}) => (
   
 ) 
 
-export const getStaticPaths = () => {
+// export const getStaticPaths = () => {
 
-  return {paths: [
+//   return {paths: [
 
-  ], fallback: true}
+//   ], fallback: true}
 
-}
+// }
  
 
 
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+export const getServerSideProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
 
   await configure(store, {
     settings : settings,
@@ -107,7 +107,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params
     props : {
       id : id
     },
-    revalidate: 1
+    // revalidate: 1
   }
 
 })
