@@ -1,15 +1,11 @@
 import {
   connect,
   MyHead as Head,
-  VoteWithLinkedIn,
-  WidgetVisitor,
   WidgetCallForPapers,
-  WidgetVotable,
  // WidgetSalesMap,
   WidgetVoteStatus,
   WidgetRoleButtons,
   LayoutMain as Layout,
-  WidgetVips,
   MyTypography as Typography,
   Markdown,
   reduxWrapper,
@@ -30,7 +26,7 @@ const PageVote  = ({category}) => {
         <WidgetCallForPapers
           intro={
             <div style={{ width: '80%' }}>
-              <WidgetVoteStatus />
+              <WidgetVoteStatus total_votes={6} />
               <Typography template="benefitsText">
                 <Markdown label="callforpapers.voting.general-rules.description" />
               </Typography>
