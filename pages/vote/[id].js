@@ -38,15 +38,15 @@ const PageVote  = ({id}) => (
   <WidgetVotable
       id={id}
       asPath="/vote"
-      vote={<WidgetVoteWithLinkedIn id={id} max_votes={6} />}
-      status={<WidgetVoteStatus total_votes={6} />}
+      vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} />}
+      status={<WidgetVoteStatus max_votes={6} />}
       show_votes={false}
     />
 
   <WidgetCallForPapers
     intro={
       <div style={{ width: '80%' }}>
-        <WidgetVoteStatus total_votes={6} />
+        <WidgetVoteStatus max_votes={6} />
         <Typography template="benefitsText">
           <Markdown label="callforpapers.voting.general-rules.description" />
         </Typography>
