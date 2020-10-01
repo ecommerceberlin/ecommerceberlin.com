@@ -93,7 +93,7 @@ export const getStaticPaths = () => {
 }
  
 
-export const getServerSideProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
 
   await configure(store, {
     settings : settings,
