@@ -7,7 +7,8 @@ import {
   WidgetRoleButtons,
   WidgetPartners,
   reduxWrapper,
-  configure
+  configure,
+  WidgetBanner
 } from 'eventjuicer-site-components';
 
 // import FeaturedExhibitors from '../src/FeaturedExhibitors';
@@ -23,6 +24,8 @@ const PageIndex = (props) => (
   <WidgetVideoWithEventInfo />
 
   {/* <WidgetSchedule /> */}
+
+  <WidgetBanner setting="banner_cfp" />
 
   <WidgetVisitor
     label="visitors.register"

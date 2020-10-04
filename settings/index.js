@@ -106,6 +106,7 @@ const settings = {
             ],
         },
 
+       
         presenters : {
             title : "",
             opengraph : "",
@@ -163,7 +164,26 @@ const settings = {
 
     },
 
-    
+    banner_cfp: {
+        /**
+         * 
+            xs, extra-small: 0px
+            sm, small: 600px
+            md, medium: 960px
+            lg, large: 1280px
+            xl, extra-large: 1920px
+         */
+        //wrapperProps: {},
+        sizes: {
+            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670727/ebe_cf/CallForPapers_2021_LiveOnStage1728x240.png",
+            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670727/ebe_cf/CallForPapers_2021_LiveOnStage1350x440.png",
+            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670727/ebe_cf/CallForPapers_2021_LiveOnStage1104x736.png",
+            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670726/ebe_cf/CallForPapers_2021_LiveOnStage900x450.png",
+            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670728/ebe_cf/CallForPapers_2021_LiveOnStageArtboard-4.png"
+        },
+        href: "/vote"
+    },
+
 
     system : {
         passwords : {
@@ -319,8 +339,8 @@ const settings = {
               items: [
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
-                {name: 'cfp', to: '/speaking'},
-                // {name: 'cfp-vote', to: '/vote'},
+                // {name: 'cfp', to: '/speaking'},
+                {name: 'vote', to: '/vote'},
               ]
             },
             {
