@@ -8,8 +8,7 @@
     "precommit": "lint-staged",
     "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "GTM='GTM-5RJC4J' next build",
-    "start": "NODE_ENV=production next start",
-    "analyze": "cross-env ANALYZE=1 next build"
+    "start": "NODE_ENV=production next start"
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,7 @@
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
     "eventjuicer-site-components": "^2.4.4",
-    "next": "^9.5.4",
+    "next": "^9.5.5",
     "now": "^19.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -37,7 +36,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
-    "cross-env": "^7.0.2",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-prettier": "^3.1.4",
