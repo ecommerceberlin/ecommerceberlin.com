@@ -1,15 +1,11 @@
 import {
   connect,
   MyHead as Head,
-  VoteWithLinkedIn,
-  WidgetVisitor,
-  WidgetCallForPapers,
-  WidgetVotable,
+  WidgetContestantCategories,
  // WidgetSalesMap,
   WidgetVoteStatus,
   WidgetRoleButtons,
   LayoutMain as Layout,
-  WidgetVips,
   MyTypography as Typography,
   Markdown,
   reduxWrapper,
@@ -23,7 +19,7 @@ const PageVote  = () => (
 
     <div>
 
-  <WidgetCallForPapers
+  <WidgetContestantCategories
     intro={
       <div style={{ width: '80%' }}>
         <WidgetVoteStatus max_votes={6} />

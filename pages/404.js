@@ -18,11 +18,10 @@ import {
   WidgetPartners,
   WidgetPresentersAll,
   reduxWrapper,
-  configure
+  configure,
+ // WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
-
-// import FeaturedExhibitors from '../src/FeaturedExhibitors';
-import FeaturedPresenters from '../src/FeaturedPresenters';
+ 
 
 const settings = require('../settings').default;
 

@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
-    "eventjuicer-site-components": "^2.3.12",
-    "next": "9.5.4-canary.23",
+    "eventjuicer-site-components": "^2.4.4",
+    "next": "^9.5.4",
     "now": "^19.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

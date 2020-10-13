@@ -11,8 +11,7 @@ import {
   WidgetBanner
 } from 'eventjuicer-site-components';
 
-// import FeaturedExhibitors from '../src/FeaturedExhibitors';
-//import FeaturedPresenters from '../src/FeaturedPresenters';
+ 
 
 const settings = require('../settings').default;
 

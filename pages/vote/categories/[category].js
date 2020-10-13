@@ -45,6 +45,7 @@ const PageVote  = ({category}) => {
           label="callforpapers.list.title"
           show_votes={false}
           first={true}
+          renderAs="table"
         />
       
        

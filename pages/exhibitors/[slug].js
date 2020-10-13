@@ -13,9 +13,11 @@ import {
     configure,
     reduxWrapper,
     fetch,
-    MyHead as Head
+    HeadCompany
   } from 'eventjuicer-site-components';
   
+  import Head from 'next/head'
+
   const settings = require('../../settings').default;
 
   const PageCompany = ({slug, dispatch}) => {
@@ -23,9 +25,9 @@ import {
   return (
     <div>
 
-      <Head />
+      <HeadCompany slug={slug}>{(data) => <Head>{data}</Head>}</HeadCompany> 
  
-      <WidgetCompany id={slug} />
+      <WidgetCompany slug={slug} />
   
       <WidgetVideoWithEventInfo />
 
@@ -59,22 +61,23 @@ import {
 
   export async function getStaticPaths() {
   
-    const request = await fetch(`${settings.system.api}/company-slugs`)
-    const slugs = await request.json();
+    // const request = await fetch(`${settings.system.api}/company-slugs`)
+    // const slugs = await request.json();
 
-    if(!"data" in slugs){
-      return
-    }
+    // if(!"data" in slugs){
+    //   return
+    // }
 
 
-    const filtered = slugs.data.filter(item => item.featured)
+    // const filtered = slugs.data.filter(item => item.featured)
 
     return {
-      paths: filtered.map(row => ({ 
-          params: {
-            slug : row.slug
-          }
-        })),
+      // paths: filtered.map(row => ({ 
+      //     params: {
+      //       slug : row.slug
+      //     }
+      //   })),
+      paths: [],
       fallback: true //do not throw 404 when not cached....
     };
      
