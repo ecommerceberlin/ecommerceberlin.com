@@ -63,7 +63,7 @@ const PageVote  = ({id}) => (
     keyword_source="presentation_category"
     keyword={null}
     label="callforpapers.categories.title"
-    show_votes={false}
+    show_votes={true}
   />
 
 <WidgetVisitor />
