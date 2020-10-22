@@ -38,7 +38,7 @@ const PageVote  = ({id}) => (
   <WidgetVotable
       id={id}
       asPath={`/vote/${id}`}
-      vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} />}
+      // vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} />}
       status={<WidgetVoteStatus max_votes={6} />}
       show_votes={false}
     />
