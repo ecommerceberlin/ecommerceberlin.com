@@ -49,9 +49,9 @@ const PageVisit = () => (
 )
 
 
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(store, {
+  await configure(props, {
     settings : settings,
     preload : ["exhibitors", 'presenters']
   })

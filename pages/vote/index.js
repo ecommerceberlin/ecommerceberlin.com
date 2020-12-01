@@ -53,9 +53,9 @@ const PageVote  = () => (
 
  
 
-export const getStaticProps = reduxWrapper.getStaticProps(async ( {store} ) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async ( props ) => {
 
-  await configure(store, {
+  await configure(props, {
     settings : settings,
     preload : ["callforpapers"]
   })

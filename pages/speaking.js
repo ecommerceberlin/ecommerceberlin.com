@@ -122,6 +122,7 @@ New Developments in E-commerce
         <WidgetJurors minToShow={4} />
 
         <WidgetFaq 
+            baseLabel="cfp.faq"
             items={[
             {
               label: 'exhibitor-status',
@@ -172,9 +173,9 @@ New Developments in E-commerce
 
 
 
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(store, {
+  await configure(props, {
     settings : settings,
     preload : ["exhibitors"]
   })

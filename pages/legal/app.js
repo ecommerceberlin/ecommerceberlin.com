@@ -108,9 +108,9 @@ In such a case we will immediately cease to process their personal data for this
 )
 
 
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(store, {
+  await configure(props, {
     settings: settings,
     //preload: [""]
   });

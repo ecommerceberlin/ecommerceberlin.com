@@ -83,14 +83,14 @@ export async function getStaticPaths() {
 
 
 
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params = {}}) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(store, {
+  const {params: {category}} = props;
+
+  await configure(props, {
     settings : settings,
     preload : ["callforpapers"]
   })
-
-  const {category} = params;
 
   return {
     props : {

@@ -73,22 +73,24 @@ const PageInvite = ( { url, person, exhibitors } ) => {
 
 
  
-export const getServerSideProps = reduxWrapper.getStaticProps(async ({req, res, query, params, store}) => {
+export const getServerSideProps = reduxWrapper.getStaticProps(async (props) => {
 
-  const {id} = params
+
+  const {params: {id}} = props
 
   const resource = `visitors/${id}`;
 
-  await configure(store, {
+  await configure(props, {
     settings : settings,
-    preload : [resource] //,"exhibitors"
+    preload : [resource]
   })
 
-  return {props: {
-    id: id.toString(),
-    resource: resource
-  }, revalidate: 1}
-
+  return {
+    props: {
+      id: id.toString(),
+      resource: resource
+    }, 
+    revalidate: 1}
 })
 
 

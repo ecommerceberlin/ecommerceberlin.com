@@ -175,13 +175,13 @@ const settings = {
          */
         //wrapperProps: {},
         sizes: {
-            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670727/ebe_cf/CallForPapers_2021_LiveOnStage1728x240.png",
-            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670727/ebe_cf/CallForPapers_2021_LiveOnStage1350x440.png",
-            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670727/ebe_cf/CallForPapers_2021_LiveOnStage1104x736.png",
-            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670726/ebe_cf/CallForPapers_2021_LiveOnStage900x450.png",
-            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1601670728/ebe_cf/CallForPapers_2021_LiveOnStageArtboard-4.png"
+            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781269/ebe_ega/ecommerce_black_2021_v31584x396-.png",
+            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781269/ebe_ega/ecommerce_black_2021_v31584x396-.png",
+            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781269/ebe_ega/ecommerce_black_2021_v31536x768-.png",
+            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781268/ebe_ega/EGA_submit_800x800.png",
+            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781268/ebe_ega/EGA_submit_800x800.png"
         },
-        href: "/vote"
+        href: "https://ecommercegermanyawards.com"
     },
 
 
@@ -190,8 +190,6 @@ const settings = {
             'admin': '1751bfe48d5ad21fd9d'
         },
         lang_api_endpoint : 'https://localise.biz/api/export/all.json?format=multi&pretty&key=tWMy1RRHuiW6DD9T7AyYtFlQzAeztbBK',
-        available_locales : ["en", "de"],
-        default_locale : "en",
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com",
         post_api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
         og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
@@ -341,7 +339,7 @@ const settings = {
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
                 // {name: 'cfp', to: '/speaking'},
-                {name: 'vote', to: '/vote'},
+                // {name: 'vote', to: '/vote'},
               ]
             },
             {

@@ -49,9 +49,11 @@ const PagePremiumSingle = ({name}) => {
 }
 
 
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(store, {
+  const {params} = props
+
+  await configure(props, {
     settings : settings,
     preload: ['tickets', 'ticketgroups'],
   })

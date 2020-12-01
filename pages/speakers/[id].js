@@ -36,36 +36,41 @@ import {
 
   export async function getStaticPaths() {
   
-    const request = await fetch(`${settings.system.api}/presenters_all`)
-    const response = await request.json();
+    // const request = await fetch(`${settings.system.api}/presenters_all`)
+    // const response = await request.json();
 
-    if(!"data" in response){
-      return
-    }
+    // if(!"data" in response){
+    //   return
+    // }
 
-    //featured OR featured_cfp
+    // //featured OR featured_cfp
 
-    const filtered = response.data.filter(item => ("featured" in item && parseInt(item.featured)) || ("featured_cfp" in item && parseInt(item.featured_cfp)) )
+    // const filtered = response.data.filter(item => ("featured" in item && parseInt(item.featured)) || ("featured_cfp" in item && parseInt(item.featured_cfp)) )
+
+    // return {
+    //   paths: filtered.map(row => ({ 
+    //       params: {
+    //         id : row.id.toString()
+    //       }
+    //     })),
+    //   fallback: true 
+    // };
+     
 
     return {
-      paths: filtered.map(row => ({ 
-          params: {
-            id : row.id.toString()
-          }
-        })),
-      fallback: true 
-    };
-     
+      paths: [],
+      fallback: true
+    }
   }
 
   
-export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-    const {id} = params;
+    const {params: {id}} = props;
 
     const resource = `presenters/${id}`;
 
-    await configure(store, {
+    await configure(props, {
       settings : settings,
       preload : [resource, "exhibitors", "presenters"]
     })

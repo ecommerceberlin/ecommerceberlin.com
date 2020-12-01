@@ -139,9 +139,9 @@ The announcement of the Contest Winners will take place on the “E-commerce Ber
   
   
   
-  export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+  export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
   
-    await configure(store, {
+    await configure(props, {
       settings: settings,
       //preload: [""]
     });

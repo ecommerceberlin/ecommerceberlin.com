@@ -84,13 +84,14 @@ import {
   }
 
   
-  export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
-  
+  export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
+    
+    const {params} = props;
     const {slug} = params;
 
     const resource = `companies/${slug}`;
 
-    await configure(store, {
+    await configure(props, {
       settings : settings,
       preload : [resource, "exhibitors", "bookingmap"]
     })
@@ -106,14 +107,14 @@ import {
   })
   
 
-  // export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ store, context }) => {
+  // export const getServerSideProps = reduxWrapper.getServerSideProps(async (props) => {
   
-  //   const {params, req, res, query} = context;
-  //   const {slug} = params;
+  //   const {params={slug}, req, res, query} = props;
+
 
   //   const resource = `companies/${slug}`;
 
-  //   await configure(store, {
+  //   await configure(props, {
   //     settings : settings,
   //     preload : [resource]
   //   })

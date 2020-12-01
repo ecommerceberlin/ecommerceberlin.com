@@ -18,9 +18,9 @@ const PageExhibitors = ({companies}) => (
 )
 
 
-export const getServerSideProps = reduxWrapper.getStaticProps(async ({ store }) => {
+export const getServerSideProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(store, {
+  await configure(props, {
     settings : settings,
     preload : ['companies']
   })

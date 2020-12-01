@@ -54,15 +54,15 @@ import {
 
 
   
-export const getServerSideProps = reduxWrapper.getServerSideProps(async ({ req, res, store, params, query}) => {
+export const getServerSideProps = reduxWrapper.getServerSideProps(async (props) => {
 
-  const {code} = params;
+  const {params: {code}} = props;
   const resource = `code/${code}`;
 
   const request = await fetch(`${settings.system.api}/${resource}`)
   const response = await request.json();
 
-  await configure(store, {
+  await configure(props, {
     settings : settings,
     preload : [resource]
   })
