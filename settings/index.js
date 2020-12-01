@@ -498,7 +498,7 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '18th February 2021',
+        event_date : '27th May 2021',
         event_hours : '10:00-17:00',
 
     },

@@ -25,7 +25,7 @@ const PageLegalExhibitors = () => (
 1.2. The terms used herein, capitalized mean:
 
 * 1.2.1. Organizer - E-commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. (Limited Liability Company limited partnership) with its registered seat in Poznań (postal code 60-770), ul. Jana Matejki 52/4, entered into the register of associations, other social and professional organizations, foundations and independent public health care facilities of the National Court Register and the register of entrepreneurs under KRS number 0000592712 whose registration files are kept by the District Court for Poznań - Nowe Miasto and Wilda in Poznań, VIII Commercial Division of the National Court Register using the given 7792439665 tax identification number and REGON number 36746333; Address for correspondence with the Organizer: ul. Jana Matejki 52/4, 60-770 Poznań; Email Address: hello@ecommerceberlin.com 
-* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 18th February 2021, from 10:00 AM to 5:00 PM;
+* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 27th May 2021, from 10:00 AM to 5:00 PM;
 * 1.2.3. Regulations - the present document constituting the general conditions of the Agreement;
 * 1.2.4. Exhibitor - a natural person, legal person or entity without legal personality, which conducts business activity: related to e-commerce, in particular providing electronic services, whose offer is addressed to operators of online shops or who in the course of its business intends to start running or managing an online store or making offers to entities engaged in these activities; 
 * 1.2.5. Pavilion - "Pavilion" in the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin
@@ -111,7 +111,7 @@ const PageLegalExhibitors = () => (
 
 7.1. Exhibitor may not use the Exhibition space in a manner inconsistent with their purpose, in particular the Exhibitor may not: use devices with a joint total power consumption greater than the power connections made available for the Exhibition space, place a roll-up or advertising wall with dimensions larger than those fixed for the Exhibition space of a given category within said Exhibition space. Advertising wall can be placed only in the back of the Exhibition space. It is prohibited to use coffee machines without notifying the Organizer and without Organizer's confirmation that the ordered power connection is sufficient to safely operate the device in question
 
-7.2. In order to arrange the Exhibition space Organizer provides the Exhibitor with the Exhibition space on February 17th from 12:00 PM and on the day of the event at 2 (two) hours before the time of commencement of the Fair.
+7.2. In order to arrange the Exhibition space Organizer provides the Exhibitor with the Exhibition space on May 26th from 12:00 PM and on the day of the event at 2 (two) hours before the time of commencement of the Fair.
 
 7.3. The Exhibitor cannot proceed with the removal of the equipment placed in the Exhibition space before 5:00 PM on the 18.02.2021.
 
@@ -159,9 +159,9 @@ const PageLegalExhibitors = () => (
 
 9.5. The data submitted by the Exhibitor as part of the profile, ie. name, logo and description of the activities will be presented by the Organizer in the Virtual Catalogue of Exhibitors accessible on the Fair Website.
 
-9.6. The Exhibitor, upon the conclusion of the Agreement, grants the Organizer free, territorially unlimited license for the period from the date of conclusion of the Agreement until February 18, 2021 to use the materials placed within Exhibitor’s profile to promote Fair, including its further editions, the media, in particular in the press, radio, television, within the Fair Website, in transmissions directed to the general Internet users by any means of communication within the network, in email messages, as well as to promote the activities of the Organizer within the scope described above.
+9.6. The Exhibitor, upon the conclusion of the Agreement, grants the Organizer free, territorially unlimited license for the period from the date of conclusion of the Agreement until May 27, 2021 to use the materials placed within Exhibitor’s profile to promote Fair, including its further editions, the media, in particular in the press, radio, television, within the Fair Website, in transmissions directed to the general Internet users by any means of communication within the network, in email messages, as well as to promote the activities of the Organizer within the scope described above.
 
-9.7. The Organizer, upon the conclusion of the Agreement, grants the Exhibitor, within Flat Fee, territorially unlimited license for the period from the date of conclusion of the Agreement until February 18, 2021 to use the trade mark “E-Commerce Berlin Expo” to promote Exhibitors participation in Fair, in any media, in particular in the press, radio, television, in transmissions directed to the general Internet users by any means of communication within the network, in email messages.
+9.7. The Organizer, upon the conclusion of the Agreement, grants the Exhibitor, within Flat Fee, territorially unlimited license for the period from the date of conclusion of the Agreement until May 27, 2021 to use the trade mark “E-Commerce Berlin Expo” to promote Exhibitors participation in Fair, in any media, in particular in the press, radio, television, in transmissions directed to the general Internet users by any means of communication within the network, in email messages.
 
 9.8. In any case related to the Agreement or Fair the Exhibitor may contact an account manager, who shall provide any information or support needed.
 
