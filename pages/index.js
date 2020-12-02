@@ -8,7 +8,8 @@ import {
   WidgetPartners,
   reduxWrapper,
   configure,
-  WidgetBanner
+  WidgetBanner,
+  WidgetPresenters
 } from 'eventjuicer-site-components';
 
  
@@ -26,10 +27,10 @@ const PageIndex = (props) => (
 
   <WidgetBanner setting="banner_cfp" />
 
-  <WidgetVisitor
+  {/* <WidgetVisitor
     label="visitors.register"
     secondaryLabel="event.parties"
-  />
+  /> */}
 
   <WidgetFeaturedCompanies />
 
@@ -38,7 +39,7 @@ const PageIndex = (props) => (
     secondaryLabel="exhibitors.map.opensales"
   /> */}
 
-  {/* <WidgetPresentersAll /> */}
+  <WidgetPresenters filter={ ()=>true } limit={12}/>
 
   <WidgetRoleButtons first={false} />
 
@@ -98,7 +99,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   await configure(props, {
     settings: settings,
-    preload: ['allexhibitors', 'companies', 'presenters_all']
+    preload: ['allexhibitors', 'companies']
   })
 
   return {props: {}, revalidate: 1}

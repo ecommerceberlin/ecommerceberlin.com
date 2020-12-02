@@ -27,7 +27,7 @@ import {
           {
             name: name,
             location: 'STATION Berlin',
-            date: '18 Februrary 2021',
+            date: '27 May 2021',
           },
         ]}
       />

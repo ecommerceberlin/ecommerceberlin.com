@@ -111,14 +111,14 @@ const settings = {
             title : "",
             opengraph : "",
             widgets : [
-                // {name : "WidgetPresenters", props : {
-                //     first : true,
-                //     disableTemps : true,
-                //     label : "presenters.list_all",
-                //     limit : null,
-                //     bio : true,
-                //     filter : "@filterPresenterWithBio"
-                // }},
+                {name : "WidgetPresenters", props : {
+                    first : true,
+                    disableTemps : true,
+                    label : "presenters.list_all",
+                    limit : null,
+                    bio : true,
+                  //  filter : "@filterPresenterWithBio"
+                }},
                 {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
                 {name : "WidgetVideoWithEventInfo"},
                 // {name : "WidgetSchedule", props : { } },
