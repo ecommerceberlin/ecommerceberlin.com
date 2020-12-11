@@ -113,11 +113,11 @@ const settings = {
             widgets : [
                 {name : "WidgetPresenters", props : {
                     first : true,
-                    disableTemps : true,
+                    disableTemps : false,
                     label : "presenters.list_all",
                     limit : null,
                     bio : true,
-                  //  filter : "@filterPresenterWithBio"
+                    filter : "@filterPresentersBasic"
                 }},
                 {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
                 {name : "WidgetVideoWithEventInfo"},
@@ -347,7 +347,7 @@ const settings = {
               items: [
                 {name: 'visit', to: '/visit'},
                 // {name: 'schedule', to: '/schedule'},
-                // {name: 'presenters', to: '/presenters'},
+                {name: 'presenters', to: '/presenters'},
                 // {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'}
               ]

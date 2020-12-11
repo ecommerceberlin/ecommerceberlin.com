@@ -9,7 +9,7 @@ import {
   reduxWrapper,
   configure,
   WidgetBanner,
-  WidgetFeaturedPresenters
+  WidgetPresenters
 } from 'eventjuicer-site-components';
 
  
@@ -21,48 +21,12 @@ const PageIndex = (props) => (
    
   <React.Fragment>
 
+  <WidgetPresenters limit={100} filter={null} />
+  
   <WidgetVideoWithEventInfo />
-
-  {/* <WidgetSchedule /> */}
-
-  <WidgetBanner setting="banner_cfp" />
-
-  {/* <WidgetVisitor
-    label="visitors.register"
-    secondaryLabel="event.parties"
-  /> */}
 
   <WidgetFeaturedCompanies />
 
-  {/* <WidgetSalesMap
-    label="exhibitors.map.title2"
-    secondaryLabel="exhibitors.map.opensales"
-  /> */}
-
-  <WidgetFeaturedPresenters limit={24}/>
-
-  <WidgetRoleButtons first={false} />
-
-  {/* <FeaturedExhibitors /> */}
-
-  {/* <WidgetVisitor
-    label="visitors.register_alt"
-    secondaryLabel="event.parties"
-  /> */}
-
-  {/* <WidgetVideoWithReviews overlay="black" /> */}
-
-  <WidgetAllExhibitorsColumnList />
-
-  {/* <FsVideo
-    background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
-    videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
-  /> */}
-
-  <WidgetVisitor
-    label="visitors.register"
-    secondaryLabel="event.parties"
-  />
 
   <WidgetPartners
     label="partners.media.title"
@@ -99,7 +63,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   await configure(props, {
     settings: settings,
-    preload: ['allexhibitors', 'companies']
+    preload: ['presenters']
   })
 
   return {props: {}, revalidate: 1}
