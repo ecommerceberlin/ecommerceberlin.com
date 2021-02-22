@@ -83,12 +83,12 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   await configure(props, {
     settings : settings,
-    preload : ["bookingmap", "ticketgroups", "formdata"]
+    preload : ["bookingmap", "ticketgroups"]
   })
 
   return {
     props: {},
-    revalidate: 1
+    revalidate: 10
   }
 
 })

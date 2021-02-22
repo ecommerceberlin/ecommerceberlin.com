@@ -28,7 +28,7 @@
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
     "eventjuicer-site-components": "3.0.38",
-    "next": "^10.0.5",
+    "next": "^10.0.6",
     "next-transpile-modules": "^6.3.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
