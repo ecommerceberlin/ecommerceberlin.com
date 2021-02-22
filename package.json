@@ -27,20 +27,19 @@
   },
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
-    "eventjuicer-site-components": "3.0.4",
+    "eventjuicer-site-components": "3.0.38",
     "next": "^10.0.5",
-    "next-transpile-modules": "^6.0.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-icons": "^4.1.0",
-    "vercel": "^21.0.1"
+    "next-transpile-modules": "^6.3.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-prettier": "^3.2.0",
-    "husky": "^4.3.5",
-    "lint-staged": "^10.5.3",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
   },
   "browserslist": [

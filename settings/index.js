@@ -175,11 +175,11 @@ const settings = {
          */
         //wrapperProps: {},
         sizes: {
-            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781269/ebe_ega/ecommerce_black_2021_v31584x396-.png",
-            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781269/ebe_ega/ecommerce_black_2021_v31584x396-.png",
-            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781269/ebe_ega/ecommerce_black_2021_v31536x768-.png",
-            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781268/ebe_ega/EGA_submit_800x800.png",
-            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1606781268/ebe_ega/EGA_submit_800x800.png"
+            xl: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
+            lg: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
+            md: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
+            sm: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
+            xs: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png"
         },
         href: "https://ecommercegermanyawards.com"
     },
@@ -587,9 +587,12 @@ const settings = {
         ]
     },
 
+
+
+
     appbar : {
         links: [
-            {label: "common.menu.exhibitors.exhibit", color: "primary",  href: "/exhibit", as: "/exhibit", variant: "contained"}
+            {label: "E-commerce Germany Awards", color: "secondary",  href: "https://ecommercegermanyawards.com", variant: "outlined"}
         ],
     },
 
