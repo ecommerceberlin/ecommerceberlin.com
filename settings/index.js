@@ -175,11 +175,11 @@ const settings = {
          */
         //wrapperProps: {},
         sizes: {
-            xl: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
-            lg: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
-            md: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
-            sm: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png",
-            xs: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.png"
+            xl: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
+            lg: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
+            md: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
+            sm: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
+            xs: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf"
         },
         href: "https://ecommercegermanyawards.com"
     },
