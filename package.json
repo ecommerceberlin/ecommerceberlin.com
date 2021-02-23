@@ -27,11 +27,12 @@
   },
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
+    "@material-ui/icons": "^4.11.2",
     "eventjuicer-site-components": "3.0.39",
     "next": "^10.0.6",
     "next-transpile-modules": "^6.3.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-icons": "^4.2.0"
   },
   "devDependencies": {

@@ -1,3 +1,4 @@
+import React from 'react'
 import { reduxWrapper, NextApp, MyHead } from 'eventjuicer-site-components';
 import Head from 'next/head'
 
