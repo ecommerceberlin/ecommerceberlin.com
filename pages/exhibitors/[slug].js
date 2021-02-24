@@ -101,7 +101,7 @@ import {
             slug :slug,
             resource: resource
         },
-        revalidate : 1
+        revalidate : 30
     }
   
   })

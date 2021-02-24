@@ -90,7 +90,7 @@ export const getServerSideProps = reduxWrapper.getStaticProps(async (props) => {
       id: id.toString(),
       resource: resource
     }, 
-    revalidate: 1}
+    revalidate: 30}
 })
 
 

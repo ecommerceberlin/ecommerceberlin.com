@@ -146,7 +146,7 @@ The announcement of the Contest Winners will take place on the “E-commerce Ber
       //preload: [""]
     });
   
-    return {props: {}, revalidate: 1}
+    return {props: {}, revalidate: 600}
 
     
   })

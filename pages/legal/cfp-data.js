@@ -117,7 +117,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     //preload: [""]
   });
 
-  return {props: {}, revalidate: 1}
+  return {props: {}, revalidate: 600}
 
 })
 

@@ -79,7 +79,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
       props : {
           id : id.toString()
       },
-      revalidate : 1
+      revalidate : 10
   }
   
   })

@@ -72,7 +72,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
       props : {
           keyword : "keyword" in params? params.keyword : ""
       },
-      revalidate: 1
+      revalidate: 30
   }
 
 })
