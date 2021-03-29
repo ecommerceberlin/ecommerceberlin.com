@@ -39,7 +39,7 @@ const PageInvite = ( { url, person, exhibitors } ) => {
           name: name,
           cname: cname,
           location: 'Berlin STATION',
-          date: '27th May 2021',
+          date: '24th Feb 2022',
         },
       ]}
     />

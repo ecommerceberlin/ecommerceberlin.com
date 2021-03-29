@@ -41,7 +41,7 @@ const PageTicket = ({code, person, exhibitors }) => {
         {
           name: name,
           location: 'STATION Berlin',
-          date: '27th May 2021',
+          date: '24th Feb 2022',
         },
       ]}
     />
