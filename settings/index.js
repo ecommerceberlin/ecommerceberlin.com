@@ -577,6 +577,8 @@ const settings = {
     },
 
     footer : {
+        primaryStyle: null,
+        secondaryStyle: null,
         iconStyle : "black",
         links : [
             {label: "common.pages.imprint", href : "/legal/imprint"},
