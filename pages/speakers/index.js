@@ -1,6 +1,8 @@
 import { 
   connect, 
-  DynamicPage,
+  WidgetPresenters,
+  WidgetRegForm,
+  WidgetVideoWithEventInfo,
   reduxWrapper,
   configure
 } from 'eventjuicer-site-components';
@@ -8,9 +10,11 @@ import {
 const settings = require('../../settings').default;
 
 const PagePresenters = () => (
-
-  <DynamicPage name="presenters" url="/presenters" />
-
+  <>
+  <WidgetPresenters />
+  <WidgetRegForm setting="visitor.register"  />
+  <WidgetVideoWithEventInfo />
+  </>
 )
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {

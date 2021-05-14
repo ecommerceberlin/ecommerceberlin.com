@@ -4,170 +4,6 @@
 
 const settings = {
     
-    globals : {
-        filterPresenterWithBio : {
-            type : "condition", 
-            required : ["avatar", "logotype", "bio"]
-        },
-        featuredPresenters : {
-            type : "condition",
-            required : ["avatar", "logotype", "bio", "featured"]
-        },
-        anotherTestGlobal : {type : "widget"},
-        vipVisitor : {
-            type : "props",
-            data : {
-
-            }
-        }
-    },
-
-    pages : {
-
-        speaking : {
-
-            title : "",
-            opengraph : "",
-            widgets : [
-
-            ]
-        },
-
-        vip : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                {name : "WidgetVisitor", props : {
-                    data : { important: 1 },
-                    template : "ecommerceberlin-vip-registration",
-                    wrapperProps: {
-                        label : "vips.register.title",
-                    },
-                    fields : [
-                        {name: "referral", required: true},
-                        {name: "email", required: true},
-                        {name: "fname", required: true},
-                        {name: "lname", required: true},
-                        {name: "cname2", required: true},
-                        {name: "position", required: true},
-                        {name: "phone", required: true}
-                      ],
-                    start : ['referral', 'email', 'fname'],
-                    first : true
-                }},
-                {name : "WidgetIconGrid", props : {
-                    setting : "vips.benefits" 
-                }},
-                {name : "WidgetVips", props : {
-                    limit: 12,
-                    mobile: 4
-                }},
-                // {name : "WidgetSchedule", props : { } },
-                {name : "WidgetVideoWithEventInfo"},
-                {name : "WidgetVisitor", props : {
-                    data : { important: 1 },
-                    template : "ecommerceberlin-vip-registration",
-                    wrapperProps: {
-                        label : "vips.register.title",
-                    },
-                    fields : [
-                        {name: "referral", required: true},
-                        {name: "email", required: true},
-                        {name: "fname", required: true},
-                        {name: "lname", required: true},
-                        {name: "cname2", required: true},
-                        {name: "position", required: true},
-                        {name: "phone", required: true}
-                      ],
-                    start : ['referral','email', 'cname2'],
-                    // first : true
-                }},
-             
-                // {name : "WidgetPresenters", props : {
-                //     disableTemps : true,
-                //     label : "presenters.list_featured",
-                //     limit : null,
-                //     bio : true,
-                //     filter : "@featuredPresenters"
-                // }},
-                // {name : "WidgetVisitor", props : {
-                //     data : { important: 1 },
-                //     template : "ecommerceberlin-vip-registration",
-                //     label : "vips.register.title",
-                //     fields : [
-                //         {name: "referral", required: true},
-                //         {name: "email", required: true},
-                //         {name: "fname", required: true},
-                //         {name: "lname", required: true},
-                //         {name: "cname2", required: true},
-                //         {name: "position", required: true},
-                //         {name: "phone", required: true}
-                //       ],
-                //     start : ['referral', 'email', 'cname2'],
-                //     // first : true
-                // }},
-            
-            ],
-        },
-
-       
-        presenters : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                {name : "WidgetPresenters", props : {
-                    first : true,
-                    disableTemps : false,
-                    label : "presenters.list_all",
-                    limit : null,
-                    bio : true,
-                    filter : "@filterPresentersBasic"
-                }},
-                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
-                {name : "WidgetVideoWithEventInfo"},
-                // {name : "WidgetSchedule", props : { } },
-                // {name : "WidgetVisitor", props : {label : "visitors.register"} },
-            ]
-        },
-
-        presenters_all : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                // {name : "WidgetPresenters", props : {
-                //     first : true,
-                //     disableTemps : true,
-                //     label : "presenters.list_all",
-                //     limit : null,
-                //     bio : true,
-                //     filter : "@filterPresenterWithBio"
-                // }},
-                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
-                {name : "WidgetVideoWithEventInfo"},
-                // {name : "WidgetSchedule", props : { } },
-                // {name : "WidgetVisitor", props : {label : "visitors.register"} },
-            ]
-        },
-
-        schedule : {
-            title : "",
-            opengraph : "",
-            widgets : [
-                // {name : "WidgetSchedule", props : {first : true} },
-                {name : "WidgetVisitor", props : {label : "visitors.register_alt"} },
-                {name : "WidgetVideoWithEventInfo"},
-                // {name : "WidgetPresenters", props : {
-                //     disableTemps : true,
-                //     label : "presenters.list_all",
-                //     limit : null,
-                //     bio : true,
-                //     filter : "@filterPresenterWithBio"
-                // }}
-            ]   
-        }
-
-    },
-
     banner_cfp: {
         /**
          * 
@@ -335,6 +171,27 @@ const settings = {
     },
 
     vips : {
+
+        register: {
+
+            data : { important: 1 },
+            template : "ecommerceberlin-vip-registration",
+            wrapperProps: {
+                label : "vips.register.title",
+            },
+            fields : [
+                {name: "referral", required: true},
+                {name: "email", required: true},
+                {name: "fname", required: true},
+                {name: "lname", required: true},
+                {name: "cname2", required: true},
+                {name: "position", required: true},
+                {name: "phone", required: true}
+              ],
+            start : ['referral', 'email', 'fname'],
+            first : true
+
+        },
 
         benefits : {
 

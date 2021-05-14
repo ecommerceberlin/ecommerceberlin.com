@@ -4,14 +4,20 @@ import {
   connect, 
   reduxWrapper,
   configure,
-  DynamicPage 
+  WidgetSchedule,
+  WidgetVideoWithEventInfo,
+  WidgetVisitor
 } from 'eventjuicer-site-components';
 
 const settings = require('../settings').default;
 
 const PageSchedule = () => (
 
-<DynamicPage name="schedule" />
+  <>
+    <WidgetSchedule />
+    <WidgetVisitor setting="visitor.register"  />
+    <WidgetVideoWithEventInfo />
+  </>
 
 )
 
