@@ -15,13 +15,13 @@ const settings = {
          */
         //wrapperProps: {},
         sizes: {
-            xl: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            lg: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            md: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            sm: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf",
-            xs: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1613570526/Awards_vote/1584x396.pdf"
+            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021179/ebev1/1728x240.png",
+            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/1584x396.png",
+            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/900x450.png",
+            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png",
+            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png"
         },
-        href: "https://ecommercegermanyawards.com"
+        href: "https://virtual.ecommerceberlin.com/schedule?utm_source=internal&utm_medium=ebe&utm_campaign=ebev1"
     },
 
 
