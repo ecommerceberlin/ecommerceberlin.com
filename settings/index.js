@@ -494,7 +494,7 @@ const settings = {
 
     appbar : {
         links: [
-            {label: "E-commerce Germany Awards", color: "secondary",  href: "https://ecommercegermanyawards.com", variant: "outlined"}
+            {label: "Virtual Edition", color: "secondary",  href: "https://virtual.ecommerceberlin.com/schedule?utm_source=internal&utm_medium=ebe&utm_campaign=ebev1", variant: "outlined"}
         ],
     },
 
