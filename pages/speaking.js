@@ -71,6 +71,8 @@ const PageSpeaking = () => (
 
   <WidgetSpeaking
 
+      setting="speakers.callforpapers"
+
       options={{
         "categories": [
           'conversion',
@@ -123,27 +125,7 @@ New Developments in E-commerce
   
         <WidgetJurors minToShow={4} />
 
-        <WidgetFaq 
-            baseLabel="cfp.faq"
-            items={[
-            {
-              label: 'exhibitor-status',
-              important: true,
-              buttons: [],
-            },
-            {
-          //    baseLabel: 'exhibitors.faq.before_event',
-              label: 'fee',
-            },
-            { label: 'submission-limits' },
-            { label: 'co-presenter' },
-            { label: 'ranking' },
-            { label: 'fair-play' },
-            {
-            //  baseLabel: 'cfp.faq.before_event',
-              label: 'stage',
-            },
-    ]} />
+        <WidgetFaq setting="speakers.faq" />
 
 
     <WidgetIconGrid setting="speakers.benefits" icons={{

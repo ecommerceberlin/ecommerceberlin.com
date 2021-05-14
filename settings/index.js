@@ -40,7 +40,9 @@ const settings = {
                 {name : "WidgetVisitor", props : {
                     data : { important: 1 },
                     template : "ecommerceberlin-vip-registration",
-                    label : "vips.register.title",
+                    wrapperProps: {
+                        label : "vips.register.title",
+                    },
                     fields : [
                         {name: "referral", required: true},
                         {name: "email", required: true},
@@ -65,7 +67,9 @@ const settings = {
                 {name : "WidgetVisitor", props : {
                     data : { important: 1 },
                     template : "ecommerceberlin-vip-registration",
-                    label : "vips.register.title",
+                    wrapperProps: {
+                        label : "vips.register.title",
+                    },
                     fields : [
                         {name: "referral", required: true},
                         {name: "email", required: true},
@@ -233,6 +237,13 @@ const settings = {
 
 
         callforpapers: {
+
+            wrapperProps: {
+                label: "presenters.form.title"
+            },
+            
+            baseLabel: "presenters",
+            legend: "speakers.callforpapers.legend",
             
             fields: [
                 {name: "email", required: true},
@@ -263,6 +274,34 @@ const settings = {
 
         },
 
+
+        faq: {
+            wrapperProps: {
+              label: "cfp.faq.name"
+            },
+            showTitle: false,
+            baseLabel: "cfp.faq",
+            items: [
+            {
+              label: 'exhibitor-status',
+              important: true,
+              buttons: [],
+            },
+            {
+          //    baseLabel: 'exhibitors.faq.before_event',
+              label: 'fee',
+            },
+            { label: 'submission-limits' },
+            { label: 'co-presenter' },
+            { label: 'ranking' },
+            { label: 'fair-play' },
+            {
+            //  baseLabel: 'cfp.faq.before_event',
+              label: 'stage',
+            },
+            ]
+
+        },
 
         benefits : {
 
@@ -425,7 +464,11 @@ const settings = {
 
         register: {
 
-            label : "visitors.register",
+            wrapperProps: {
+                label: "visitors.register",
+                secondaryLabel: "event.parties"
+            },
+
             fields : [
               {name: "email", required: true},
               {name: "fname", required: true},
