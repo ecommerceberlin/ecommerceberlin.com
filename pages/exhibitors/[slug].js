@@ -38,16 +38,13 @@ import {
       
       <WidgetRoleButtons />
       
-      <WidgetVisitor secondaryLabel="event.parties" />
+      <WidgetVisitor setting="visitor.register" />
   
       {/* <WidgetPresenters /> */}
   
       {/* <WidgetSchedule />*/}
   
-      {/* <WidgetVisitor />  */}
-  
      
-  
       <WidgetAllExhibitorsColumnList />
     </div>
   );

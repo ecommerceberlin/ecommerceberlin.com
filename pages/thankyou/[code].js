@@ -41,7 +41,7 @@ import {
         <WhoIsGonnaBeThere />
       </Wrapper> */}
   
-      <WidgetVisitor label="visitors.register_alt" />
+  <WidgetVisitor setting="visitor.register" />
   
       {/* <Googlemap /> */}
     </>)

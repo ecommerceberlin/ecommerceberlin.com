@@ -16,7 +16,7 @@ const PageAgenda = () => (
 
   
 
-  <WidgetVisitor label="visitors.register_alt" />
+<WidgetVisitor setting="visitor.register" />
  
 ) 
 

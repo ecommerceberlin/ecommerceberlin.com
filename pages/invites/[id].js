@@ -57,7 +57,7 @@ const PageInvite = ( { url, person, exhibitors } ) => {
       <WidgetEventInfo orientation="h" style={{ marginTop: 50 }} />
     </Wrapper>
 
-    <WidgetVisitor label="visitors.register" />
+   <WidgetVisitor setting="visitor.register" />
 
     {/* <WidgetSchedule /> */}
 

@@ -67,7 +67,7 @@ const PageVote  = ({id}) => (
     show_votes={true}
   />
 
-<WidgetVisitor />
+<WidgetVisitor setting="visitor.register" />
 
  <WidgetVips limit={12} mobile={4} />
 

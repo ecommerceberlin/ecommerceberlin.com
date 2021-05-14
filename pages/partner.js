@@ -13,7 +13,7 @@ const settings = require('../settings').default;
 
 const PagePartner = () => (
 
-  <WidgetVisitor label="visitors.register_alt" />
+<WidgetVisitor setting="visitor.register" />
 )
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {

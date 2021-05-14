@@ -69,11 +69,7 @@ const PageSpeaking = () => (
 
   <WidgetPhotostream setting="cfpphotostream" />
 
-  <WidgetSpeaking
-
-      setting="speakers.callforpapers"
-
-      options={{
+  <WidgetSpeaking setting="speakers.callforpapers" options={{
         "categories": [
           'conversion',
           'marketing',

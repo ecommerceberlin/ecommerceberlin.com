@@ -24,10 +24,8 @@ const PageExhibitors = () => (
   />
 
   <WidgetRoleButtons />
-
-  <WidgetVisitor 
-    label="visitors.are_you_visitor" 
-  />
+  
+  <WidgetVisitor setting="visitor.register" />
 
   </>
 

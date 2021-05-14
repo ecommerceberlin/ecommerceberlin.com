@@ -29,10 +29,7 @@ const PageIndex = (props) => (
 
   <WidgetBanner setting="banner_cfp" />
 
-  {/* <WidgetVisitor
-    label="visitors.register"
-    secondaryLabel="event.parties"
-  /> */}
+ 
 
   <WidgetFeaturedCompanies />
 
@@ -41,16 +38,13 @@ const PageIndex = (props) => (
     secondaryLabel="exhibitors.map.opensales"
   /> */}
 
-  <WidgetFeaturedPresenters limit={24}/>
+  <WidgetFeaturedPresenters limit={8}/>
 
   <WidgetRoleButtons first={false} />
 
   {/* <FeaturedExhibitors /> */}
 
-  {/* <WidgetVisitor
-    label="visitors.register_alt"
-    secondaryLabel="event.parties"
-  /> */}
+ 
 
   {/* <WidgetVideoWithReviews overlay="black" /> */}
 
@@ -61,10 +55,7 @@ const PageIndex = (props) => (
     videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
   /> */}
 
-  <WidgetVisitor
-    label="visitors.register"
-    secondaryLabel="event.parties"
-  />
+  <WidgetVisitor setting="visitor.register" />
 
   <WidgetPartners
     label="partners.media.title"

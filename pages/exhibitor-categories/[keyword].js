@@ -19,19 +19,7 @@ const  PageExhibitorsByKeyword = ({keyword}) => {
     <>
       <WidgetExhibitorsByKeyword keyword={keyword} />
 
-      <WidgetVisitor
-        label="visitors.register"
-        color="#ffffff"
-        links={[
-          <Link
-            key="visit"
-            href="/visit"
-            label="visitors.more_info"
-            variant="text"
-            color="secondary"
-          />,
-        ]}
-      />
+    <WidgetVisitor setting="visitor.register" />
 
       <WidgetSalesMap
         label="exhibitors.map.title"

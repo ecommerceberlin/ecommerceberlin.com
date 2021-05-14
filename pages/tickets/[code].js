@@ -67,7 +67,7 @@ const PageTicket = ({code, person, exhibitors }) => {
 
     <WidgetAllExhibitorsColumnList />
 
-    <WidgetVisitor label="visitors.register_alt" />
+    <WidgetVisitor setting="visitor.register" />
   </>
 
     )

@@ -21,20 +21,11 @@ const PageOffers = () => (
 
        <WidgetOffers
           divider={
-            <WidgetVisitor
-              first
-              label="visitors.register_alt"
-              secondaryLabel="event.parties"
-            />
+            <WidgetVisitor setting="visitor.register" />
           }
         />
 
-        <WidgetVisitor
-          first
-          label="visitors.register"
-          secondaryLabel="event.parties"
-        />
-
+      <WidgetVisitor setting="visitor.register" />
         <WidgetRoleButtons />
     </>
 )

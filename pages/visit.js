@@ -24,7 +24,7 @@ const PageVisit = () => (
         <div>
       
 
-        <WidgetVisitor label="visitors.register_alt" first />
+        <WidgetVisitor setting="visitor.register" first />
 
         {/* <WidgetSchedule /> */}
 
@@ -38,14 +38,11 @@ const PageVisit = () => (
 
         <WidgetIconGrid setting="visitor.benefits" />
 
-        <WidgetVisitor label="visitors.register" />
+      <WidgetVisitor setting="visitor.register" />
 
         {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
 
-        {/* <WidgetVisitor label="visitors.register" first /> */}
 
-       
-  
         </div>
 
 )
