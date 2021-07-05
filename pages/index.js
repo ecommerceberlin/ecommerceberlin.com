@@ -11,7 +11,8 @@ import {
   reduxWrapper,
   configure,
   WidgetBanner,
-  WidgetFeaturedPresenters
+  WidgetFeaturedPresenters,
+  WidgetSalesMap
 } from 'eventjuicer-site-components';
 
  
@@ -29,14 +30,12 @@ const PageIndex = (props) => (
 
   <WidgetBanner setting="banner_cfp" />
 
- 
-
   <WidgetFeaturedCompanies />
 
-  {/* <WidgetSalesMap
-    label="exhibitors.map.title2"
-    secondaryLabel="exhibitors.map.opensales"
-  /> */}
+  <WidgetSalesMap
+   label="exhibitors.map.title"
+   secondaryLabel="exhibitors.map.opensales"
+  />
 
   <WidgetFeaturedPresenters limit={8}/>
 
