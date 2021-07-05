@@ -14,14 +14,14 @@ const settings = {
             xl, extra-large: 1920px
          */
         //wrapperProps: {},
-        sizes: {
-            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021179/ebev1/1728x240.png",
-            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/1584x396.png",
-            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/900x450.png",
-            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png",
-            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png"
-        },
-        href: "https://virtual.ecommerceberlin.com/schedule?utm_source=internal&utm_medium=ebe&utm_campaign=ebev1"
+        // sizes: {
+        //     xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021179/ebev1/1728x240.png",
+        //     lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/1584x396.png",
+        //     md: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/900x450.png",
+        //     sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png",
+        //     xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png"
+        // },
+        // href: "https://virtual.ecommerceberlin.com/schedule?utm_source=internal&utm_medium=ebe&utm_campaign=ebev1"
     },
 
 
@@ -398,7 +398,7 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '24th Feb 2022',
+        event_date : 'February 2022',
         event_hours : '10:00-17:00',
 
     },
