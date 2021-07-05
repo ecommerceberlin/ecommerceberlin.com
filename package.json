@@ -7,7 +7,7 @@
     "next": "next",
     "precommit": "lint-staged",
     "dev": "NODE_OPTIONS=--max_old_space_size=8192  NODE_OPTIONS='--inspect' next dev",
-    "build": "GTM='GTM-5RJC4J' next build",
+    "build": "next build",
     "start": "NODE_ENV=production next start"
   },
   "repository": {
@@ -36,7 +36,9 @@
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^7.0.0",

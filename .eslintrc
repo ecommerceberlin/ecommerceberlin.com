@@ -3,5 +3,6 @@
  "rules": {
    "prettier/prettier": "error"
  },
- "extends": ["prettier"]
+ "extends": ["prettier"],
+ "parser": "babel-eslint"
 }
