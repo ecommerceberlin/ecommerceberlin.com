@@ -93,7 +93,7 @@ We hereby explain that direct marketing consists in providing information on the
 
 ## The place of personal data storing 
 
-13. We hereby inform that the data we accumulate are stored on servers that are leased from [Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany] and located at [https://www.hetzner.com/rechtliches/impressum?country=us]
+13. We hereby inform that the data we accumulate are stored on servers that are leased from Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany and located at [https://www.hetzner.com/rechtliches/impressum?country=us](https://www.hetzner.com/rechtliches/impressum?country=us)
 
 ## The rights of people whose data we process
 

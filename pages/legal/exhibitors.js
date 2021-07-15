@@ -31,7 +31,7 @@ const PageLegalExhibitors = () => (
 * 1.2.5. Pavilion - "Pavilion" in the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin
 * 1.2.6. Exhibition space- an exhibition space located in the Pavilion including furnishing, wi-fi, electricity;
 * 1.2.7. Agreement – an agreement concluded on the terms specified in the Regulations between the Organizer and the Exhibitor, defining the rights and obligations of the Organizer and the Exhibitor; 
-* 1.2.8. Fair Website - made available by the Organizer on the Internet at https://ecommerceberlin.com website enabling inter alia conclusion of the Agreement between the Organizer and the Exhibitor;
+* 1.2.8. Fair Website - made available by the Organizer on the Internet at [https://ecommerceberlin.com](https://ecommerceberlin.com) website enabling inter alia conclusion of the Agreement between the Organizer and the Exhibitor;
 * 1.2.9. Visitor - a natural person who is neither an Exhibitor nor a representative of the Organizer, but who is present in the Pavilion during the Fair. 
 * 1.2.10. Additional Services - above-standard benefits provided by the Organizer not falling within any of the categories of Exhibition space, individually agreed with the Exhibitor, in particular as to their scope and remuneration payable to the Organizer. 
 * 1.2.11. Full print stand booth - solid arrangement of the Exhibition space, consisting of: Full print back wall, branded counter, carpet flooring and leaflets holder. The service is not included in the basic Exhibitor package, and the service has to be ordered additionally by the Exhibitor.
@@ -160,7 +160,7 @@ const PageLegalExhibitors = () => (
 
 8.6. The Organizer reserves the right to seek damages in the amount exceeding the amount of contractual penalties.
 
-9. Registration, Advertising and marketing services, account manager services
+## 9. Registration, Advertising and marketing services, account manager services
 
 9.1. The Organizer, within the Reservation Flat Fee after conclusion of the Agreement registers Exhibitor in The Ecommerce Berlin EXPO CRM system without delay. 
 

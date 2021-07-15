@@ -42,7 +42,7 @@ const PageLegalVisitors = () => (
 
 ### 3. Order of the Access
 
-3.1 To order the Access on the subpage of the Service at http://ecommerceberlin.com one must complete the registration form including the following information: email address, first name, surname, job title, brand name, How the User did hear about the Event, mobile no., and then click "Register".
+3.1 To order the Access on the subpage of the Service at [https://ecommerceberlin.com](https://ecommerceberlin.com) one must complete the registration form including the following information: email address, first name, surname, job title, brand name, How the User did hear about the Event, mobile no., and then click "Register".
 
 3.2 By clicking "Register" the User simultaneously accepts these terms and conditions.
 
@@ -68,11 +68,11 @@ const PageLegalVisitors = () => (
 
 ### 6. Personal data
 
-All information about personal data protection and privacy one can find here in our​​ ​<a href="https://ecommerceberlin.com/legal/visitors-data">Information about personal data protection
+All information about personal data protection and privacy one can find here in our​​ ​[https://ecommerceberlin.com/legal/visitors-data](https://ecommerceberlin.com/legal/visitors-data) Information about personal data protection
 
-## 7. Final provisions
+### 7. Final provisions
 
-7.1 These terms and conditions are available on the http://ecommerceberlin.com/visitor-rules, and in the Organizer's office.
+7.1 These terms and conditions are available on the [https://ecommerceberlin.com/legal/visitors](https://ecommerceberlin.com/legal/visitors), and in the Organizer's office.
 
 7.2 Administrator allows anyone to download these terms and conditions and save them on his own data carrier.
 
