@@ -22,7 +22,7 @@ const PageLegalVisitorsData = () => (
     
 ## General information and contact details of the Administrator
 
-1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), ul. Jana Matejki 52/4, 60-770 Poznań (Poland), 
+1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), ul. Botaniczna 26/2, 60-586 Poznań (Poland), 
 entered into the Register of Entrepreneurs under the National Court Register number 0000592712, 
 whose files are kept by the District Court Poznań Nowe Miasto and Wilda in Poznań, 
 8th Economic Department of the National Court Register, that uses tax identification number (NIP): 7792423665 and REGON statistical number: 363746333, 
@@ -31,7 +31,7 @@ and repealing Directive 95/46/EC (General Data Protection Regulation), hereinaft
 hereby presents this information, asking whoever it may concern to get acquainted with it.
 
 2. The Administrator provides the following contact details for communication regarding personal data processing. 
-Email address: office@ecommercecapitals.com, address: ul. Jana Matejki 52/4, 60-770 Poznań (Poland).
+Email address: office@ecommercecapitals.com, address: ul. Botaniczna 26/2, 60-586 Poznań (Poland).
 
 ## Categories of personal data subject to processing and information on the freedom to provide them
 
