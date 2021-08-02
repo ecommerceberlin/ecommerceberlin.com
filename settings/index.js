@@ -105,7 +105,7 @@ const settings = {
                 'cname2'
             ],
 
-            ticket_id : 1842,
+            ticket_id : 1950,
             email_template : "ebe-presenters-application",
 
         },
