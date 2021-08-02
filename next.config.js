@@ -17,6 +17,12 @@ const withTM = require('next-transpile-modules')(['eventjuicer-site-components']
 
       // config.optimization.minimize = false
 
+      config.module.rules.push({
+        test: /\.md$/,
+        use: 'raw-loader',
+      });
+
+      
       config.resolve.alias['react'] = path.resolve(__dirname, '.', 'node_modules', 'react');
       return config
     },
