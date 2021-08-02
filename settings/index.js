@@ -532,11 +532,11 @@ const settings = {
         baseLabel: "cfp.timeline",
 
         items : [
-            {date: "2020-09-01", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
-            {date: "2020-10-01", name: "public-voting", icon:  "Public" },
-            {date: "2020-10-23", name: "qualification", icon:  "Assessment" },
-            {date: "2020-10-26", name: "jury-voting", icon:  "HowToVote" },
-            {date: "2020-10-30", name: "results", icon:  "Mic", active: false }
+            {date: "2021-09-01", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
+            {date: "2021-10-01", name: "public-voting", icon:  "Public" },
+            {date: "2021-10-21", name: "qualification", icon:  "Assessment" },
+            {date: "2021-10-22", name: "jury-voting", icon:  "HowToVote" },
+            {date: "2021-10-29", name: "results", icon:  "Mic", active: false }
             
         ]
 
