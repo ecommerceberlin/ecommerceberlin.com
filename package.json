@@ -28,6 +28,7 @@
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
+    "@sentry/nextjs": "^6.10.0",
     "eventjuicer-site-components": "3.5.25",
     "next": "11.0.1",
     "next-transpile-modules": "^8.0.0",
