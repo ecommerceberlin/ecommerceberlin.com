@@ -21,6 +21,18 @@ import {
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 
+
+  
+import TrendingUp from '@material-ui/icons/TrendingUp';
+import EuroSymbol from '@material-ui/icons/EuroSymbol';
+import EmojiObjects from '@material-ui/icons/EmojiObjects';
+import VolumeUp from '@material-ui/icons/VolumeUp';
+import Power from '@material-ui/icons/Power';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
+
+
+
+
 const settings = require('../../settings').default;
 
 const DynamicWidgetVoteWithLinkedIn = dynamic(
@@ -64,7 +76,15 @@ const PageVote  = ({id}) => (
     keyword_source="presentation_category"
     keyword={null}
     label="callforpapers.categories.title"
-    show_votes={true}
+    show_votes={false}
+    icons={{
+      conversion: TrendingUp,
+      logistics: LocalShippingIcon,
+      payments: EuroSymbol,
+      trends: EmojiObjects,
+      marketing: VolumeUp,
+      it: Power
+    }}
   />
 
 <WidgetVisitor setting="visitor.register" />
