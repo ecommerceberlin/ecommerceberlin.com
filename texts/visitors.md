@@ -5,7 +5,7 @@
 
 1.1 The Organizer - E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. (E-Commerce Capitals limited liability company limited partnership) with its registered seat in Poznan, Poland, Botaniczna St. No. 26/2, 60-586 Poznan, entered in the Register under the number KRS 0000592712, NIP 7792439665, REGON 363746333, which registration files are kept by the District Court Poznan - Nowe Miasto and Wilda in Poznan, VIII Commercial Division of the National Court Register (Sąd Rejonowy Poznań – Nowe Miasto i Wilda w Poznaniu VIII Wydział Gospodarczy Krajowego Rejestru Sądowego)
 
-1.2 Service – the Internet service available on the Internet at www.ecommerceberlin.com, under which the administrator enables to use the Application for ordering the Access to the online streaming.
+1.2 Service – the Internet service available on the Internet at [www.ecommerceberlin.com](www.ecommerceberlin.com), under which the administrator enables to use the Application for ordering the Access to the online streaming.
 
 1.3 The Application - the system available through the Service where the User can order the Access to the online streaming.
 

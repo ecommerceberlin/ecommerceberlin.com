@@ -25,8 +25,8 @@ providing the following personal data:
 * job position and represented brand (the company of the employer or their own company).
 * photo image and video image
 
-4. The Company is also the organizer of Call for Papers Contest, hereinafter referred to as ‘Fair’, 
-in which anyone who has an active profile on Facebook can give eight votes. 
+4. The Company is also the organizer of Call for Papers Contest, hereinafter referred to as ‘Contest’, 
+in which anyone who has an active profile on Facebook can give six votes. 
 With regard to the Contest we process email address of the voter.
 
 5. Provision of personal data is voluntary. However, unless they are provided, 
@@ -43,7 +43,7 @@ However, unless they are provided, it will be impossible to vote in the Contest.
 * to generate individual admission ticket to enter the Fair as a guest in line with the Rules for Visitors, Terms and Conditions of Ordering Tickets, hereinafter referred to as ‘Rules for Visitors’,
 * to verify the Guest’s identity at the entry to the Fair to secure the safety of participants of the Fair, under the Rules for Visitors,
 * to realize communication-related to the Fair, under the Rules for Visitors,
-* <li>to send emails as mentioned below, under the Rules for Visitors,
+* to send emails as mentioned below, under the Rules for Visitors,
 * to realize direct marketing activities for Administrator’s services – email communication related to the current and subsequent editions of the Fair,
 * to verify if the voter has voted in the Contest.
 * to promote the event in social media
