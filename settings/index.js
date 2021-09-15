@@ -1,5 +1,66 @@
+const sharedBenefits = [
+    {
+        icon : "A",
+        primary : "shared"
+    }
+]
 
-//
+const standardBenefits =    [{
+    icon : "Space", 
+    primary : "space"
+    },
+    {
+    icon : "Furniture",
+    primary : "furniture"
+    },
+    {
+    icon : "Electricity", 
+    primary : "electricity"
+    },
+    {
+    icon : "A", 
+    primary : "reps"
+    },
+    {
+    icon : "A",
+    primary : "party"
+    },
+    {
+    icon : "A",
+    primary : "socialmedia"
+    },...sharedBenefits]
+
+const premiumBenefits =    [{
+    icon : "Space", 
+    primary : "space_premium"
+    },
+    {
+    icon : "Furniture",
+    primary : "furniture"
+    },
+    {
+    icon : "Electricity", 
+    primary : "electricity_premium"
+    },
+    {
+    icon : "A", 
+    primary : "reps_premium"
+    },
+    {
+    icon : "A",
+    primary : "party_premium"
+    },
+    {
+    icon : "A",
+    primary : "socialmedia_premium"
+    },
+    {
+        icon : "A",
+        primary : "co-exhibitor"
+    },
+...sharedBenefits]
+
+
 
 
 const settings = {
@@ -34,7 +95,8 @@ const settings = {
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com",
         post_api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
         og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
-    
+        service_api : "https://api.eventjuicer.com/v1/services",
+
     },
     hero : {
 
@@ -59,15 +121,22 @@ const settings = {
         boothStyleMapping: {
             322: "light", //STD
             323: "standard", //HOT
-            324: "hot", //SHOT
-            329: "superHot", //GRAND
-            325: "ultra", //PREMIUM GRAND
+            324: "hot", //SUPER HOT
+            325: "superHot", //GRAND
+            329: "ultra", //PREMIUM GRAND
 
             328: "stage",
             326: "networking",
             // 321: "boothSold"
         },
-        api : "https://order.ecommerceberlin.com/preorder"
+        api : "https://order.ecommerceberlin.com/preorder",
+        benefits: {
+            322: standardBenefits, //STD
+            323: standardBenefits, //HOT
+            324: standardBenefits, //SUPER HOT
+            325: premiumBenefits, //GRAND
+            329: premiumBenefits, //PREMIUM GRAND
+        }
     },
 
     speakers : {
@@ -111,6 +180,29 @@ const settings = {
 
         },
 
+        callforpapers_update: {
+
+            wrapperProps: {
+                label: "presenters.update.title",
+                // secondaryLabel: ""
+            },
+            legend: "",
+            baseLabel: "presenters",
+            fields: [
+                {name: "presentation_title", required: true},
+                {name: "presentation_description", required: true, long: true },
+                {name: "presenter", required: true},
+                {name: "position", required: true},
+                {name: "logotype", required: true},
+                {name: "avatar", required: true},
+                {name: "bio", long: true, required: true},
+               
+            ],
+            
+            start: [],
+
+    
+        },
 
         faq: {
             wrapperProps: {
