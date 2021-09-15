@@ -1,37 +1,19 @@
 import React from 'react'
 import {
   connect,
-  MyHead,
-  WidgetVoteWithLinkedIn,
   WidgetVisitor,
-  WidgetCallForPapers,
   WidgetVotable,
- // WidgetSalesMap,
   WidgetVoteStatus,
   WidgetRoleButtons,
-  LayoutMain as Layout,
-  WidgetVips,
-  MyTypography as Typography,
-  Markdown,
   reduxWrapper,
   configure,
-  HeadVote
+  HeadVote,
+  WidgetRegForm,
+  WidgetSalesMap
 } from 'eventjuicer-site-components';
-
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
-
-
-  
-import TrendingUp from '@material-ui/icons/TrendingUp';
-import EuroSymbol from '@material-ui/icons/EuroSymbol';
-import EmojiObjects from '@material-ui/icons/EmojiObjects';
-import VolumeUp from '@material-ui/icons/VolumeUp';
-import Power from '@material-ui/icons/Power';
-import LocalShippingIcon from '@material-ui/icons/LocalShipping';
-
-
-
+import VotingCategories from '../../compositions/VotingCategories'
 
 const settings = require('../../settings').default;
 
@@ -41,55 +23,37 @@ const DynamicWidgetVoteWithLinkedIn = dynamic(
 )
 
 
+const onVoted = (canVote) => (<>
+  <WidgetVoteStatus max_votes={6} />
+  {canVote ? 
+    <div><VotingCategories label={null} secondaryLabel={null} /><WidgetRegForm setting="visitor.register" wrapperProps={{secondaryLabel: "visitors.register_question"}} /></div>: 
+    <WidgetRegForm setting="visitor.register" wrapperProps={{secondaryLabel: "visitors.register"}} />
+  }</>)
+
 const PageVote  = ({id}) => (
 
   
   <div>
 
-  <HeadVote id={id}>{(data) => <Head>{data}</Head>}</HeadVote> 
+  <HeadVote id={id} template="template_teh20_callforpapers_pl">{(data) => <Head>{data}</Head>}</HeadVote> 
    
   <WidgetVotable
       id={id}
       asPath={`/vote/${id}`}
-      // vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} />}
-      status={<WidgetVoteStatus max_votes={6} />}
+      vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} onVoted={onVoted} />}
+      status={null}
       show_votes={false}
     />
 
-  <WidgetCallForPapers
-    intro={
-      <div style={{ width: '80%' }}>
-        <WidgetVoteStatus max_votes={6} />
-        <Typography template="benefitsText">
-          <Markdown label="callforpapers.voting.general-rules.description" />
-        </Typography>
-      </div>
-    }
-    limit={350}
-    filter={item => "presentation_description" in item       
-    //&& item.presentation_description.length > 10 
-    //&& "avatar" in item 
-    //&& item.avatar.indexOf('http') > -1 
-    //&& "logotype" in item 
-    //&& item.logotype.indexOf('http') > -1
-    }
-    keyword_source="presentation_category"
-    keyword={null}
-    label="callforpapers.categories.title"
-    show_votes={false}
-    icons={{
-      conversion: TrendingUp,
-      logistics: LocalShippingIcon,
-      payments: EuroSymbol,
-      trends: EmojiObjects,
-      marketing: VolumeUp,
-      it: Power
-    }}
-  />
+ <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_alt"}} />
 
+
+  <VotingCategories />
+
+ 
 <WidgetVisitor setting="visitor.register" />
 
- <WidgetVips limit={12} mobile={4} />
+ {/* <WidgetVips limit={12} mobile={4} /> */}
 
   {/* {id && (
     <WidgetSalesMap
@@ -109,7 +73,7 @@ export const getStaticPaths = () => {
 
   return {paths: [
 
-  ], fallback: true}
+  ], fallback: "blocking"}
 
 }
  
@@ -127,7 +91,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     props : {
       id : id
     },
-    revalidate: 10
+    revalidate: 15
   }
 
 })

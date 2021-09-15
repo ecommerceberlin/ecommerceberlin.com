@@ -1,55 +1,36 @@
 import {
   connect,
   MyHead as Head,
-  WidgetContestantCategories,
  // WidgetSalesMap,
   WidgetVoteStatus,
-  WidgetRoleButtons,
+  // WidgetRoleButtons,
   LayoutMain as Layout,
   MyTypography as Typography,
   Markdown,
   reduxWrapper,
-  configure
+  configure,
+  Centered
 } from 'eventjuicer-site-components';
 
+
+import VotingCategories from '../../compositions/VotingCategories'
 
 const settings = require('../../settings').default;
 
 const PageVote  = () => (
 
-    <div>
-
-  <WidgetContestantCategories
-    intro={
-      <div style={{ width: '80%' }}>
-        <WidgetVoteStatus max_votes={6} />
-        <Typography template="benefitsText">
-          <Markdown label="callforpapers.voting.general-rules.description" />
-        </Typography>
+  <VotingCategories intro={
+    
+    <Centered>
+        <div style={{ maxWidth: 600, marginLeft: "auto", marginRight: "auto", marginBottom: 50}}>
+    <WidgetVoteStatus max_votes={6} />
+      <Typography template="benefitsText">
+        <Markdown label="callforpapers.voting.general-rules.description" />
+      </Typography>
       </div>
-    }
-    limit={350}
-    filter={item => item
-    //  item => "presentation_description" in item 
-      //&& item.presentation_description.length > 10 
-      //&& "avatar" in item 
-      //&& item.avatar.indexOf('http') > -1 
-      //&& "logotype" in item 
-      //&& item.logotype.indexOf('http') > -1
-    }
-    keyword_source="presentation_category"
-    label='callforpapers.categories.title'
-    show_votes={false}
-    first={true}
-  />
-
- 
-
-  <WidgetRoleButtons />
- 
-  </div>
-  
-) 
+      </Centered>
+   
+  } />) 
 
  
 

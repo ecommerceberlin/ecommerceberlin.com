@@ -12,7 +12,8 @@ import {
   Markdown,
   reduxWrapper,
   configure,
-  tagsUsed
+  tagsUsed,
+  Centered
 } from 'eventjuicer-site-components';
 
 
@@ -27,12 +28,14 @@ const PageVote  = ({category}) => {
       
         <WidgetCallForPapers
           intro={
-            <div style={{ width: '80%' }}>
+            <Centered>
+            <div style={{  maxWidth: 600, marginLeft: "auto", marginRight: "auto", marginBottom: 50 }}>
               <WidgetVoteStatus max_votes={6} />
               <Typography template="benefitsText">
                 <Markdown label="callforpapers.voting.general-rules.description" />
               </Typography>
             </div>
+            </Centered>
           }
           limit={350}
           filter={item => "presentation_description" in item       
@@ -48,6 +51,7 @@ const PageVote  = ({category}) => {
           show_votes={false}
           first={true}
           renderAs="table"
+          selected={ ()=>false }
         />
       
        
@@ -98,7 +102,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     props : {
         category : category
     },
-    revalidate: 10
+    revalidate: 15
   }
 
 })
