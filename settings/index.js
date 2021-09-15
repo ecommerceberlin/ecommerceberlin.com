@@ -26,6 +26,7 @@ const settings = {
 
 
     system : {
+        use_old_ecommerce_module: 1,
         passwords : {
             'admin': '1751bfe48d5ad21fd9d'
         },
