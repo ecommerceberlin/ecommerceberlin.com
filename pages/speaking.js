@@ -16,9 +16,10 @@ import {
   WidgetPhotostream,
   WidgetVerticalTimeline,
   TwoColsLayout as Section,
-  MyTypography
+  MyTypography,
+  MyHead
 } from 'eventjuicer-site-components';
-
+import Head from 'next/head'
 import NoteAdd from '@material-ui/icons/NoteAdd'
 import HowToVote from '@material-ui/icons/HowToVote'
 import Public from '@material-ui/icons/Public'
@@ -30,9 +31,13 @@ import Assessment from '@material-ui/icons/Assessment'
 const settings = require('../settings').default;
 
 
+
 const PageSpeaking = () => (
 
   <div>
+
+      <MyHead image="https://res.cloudinary.com/eventjuicer/image/upload/v1631805700/og_ebe2022_speaking.png" url="/speaking">{(data) => <Head>{data}</Head>}</MyHead> 
+
        <Wrapper first label="cfp.hello.title">
        
        <Section 
