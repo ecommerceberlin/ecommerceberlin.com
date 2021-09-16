@@ -30,6 +30,12 @@ const onVoted = (canVote) => (<>
     <WidgetRegForm setting="visitor.register" wrapperProps={{secondaryLabel: "visitors.register"}} />
   }</>)
 
+
+  /**
+   * <DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} onVoted={onVoted} />
+   */
+
+
 const PageVote  = ({id}) => (
 
   
@@ -40,7 +46,7 @@ const PageVote  = ({id}) => (
   <WidgetVotable
       id={id}
       asPath={`/vote/${id}`}
-      vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} onVoted={onVoted} />}
+      vote={null }
       status={null}
       show_votes={false}
     />
