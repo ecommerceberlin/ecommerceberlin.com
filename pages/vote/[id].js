@@ -41,7 +41,7 @@ const PageVote  = ({id}) => (
   
   <div>
 
-  <HeadVote id={id} template="template_teh20_callforpapers_pl">{(data) => <Head>{data}</Head>}</HeadVote> 
+  <HeadVote id={id} template="og_ebe2022_cfp">{(data) => <Head>{data}</Head>}</HeadVote> 
    
   <WidgetVotable
       id={id}
