@@ -46,7 +46,7 @@ const PageVote  = ({id}) => (
   <WidgetVotable
       id={id}
       asPath={`/vote/${id}`}
-      vote={null }
+      vote={  <DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} onVoted={onVoted} />  }
       status={null}
       show_votes={false}
     />
