@@ -93,7 +93,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   await configure(props, {
     settings: settings,
-    preload: ['allexhibitors', 'companies', 'callforpapers']
+    preload: ['allexhibitors', 'companies']
   })
 
   return {props: {}, revalidate: 30}
