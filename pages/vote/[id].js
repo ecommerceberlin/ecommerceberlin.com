@@ -51,10 +51,11 @@ const PageVote  = ({id}) => (
       show_votes={false}
     />
 
- <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_alt"}} />
-
-
   <VotingCategories />
+
+  <WidgetRoleButtons />
+
+ <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_cfp"}} />
 
  
 <WidgetVisitor setting="visitor.register" />
@@ -69,7 +70,7 @@ const PageVote  = ({id}) => (
     />
   )} */}
 
-  <WidgetRoleButtons />
+
  
   </div>
   

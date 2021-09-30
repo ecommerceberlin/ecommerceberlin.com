@@ -586,8 +586,9 @@ const settings = {
 
 
     appbar : {
+        logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_40,c_fit,f_auto/v1633022810/EBE_WH.png",
         links: [
-            {label: "Exhibit", color: "primary",  href: "/exhibit", variant: "contained"}
+            {label: "Vote!", color: "secondary",  href: "/vote", variant: "contained"}
         ],
     },
 
