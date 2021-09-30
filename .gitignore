@@ -60,5 +60,5 @@ typings/
 .next/
 .DS_Store
 now.json
-
 .vercel
+package-lock.json
