@@ -16,6 +16,7 @@ import {
 } from 'eventjuicer-site-components';
 
  
+import VotingCategories from '../compositions/VotingCategories'
 
 const settings = require('../settings').default;
 
@@ -28,8 +29,12 @@ const PageIndex = (props) => (
 
   {/* <WidgetSchedule /> */}
 
-  <WidgetBanner setting="banner_cfp" />
+  {/* <WidgetBanner setting="banner_cfp" /> */}
 
+  <VotingCategories intro={ null } />
+
+  <WidgetRoleButtons first={false} />
+  
   <WidgetFeaturedCompanies />
 
   <WidgetSalesMap
@@ -39,12 +44,9 @@ const PageIndex = (props) => (
 
   <WidgetFeaturedPresenters limit={8}/>
 
-  <WidgetRoleButtons first={false} />
+
 
   {/* <FeaturedExhibitors /> */}
-
- 
-
   {/* <WidgetVideoWithReviews overlay="black" /> */}
 
   <WidgetAllExhibitorsColumnList />
@@ -91,10 +93,10 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   await configure(props, {
     settings: settings,
-    preload: ['allexhibitors', 'companies']
+    preload: ['allexhibitors', 'companies', 'callforpapers']
   })
 
-  return {props: {}, revalidate: 10}
+  return {props: {}, revalidate: 30}
 
   
 })

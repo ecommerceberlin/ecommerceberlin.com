@@ -75,14 +75,14 @@ const settings = {
             xl, extra-large: 1920px
          */
         //wrapperProps: {},
-        // sizes: {
-        //     xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021179/ebev1/1728x240.png",
-        //     lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/1584x396.png",
-        //     md: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021178/ebev1/900x450.png",
-        //     sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png",
-        //     xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1621021180/ebev1/800x800.png"
-        // },
-        // href: "https://virtual.ecommerceberlin.com/schedule?utm_source=internal&utm_medium=ebe&utm_campaign=ebev1"
+        sizes: {
+            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1633037966/ebe_cfp2021/ebe_cfp2021_1584x396.png",
+            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1633037966/ebe_cfp2021/ebe_cfp2021_1500x500.png",
+            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1633037964/ebe_cfp2021/ebe_cfp2021_1104x736.png",
+            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1633037964/ebe_cfp2021/ebe_cfp2021_800x800.png",
+            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1633037964/ebe_cfp2021/ebe_cfp2021_800x800.png"
+        },
+        href: "/vote"
     },
 
 
@@ -586,7 +586,7 @@ const settings = {
 
 
     appbar : {
-        logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_40,c_fit,f_auto/v1633022810/EBE_WH.png",
+        logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1633022810/EBE_WH.png",
         links: [
             {label: "Vote!", color: "secondary",  href: "/vote", variant: "contained"}
         ],
