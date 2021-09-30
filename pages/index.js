@@ -45,7 +45,6 @@ const PageIndex = (props) => (
   <WidgetFeaturedPresenters limit={8}/>
 
 
-
   {/* <FeaturedExhibitors /> */}
   {/* <WidgetVideoWithReviews overlay="black" /> */}
 
