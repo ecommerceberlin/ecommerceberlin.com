@@ -6,7 +6,7 @@
   "scripts": {
     "next": "next",
     "precommit": "lint-staged",
-    "dev": "NODE_OPTIONS=--max_old_space_size=8192  NODE_OPTIONS='--inspect' next dev",
+    "dev": "NODE_OPTIONS=--max_old_space_size=4192  NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "NODE_ENV=production next start"
   },
@@ -29,7 +29,7 @@
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
     "@sentry/nextjs": "^6.13.2",
-    "eventjuicer-site-components": "4.2.7",
+    "eventjuicer-site-components": "4.2.8",
     "next": "11.1.2",
     "next-transpile-modules": "^8.0.0",
     "raw-loader": "^4.0.2",
