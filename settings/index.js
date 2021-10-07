@@ -530,7 +530,7 @@ const settings = {
                 langs : ["de"],
                 avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386301/ecommerceberlin_support_lz.jpg',
                 phone: '+49 157 7254 7327',
-                email: 'lucas@ecommerceberlin.com',
+                email: 'hello@ecommerceberlin.com',
                 chatlio : true
             },
             {
