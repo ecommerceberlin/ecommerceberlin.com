@@ -28,23 +28,23 @@
   "homepage": "https://github.com/ecommerceberlin/homepage#readme",
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
-    "@sentry/nextjs": "^6.13.2",
-    "eventjuicer-site-components": "4.2.9",
+    "@sentry/nextjs": "^6.13.3",
+    "eventjuicer-site-components": "4.3.11",
     "next": "11.1.2",
     "next-transpile-modules": "^8.0.0",
     "raw-loader": "^4.0.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0"
+    "react-dom": "^17.0.2"
+
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
+    "lint-staged": "^11.2.3",
     "prettier": "^2.4.1"
   },
   "browserslist": [
