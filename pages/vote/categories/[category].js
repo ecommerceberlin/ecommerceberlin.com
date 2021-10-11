@@ -51,7 +51,7 @@ const PageVote  = ({category}) => {
           show_votes={true}
           first={true}
           renderAs="table"
-          selected={ ()=>false }
+          selected={ (row, i) => i < 5 }
         />
       
        
