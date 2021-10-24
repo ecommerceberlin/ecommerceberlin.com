@@ -327,8 +327,8 @@ const settings = {
               items: [
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
-                // {name: 'cfp', to: '/speaking'},
-                {name: 'vote', to: '/vote'},
+                //{name: 'cfp', to: '/speaking'},
+                //{name: 'vote', to: '/vote'},
               ]
             },
             {
@@ -588,7 +588,7 @@ const settings = {
     appbar : {
         logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1633022810/EBE_WH.png",
         links: [
-            {label: "Vote!", color: "secondary",  href: "/vote", variant: "contained"}
+            // {label: "Vote!", color: "secondary",  href: "/vote", variant: "contained"}
         ],
     },
 

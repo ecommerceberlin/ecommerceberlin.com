@@ -31,11 +31,13 @@ const PageIndex = (props) => (
 
   {/* <WidgetBanner setting="banner_cfp" /> */}
 
-  <VotingCategories intro={ null } />
+  {/* <VotingCategories intro={ null } /> */}
 
+  <WidgetFeaturedCompanies />
+  
   <WidgetRoleButtons first={false} />
   
-  <WidgetFeaturedCompanies />
+
 
   <WidgetSalesMap
    label="exhibitors.map.title"
