@@ -1,70 +1,71 @@
 import {
   connect,
-  MyHead as Head,
+  MyHead,
   get as _get,
   getInviteOgImage,
   WidgetVisitor,
-  WidgetFeaturedExhibitors,
   WidgetSchedule,
   WidgetEventInfo,
-  Typography,
   Wrapper,
- 
-  // EventInfo,
+  WidgetSalesMap,
   reduxWrapper,
   configure
 } from 'eventjuicer-site-components';
 
+import Head from 'next/head'
+
 
 const settings = require('../../settings').default;
 
-const PageInvite = ( { url, person, exhibitors } ) => {
+const PageInvite = ( { id, person, exhibitors } ) => {
 
   const name = `${_get(person, 'fname', '')} ${_get(person, 'lname', '')}`;
     const cname = `${_get(person, 'cname2', '')}`;
 
   return (
     <div>
-    <Head
-      url="/invites"
-      image={getInviteOgImage(
-        `See You! ${_get(person, 'fname', '')} from ${_get(
-          person,
-          'cname2',
-        )}`,
-      )}
+  
+    <MyHead
+      url={`/invites/${id}`}
+      image={getInviteOgImage(`Będę! ${_get(person, 'fname', '')} z ${_get(person, 'cname2',"")}`, "teh20_visitor_template1")}
       titleLabel={[
         'visitors.opengraph.title',
         {
           name: name,
           cname: cname,
-          location: 'Berlin STATION',
-          date: 'February 2022',
+          location: 'Warszawa EXPO XXI',
+          date: '20 października 2021',
         },
       ]}
-    />
+    >{(data=> <Head>{data}</Head>)}</MyHead>
 
     <Wrapper
       first
       label={['visitors.invite.title', { name, cname }]}
       secondaryTitle="visitors.invite.description"
     >
-      <Typography
+      {/* <Typography
         template="visitor_invite_join"
         label={['visitors.invite.will_you_join', { name, cname }]}
       />
-
-      <WidgetEventInfo orientation="h" style={{ marginTop: 50 }} />
+ */}
+     
     </Wrapper>
 
-   <WidgetVisitor setting="visitor.register" />
+   <WidgetVisitor setting="visitor.register"  right={
 
-    {/* <WidgetSchedule /> */}
+<WidgetEventInfo  orientation="v" style={{ marginTop: 50 }} primaryStyle={null} secondaryStyle={null}  iconStyle="black" />
+   }/>
 
-    <WidgetFeaturedExhibitors
-      label="exhibitors.list_featured"
-      secondaryTitle=""
-    />
+    <WidgetSchedule />
+    <WidgetSalesMap />
+ <WidgetVisitor setting="visitor.register"  right={
+<WidgetEventInfo  orientation="v" style={{ marginTop: 50 }} primaryStyle={null} secondaryStyle={null}  iconStyle="black" />
+
+   }/>
+
+
+
  </div>
 
   )
@@ -73,11 +74,10 @@ const PageInvite = ( { url, person, exhibitors } ) => {
 
 
  
-export const getServerSideProps = reduxWrapper.getStaticProps(async (props) => {
+export const getServerSideProps = reduxWrapper.getServerSideProps(async (props) => {
 
 
   const {params: {id}} = props
-
   const resource = `visitors/${id}`;
 
   await configure(props, {
@@ -89,8 +89,7 @@ export const getServerSideProps = reduxWrapper.getStaticProps(async (props) => {
     props: {
       id: id.toString(),
       resource: resource
-    }, 
-    revalidate: 30}
+    }}
 })
 
 
