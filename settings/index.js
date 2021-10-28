@@ -500,13 +500,13 @@ const settings = {
         accent : "gold",
         items : [
         {
-          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/visit.jpg',
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto,q_auto/v1579000835/visit.jpg',
           label: 'common.visitor',
           width: '50%',
           target : "/visit"
         },
         {
-          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto/v1579000835/exhibit.jpg',
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/w_768,c_fit,f_auto,q_auto/v1579000835/exhibit.jpg',
           label: 'common.exhibitor',
           width: '50%',
           target : "/exhibit"
