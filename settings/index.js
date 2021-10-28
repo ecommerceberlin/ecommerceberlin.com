@@ -491,7 +491,7 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : 'February 2022',
+        event_date : '9th February 2022',
         event_hours : '10:00-17:00',
 
     },
