@@ -18,6 +18,46 @@ const SentryWebpackPluginOptions = {
 
 module.exports = withSentryConfig(withTM({
 
+    async redirects() {
+    return [
+      {
+        source: '/exhibitors/etlde',
+        destination: '/exhibitors/fynaxio',
+        permanent: true,
+      },
+      {
+        source: '/exhibitors/4elements-gruppede',
+        destination: '/exhibitors/yousellwesendde',
+        permanent: true,
+      },
+      {
+        source: '/exhibitors/real-digitalde',
+        destination: '/exhibitors/kauflandde',
+        permanent: true,
+      },
+      {
+        source: '/exhibitors/luminatiio',
+        destination: '/exhibitors/brightdatacom',
+        permanent: true,
+      },
+      {
+        source: '/exhibitors/a4bgroupcom',
+        destination: '/exhibitors/bigbuyeu',
+        permanent: true,
+      },
+      {
+        source: '/exhibitors/parsionatecom',
+        destination: '/exhibitors/priceintelligencenet',
+        permanent: true,
+      },
+      {
+        source: '/exhibitors/ulmahandlingcom',
+        destination: '/exhibitors/picktolightsystemscom',
+        permanent: true,
+      },
+    ]
+    },
+
     eslint: {
       // Warning: Dangerously allow production builds to successfully complete even if
       // your project has ESLint errors.
