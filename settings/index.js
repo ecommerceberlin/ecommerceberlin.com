@@ -87,7 +87,7 @@ const settings = {
 
 
     system : {
-        use_old_ecommerce_module: 1,
+        // use_old_ecommerce_module: 1, //MOVED to bookingmap
         passwords : {
             'admin': '1751bfe48d5ad21fd9d'
         },
@@ -109,6 +109,7 @@ const settings = {
     },
 
     bookingmap : {
+        use_old_ecommerce_module: 1,
         height : 2600,
         steps : [
             "choose_booth",
