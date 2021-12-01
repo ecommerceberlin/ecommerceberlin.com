@@ -281,15 +281,15 @@ const settings = {
                 {name: "position", required: true},
                 {name: "phone", required: true}
               ],
+            ticket_id : 1830,
             start : ['referral', 'email', 'fname'],
             first : true
-
         },
 
         benefits : {
 
             label: "vips.benefits.title",
-     //       secondaryLabel: "vips.benefits.description",
+            //secondaryLabel: "vips.benefits.description",
             baseLabel: "vips.benefits",
             typography: "subtitle",
             dense: true,

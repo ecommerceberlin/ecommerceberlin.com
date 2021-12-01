@@ -39,7 +39,7 @@ export async function getStaticPaths() {
   const companies = await request.json();
 
   const cats = tagsUsed(companies.data, "profile.keywords")
-  const paths = cats.map(c => ({params: {keyword: c}}))
+  const paths = cats.map(c => ({params: {keyword: String(c) }}))
 
   return {
       paths: paths,

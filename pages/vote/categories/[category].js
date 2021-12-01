@@ -79,7 +79,7 @@ export async function getStaticPaths() {
   const callforpapers = await request.json();
 
   const cats = tagsUsed(callforpapers.data, "presentation_category")
-  const paths = cats.map(c => ({params: {category: c}}))
+  const paths = cats.map(c => ({params: {category: String(c) }}))
 
   return {
       paths: paths,
