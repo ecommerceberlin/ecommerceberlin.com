@@ -62,5 +62,13 @@ module.exports = withSentryConfig(withTM({
       ],
     },
   
+    async redirects() {
+      return [{
+          source: '/vote/categories',
+          destination: '/vote',
+          permanent: false,
+        }]
+    }
+
 }), SentryWebpackPluginOptions);
 
