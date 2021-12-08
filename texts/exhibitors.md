@@ -67,9 +67,9 @@
 
 5.5. If the Exhibitor decides to cancel the booking of the Additional Services, other than the Full print stand booth:
 
-5.5.1. up to 120 days before the eventą, 80% of the amount paid shall be returned to the Exhibitor,
+5.5.1. up to 120 days before the event, 80% of the amount paid shall be returned to the Exhibitor,
 5.5.2 up to 90 days before the event, 20% of the amount paid shall be returned to the Exhibitor,
-5.5.3 up to 60 days before the eventą, 100% of the amount paid will be retained as the handling fee. 
+5.5.3 up to 60 days before the event, 100% of the amount paid will be retained as the handling fee. 
 
 5.6.  If the Exhibitor decides to cancel the booking of Full print stand booth:
 
