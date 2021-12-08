@@ -6,7 +6,7 @@
 1.2. The terms used herein, capitalized mean:
 
 * 1.2.1. Organizer - E-commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. (Limited Liability Company limited partnership) with its registered seat in Poznań (postal code 60-586), ul. Botaniczna 26/2, entered into the register of associations, other social and professional organizations, foundations and independent public health care facilities of the National Court Register and the register of entrepreneurs under KRS number 0000592712 whose registration files are kept by the District Court for Poznań - Nowe Miasto and Wilda in Poznań, VIII Commercial Division of the National Court Register using the given 7792439665 tax identification number and REGON number 36746333; Address for correspondence with the Organizer: ul. Botaniczna 26/2, 60-586 Poznań; Email Address: hello@ecommerceberlin.com 
-* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 9th February 2022, from 10:00 AM to 5:00 PM;
+* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 5th May 2022, from 10:00 AM to 5:00 PM;
 * 1.2.3. Regulations - the present document constituting the general conditions of the Agreement;
 * 1.2.4. Exhibitor - a natural person, legal person or entity without legal personality, which conducts business activity: related to e-commerce, in particular providing electronic services, whose offer is addressed to operators of online shops or who in the course of its business intends to start running or managing an online store or making offers to entities engaged in these activities; 
 * 1.2.5. Pavilion - "Pavilion" in the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin
@@ -67,13 +67,13 @@
 
 5.5. If the Exhibitor decides to cancel the booking of the Additional Services, other than the Full print stand booth:
 
-5.5.1. up to 120 days before the event (12th October 2021), 80% of the amount paid shall be returned to the Exhibitor,
-5.5.2 up to 90 days before the event (11th November 2021), 20% of the amount paid shall be returned to the Exhibitor,
-5.5.3 up to 60 days before the event (11th December 2021), 100% of the amount paid will be retained as the handling fee. 
+5.5.1. up to 120 days before the eventą, 80% of the amount paid shall be returned to the Exhibitor,
+5.5.2 up to 90 days before the event, 20% of the amount paid shall be returned to the Exhibitor,
+5.5.3 up to 60 days before the eventą, 100% of the amount paid will be retained as the handling fee. 
 
 5.6.  If the Exhibitor decides to cancel the booking of Full print stand booth:
 
-5.6.1. up to 40 days before the event (30 December 2021), 90% of the amount paid shall be returned to the Exhibitor,
+5.6.1. up to 40 days before the event, 90% of the amount paid shall be returned to the Exhibitor,
 5.6.2. after 30 December 2021, the Organizer does not return the payment made as a Full print stand booth fee.
 
 5.7. In case of the postponement of the Fair the Exhibitor can apply for a refund no later than 14 days after receiving the information about the postponement of the event. The Exhibitor needs to inform the organizer in written form (electronic or postal). If the exhibitor doesn’t reply within the above mentioned time period all reservations and orders will be automatically transferred to the new date and stay in force.
@@ -105,9 +105,9 @@
 
 7.1. Exhibitor may not use the Exhibition space in a manner inconsistent with their purpose, in particular the Exhibitor may not: use devices with a joint total power consumption greater than the power connections made available for the Exhibition space, place a roll-up or advertising wall with dimensions larger than those fixed for the Exhibition space of a given category within said Exhibition space. Advertising wall can be placed only in the back of the Exhibition space. It is prohibited to use coffee machines without notifying the Organizer and without Organizer's confirmation that the ordered power connection is sufficient to safely operate the device in question
 
-7.2. In order to arrange the Exhibition space Organizer provides the Exhibitor with the Exhibition space on 8th February 2022 from 12:00 PM and on the day of the event at 2 (two) hours before the time of commencement of the Fair.
+7.2. In order to arrange the Exhibition space Organizer provides the Exhibitor with the Exhibition space on 4th May 2022 from 12:00 PM and on the day of the event at 2 (two) hours before the time of commencement of the Fair.
 
-7.3. The Exhibitor cannot proceed with the removal of the equipment placed in the Exhibition space before 5:00 PM on the 9th February 2022.
+7.3. The Exhibitor cannot proceed with the removal of the equipment placed in the Exhibition space before 5:00 PM on the 5th May 2022.
 
 7.4. The Exhibitor may use any number of Exhibition spaces stipulated in the Agreement.
 

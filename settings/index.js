@@ -489,11 +489,11 @@ const settings = {
     common : {
 
         organizer_name : 'E-commerce Capitals Sp. z o.o. Sp. k.',
-        organizer_address : 'POLAND, Poznan, Jana Matejki 52/4',
+        organizer_address : 'POLAND, 60‐586 Poznań, ul. Botaniczna 26/2',
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '9th February 2022',
+        event_date : '5th May 2022',
         event_hours : '10:00-17:00',
 
     },

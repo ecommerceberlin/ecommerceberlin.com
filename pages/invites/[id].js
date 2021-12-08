@@ -27,14 +27,14 @@ const PageInvite = ( { id, person, exhibitors } ) => {
   
     <MyHead
       url={`/invites/${id}`}
-      image={getInviteOgImage(`Będę! ${_get(person, 'fname', '')} z ${_get(person, 'cname2',"")}`, "teh20_visitor_template1")}
+      image={getInviteOgImage(`CU! ${_get(person, 'fname', '')} z ${_get(person, 'cname2',"")}`, "teh20_visitor_template1")}
       titleLabel={[
         'visitors.opengraph.title',
         {
           name: name,
           cname: cname,
-          location: 'Warszawa EXPO XXI',
-          date: '20 października 2021',
+          location: 'STATION Berlin',
+          date: '5th May 2022',
         },
       ]}
     >{(data=> <Head>{data}</Head>)}</MyHead>
