@@ -98,17 +98,17 @@
 
 5.7.1. The Organizer informs the Exhibitor immediately by email or in writing (“Postponement notice”),
 
-5.7.2. The Organizer within 14 days after receiving the Postponement message is entitled to:
+5.7.2. The Exhibitor within 14 days after receiving the Postponement message is entitled to:
 
 5.7.2.1. Terminate the Agreement in writing or by email, and receive refund of 100% of the Exhibition space fee; the refund shall be made within 30 days after receiving by the Organizer the acceptance of corrective invoice; Reservation fee shall not be returned;
 
-5.7.2.2. Cancel (by email send at: hello@ecommerceberlin.com) his participation in upcoming edition of the Fair (on a new date of postponed Fair) and apply for the participation in next year's edition (all payments made are credited towards services related to next year’s edition), subject to payment of additional fee of 10% of payments made within term of April 31st 2022; Exhibition space category remains the same;
+5.7.2.2. Cancel (by email send at: hello@ecommerceberlin.com) his participation in upcoming edition of the Fair (on a new date of postponed Fair) and apply for the participation in next year's edition (all payments made are credited towards services related to next year’s edition), subject to payment of additional fee of 10% of payments made within term of April 30th 2022; Exhibition space category remains the same;
 
 5.7.2.3. Leave the Postponement notice with no reply;
 
 5.7.3. No reply to the Postponement notice within 14 days term mentioned in section 5.7.2. is considered as a declaration of participation in the Fair on the day (new date) of postponed Fair; no additional payment shall be made;
 
-5.7.4. If additional payment mentioned in section 5.7.2.2. is not made by April 31st 2022,  it shall be considered as termination of the Agreement; payments already made shall be settled as follows: the Organizer returns 30% (thirty percent) of Exhibition space fee, while retaining all other payments as handling fee;
+5.7.4. If additional payment mentioned in section 5.7.2.2. is not made by April 30th 2022,  it shall be considered as termination of the Agreement; payments already made shall be settled as follows: the Organizer returns 30% (thirty percent) of Exhibition space fee, while retaining all other payments as handling fee;
 
 5.7.5. The Exhibitor which decided to cancel his participation in upcoming edition of the Fair (on a new date of postponed Fair), and apply for the participation in next year's edition  and paid the additional fee mentioned in section 1.2.2 is entitled to terminate the Agreement; payments already made shall be settled as follows: the Organizer returns 10% (ten percent) of Exhibition space fee, while retaining all other payments as handling fee.
 
