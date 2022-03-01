@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "/Users/az/GITHUB/site-components"
+			"path": "../site-components"
 		}
 	],
 	"settings": {}
