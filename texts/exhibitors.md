@@ -21,7 +21,7 @@
 
 2.1. Organizer provides Exhibitors on the terms specified in the Regulations:
 
-2.1.1 Exhibition space in a category chosen by the Exhibitor, categories of Exhibition space are specified on Fair website,
+2.1.1 Exhibition space in a category chosen by the Exhibitor, categories of Exhibition space are specified on the Fair website,
 2.1.2 advertising and marketing services as referred to Section 9 below,
 2.1.3 services of account manager as referred to Section 9 below.
 
@@ -37,7 +37,7 @@
 
 ## 4. Remuneration
 
-4.1. Organizer under the Agreement shall be entitled to remuneration in the amount specified in the current price list available on the Fair Website. The total remuneration consists of Exhibition space fee (amount of Exhibition space fee depends on the type of the exhibition space booked), Reservation Flat Fee (covering costs of advertising, marketing, account manager services and registration), and Additional Services fees.
+4.1. Organizer under the Agreement shall be entitled to remuneration in the amount specified in the current price list available on the Fair Website. The total remuneration consists of Exhibition space fee (amount of Exhibition space fee depends on the type of the exhibition space booked), Registration fee (covering costs of advertising, marketing, account manager services and registration), and Additional Services fees.
 
 4.2. Upon the conclusion of the Agreement the Exhibitor is obliged to pay the Organizer for services provided by the Organizer under the Agreement, including the Exhibition Space, services specified in Section 2.1.2 and 2.1.3 and Additional Services as specified in the Participation Agreement. 
 
@@ -59,26 +59,60 @@
 
 5.1. Each Exhibitor may, without giving any reason, terminate the Agreement in writing, without notice.
 
-5.2. In the event of termination of Agreement by the Exhibitor by 22 October 2021, payment already made shall be settled as follows: the Organizer returns 50% (fifty percent) of the payment made as a remuneration for Exhibition space, while retaining the remaining 50% (fifty percent) as a handling fee. Payment for services referred in paragraph 2.1.3 already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+5.2. Referring to the exhibitors who booked the Exhibition space no later than on December 8th 2021:
 
-5.3. In the event of termination of Agreement by the Exhibitor after 22 October 2021, the Organizer does not return the payment made as a remuneration for Exhibition space, whilst retaining 100% (one hundred percent) of the amount paid as handling fee. Payment for services referred in paragraph 2.1.3 already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+5.2.1. In the event of termination of Agreement by the Exhibitor: by 22 October 2021, payment already made shall be settled as follows: the Organizer returns 50% (fifty percent) of the payment made as a remuneration for Exhibition space, while retaining the remaining 50% (fifty percent) as a handling fee. Payment for services referred in paragraph 2.1.3 already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+5.2.2. In the event of termination of Agreement by the Exhibitor after 22 October 2021, the Organizer does not return the payment made as a remuneration for Exhibition space, whilst retaining 100% (one hundred percent) of the amount paid as handling fee. Payment for services referred in paragraph 2.1.3 already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+
+5.3. Referring to the exhibitors who booked the Exhibition space after December 8th 2021:
+
+5.3.1. In the event of termination of Agreement by the Exhibitor up to 90 days before the event the Organizer returns 100% of the Exhibition space fee. Payment for services included in the Registration fee already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+
+5.3.2. In the event of termination of Agreement by the Exhibitor between 89 and 75 days before the event the Organizer returns 75% of the Exhibition space fee. Payment for services included in the Registration fee already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+
+5.3.3. In the event of termination of Agreement by the Exhibitor between 74 and 60 days before the event the Organizer returns 60% of the Exhibition space fee. Payment for services included in the Registration fee already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+
+5.3.4. In the event of termination of Agreement by the Exhibitor between 59 and 45 days before the event the Organizer returns 25% of the Exhibition space fee. Payment for services included in the Registration fee already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+
+5.3.5. In the event of termination of Agreement by the Exhibitor between 44 and 40 days before the event the Organizer returns 10% of the Exhibition space fee. Payment for services included in the Registration fee already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
+
+5.3.6. In the event of termination of Agreement by the Exhibitor between less than 39 days before the event the Organizer does not return the payment made as remuneration for Exhibition space, whilst retaining 100% (one hundred percent) of the amount paid as handling fee. Payment for services included in the Registration fee already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.5 and 5.6.
 
 5.4. The Organizer reserves the right to cancel, postpone or close the Fair for visitors for reasons beyond his control, especially because of the insufficient number of participants, and also due to reasons of force majeure, as well as due to the threat to public health (e.g. epidemiologic threat).
 
 5.5. If the Exhibitor decides to cancel the booking of the Additional Services, other than the Full print stand booth:
 
 5.5.1. up to 120 days before the event, 80% of the amount paid shall be returned to the Exhibitor,
+
 5.5.2 up to 90 days before the event, 20% of the amount paid shall be returned to the Exhibitor,
+
 5.5.3 up to 60 days before the event, 100% of the amount paid will be retained as the handling fee. 
 
 5.6.  If the Exhibitor decides to cancel the booking of Full print stand booth:
 
 5.6.1. up to 40 days before the event, 90% of the amount paid shall be returned to the Exhibitor,
+
 5.6.2. after 30 December 2021, the Organizer does not return the payment made as a Full print stand booth fee.
 
-5.7. In case of the postponement of the Fair the Exhibitor can apply for a refund no later than 14 days after receiving the information about the postponement of the event. The Exhibitor needs to inform the organizer in written form (electronic or postal). If the exhibitor doesn’t reply within the above mentioned time period all reservations and orders will be automatically transferred to the new date and stay in force.
+5.7. In case of the postponement of the Fair:
 
-5.8. In case of cancellation of the Fair, the whole payment made for Exhibition space shall be returned to the Exhibitor, however Payment for other services - including Reservation Flat Fee (advertising, marketing, account manager services, additional services) already provided (including partial performance) shall not be returned.
+5.7.1. The Organizer informs the Exhibitor immediately by email or in writing (“Postponement notice”),
+
+5.7.2. The Exhibitor within 14 days after receiving the Postponement message is entitled to:
+
+5.7.2.1. Terminate the Agreement in writing or by email, and receive refund of 100% of the Exhibition space fee; the refund shall be made within 30 days after receiving by the Organizer the acceptance of corrective invoice; Reservation fee shall not be returned;
+
+5.7.2.2. Cancel (by email send at: hello@ecommerceberlin.com) his participation in upcoming edition of the Fair (on a new date of postponed Fair) and apply for the participation in next year's edition (all payments made are credited towards services related to next year’s edition), subject to payment of additional fee of 10% of payments made within term of April 30th 2022; Exhibition space category remains the same;
+
+5.7.2.3. Leave the Postponement notice with no reply;
+
+5.7.3. No reply to the Postponement notice within 14 days term mentioned in section 5.7.2. is considered as a declaration of participation in the Fair on the day (new date) of postponed Fair; no additional payment shall be made;
+
+5.7.4. If additional payment mentioned in section 5.7.2.2. is not made by April 30th 2022,  it shall be considered as termination of the Agreement; payments already made shall be settled as follows: the Organizer returns 30% (thirty percent) of Exhibition space fee, while retaining all other payments as handling fee;
+
+5.7.5. The Exhibitor which decided to cancel his participation in upcoming edition of the Fair (on a new date of postponed Fair), and apply for the participation in next year's edition  and paid the additional fee mentioned in section 1.2.2 is entitled to terminate the Agreement; payments already made shall be settled as follows: the Organizer returns 10% (ten percent) of Exhibition space fee, while retaining all other payments as handling fee.
+
+5.8. In case of cancellation of the Fair, the whole payment made for Exhibition space shall be returned to the Exhibitor, however Payment for other services - including Registration fee (advertising, marketing, account manager services, additional services) already provided (including partial performance) shall not be returned.
 
 5.9. Exhibitor will be notified on canceling, postponing or closure for visitors of Fair by an email sent to the address given by the Exhibitor during the registration through the Fair Website.
 
@@ -143,9 +177,9 @@
 
 ## 9. Registration, Advertising and marketing services, account manager services
 
-9.1. The Organizer, within the Reservation Flat Fee after conclusion of the Agreement registers Exhibitor in The Ecommerce Berlin EXPO CRM system without delay. 
+9.1. The Organizer, within the Registration fee after conclusion of the Agreement registers Exhibitor in The Ecommerce Berlin EXPO CRM system without delay. 
 
-9.2. The Organizer, within the Reservation Flat Fee , provides Exhibitors within the Fair Website Exhibitor’s profile available for users of the Fair Website.
+9.2. The Organizer, within the Registration fee, provides Exhibitors within the Fair Website Exhibitor’s profile available for users of the Fair Website.
 
 9.3. The Exhibitor undertakes to complete the profile with all the information required by the Organizer. In particular submitting: a logo to the profile, information about its business, as well as preparing and adding the information on the special offer for Visitors in the profile.
 
@@ -155,7 +189,7 @@
 
 9.6. The Exhibitor, upon the conclusion of the Agreement, grants the Organizer free, territorially unlimited license for the period from the date of conclusion of the Agreement until 1st March 2023 to use the materials placed within Exhibitor’s profile to promote Fair, including its further editions, the media, in particular in the press, radio, television, within the Fair Website, in transmissions directed to the general Internet users by any means of communication within the network, in email messages, as well as to promote the activities of the Organizer within the scope described above.
 
-9.7. The Organizer, upon the conclusion of the Agreement, grants the Exhibitor, within Reservation Flat Fee, territorially unlimited license for the period from the date of conclusion of the Agreement until May 31, 2022 to use the trade mark “E-Commerce Berlin Expo” to promote Exhibitors participation in Fair, in any media, in particular in the press, radio, television, in transmissions directed to the general Internet users by any means of communication within the network, in email messages
+9.7. The Organizer, upon the conclusion of the Agreement, grants the Exhibitor, within Registration fee, territorially unlimited license for the period from the date of conclusion of the Agreement until May 31, 2022 to use the trade mark “E-Commerce Berlin Expo” to promote Exhibitors participation in Fair, in any media, in particular in the press, radio, television, in transmissions directed to the general Internet users by any means of communication within the network, in email messages
 
 9.8. In any case related to the Agreement or Fair the Exhibitor may contact an account manager, who shall provide any information or support needed.
 
