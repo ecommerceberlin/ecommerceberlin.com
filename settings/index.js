@@ -105,7 +105,8 @@ const settings = {
         overlay : "black",
         template : "heroGold",
         heading : "event.claim",
-        subheading : "event.description"
+        subheading : "event.description",
+        showable: ["date", "hours","location"]
     },
 
     bookingmap : {
