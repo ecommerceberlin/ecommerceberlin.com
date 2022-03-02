@@ -98,7 +98,7 @@ import {
             slug :slug,
             resource: resource
         },
-        revalidate : 30
+        revalidate : 60
     }
   
   })
