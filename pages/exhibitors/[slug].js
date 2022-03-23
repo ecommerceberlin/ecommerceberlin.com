@@ -6,9 +6,9 @@ import {
     WidgetVisitor,
     WidgetCompany,
     WidgetAllExhibitorsColumnList,
-    WidgetSalesMap,
+    // WidgetSalesMap,
     // WidgetPresenters,
-    // WidgetSchedule,
+    WidgetSchedule,
     WidgetRoleButtons,
     configure,
     reduxWrapper,
@@ -28,22 +28,25 @@ import {
       <HeadCompany slug={slug}>{(data) => <Head>{data}</Head>}</HeadCompany> 
  
       <WidgetCompany slug={slug} />
+
+      <WidgetVisitor setting="visitor.register" />
+  
+      <WidgetSchedule />
   
       <WidgetVideoWithEventInfo />
 
-       <WidgetSalesMap
+       {/* <WidgetSalesMap
         label="exhibitors.map.title2"
         secondaryLabel="exhibitors.map.opensales"
-      /> 
+      />  */}
       
       <WidgetRoleButtons />
       
-      <WidgetVisitor setting="visitor.register" />
+     
   
       {/* <WidgetPresenters /> */}
   
-      {/* <WidgetSchedule />*/}
-  
+   
      
       <WidgetAllExhibitorsColumnList />
     </div>
