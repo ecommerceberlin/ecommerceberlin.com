@@ -10,9 +10,10 @@ import {
   WidgetPartners,
   reduxWrapper,
   configure,
-  WidgetBanner,
+  // WidgetBanner,
   WidgetFeaturedPresenters,
-  WidgetSalesMap
+  // WidgetSalesMap,
+  WidgetSchedule
 } from 'eventjuicer-site-components';
 
  
@@ -27,24 +28,30 @@ const PageIndex = (props) => (
 
   <WidgetVideoWithEventInfo />
 
-  {/* <WidgetSchedule /> */}
+  <WidgetVisitor setting="visitor.register" />
+
+  <WidgetFeaturedPresenters limit={8}/>
+
+  <WidgetFeaturedCompanies />
+  
+  <WidgetRoleButtons first={false} />
+
+  <WidgetSchedule />
+
+  <WidgetVisitor setting="visitor.register" />
+
 
   {/* <WidgetBanner setting="banner_cfp" /> */}
 
   {/* <VotingCategories intro={ null } /> */}
 
-  <WidgetFeaturedCompanies />
-  
-  <WidgetRoleButtons first={false} />
-  
 
 
-  <WidgetSalesMap
+  {/* <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  />
+  /> */}
 
-  <WidgetFeaturedPresenters limit={8}/>
 
 
   {/* <FeaturedExhibitors /> */}
@@ -57,7 +64,6 @@ const PageIndex = (props) => (
     videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
   /> */}
 
-  <WidgetVisitor setting="visitor.register" />
 
   <WidgetPartners
     label="partners.media.title"

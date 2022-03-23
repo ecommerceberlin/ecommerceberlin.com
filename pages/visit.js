@@ -6,14 +6,14 @@ import {
   WidgetVisitor,
   WidgetIconGrid,
   // WidgetPresenters,
-  // WidgetSchedule,
+  WidgetSchedule,
   // WidgetAllExhibitorsAvatarlist,
   DatasourcePhotos as Photos,
  
   WidgetVips,
   reduxWrapper,
   configure,
-  //WidgetFeaturedPresenters
+  WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
 
  
@@ -26,9 +26,9 @@ const PageVisit = () => (
 
         <WidgetVisitor setting="visitor.register" first />
 
-        {/* <WidgetSchedule /> */}
+        <WidgetSchedule />
 
-        {/* <WidgetFeaturedPresenters bio={false} /> */}
+        <WidgetFeaturedPresenters bio={false} />
 
         <WidgetVips limit={12} mobile={4} />
 
