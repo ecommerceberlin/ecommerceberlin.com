@@ -532,7 +532,7 @@ const settings = {
                 position : 'Business Development Manager',
                 langs : ["de"],
                 avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386301/ecommerceberlin_support_lz.jpg',
-                phone: '+49 157 7254 7327',
+                phone: '+49 176 316 244 92',
                 email: 'hello@ecommerceberlin.com',
                 chatlio : true
             },
