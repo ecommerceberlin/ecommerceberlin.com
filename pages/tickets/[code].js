@@ -41,12 +41,11 @@ right={
 
 />
 
-<Invite person={person} text="Będę!" template="teh20_visitor_template1"/>
+<Invite person={person} text="CU!" from="from" template="ebe6_template_visitor" color="000000"/>
 </Wrapper>
 
 <WidgetSchedule />
-<WidgetSalesMap />
-<WidgetVisitor setting="visitor.register" />
+
 </>)
 
 }

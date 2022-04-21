@@ -29,7 +29,7 @@
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
     "@sentry/nextjs": "^6.18.1",
-    "eventjuicer-site-components": "4.4.26",
+    "eventjuicer-site-components": "4.4.35",
     "next": "11.1.2",
     "next-transpile-modules": "^8.0.0",
     "raw-loader": "^4.0.2",

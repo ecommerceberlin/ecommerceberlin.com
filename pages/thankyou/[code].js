@@ -7,7 +7,7 @@ import {
     Wrapper,
     // WhoIsGonnaBeThere,
     MyTypography,
-    Googlemap,
+    WidgetSchedule,
     reduxWrapper,
     configure
   } from 'eventjuicer-site-components';
@@ -41,9 +41,14 @@ import {
         <WhoIsGonnaBeThere />
       </Wrapper> */}
   
+
+
+
   <WidgetVisitor setting="visitor.register" />
+
+  <WidgetSchedule />
   
-      {/* <Googlemap /> */}
+
     </>)
   
   } 

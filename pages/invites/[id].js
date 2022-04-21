@@ -27,7 +27,7 @@ const PageInvite = ( { id, person, exhibitors } ) => {
   
     <MyHead
       url={`/invites/${id}`}
-      image={getInviteOgImage(`CU! ${_get(person, 'fname', '')} z ${_get(person, 'cname2',"")}`, "teh20_visitor_template1")}
+      image={getInviteOgImage(`CU! ${_get(person, 'fname', '')} from ${_get(person, 'cname2',"")}`, "ebe6_template_visitor", "000000")}
       titleLabel={[
         'visitors.opengraph.title',
         {
@@ -58,7 +58,7 @@ const PageInvite = ( { id, person, exhibitors } ) => {
    }/>
 
     <WidgetSchedule />
-    <WidgetSalesMap />
+
  <WidgetVisitor setting="visitor.register"  right={
 <WidgetEventInfo  orientation="v" style={{ marginTop: 50 }} primaryStyle={null} secondaryStyle={null}  iconStyle="black" />
 
