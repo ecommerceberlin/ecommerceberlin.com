@@ -43,18 +43,34 @@
 
 4.5 Persons joining the Event are obliged to comply with the Terms and conditions for the participants.
 
-### 5. Technical problems and complaints.
+### 5. Marketing and personal image use. 
 
-5.1 Any technical problems and complaints related to the operation of the Service and the Application should be submitted to the Organizer at the email address given in Section 2.1.
+5.1. Photographs of the event for commercial use, as well as its logotypes and names, are only permitted with the Organizer express, prior, written permission.
 
-5.2 Organizer immediately, not later than 14 days from the date of receipt of the notification, shall respond by sending an e-mail to the address from which he received the notification.
+5.2. Image and sound recordings for transmission, further distribution, or recording for all media and data carriers, such as radio, television, Internet, virtual and physical storage media, must be approved in writing in advance by the Organizer, regardless of whether they are made against payment or free of charge.
 
-### 6. Personal data
+5.3. The organizer may record the event in order to capture, use, and emit the recording of the event and its Users, who attend in full or in part, as audiovisual recordings capture it during the course of the corresponding Event. As a result, the User's image can be captured, emitted and used for promotional purposes by the Organizer. 
+
+### 6. Liability Limitation for the Cloakroom
+
+6.1 The following conditions apply if the Organizer offers free storage (wardrobe services) of objects, such as coats, jackets, suitcases, or bags, at an event:
+
+6.1.1. Attendees are not permitted to leave any valuable items (e.g., laptops, smartphones, jewelry), data carriers containing confidential and/or business-related information, payment methods / cards, or travel tickets.
+
+6.1.2. The Organizer is not liable for any material or property damage caused by its organs or agents.
+
+### 7. Technical problems and complaints.
+
+7.1 Any technical problems and complaints related to the operation of the Service and the Application should be submitted to the Organizer at the email address given in Section 2.1.
+
+7.2 Organizer immediately, not later than 14 days from the date of receipt of the notification, shall respond by sending an e-mail to the address from which he received the notification.
+
+### 8. Personal data
 
 All information about personal data protection and privacy one can find here in our​​ ​[https://ecommerceberlin.com/legal/visitors-data](https://ecommerceberlin.com/legal/visitors-data) Information about personal data protection
 
-### 7. Final provisions
+### 9. Final provisions
 
-7.1 These terms and conditions are available on the [https://ecommerceberlin.com/legal/visitors](https://ecommerceberlin.com/legal/visitors), and in the Organizer's office.
+9.1 These terms and conditions are available on the [https://ecommerceberlin.com/legal/visitors](https://ecommerceberlin.com/legal/visitors), and in the Organizer's office.
 
-7.2 Administrator allows anyone to download these terms and conditions and save them on his own data carrier.
+9.2 Administrator allows anyone to download these terms and conditions and save them on his own data carrier.
