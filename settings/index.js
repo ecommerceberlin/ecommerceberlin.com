@@ -110,7 +110,7 @@ const settings = {
     },
 
     bookingmap : {
-        use_old_ecommerce_module: 1,
+        use_old_ecommerce_module: 0,
         height : 2600,
         steps : [
             "choose_booth",

@@ -18,10 +18,9 @@ const PageExhibitors = () => (
     label="exhibitors.list_full" 
     first 
   />
-
-  <WidgetSalesMap
+{/*  <WidgetSalesMap
     label="exhibitors.map.title"
-  />
+  /> */}
 
   <WidgetRoleButtons />
   

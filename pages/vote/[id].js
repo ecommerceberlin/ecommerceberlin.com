@@ -55,7 +55,7 @@ const PageVote  = ({id}) => (
 
   <WidgetRoleButtons />
 
- <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_cfp"}} />
+ {/* <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_cfp"}} /> */}
 
  
 <WidgetVisitor setting="visitor.register" />

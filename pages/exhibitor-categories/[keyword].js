@@ -21,10 +21,10 @@ const  PageExhibitorsByKeyword = ({keyword}) => {
 
     <WidgetVisitor setting="visitor.register" />
 
-      <WidgetSalesMap
+      {/* <WidgetSalesMap
         label="exhibitors.map.title"
  
-      />
+      /> */}
      </>
   );
 
