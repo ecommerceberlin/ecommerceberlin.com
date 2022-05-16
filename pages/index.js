@@ -28,17 +28,19 @@ const PageIndex = (props) => (
 
   <WidgetVideoWithEventInfo />
 
-  <WidgetVisitor setting="visitor.register" />
-
-  <WidgetFeaturedPresenters limit={8}/>
-
   <WidgetFeaturedCompanies />
-  
-  <WidgetRoleButtons first={false} />
-
-  <WidgetSchedule />
 
   <WidgetVisitor setting="visitor.register" />
+
+  {/* <WidgetFeaturedPresenters limit={8}/> */}
+
+
+  
+  {/* <WidgetRoleButtons first={false} /> */}
+
+  {/* <WidgetSchedule /> */}
+
+  {/* <WidgetVisitor setting="visitor.register" /> */}
 
 
   {/* <WidgetBanner setting="banner_cfp" /> */}

@@ -21,14 +21,19 @@ const standardBenefits =    [{
     icon : "A", 
     primary : "reps"
     },
-    {
-    icon : "A",
-    primary : "party"
-    },
+   
     {
     icon : "A",
     primary : "socialmedia"
     },...sharedBenefits]
+
+
+const hotBenefits = [...standardBenefits, 
+    {
+        icon : "A",
+        primary : "party"
+    },
+]
 
 const premiumBenefits =    [{
     icon : "Space", 
@@ -60,7 +65,45 @@ const premiumBenefits =    [{
     },
 ...sharedBenefits]
 
+const bookingmapShared = {
 
+    use_old_ecommerce_module: 0,
+    height : 2000,
+    steps : [
+        "choose_booth",
+        "confirm",
+        "pay",
+        "access"
+    ],
+    allowedGroupIds : [356, 355, 357, 378, 358, 359],
+    boothStyleMapping: {
+        356: "light", //STD
+        355: "standard", //HOT
+        357: "hot", //SUPER HOT
+        378: "superHot", //ULTRA
+
+        376: "superHot", //BUFFER - LAST MINUTE
+
+        358: "ultra", //GRAND
+        359: "ultra", //PREMIUM GRAND
+
+        361: "stage",
+        362: "networking",
+        380: "networking",
+        381: "networking",
+        // 321: "boothSold"
+    },
+    api : "https://order.ecommerceberlin.com/preorder",
+    benefits: {
+        356: standardBenefits, //STD
+        355: standardBenefits, //HOT
+        357: hotBenefits, //SUPER HOT
+        378: hotBenefits, //ULTRA
+        358: premiumBenefits, //GRAND
+        359: premiumBenefits, //PREMIUM GRAND
+    }
+
+}
 
 
 const settings = {
@@ -109,40 +152,53 @@ const settings = {
         showable: ["date", "hours","location"]
     },
 
-    bookingmap : {
-        use_old_ecommerce_module: 0,
-        height : 2600,
-        steps : [
-            "choose_booth",
-            "confirm",
-            "pay",
-            "access"
-        ],
-        allowedGroupIds : [322, 323, 324, 325, 329],
+    
+    bookingmap_top30 : {
+        ...bookingmapShared,
         disabledTicketIds : [1821, 1822, 1819, 1820, 1836],
-        boothStyleMapping: {
-            322: "light", //STD
-            323: "standard", //HOT
-            324: "hot", //SUPER HOT
-            325: "superHot", //GRAND
-            329: "ultra", //PREMIUM GRAND
-
-            328: "stage",
-            326: "networking",
-            // 321: "boothSold"
-        },
-        api : "https://order.ecommerceberlin.com/preorder",
-        benefits: {
-            322: standardBenefits, //STD
-            323: standardBenefits, //HOT
-            324: standardBenefits, //SUPER HOT
-            325: premiumBenefits, //GRAND
-            329: premiumBenefits, //PREMIUM GRAND
-        }
     },
 
-    speakers : {
+    bookingmap : {
+        ...bookingmapShared,
+        disabledTicketIds : [1821, 1822, 1819, 1820, 1836],
+    },
 
+
+    exhibitor_registration: {
+
+        wrapperProps: {
+            label : "ecommerce.regform.title",
+            secondaryLabel: null,
+            dense: false,
+            first: true
+        },
+
+        path_to_regform: "exhibitor_registration.regform",
+
+        regform: {
+            wrapperProps: {},
+            legend: "exhibitor.regform.legend",
+            baseLabel: "exhibitor",
+            fields : [
+            {name: "email", required: true},
+            {name: "fname", required: true},
+            {name: "lname", required: true},
+            {name: "phone", required: true},
+
+            {name: "cname", required: true},
+            {name: "nip", required: true},
+
+            {name: "accept", required: true, type: "confirm"}
+            ],
+            start : [],
+            email_template : "ebe-exhibitor-confirmation",
+            right: null,
+        }
+        
+    },
+
+
+    speakers : {
 
         callforpapers: {
 
@@ -432,7 +488,7 @@ const settings = {
             ],
 
             start : ['email', 'fname'],
-            ticket_id : 1830,
+            ticket_id : 2176,
             email_template : "ecommerceberlin-visitor-registration",
             background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
             api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
@@ -494,7 +550,7 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '5th May 2022',
+        event_date : '23rd FEBRUARY 2023',
         event_hours : '10:00-17:00',
 
     },

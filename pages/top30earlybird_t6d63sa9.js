@@ -23,12 +23,15 @@ const PageTopEarlyBird = () => (
 
   <div>
 
-  {/* <WidgetSalesMap
-    label="exhibitors.map.title"
-    secondaryLabel="exhibitors.map.closedsales"
+  <WidgetSalesMap
+    wrapperProps={{
+      label: "exhibitors.map.top30_title",
+      secondaryLabel: "exhibitors.map.top30_description"
+    }}
     disabled={false}
     first={true}
-  /> */}
+    setting="bookingmap_top30"
+  />
 
 
   <WidgetIconGrid setting="exhibitors.benefits" icons={{
