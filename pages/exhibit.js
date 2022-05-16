@@ -3,21 +3,13 @@ import React from 'react'
 
 import {
   connect,
-  MyHead as Head,
-  MyLink as Link,
   WidgetSalesMap,
   WidgetIconGrid,
   //WidgetVideoWithReviews,
-  WidgetAllExhibitorsAvatarlist,
+  WidgetFeaturedCompanies,
   WidgetVips,
   Wrapper,
   Faq,
-  // Avatarlist,
-  // Typography,
-  // WidthAwareInfo,
-  // People,
-  // GridBenefits
-  LayoutMain as Layout,
   configure,
   reduxWrapper
    
@@ -29,12 +21,12 @@ const PageExhibit = () => (
 
  <>
 
-  {/* <WidgetSalesMap
+  <WidgetSalesMap
     label="exhibitors.map.title"
     secondaryLabel="exhibitors.map.opensales"
  
     first
-  /> */}
+  />
 
   <WidgetIconGrid setting="exhibitors.benefits" icons={{
 
@@ -69,7 +61,7 @@ const PageExhibit = () => (
     />
   </Wrapper>
 
-  <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
+  <WidgetFeaturedCompanies />
 
   
 
@@ -81,15 +73,12 @@ const PageExhibit = () => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings : settings,
     preload : ["bookingmap", "ticketgroups"]
   })
 
-  return {
-    props: {},
-    revalidate: 10
-  }
+ 
 
 })
 

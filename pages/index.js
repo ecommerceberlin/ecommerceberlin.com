@@ -28,6 +28,13 @@ const PageIndex = (props) => (
 
   <WidgetVideoWithEventInfo />
 
+
+  {/* <WidgetSalesMap
+   label="exhibitors.map.title"
+   secondaryLabel="exhibitors.map.opensales"
+  /> */}
+
+
   <WidgetFeaturedCompanies />
 
   <WidgetVisitor setting="visitor.register" />
@@ -49,10 +56,7 @@ const PageIndex = (props) => (
 
 
 
-  {/* <WidgetSalesMap
-   label="exhibitors.map.title"
-   secondaryLabel="exhibitors.map.opensales"
-  /> */}
+
 
 
 

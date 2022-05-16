@@ -68,14 +68,15 @@ const premiumBenefits =    [{
 const bookingmapShared = {
 
     use_old_ecommerce_module: 0,
-    height : 2000,
+    show_recent_purchases: 1,
+    height : 1925,
     steps : [
         "choose_booth",
         "confirm",
         "pay",
         "access"
     ],
-    allowedGroupIds : [356, 355, 357, 378, 358, 359],
+    allowedGroupIds : [356, 355, 357, 378],
     boothStyleMapping: {
         356: "light", //STD
         355: "standard", //HOT
@@ -87,10 +88,10 @@ const bookingmapShared = {
         358: "ultra", //GRAND
         359: "ultra", //PREMIUM GRAND
 
-        361: "stage",
-        362: "networking",
-        380: "networking",
-        381: "networking",
+        361: "stage", //STAGE KEYNOTE
+        362: "stage", //STAGE OPEN
+        380: "networking", //VIPZONE
+        381: "networking", //NETWORKING
         // 321: "boothSold"
     },
     api : "https://order.ecommerceberlin.com/preorder",
@@ -155,12 +156,28 @@ const settings = {
     
     bookingmap_top30 : {
         ...bookingmapShared,
-        disabledTicketIds : [1821, 1822, 1819, 1820, 1836],
+        disabledTicketIds : [
+
+            2089, 2088, 2090, 2087, //STD
+            2085, 2084, 2083, 2117, 2081, //HOT
+            2092, 2093, 2094, 2095, 2096, //SH
+            2169, 2170, 2171, 2172, 2173, //ULTRA,
+            2105, 2106, 2102, 2097, 2107, //GRAND
+            2100, 2108, 2099, 2104, 2103 //P GRAND
+
+        ],
     },
 
     bookingmap : {
         ...bookingmapShared,
-        disabledTicketIds : [1821, 1822, 1819, 1820, 1836],
+        disabledTicketIds : [
+            2079, 2175, //STD
+            2082, 2086, //HOT
+            2091, 2118, //SH
+            2168, 2171, //UTLRA
+            2080, 2165, //GRAND
+            2098, 2164, //P GRAND
+        ],
     },
 
 
@@ -393,8 +410,8 @@ const settings = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                {name: 'schedule', to: '/schedule'},
-                {name: 'presenters', to: '/presenters'},
+                // {name: 'schedule', to: '/schedule'},
+                // {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'}
               ]
@@ -415,7 +432,7 @@ const settings = {
 
     premium : {
 
-        ticketgroups : [331]
+        ticketgroups : [360]
 
     },
 

@@ -2,17 +2,10 @@ import {
   connect,
   WidgetSalesMap,
   WidgetIconGrid,
-  //WidgetVideoWithReviews,
-  WidgetAllExhibitorsAvatarlist,
-  //DatasourceExhibitors,
+  WidgetFeaturedCompanies,
   WidgetVips,
   Wrapper,
   Faq,
-  // Avatarlist,
-  // Typography,
-  // WidthAwareInfo,
-  // People,
-  // GridBenefits
   reduxWrapper,
   configure
 } from 'eventjuicer-site-components';
@@ -68,7 +61,7 @@ const PageTopEarlyBird = () => (
     />
   </Wrapper>
 
-  <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
+  <WidgetFeaturedCompanies />
 
  
 </div>
@@ -77,9 +70,9 @@ const PageTopEarlyBird = () => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings : settings,
-    preload : ["exhibitors", "allexhibitors"]
+    preload : ["bookingmap"]
   })
 
 })
