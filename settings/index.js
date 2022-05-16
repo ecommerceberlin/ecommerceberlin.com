@@ -83,10 +83,10 @@ const bookingmapShared = {
         357: "hot", //SUPER HOT
         378: "superHot", //ULTRA
 
-        376: "superHot", //BUFFER - LAST MINUTE
+        376: "lastminute", //BUFFER - LAST MINUTE
 
-        358: "ultra", //GRAND
-        359: "ultra", //PREMIUM GRAND
+        358: "grand", //GRAND
+        359: "premiumGrand", //PREMIUM GRAND
 
         361: "stage", //STAGE KEYNOTE
         362: "stage", //STAGE OPEN
