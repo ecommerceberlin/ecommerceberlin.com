@@ -12,7 +12,7 @@ import {
   configure,
   // WidgetBanner,
   WidgetFeaturedPresenters,
-  // WidgetSalesMap,
+  WidgetSalesMap,
   WidgetSchedule
 } from 'eventjuicer-site-components';
 
@@ -29,10 +29,10 @@ const PageIndex = (props) => (
   <WidgetVideoWithEventInfo />
 
 
-  {/* <WidgetSalesMap
+  <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  /> */}
+  />
 
 
   <WidgetFeaturedCompanies />
