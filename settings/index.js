@@ -174,7 +174,7 @@ const settings = {
             2175, //STD
             2082, //HOT
             2118, //SH
-            2168, 2171, //UTLRA
+            2171, //UTLRA
             2165, //GRAND
             2164, //P GRAND
         ],
