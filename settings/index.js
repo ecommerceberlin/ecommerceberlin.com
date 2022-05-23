@@ -203,6 +203,7 @@ const settings = {
             {name: "phone", required: true},
 
             {name: "cname", required: true},
+            {nama: "company_address", required: true},
             {name: "nip", required: true},
 
             {name: "accept", required: true, type: "confirm"}
