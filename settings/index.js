@@ -251,7 +251,7 @@ const settings = {
                 'cname2'
             ],
 
-            ticket_id : 1950,
+            ticket_id : 2220,
             email_template : "ebe-presenters-application",
 
         },
@@ -703,11 +703,11 @@ const settings = {
         baseLabel: "cfp.timeline",
 
         items : [
-            {date: "2021-09-01", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
-            {date: "2021-10-01", name: "public-voting", icon:  "Public" },
-            {date: "2021-10-21", name: "qualification", icon:  "Assessment" },
-            {date: "2021-10-22", name: "jury-voting", icon:  "HowToVote" },
-            {date: "2021-10-29", name: "results", icon:  "Mic", active: false }
+            {date: "2022-09-01", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
+            {date: "2022-10-03", name: "public-voting", icon:  "Public" },
+            {date: "2022-10-19", name: "qualification", icon:  "Assessment" },
+            {date: "2022-10-24", name: "jury-voting", icon:  "HowToVote" },
+            {date: "2022-10-31", name: "results", icon:  "Mic", active: false }
             
         ]
 
