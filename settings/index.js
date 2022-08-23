@@ -403,7 +403,7 @@ const settings = {
               items: [
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
-                //{name: 'cfp', to: '/speaking'},
+                {name: 'cfp', to: '/speaking'},
                 //{name: 'vote', to: '/vote'},
               ]
             },
