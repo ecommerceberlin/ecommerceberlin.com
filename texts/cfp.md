@@ -23,7 +23,7 @@ In order to ensure transparency of the rules of the above-mentioned contest and 
 
 1. Only entrepreneurs are entitled to enter the Contest as Participants.
 2. Participants who either in person or through their members' bodies, employees or associates, are a member of the Advisory Board that evaluates the Contest Participants, are not allowed to enter the Contest.
-3. Entry to the Contest can be made from September 1, 2021, to September 30, 2021, solely via the application form available on the Contest website. Participation in the Contest is subject to the fulfillment of all mandatory form fields and acceptance of the Terms and Conditions.
+3. Entry to the Contest can be made from September 1, 2022, to September 30, 2022, solely via the application form available on the Contest website. Participation in the Contest is subject to the fulfillment of all mandatory form fields and acceptance of the Terms and Conditions.
 4. Entry into the Contest is equivalent to providing the Organizer with a consent to publish the Participant's name (s) and the Trademark Identification (logo) on the Contest Website, as well as in all promotional and advertising materials distributed by the Organizer concerning the Contest, for the duration of the Contest, and for a period of 1 (one) year from the closing date of the Contest.
 
 # §3 Personal Data
@@ -37,13 +37,13 @@ In order to ensure transparency of the rules of the above-mentioned contest and 
 
 1. The contest will be conducted in the following stages:
 
-* Stage I (September 1, 2021 - September 30, 2021) – entry into the contest and submissions
-* Stage II (October 1, 2021 - October 20, 2021) – Internet User’s public voting
-* Stage III (October 21, 2021) – Public Voting Nominees announcement
-* Stage IV (October 22, 2021 - October 28, 2021) – Advisory Board voting and determining the results of the Contest - selection of winners
-* Stage V (October 29, 2021) – announcement of the Contest Winners
+* Stage I (September 1, 2022 - September 30, 2022) – entry into the contest and submissions
+* Stage II (October 1, 2022 - October 19, 2022) – Internet User’s public voting
+* Stage III (October 20, 2022) – Public Voting Nominees announcement
+* Stage IV (October 24, 2022 - October 28, 2022) – Advisory Board voting and determining the results of the Contest - selection of winners
+* Stage V (October 31, 2022) – announcement of the Contest Winners
 
-2. Submitted information can be edited until September 30, 2021, 23:59 (11:59 pm).
+2. Submitted information can be edited until September 30, 2022, 23:59 (11:59 pm).
 
 # §5 Stage I – Entry into the Contest
 
@@ -67,9 +67,9 @@ In order to ensure transparency of the rules of the above-mentioned contest and 
 2. The Organizer uses Linkedin as a verification tool to confirm the identity of a voting person or a company. The contest is in no way sponsored, endorsed, administered by, or associated with Linkedin. Users' content or information will not be collected by the Organizer. Information obtained from a person’s or company’s interaction with the call-to-action button will not be used for any purpose other than to provide the service associated with the call-to-action button. There is no obligation to share the cast vote on a personal/company timeline.
 3. Every Participant is ultimately responsible for the actions taken with his account, or by applications associated with his account.
 4. Usage of any automated scripting/services, paid mass services or another automatic device, program, algorithm or technology which perform the same action, as well as any kind of automation executed by a third party in the voting process will result in the removal of the submission and canceling of the participation in the contest and will be immediately executed by the Organizer.
-5. Only votes cast by Internet Users until October 20, 23:59 (11:59 pm) will be considered in the final summary of the voting.
+5. Only votes cast by Internet Users until October 19, 19:59 (11:59 pm) will be considered in the final summary of the voting.
 6. The maximum of 5 (five) Participants who will receive the highest number of votes in the Internet Users’ public voting in each category and the number of their total votes is higher than 100 -  will become the nominees. In order to be qualified for Stage II of the Contest, these participants are obliged to meet the formal conditions for participation in the Contest described in § 2 of these Terms and Conditions.
-7. The announcement of the list of Participants nominated in all contest categories (Stage III) will take place on the Contest Website on October 21, 2021.
+7. The announcement of the list of Participants nominated in all contest categories (Stage III) will take place on the Contest Website on October 20, 2022.
 
 # §7 Stage IV – Voting of the Advisory Board
 
@@ -93,7 +93,7 @@ In order to ensure transparency of the rules of the above-mentioned contest and 
 
 # §9 Stage V - Announcement of the Contest Winners
 
-The announcement of the Contest Winners will take place on the “E-commerce Berlin Expo” website on October 29, 2021.
+The announcement of the Contest Winners will take place on the “E-commerce Berlin Expo” website on October 31, 2022.
 
 # §10 Contest Communication Channels
 
