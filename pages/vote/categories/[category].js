@@ -13,7 +13,9 @@ import {
   reduxWrapper,
   configure,
   tagsUsed,
-  Centered
+  Centered,
+  useDispatch,
+  dialogHide
 } from 'eventjuicer-site-components';
 
 
@@ -21,6 +23,11 @@ const settings = require('../../../settings').default;
 
 
 const PageVote  = ({category}) => {
+    const dispatch = useDispatch()
+
+    React.useEffect(()=>{
+      dispatch(dialogHide())
+    }, [])
 
     return (
   
@@ -49,9 +56,10 @@ const PageVote  = ({category}) => {
           keyword={category}
           label="callforpapers.list.title"
           show_votes={true}
+          random={true}
           first={true}
           renderAs="table"
-          selected={ (row, i) => i < 5 }
+          selected={ (row, i)=>false }
         />
       
        
