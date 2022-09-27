@@ -30,12 +30,6 @@ const onVoted = (canVote) => (<>
     <WidgetRegForm setting="visitor.register" wrapperProps={{secondaryLabel: "visitors.register"}} />
   }</>)
 
-
-  /**
-   * <DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} onVoted={onVoted} />
-   */
-
-
 const PageVote  = ({id}) => (
 
   
@@ -47,15 +41,21 @@ const PageVote  = ({id}) => (
       id={id}
       asPath={`/vote/${id}`}
     //vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} onVoted={onVoted} />  }
+     vote={null} 
       status={null}
       show_votes={true}
     />
+
+
+
+
+
 
   <VotingCategories />
 
   <WidgetRoleButtons />
 
- {/* <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_cfp"}} /> */}
+ <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_cfp"}} />
 
  
 <WidgetVisitor setting="visitor.register" />
@@ -98,7 +98,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     props : {
       id : id
     },
-    revalidate: 15
+    revalidate: 30
   }
 
 })
