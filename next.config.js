@@ -55,6 +55,15 @@ module.exports = withSentryConfig(withTM({
         destination: '/exhibitors/picktolightsystemscom',
         permanent: true,
       },
+
+
+      {
+        source: '/vote/categories',
+        destination: '/vote',
+        permanent: false,
+      }
+
+
     ]
     },
 
@@ -78,6 +87,8 @@ module.exports = withSentryConfig(withTM({
 
       
       config.resolve.alias['react'] = path.resolve(__dirname, '.', 'node_modules', 'react');
+
+    
       return config
     },
 
@@ -102,13 +113,7 @@ module.exports = withSentryConfig(withTM({
       ],
     },
   
-    async redirects() {
-      return [{
-          source: '/vote/categories',
-          destination: '/vote',
-          permanent: false,
-        }]
-    }
+  
 
 }), SentryWebpackPluginOptions);
 
