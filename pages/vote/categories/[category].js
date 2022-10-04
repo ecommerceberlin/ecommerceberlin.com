@@ -44,7 +44,7 @@ const PageVote  = ({category}) => {
             </div>
             </Centered>
           }
-          limit={350}
+          limit={1000}
           filter={item => "presentation_description" in item       
           //&& item.presentation_description.length > 10 
           //&& "avatar" in item 
