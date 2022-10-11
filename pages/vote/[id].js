@@ -43,7 +43,7 @@ const PageVote  = ({id}) => (
     vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={6} onVoted={onVoted} />  }
     //  vote={null} 
       status={null}
-      show_votes={false}
+      show_votes={true}
     />
 
 
