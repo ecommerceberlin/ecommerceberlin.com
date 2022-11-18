@@ -13,7 +13,9 @@ import {
     configure,
     reduxWrapper,
     fetch,
-    HeadCompany
+    HeadCompany,
+    WidgetCompanyMeetup,
+    WidgetCompanyVip
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
@@ -27,6 +29,9 @@ import {
 
       <HeadCompany slug={slug}>{(data) => <Head>{data}</Head>}</HeadCompany> 
  
+      <WidgetCompanyMeetup />
+      <WidgetCompanyVip />
+
       <WidgetCompany slug={slug} />
 
       <WidgetVisitor setting="visitor.register" />
