@@ -181,6 +181,179 @@ const settings = {
     },
 
 
+
+
+
+    masterclasses : {
+
+    apply: {
+        limit: 25
+    },
+
+    schedule: {
+
+        wrapperProps: {
+            label: "masterclasses.schedule.title",
+            secondaryLabel: "masterclasses.schedule.description"
+        },
+        times : {
+
+            // 15+10+10 = 35!!!
+            // 
+            // '10:25': 'presentation',
+            '11:15': 'presentation',
+            '12:00': 'presentation',
+            '12:45': 'presentation',
+            '13:30': 'presentation',
+            '14:15': 'presentation',
+            '15:00': 'presentation',
+            '15:45': 'presentation'
+          }, 
+          venues : {
+            W1: { company_id: 0 },
+            W2: { company_id: 0 },
+          },
+        //   minimized : ["B", "E"],
+          venueStyle : "red",
+    },
+
+
+        registration: {
+        wrapperProps: {
+            label: "masterclasses.form.title",
+            // secondaryLabel: ""
+        },
+        
+        baseLabel: "masterclasses",
+        fields: [
+            {name: "email", required: true},
+            {name: "fname", required: true},
+            {name: "lname", required: true},
+            {name: "cname2", required: true},
+            {name: "phone", required: true},
+            {name: "presenter", required: true},  
+            // {name: "bio", required: true},  
+            // {name: "profile_linkedin", required: true},  
+            {name: "presentation_title", required: false},
+            // {name: "presentation_description", required: true}
+        ],
+        
+        start: [
+            'presenter',
+            "profile_linkedin",
+            'presentation_title', 
+
+
+        ],
+
+        ticket_id : 2079,
+        email_template : "en-masterclasses-application",
+   },
+
+
+   update: {
+        wrapperProps: {
+        label: "masterclasses.update.title",
+        // secondaryLabel: ""
+        },
+        legend: "",
+        baseLabel: "masterclasses",
+        fields: [
+        {name: "presentation_title", required: true},
+        {name: "presentation_description", required: true, long: true },
+        {name: "presenter", required: true},
+        {name: "position", required: true},
+        {name: "logotype", required: true},
+        {name: "avatar", required: true},
+        {name: "bio", long: true, required: true},
+
+        ],
+
+        start: [],
+
+   },
+
+
+   faq: {
+        wrapperProps: {
+            label: "faq"
+        },
+        baseLabel: "masterclasses.faq",
+        items: [
+            { label: 'cost' },
+            { label: 'offering' },
+            { label: 'participation' },
+            { label: 'toolset' }
+        ]
+    },
+
+    faq_participant: {
+        baseLabel: "masterclasses.participants.faq",
+        items: [
+            { label: 'formula' },
+            { label: 'application' },
+            { label: 'cost' },
+            { label: 'vip' }
+        ]
+    },
+
+   photostream : {
+
+    wrapperProps: {
+        label : "masterclasses.gallery.title"
+    },
+
+    overlay: "red",
+
+    cols: 12,
+
+    items : [
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404744/vipzone/strefaVIP_01.jpg", cols: 3},
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404741/vipzone/strefaVIP_02.jpg", cols: 3},
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404740/vipzone/strefaVIP_04.jpg", cols: 3},
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404740/vipzone/strefaVIP_03.jpg", cols: 3},
+      
+    ]
+    },
+
+    benefits : {
+
+        label: "masterclasses.steps.title",
+        baseLabel: "masterclasses.steps",
+
+        items: [
+
+            {
+                icon : "FaSearch",
+                label :  'costam1',
+            },
+        
+            {
+                icon : "FaPoll",
+                label : 'costam2'
+            },
+        
+            {
+                icon : "FaTrophy",
+                label : 'costam3'
+            }
+
+        ]
+    }, 
+
+},
+
+
+
+
+
+
+
+
+
+
+
+
     exhibitor_registration: {
 
         wrapperProps: {
