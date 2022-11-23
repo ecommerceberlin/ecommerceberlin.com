@@ -104,12 +104,10 @@ const PageIndex = (props) => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings: settings,
     preload: ['allexhibitors', 'companies']
   })
-
-  return {props: {}, revalidate: 30}
 
   
 })
