@@ -246,7 +246,7 @@ const settings = {
 
         ],
 
-        ticket_id : 2079,
+        ticket_id : 2175,
         email_template : "en-masterclasses-application",
    },
 
