@@ -201,17 +201,15 @@ const settings = {
             // 15+10+10 = 35!!!
             // 
             // '10:25': 'presentation',
-            '11:15': 'presentation',
-            '12:00': 'presentation',
-            '12:45': 'presentation',
-            '13:30': 'presentation',
+            '10:30': 'presentation',
+            '11:45': 'presentation',
+            '13:00': 'presentation',
             '14:15': 'presentation',
-            '15:00': 'presentation',
-            '15:45': 'presentation'
+            '15:30': 'presentation'
           }, 
           venues : {
-            W1: { company_id: 0 },
-            W2: { company_id: 0 },
+            M1: { company_id: 0 },
+            M2: { company_id: 0 },
           },
         //   minimized : ["B", "E"],
           venueStyle : "red",
@@ -288,6 +286,8 @@ const settings = {
     },
 
     faq_participant: {
+        wrapperProps: {},
+        // showTitle: false,
         baseLabel: "masterclasses.participants.faq",
         items: [
             { label: 'formula' },
