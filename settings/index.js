@@ -136,12 +136,17 @@ const settings = {
             'admin': '1751bfe48d5ad21fd9d'
         },
         lang_api_endpoint : 'https://api.eventjuicer.workers.dev/?url=https%3A%2F%2Flocalise.biz%2Fapi%2Fexport%2Fall.json%3Fformat%3Dmulti%26pretty%26key%3DtWMy1RRHuiW6DD9T7AyYtFlQzAeztbBK',
-        api : "https://api.eventjuicer.workers.dev?url=https%3A%2F%2Fapi.eventjuicer.com%2Fv1%2Fpublic%2Fhosts%2Fecommerceberlin.com",
+
+        api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com",
+        proxy: "https://api.eventjuicer.workers.dev?url=",
+
         post_api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
-        og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
         service_api : "https://api.eventjuicer.com/v1/services",
+        og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
 
     },
+
+
     hero : {
 
         videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/q_auto,f_auto/v1544572510/ebe_hero_final.mp4",
