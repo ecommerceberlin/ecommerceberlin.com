@@ -210,7 +210,8 @@ const settings = {
             '11:30': 'presentation',
             '12:40': 'presentation',
             '13:50': 'presentation',
-            '15:00': 'presentation'
+            '15:00': 'presentation',
+            '16:10': 'presentation',
           }, 
           venues : {
             M1: { company_id: 0 },
