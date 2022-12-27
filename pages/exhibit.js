@@ -11,8 +11,8 @@ import {
   Wrapper,
   Faq,
   configure,
-  reduxWrapper
-   
+  reduxWrapper,
+  WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
 const settings = require('../settings').default;
@@ -63,7 +63,7 @@ const PageExhibit = () => (
 
   <WidgetFeaturedCompanies />
 
-  
+  <WidgetAllOrCurrentExhibitorsColumnList/>
 
 </>
 

@@ -5,19 +5,18 @@ import {
   WidgetVideoWithEventInfo,
   WidgetVisitor,
   WidgetFeaturedCompanies,
-  WidgetAllExhibitorsColumnList,
+  WidgetAllOrCurrentExhibitorsColumnList,
   WidgetRoleButtons,
   WidgetPartners,
   reduxWrapper,
   configure,
   // WidgetBanner,
-  WidgetFeaturedPresenters,
-  WidgetSalesMap,
-  WidgetSchedule
+  WidgetPresenters,
+  // WidgetSalesMap,
+  // WidgetSchedule
 } from 'eventjuicer-site-components';
 
- 
-import VotingCategories from '../compositions/VotingCategories'
+// import VotingCategories from '../compositions/VotingCategories'
 
 const settings = require('../settings').default;
 
@@ -28,22 +27,20 @@ const PageIndex = (props) => (
 
   <WidgetVideoWithEventInfo />
 
+  <WidgetVisitor setting="visitor.register" />
 
-  <WidgetSalesMap
+  {/* <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  />
+  /> */}
 
+  <WidgetRoleButtons first={false} />
 
   <WidgetFeaturedCompanies />
 
-  <WidgetVisitor setting="visitor.register" />
-
   {/* <WidgetFeaturedPresenters limit={8}/> */}
 
-
-  
-  {/* <WidgetRoleButtons first={false} /> */}
+  <WidgetPresenters filter={(p)=>p.featured} limt={8} />
 
   {/* <WidgetSchedule /> */}
 
@@ -55,15 +52,7 @@ const PageIndex = (props) => (
   {/* <VotingCategories intro={ null } /> */}
 
 
-
-
-
-
-
-  {/* <FeaturedExhibitors /> */}
-  {/* <WidgetVideoWithReviews overlay="black" /> */}
-
-  <WidgetAllExhibitorsColumnList />
+  <WidgetAllOrCurrentExhibitorsColumnList />
 
   {/* <FsVideo
     background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
@@ -115,7 +104,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   return await configure(props, {
     settings: settings,
-    preload: ['allexhibitors', 'companies']
+    preload: ['exhibitors', 'companies']
   })
 
   

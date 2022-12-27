@@ -5,7 +5,8 @@ import {
   WidgetSalesMap,
   WidgetRoleButtons,
   reduxWrapper,
-  configure
+  configure,
+  WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
 const settings = require('../../settings').default;
@@ -14,13 +15,11 @@ const PageExhibitors = () => (
 
   <>
 
-  <WidgetAllExhibitorsAvatarlist 
-    label="exhibitors.list_full" 
-    first 
-  />
-{/*  <WidgetSalesMap
+  <WidgetAllOrCurrentExhibitorsColumnList />
+
+  <WidgetSalesMap
     label="exhibitors.map.title"
-  /> */}
+  />
 
   <WidgetRoleButtons />
   
@@ -33,12 +32,10 @@ const PageExhibitors = () => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings : settings,
-   // preload : ['exhibitors', 'allexhibitors', 'bookingmap'],
+   preload : ['exhibitors2'],
   })
-
-  return {props: {}, revalidate: 30}
 
 
 })
