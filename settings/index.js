@@ -583,7 +583,7 @@ const settings = {
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
                 // {name: 'cfp', to: '/speaking'},
-                {name: 'vote', to: '/vote'},
+                // {name: 'vote', to: '/vote'},
               ]
             },
             {
@@ -591,7 +591,7 @@ const settings = {
               items: [
                 {name: 'visit', to: '/visit'},
                 // {name: 'schedule', to: '/schedule'},
-                // {name: 'presenters', to: '/presenters'},
+                {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'}
               ]
@@ -844,7 +844,7 @@ const settings = {
     appbar : {
         logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1633022810/EBE_WH.png",
         links: [
-            // {label: "Vote!", color: "secondary",  href: "/vote", variant: "contained"}
+             {label: "Become a visitor", color: "primary",  href: "/visit", variant: "contained"}
         ],
     },
 
