@@ -28,10 +28,10 @@ const PageAccount = () => {
          right={
             <div style={{marginTop: 30}}>
             
-            <SubPageButton target={{href: `/vote/${user.id}`}} label="common.preview" />
+            <SubPageButton target={{href: `/speakers/${user.id}`}} label="common.preview" />
 
             <TextSection margin={2} record={user.fields} name="cname2" />
-            <TextSection margin={2} record={user.fields} name="project_name" />
+            {/* <TextSection margin={2} record={user.fields} name="presenter" /> */}
 
             </div>
           }
