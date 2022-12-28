@@ -40,7 +40,9 @@ const PageIndex = (props) => (
 
   {/* <WidgetFeaturedPresenters limit={8}/> */}
 
-  <WidgetPresenters filter={(p)=>p.featured} limt={8} />
+  <WidgetPresenters filter={(p)=>p.featured} limt={8} wrapperProps={{
+    label: "presenters.list_featured"
+  }}/>
 
   {/* <WidgetSchedule /> */}
 
