@@ -62,6 +62,9 @@ const PageIndex = (props) => (
   /> */}
 
 
+  <WidgetVisitor setting="visitor.register" />
+
+
   <WidgetPartners
     label="partners.association.title"
     filter={item =>
@@ -106,7 +109,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   return await configure(props, {
     settings: settings,
-    preload: ['exhibitors', 'companies']
+    // preload: ['exhibitors', 'companies']
   })
 
   

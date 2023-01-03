@@ -807,12 +807,15 @@ const settings = {
             '11:10': 'presentation',
             '11:50': 'presentation',
             '12:30': 'presentation',
-            '13:00': 'break_20',
-            '13:20': 'presentation',
-            '14:00': 'presentation',
-            '14:40': 'presentation',
-            '15:20': 'presentation',
-            '15:50': 'presentation'
+            // '13:00': 'break_20',
+            '13:10': 'presentation',
+            '13:50': 'presentation',
+            '14:30': 'presentation',
+            '15:10': 'presentation',
+            '15:50': 'presentation',
+            '16:10': 'presentation',
+            '16:50': 'presentation',
+        
           },    
           venues : {
             A: { company_id: 0 },
