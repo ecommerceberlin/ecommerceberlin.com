@@ -814,7 +814,7 @@ const settings = {
             '15:10': 'presentation',
             '15:50': 'presentation',
             '16:10': 'presentation',
-            '16:50': 'presentation',
+            '16:30': 'presentation',
         
           },    
           venues : {
