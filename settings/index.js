@@ -522,13 +522,21 @@ const settings = {
 
         register: {
 
-            data : { important: 1 },
-            template : "ecommerceberlin-vip-registration",
+            label: "vips.register.description",
+            
+            allowed: {
+                dupa1: {
+                    company_id: 0,
+                    cname: "",
+                  
+                }
+            },
             wrapperProps: {
                 label : "vips.register.title",
+                first : true,
             },
             fields : [
-                {name: "referral", required: true},
+                // {name: "referral", required: true},
                 {name: "email", required: true},
                 {name: "fname", required: true},
                 {name: "lname", required: true},
@@ -536,9 +544,11 @@ const settings = {
                 {name: "position", required: true},
                 {name: "phone", required: true}
               ],
-            ticket_id : 1830,
-            start : ['referral', 'email', 'fname'],
-            first : true
+            ticket_id : 2176,
+            start : ['email', 'fname'],
+            template : "ecommerceberlin-vip-registration",
+            background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
+            api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
         },
 
         benefits : {
