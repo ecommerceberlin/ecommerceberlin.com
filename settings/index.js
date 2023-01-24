@@ -525,7 +525,7 @@ const settings = {
             label: "vips.register.description",
             
             allowed: {
-                
+
                 test123: {},
                 EBE_vip20_utudeb: {},
                 EBE_umijus: {},
@@ -577,15 +577,15 @@ const settings = {
             dense: true,
             
             items: [
+                
+                {   
+                    icon : "FaChair",
+                    label : 'badge'
+                },
 
                 {   
                     icon : "FaFastForward",
                     label : 'fastentry'
-                },
-            
-                {   
-                    icon : "FaChair",
-                    label : 'badge'
                 },
             
                 {   
