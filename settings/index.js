@@ -525,11 +525,28 @@ const settings = {
             label: "vips.register.description",
             
             allowed: {
-                dupa1: {
-                    company_id: 0,
-                    cname: "",
-                  
-                }
+                
+                test123: {},
+                EBE_vip20_utudeb: {},
+                EBE_umijus: {},
+                EBE_media_utudeb: {},
+                EBE_vip22_irufep: {},
+                EBE_ahehaj: {},
+                EBE_ujaxop: {},
+                EBE_imoyav: {},
+                EBE_gfmnachrichten_etobih: {},
+                EBE_ikajip: {},
+                EBE_omawik: {},
+                EBE_iyasiq: {},
+                EBE_oveyev: {},
+                EBE_uxopuk: {},
+                EBE_efifum: {},
+                EBE_uzunun: {},
+                EBE_ixefow: {},
+                EBE_emeyef: {},
+                EBE_ewemop: {},
+                EBE_eduvez: {},
+
             },
             wrapperProps: {
                 label : "vips.register.title",
