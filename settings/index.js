@@ -568,12 +568,12 @@ const settings = {
             
                 {   
                     icon : "FaChair",
-                    label : 'seats'
+                    label : 'badge'
                 },
             
                 {   
                     icon : "FaHandshake",
-                    label : 'vipzone'
+                    label : 'video'
                 }
             ]
         },
