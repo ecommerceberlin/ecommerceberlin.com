@@ -4,12 +4,12 @@ import {
   connect, 
   reduxWrapper,
   configure,
-  WidgetVisitor,
   WidgetIconGrid,
   WidgetVips,
   WidgetVideoWithEventInfo,
   WidgetOrganizerVip,
-  WidgetSchedule
+  WidgetSchedule,
+  WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
 const settings  = require('../../settings').default;
@@ -25,6 +25,7 @@ const PageVip = ({code}) => (
   <WidgetVips limit={12} mobile={4} />
   <WidgetVideoWithEventInfo />
   <WidgetSchedule />
+  <WidgetAllOrCurrentExhibitorsColumnList />
   </>
 
 ) 
