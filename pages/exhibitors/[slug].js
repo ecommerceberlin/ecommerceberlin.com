@@ -7,7 +7,6 @@ import {
     WidgetCompany,
     WidgetAllExhibitorsColumnList,
     // WidgetSalesMap,
-    // WidgetPresenters,
     WidgetSchedule,
     WidgetRoleButtons,
     configure,
@@ -45,13 +44,7 @@ import {
         secondaryLabel="exhibitors.map.opensales"
       />  */}
       
-      <WidgetRoleButtons />
-      
-     
-  
-      {/* <WidgetPresenters /> */}
-  
-   
+      <WidgetRoleButtons /> 
      
       <WidgetAllExhibitorsColumnList />
     </div>

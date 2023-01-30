@@ -6,7 +6,6 @@ import {
   // WidgetVideoWithEventInfo,
   WidgetRegForm,
   // WidgetRoleButtons,
-  // WidgetPresentersAll,
   WidgetIconGrid,
   WidgetFaq,
   reduxWrapper,
@@ -66,11 +65,6 @@ right={
 }} /> */}
 
 <WidgetPhotostream setting="masterclasses.photostream" />
-
-{/* <WidgetPresentersAll 
-filter={(item)=> parseInt(item.featured_cfp) } limit="24" 
-label="cfp.featured_presenters"
-/> */}
 
 
 {/* <WidgetVideoWithEventInfo

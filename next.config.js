@@ -61,6 +61,12 @@ module.exports = withSentryConfig(withTM({
         source: '/vote/categories',
         destination: '/vote',
         permanent: false,
+      },
+
+      {
+        source: '/agenda',
+        destination: '/schedule',
+        permanent: true,
       }
 
 

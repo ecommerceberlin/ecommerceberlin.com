@@ -6,7 +6,6 @@ import {
   // WidgetVideoWithEventInfo,
   WidgetRegForm,
   // WidgetRoleButtons,
-  // WidgetPresentersAll,
   WidgetIconGrid,
   WidgetFaq,
   reduxWrapper,

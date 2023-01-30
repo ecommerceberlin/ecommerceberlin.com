@@ -1,17 +1,18 @@
 import { 
   connect, 
-  WidgetPresenters,
   WidgetRegForm,
   WidgetVideoWithEventInfo,
   reduxWrapper,
   configure
 } from 'eventjuicer-site-components';
 
+import { FilteredPresenters } from '../../compositions';
+
 const settings = require('../../settings').default;
 
 const PagePresenters = () => (
   <>
-  <WidgetPresenters />
+  <FilteredPresenters />
   <WidgetRegForm setting="visitor.register"  />
   <WidgetVideoWithEventInfo />
   </>
@@ -19,13 +20,10 @@ const PagePresenters = () => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings : settings,
     preload : ["presenters"]
   })
-
-  return {props: {}, revalidate: 10}
-
 
 })
 

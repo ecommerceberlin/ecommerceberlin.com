@@ -10,20 +10,17 @@ import {
   WidgetVisitor,
   WidgetFeaturedCompanies,
   WidgetAllExhibitorsColumnList,
-  WidgetSalesMap,
-  // WidgetPresenters,
-  WidgetSchedule,
+
   // WidgetExhibitors,
   WidgetRoleButtons,
   Wrapper,
   Facebook,
-  WidgetPartners,
-  WidgetPresentersAll,
   reduxWrapper,
   configure,
  // WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
- 
+
+import { AllPartners } from '../compositions';
 
 const settings = require('../settings').default;
 
@@ -46,7 +43,6 @@ const PageIndex = (props) => (
     secondaryLabel="exhibitors.map.opensales"
   /> */}
 
-  {/* <WidgetPresentersAll /> */}
 
   <WidgetRoleButtons first={true} />
 
@@ -63,35 +59,9 @@ const PageIndex = (props) => (
 
   <WidgetVisitor setting="visitor.register" />
 
-  <WidgetPartners
-    label="partners.media.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('media') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    limit={50}
-  />
-
-  <WidgetPartners
-    label="partners.community.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('community') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    limit={50}
-  />
-
-  <WidgetPartners
-    label="partners.communication.title"
-    filter={item =>
-      item['scopes(deprecated)'].indexOf('communication') > -1 &&
-      item.logotype.indexOf('cloudinary') > -1
-    }
-    center={true}
-    limit={50}
-  />
-
    <WidgetAllExhibitorsColumnList />
+
+   <AllPartners />
 
   </React.Fragment>
  
@@ -99,15 +69,10 @@ const PageIndex = (props) => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings: settings,
     preload: []
   })
-
-  return {
-    props: {}, 
-    revalidate: 1
-  }
   
 })
 
