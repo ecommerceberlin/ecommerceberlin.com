@@ -617,7 +617,7 @@ const settings = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                // {name: 'schedule', to: '/schedule'},
+                 {name: 'schedule', to: '/schedule'},
                 {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'}
