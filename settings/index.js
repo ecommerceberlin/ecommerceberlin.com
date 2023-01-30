@@ -185,17 +185,16 @@ const settings = {
         ],
     },
 
+    workshops : {
 
-
-
+        apply: {
+            limit: 30
+        },
+    },
 
     masterclasses : {
 
-    apply: {
-        limit: 25
-    },
-
-    schedule: {
+        schedule: {
 
         wrapperProps: {
             label: "masterclasses.schedule.title",
