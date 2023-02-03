@@ -188,7 +188,7 @@ const settings = {
     workshops : {
 
         apply: {
-            limit: 30
+            disabled: 1
         },
     },
 
