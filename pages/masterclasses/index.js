@@ -3,18 +3,15 @@ import React from 'react'
 import {
   connect,
   Wrapper,
-  // WidgetVideoWithEventInfo,
-  WidgetRegForm,
-  // WidgetRoleButtons,
-  WidgetIconGrid,
+  WidgetVisitor,
   WidgetFaq,
   reduxWrapper,
   configure,
-  WidgetPhotostream,
   WidgetSchedule,
   TwoColsLayout as Section,
   MyTypography,
-  Markdown
+  Markdown,
+  WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
 
@@ -31,11 +28,18 @@ const PageMasterclasses = () => (
 <WidgetFaq setting="masterclasses.faq_participant" />    
 </Wrapper>
 
- 
 
 <WidgetSchedule setting="masterclasses.schedule" />
 
-{/* <WidgetPhotostream setting="masterclasses.photostream" /> */}
+<WidgetVisitor setting="visitor.register" wrapperProps={{
+  label: "masterclasses.public_registration.title"
+  }} />
+<WidgetSchedule
+  wrapperProps={{
+  label: "masterclasses.public_schedule.title"
+  }}
+ />
+<WidgetAllOrCurrentExhibitorsColumnList />
 
 </div>
 
