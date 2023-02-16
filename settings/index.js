@@ -109,6 +109,29 @@ const bookingmapShared = {
 
 const settings = {
     
+
+    metaverse: {
+        /**
+         * 
+            xs, extra-small: 0px
+            sm, small: 600px
+            md, medium: 960px
+            lg, large: 1280px
+            xl, extra-large: 1920px
+         */
+        //wrapperProps: {},
+        sizes: {
+            xl: "https://res.cloudinary.com/eventjuicer/image/upload/v1676582136/ebe7/Creators_of_the_Metaverse_1200x300.png",
+            lg: "https://res.cloudinary.com/eventjuicer/image/upload/v1676582136/ebe7/Creators_of_the_Metaverse_1200x300.png",
+            md: "https://res.cloudinary.com/eventjuicer/image/upload/v1676582138/ebe7/Creators_of_the_Metaverse_1200x600.png",
+            sm: "https://res.cloudinary.com/eventjuicer/image/upload/v1676582145/ebe7/Creators_of_the_Metaverse_1000x1000.png",
+            xs: "https://res.cloudinary.com/eventjuicer/image/upload/v1676582145/ebe7/Creators_of_the_Metaverse_1000x1000.png"
+        },
+        href: "https://www.creatorsofthemetaverse.de/fest/"
+    },
+
+
+
     banner_cfp: {
         /**
          * 

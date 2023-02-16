@@ -6,7 +6,8 @@ import {
   configure,
   WidgetSchedule,
   WidgetVideoWithEventInfo,
-  WidgetVisitor
+  WidgetVisitor,
+  WidgetBanner
 } from 'eventjuicer-site-components';
 
 const settings = require('../settings').default;
@@ -15,6 +16,7 @@ const PageSchedule = () => (
 
   <>
     <WidgetSchedule />
+    <WidgetBanner setting="metaverse" />
     <WidgetVisitor setting="visitor.register"  />
     <WidgetVideoWithEventInfo />
   </>

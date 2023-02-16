@@ -5,21 +5,20 @@ import {
   WidgetVideoWithEventInfo,
   WidgetVisitor,
   WidgetIconGrid,
-  // WidgetPresenters,
   WidgetSchedule,
-  // WidgetAllExhibitorsAvatarlist,
-  DatasourcePhotos as Photos,
- 
   WidgetVips,
   reduxWrapper,
   configure,
-  WidgetFeaturedPresenters
+  WidgetFeaturedPresenters,
+  WidgetBanner
 } from 'eventjuicer-site-components';
 
+import { FilteredPresenters } from '../../compositions';
  
-const settings = require('../settings').default;
+const settings = require('../../settings').default;
 
-const PageVisit = () => (
+
+export const PageVisit = () => (
 
         <div>
       
@@ -28,17 +27,19 @@ const PageVisit = () => (
 
         <WidgetSchedule />
 
+        <WidgetBanner setting="metaverse" />
+
         <WidgetFeaturedPresenters bio={false} />
 
         <WidgetVips limit={12} mobile={4} />
 
         <WidgetVideoWithEventInfo />
 
-        {/* <WidgetPresenters /> */}
+        <FilteredPresenters />
 
         <WidgetIconGrid setting="visitor.benefits" />
 
-      <WidgetVisitor setting="visitor.register" />
+        <WidgetVisitor setting="visitor.register" />
 
         {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
 
@@ -50,13 +51,10 @@ const PageVisit = () => (
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  await configure(props, {
+  return await configure(props, {
     settings : settings,
-    preload : ["exhibitors", 'presenters']
+    preload : []
   })
-
-  return {props: {}, revalidate: 10}
-
   
 })
 

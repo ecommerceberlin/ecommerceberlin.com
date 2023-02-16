@@ -12,7 +12,8 @@ import {
   // WidgetBanner,
   WidgetPresenters,
   // WidgetSalesMap,
-  // WidgetSchedule,
+  WidgetSchedule,
+  WidgetBanner
 } from 'eventjuicer-site-components';
 
 import {AllPartners} from '../compositions'
@@ -35,7 +36,8 @@ const PageIndex = (props) => (
    secondaryLabel="exhibitors.map.opensales"
   /> */}
 
-  <WidgetRoleButtons first={false} />
+  <WidgetSchedule />
+  <WidgetBanner setting="metaverse" />
 
   <WidgetFeaturedCompanies />
 
@@ -45,7 +47,9 @@ const PageIndex = (props) => (
     label: "presenters.list_featured"
   }}/>
 
-  {/* <WidgetSchedule /> */}
+
+
+  <WidgetRoleButtons first={false} />
 
   {/* <WidgetVisitor setting="visitor.register" /> */}
 
