@@ -21,12 +21,12 @@ import {
   const PageSpeaker = ({id}) => (<>
 
       <HeadSpeaker setting="speakers" id={id} path="/speakers">{(data)=><Head>{data}</Head> }</HeadSpeaker>
+      
       <WidgetPresenterNew id={id} path="/speakers" />
 
-      <WidgetVideoWithEventInfo setting="heroExpo" />
+      <WidgetVideoWithEventInfo  />
 
       <WidgetRegForm setting="visitor.register" />
-
 
       <WidgetSchedule />
 
