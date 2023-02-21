@@ -18,6 +18,19 @@ const SentryWebpackPluginOptions = {
 
 module.exports = withSentryConfig(withTM({
 
+
+    async rewrites() { 
+      return [
+      {
+      source: '/presenters',
+      destination: '/speakers',
+      },
+      {
+      source: '/presenters/:id',
+      destination: '/speakers/:id',
+      }]
+    },
+
     async redirects() {
     return [
       {
