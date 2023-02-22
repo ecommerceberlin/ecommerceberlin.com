@@ -30,21 +30,21 @@ const PagePremiumSingle = ({name}) => {
 
  export async function getStaticPaths() {
   
-  const request = await fetch(`${settings.system.api}/tickets`)
-  const tickets = await request.json();
+  // const request = await fetch(`${settings.system.api}/tickets`)
+  // const tickets = await request.json();
 
-  const scope = get(settings, "premium.ticketgroups", []);
+  // const scope = get(settings, "premium.ticketgroups", []);
 
-  const filtered = tickets.data.filter(t => scope.includes(t.group_id) );
+  // const filtered = tickets.data.filter(t => scope.includes(t.group_id) );
  
-  const paths = filtered.map(row => ({ 
-    params: {
-      name : row.translation_asset_id.replace('resources.upgrades.misc.', '')
-    }
-  }))
+  // const paths = filtered.map(row => ({ 
+  //   params: {
+  //     name : row.translation_asset_id.replace('resources.upgrades.misc.', '')
+  //   }
+  // }))
 
   return {
-    paths: paths,
+    paths: [], //paths
     fallback: true 
   };
    
