@@ -27,7 +27,12 @@ const PageIndex = (props) => (
    
   <React.Fragment>
 
+  <WidgetSchedule />
   <WidgetVideoWithEventInfo />
+
+  <WidgetAllOrCurrentExhibitorsColumnList />
+
+
 
   <WidgetVisitor setting="visitor.register" />
 
@@ -36,7 +41,7 @@ const PageIndex = (props) => (
    secondaryLabel="exhibitors.map.opensales"
   /> */}
 
-  <WidgetSchedule />
+
   <WidgetBanner setting="metaverse" />
 
   <WidgetFeaturedCompanies />
@@ -59,7 +64,7 @@ const PageIndex = (props) => (
   {/* <VotingCategories intro={ null } /> */}
 
 
-  <WidgetAllOrCurrentExhibitorsColumnList />
+
 
   {/* <FsVideo
     background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
