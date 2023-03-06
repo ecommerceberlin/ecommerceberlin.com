@@ -27,14 +27,11 @@ const PageIndex = (props) => (
    
   <React.Fragment>
 
-  <WidgetSchedule />
+  {/* <WidgetSchedule /> */}
   <WidgetVideoWithEventInfo />
 
-  <WidgetAllOrCurrentExhibitorsColumnList />
 
-
-
-  <WidgetVisitor setting="visitor.register" />
+  {/* <WidgetVisitor setting="visitor.register" /> */}
 
   {/* <WidgetSalesMap
    label="exhibitors.map.title"
@@ -42,19 +39,19 @@ const PageIndex = (props) => (
   /> */}
 
 
-  <WidgetBanner setting="metaverse" />
+  {/* <WidgetBanner setting="metaverse" /> */}
 
   <WidgetFeaturedCompanies />
 
   {/* <WidgetFeaturedPresenters limit={8}/> */}
 
-  <WidgetPresenters filter={(p)=>p.featured} limt={8} wrapperProps={{
+  {/* <WidgetPresenters filter={(p)=>p.featured} limt={8} wrapperProps={{
     label: "presenters.list_featured"
-  }}/>
+  }}/> */}
 
 
 
-  <WidgetRoleButtons first={false} />
+  {/* <WidgetRoleButtons first={false} /> */}
 
   {/* <WidgetVisitor setting="visitor.register" /> */}
 
@@ -72,9 +69,13 @@ const PageIndex = (props) => (
   /> */}
 
 
-  <WidgetVisitor setting="visitor.register" />
+  {/* <WidgetVisitor setting="visitor.register" /> */}
+
+
+  <WidgetAllOrCurrentExhibitorsColumnList />
 
   <AllPartners />
+
 
   </React.Fragment>
  

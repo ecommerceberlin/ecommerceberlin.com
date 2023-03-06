@@ -1,69 +1,80 @@
 const sharedBenefits = [
-    {
-        icon : "A",
-        primary : "shared"
-    }
+    // {
+    //     icon : "A",
+    //     primary : "shared"
+    // }
 ]
 
 const standardBenefits =    [{
     icon : "Space", 
     primary : "space"
     },
-    {
-    icon : "Furniture",
-    primary : "furniture"
-    },
+    // {
+    // icon : "Furniture",
+    // primary : "furniture"
+    // },
     {
     icon : "Electricity", 
     primary : "electricity"
     },
-    {
-    icon : "A", 
-    primary : "reps"
-    },
+    // {
+    // icon : "A", 
+    // primary : "reps"
+    // },
    
-    {
-    icon : "A",
-    primary : "socialmedia"
-    },...sharedBenefits]
+    // {
+    // icon : "A",
+    // primary : "socialmedia"
+    // },
+    
+    ...sharedBenefits]
 
 
 const hotBenefits = [...standardBenefits, 
-    {
-        icon : "A",
-        primary : "party"
-    },
+    // {
+    //     icon : "A",
+    //     primary : "party"
+    // },
 ]
 
 const premiumBenefits =    [{
     icon : "Space", 
     primary : "space_premium"
     },
-    {
-    icon : "Furniture",
-    primary : "furniture"
-    },
+    // {
+    // icon : "Furniture",
+    // primary : "furniture"
+    // },
     {
     icon : "Electricity", 
     primary : "electricity_premium"
     },
-    {
-    icon : "A", 
-    primary : "reps_premium"
-    },
-    {
-    icon : "A",
-    primary : "party_premium"
-    },
-    {
-    icon : "A",
-    primary : "socialmedia_premium"
-    },
-    {
-        icon : "A",
-        primary : "co-exhibitor"
-    },
+    // {
+    // icon : "A", 
+    // primary : "reps_premium"
+    // },
+    // {
+    // icon : "A",
+    // primary : "party_premium"
+    // },
+    // {
+    // icon : "A",
+    // primary : "socialmedia_premium"
+    // },
+    // {
+    //     icon : "A",
+    //     primary : "co-exhibitor"
+    // },
 ...sharedBenefits]
+
+
+/**
+ * 
+
+
+
+ * 
+ */
 
 const bookingmapShared = {
 
@@ -76,32 +87,40 @@ const bookingmapShared = {
         "pay",
         "access"
     ],
-    allowedGroupIds : [356, 355, 357, 378],
+    allowedGroupIds : [398, 399, 400, 401, 402, 403, 407],
     boothStyleMapping: {
-        356: "light", //STD
-        355: "standard", //HOT
-        357: "hot", //SUPER HOT
-        378: "superHot", //ULTRA
+        399: "light", //STD
+        398: "standard", //HOT
+        400: "hot", //SUPER HOT
+        407: "superHot", //ULTRA
 
-        376: "boothSold", //BUFFER - LAST MINUTE
+        406: "boothSold", //BUFFER - LAST MINUTE
 
-        358: "grand", //GRAND
-        359: "premiumGrand", //PREMIUM GRAND
+        401: "grand", //GRAND
+        402: "premiumGrand", //PREMIUM GRAND
 
-        361: "stage", //STAGE KEYNOTE
-        362: "stage", //STAGE OPEN
-        380: "networking", //VIPZONE
-        381: "networking", //NETWORKING
+        404: "stage", //STAGE KEYNOTE
+        405: "stage", //STAGE OPEN
+        410: "networking", //VIPZONE
+        409: "networking", //NETWORKING
         // 321: "boothSold"
     },
     api : "https://order.ecommerceberlin.com/preorder",
     benefits: {
-        356: standardBenefits, //STD
-        355: standardBenefits, //HOT
-        357: hotBenefits, //SUPER HOT
-        378: hotBenefits, //ULTRA
-        358: premiumBenefits, //GRAND
-        359: premiumBenefits, //PREMIUM GRAND
+       
+
+        399: standardBenefits, //STD
+        398: standardBenefits, //HOT
+        400: standardBenefits, //SUPER HOT
+        407: standardBenefits, //ULTRA
+        406: standardBenefits, //BUFFER - LAST MINUTE
+        401: premiumBenefits, //GRAND
+        402: premiumBenefits, //PREMIUM GRAND
+
+        // 357: hotBenefits, //SUPER HOT
+        // 378: hotBenefits, //ULTRA
+        // 358: premiumBenefits, //GRAND
+        // 359: premiumBenefits, //PREMIUM GRAND
     }
 
 }
@@ -186,12 +205,7 @@ const settings = {
         ...bookingmapShared,
         disabledTicketIds : [
 
-            2089, 2088, 2090, 2087, //STD
-            2085, 2084, 2083, 2117, 2081, //HOT
-            2092, 2093, 2094, 2095, 2096, //SH
-            2169, 2170, 2171, 2172, 2173, //ULTRA,
-            2105, 2106, 2102, 2097, 2107, //GRAND
-            2100, 2108, 2099, 2104, 2103 //P GRAND
+          
 
         ],
     },
@@ -199,12 +213,12 @@ const settings = {
     bookingmap : {
         ...bookingmapShared,
         disabledTicketIds : [
-            2175, //STD
-            2082, //HOT
-            2118, //SH
-            2171, //UTLRA
-            2165, //GRAND
-            2164, //P GRAND
+            2383, 2465, //STD
+            2380, 2467, //HOT
+            2412, 2456, //SH
+            2417, 2469, //ULTRA
+            2400, 2468, //GRAND
+            2393, 2466, //P GRAND
         ],
     },
 
@@ -734,7 +748,7 @@ const settings = {
             ],
 
             start : ['email', 'fname'],
-            ticket_id : 2176,
+            ticket_id : 2426,
             email_template : "ecommerceberlin-visitor-registration",
             background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
             api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
@@ -896,7 +910,7 @@ const settings = {
     appbar : {
         logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1633022810/EBE_WH.png",
         links: [
-             {label: "Become a visitor", color: "primary",  href: "/visit", variant: "contained"}
+            //  {label: "Become a visitor", color: "primary",  href: "/visit", variant: "contained"}
         ],
     },
 
