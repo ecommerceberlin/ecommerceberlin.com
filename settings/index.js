@@ -810,7 +810,7 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '23rd FEBRUARY 2023',
+        event_date : '22nd FEBRUARY 2024',
         event_hours : '10:00-17:00',
 
     },
@@ -843,15 +843,15 @@ const settings = {
         description: 'event.support.description',
 
         people : [
-            {             
-                name: 'Lucas',
-                position : 'Business Development Manager',
-                langs : ["de"],
-                avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386301/ecommerceberlin_support_lz.jpg',
-                phone: '+49 176 316 244 92',
-                email: 'hello@ecommerceberlin.com',
-                chatlio : true
-            },
+            // {             
+            //     name: 'Lucas',
+            //     position : 'Business Development Manager',
+            //     langs : ["de"],
+            //     avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386301/ecommerceberlin_support_lz.jpg',
+            //     phone: '+49 176 316 244 92',
+            //     email: 'hello@ecommerceberlin.com',
+            //     chatlio : true
+            // },
             {
                 name: 'Peter',
                 position : 'Project Manager',

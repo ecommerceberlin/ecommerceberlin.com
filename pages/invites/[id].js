@@ -34,7 +34,7 @@ const PageInvite = ( { id, person, exhibitors } ) => {
           name: name,
           cname: cname,
           location: 'STATION Berlin',
-          date: '23rd Feb 2023',
+          date: '22nd Feb 2024',
         },
       ]}
     >{(data=> <Head>{data}</Head>)}</MyHead>
