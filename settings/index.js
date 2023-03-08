@@ -843,22 +843,14 @@ const settings = {
         description: 'event.support.description',
 
         people : [
-            // {             
-            //     name: 'Lucas',
-            //     position : 'Business Development Manager',
-            //     langs : ["de"],
-            //     avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386301/ecommerceberlin_support_lz.jpg',
-            //     phone: '+49 176 316 244 92',
-            //     email: 'hello@ecommerceberlin.com',
-            //     chatlio : true
-            // },
+           
             {
-                name: 'Peter',
-                position : 'Project Manager',
+                name: 'Gerome Yalim',
+                position : '',
                 langs : ["en"],
-                avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/w_150,c_fit,f_auto/v1546386405/ecommerceberlin_support_psz.jpg',
-                phone: '+49 302 555 98 75',
-                email: 'peter@ecommerceberlin.com',
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/w_150,c_fit,f_auto/v1678187389/Website/gerome.jpg',
+                phone: '+49 305 201 42 88',
+                email: 'hello@ecommerceberlin.com',
                 chatlio : true
             }
           ]
