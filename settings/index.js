@@ -675,7 +675,7 @@ const settings = {
 
     premium : {
 
-        ticketgroups : [360]
+        ticketgroups : [403]
 
     },
 
