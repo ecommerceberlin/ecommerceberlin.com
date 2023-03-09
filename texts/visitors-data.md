@@ -1,7 +1,7 @@
 
 ## General information and contact details of the Administrator
 
-1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), ul. Botaniczna 26/2, 60-586 Poznań (Poland), 
+1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), Matejki st. 6/7, 60-766 Poznań (Poland), 
 entered into the Register of Entrepreneurs under the National Court Register number 0000592712, 
 whose files are kept by the District Court Poznań Nowe Miasto and Wilda in Poznań, 
 8th Economic Department of the National Court Register, that uses tax identification number (NIP): 7792423665 and REGON statistical number: 363746333, 
