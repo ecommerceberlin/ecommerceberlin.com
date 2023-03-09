@@ -27,7 +27,7 @@ export const PageVisit = () => (
 
         <WidgetSchedule />
 
-        <WidgetBanner setting="metaverse" />
+        {/* <WidgetBanner setting="metaverse" /> */}
 
         <WidgetFeaturedPresenters bio={false} />
 

@@ -16,7 +16,7 @@ const PageSchedule = () => (
 
   <>
     <WidgetSchedule />
-    <WidgetBanner setting="metaverse" />
+    {/* <WidgetBanner setting="metaverse" /> */}
     <WidgetVisitor setting="visitor.register"  />
     <WidgetVideoWithEventInfo />
   </>
