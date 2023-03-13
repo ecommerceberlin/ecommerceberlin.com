@@ -80,7 +80,7 @@ const bookingmapShared = {
 
     use_old_ecommerce_module: 0,
     show_recent_purchases: 0,
-    height : 2404,
+    height : 1811,
     steps : [
         "choose_booth",
         "confirm",
