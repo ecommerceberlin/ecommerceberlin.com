@@ -88,6 +88,7 @@ const bookingmapShared = {
         "access"
     ],
     allowedGroupIds : [398, 399, 400, 401, 402, 403, 407],
+    venueLayout: "https://res.cloudinary.com/eventjuicer/image/upload/v1678744350/ebe8/ebe8_venueplan.png",
     boothStyleMapping: {
         399: "light", //STD
         398: "standard", //HOT
