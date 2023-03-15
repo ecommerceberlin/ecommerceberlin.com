@@ -79,7 +79,7 @@ const premiumBenefits =    [{
 const bookingmapShared = {
 
     use_old_ecommerce_module: 0,
-    show_recent_purchases: 0,
+    show_recent_purchases: 1,
     height : 1811,
     steps : [
         "choose_booth",
