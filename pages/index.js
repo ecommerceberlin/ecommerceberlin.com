@@ -3,17 +3,17 @@ import React from 'react'
 import {
   connect,
   WidgetVideoWithEventInfo,
-  WidgetVisitor,
+  // WidgetVisitor,
   WidgetFeaturedCompanies,
   WidgetAllOrCurrentExhibitorsColumnList,
   WidgetRoleButtons,
   reduxWrapper,
   configure,
   // WidgetBanner,
-  WidgetPresenters,
-  // WidgetSalesMap,
-  WidgetSchedule,
-  WidgetBanner
+  // WidgetPresenters,
+  WidgetSalesMap,
+  // WidgetSchedule,
+  // WidgetBanner
 } from 'eventjuicer-site-components';
 
 import {AllPartners} from '../compositions'
@@ -33,10 +33,10 @@ const PageIndex = (props) => (
 
   {/* <WidgetVisitor setting="visitor.register" /> */}
 
-  {/* <WidgetSalesMap
+  <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  /> */}
+  />
 
 
   {/* <WidgetBanner setting="metaverse" /> */}
