@@ -4,6 +4,34 @@ const sharedBenefits = [
     //     primary : "shared"
     // }
 ]
+const stageBenefits =    [{
+    icon : "A", 
+    primary : "speakingslot"
+    },
+    {
+    icon : "A",
+    primary : "printedmapstage"
+    },
+    {
+    icon : "A", 
+    primary : "screenbranding"
+    },
+    {
+    icon : "A", 
+    primary : "logowebsitestage"
+    },
+   
+    {
+    icon : "A",
+    primary : "keynoteroom"
+    },
+
+    {
+        icon : "A",
+        primary : "blogpost"
+        },
+    
+    ...sharedBenefits]
 
 const networkingBenefits =    [{
     icon : "A", 
@@ -119,7 +147,7 @@ const bookingmapShared = {
         "pay",
         "access"
     ],
-    allowedGroupIds : [398, 399, 400, 401, 402, 403, 407],
+    allowedGroupIds : [398, 399, 400, 401, 402, 403, 407, 413],
     venueLayout: "https://res.cloudinary.com/eventjuicer/image/upload/v1678744350/ebe8/ebe8_venueplan.png",
     boothStyleMapping: {
         399: "light", //STD
@@ -134,6 +162,7 @@ const bookingmapShared = {
 
         404: "stage", //STAGE KEYNOTE
         405: "stage", //STAGE OPEN
+        413: "stage", //STAGE STANDARD
         410: "networking", //VIPZONE
         409: "networking", //NETWORKING
         // 321: "boothSold"
@@ -151,6 +180,9 @@ const bookingmapShared = {
         402: premiumBenefits, //PREMIUM GRAND
         410: networkingBenefits, //VIPZONE
         409: networkingBenefits, //NETWORKING
+        404: stageBenefits, //STAGE KEYNOTE
+        405: stageBenefits, //STAGE OPEN
+        413: stageBenefits, //STAGE STANDARD
 
         // 357: hotBenefits, //SUPER HOT
         // 378: hotBenefits, //ULTRA
