@@ -5,6 +5,37 @@ const sharedBenefits = [
     // }
 ]
 
+const networkingBenefits =    [{
+    icon : "A", 
+    primary : "spacenetworking"
+    },
+    {
+    icon : "A",
+    primary : "printedmap"
+    },
+    {
+    icon : "A", 
+    primary : "logocubes"
+    },
+    {
+    icon : "A", 
+    primary : "mailingpromo"
+    },
+   
+    {
+    icon : "A",
+    primary : "onsitebranding"
+    },
+
+    {
+        icon : "A",
+        primary : "logowebsite"
+        },
+    
+    ...sharedBenefits]
+
+
+
 const standardBenefits =    [{
     icon : "Space", 
     primary : "space"
@@ -30,6 +61,7 @@ const standardBenefits =    [{
     ...sharedBenefits]
 
 
+    
 const hotBenefits = [...standardBenefits, 
     // {
     //     icon : "A",
@@ -117,6 +149,8 @@ const bookingmapShared = {
         406: standardBenefits, //BUFFER - LAST MINUTE
         401: premiumBenefits, //GRAND
         402: premiumBenefits, //PREMIUM GRAND
+        410: networkingBenefits, //VIPZONE
+        409: networkingBenefits, //NETWORKING
 
         // 357: hotBenefits, //SUPER HOT
         // 378: hotBenefits, //ULTRA
