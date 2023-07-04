@@ -27,36 +27,44 @@ const PageAbout = () => (
     {[
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/visitor_growth.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1687958432/EBE24%20About/INFOGRAFIKA-pocieta-01.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/visitor_growth.svg',
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475962/about/visitors-profile.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1687958432/EBE24%20About/INFOGRAFIKA-pocieta-02.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475962/about/visitors-profile.svg',
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/visitors-branches.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1687958432/EBE24%20About/INFOGRAFIKA-pocieta-03.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/visitors-branches.svg',
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597739548/about/theDivisionIntoJobPosition.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1687958432/EBE24%20About/INFOGRAFIKA-pocieta-04.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597739548/about/theDivisionIntoJobPosition.svg',
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597392552/about/top_10_nationalities.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1687958432/EBE24%20About/INFOGRAFIKA-pocieta-05.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597392552/about/top_10_nationalities.svg',
       },
 
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/exhibitors-nationality.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688456069/EBE24%20About/INFOGRAFIKA-pocieta-06.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/exhibitors-nationality.svg',
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/exhibitor_growth.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1687958434/EBE24%20About/INFOGRAFIKA-pocieta-07.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/exhibitor_growth.svg',
       },
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/promotion.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1687958433/EBE24%20About/INFOGRAFIKA-pocieta-08.svg'
+          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/promotion.svg',
       },
     ].map(item => (
       <img
