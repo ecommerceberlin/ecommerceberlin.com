@@ -16,7 +16,7 @@ import {
   WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
-import settings from '/Users/karolina/Documents/GitHub/ecommerceberlin.com/settings/index.js';
+import settings from '../settings';
 
 import { Search, Poll } from '@material-ui/icons';
 
