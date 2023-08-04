@@ -457,14 +457,95 @@ const settings = {
 
 },
 
+    vip : {
+
+        registration: {
+        wrapperProps: {
+            label: "vips.form.title",
+        },
+        
+        baseLabel: "vips",
+        fields: [
+            {name: "fname", required: true},
+            {name: "lname", required: true},
+            {name: "cname2", required: true},
+            {name: "company_website", required: true},
+            {name: "company_address", required: true},
+            {name: "nip", required: true},
+            {name: "email", required: true},
+            {name: "position", required: true},
+            {name: "phone", required: true}, 
+            {name: "profile_linkedin", required: true}, 
+        ],
+        
+        start: [
+            'email',
+            "fname",
+            'lname', 
 
 
+        ],
+
+        ticket_id : 2575,
+        email_template : "ecommerceberlin-vip-apply",
+    },
 
 
+    faq: {
+        wrapperProps: {
+            label: "faq"
+        },
+        baseLabel: "vips.faq",
+        items: [
+            { label: 'howtobecome' },
+            { label: 'benefits' },
+            { label: 'applying' },
+            { label: 'deadline' }
+        ]
+    },
 
 
+    benefits : {
 
+        label: "vips.benefits.title",
+        baseLabel: "vips.benefits",
 
+        items: [
+
+            {
+                icon : "FaSearch",
+                label :  'fastentry',
+            },
+        
+            {
+                icon : "FaPoll",
+                label : 'badge'
+            },
+        
+            {
+                icon : "FaPoll",
+                label : 'vipzone'
+            },
+
+            {
+                icon : "FaPoll",
+                label : 'networking'
+            },
+
+            {
+                icon : "FaPoll",
+                label : 'seats'
+            },
+
+            {
+                icon : "FaTrophy",
+                label : 'passes'
+            }
+
+        ]
+    }, 
+
+    },
 
 
 
@@ -728,7 +809,8 @@ const settings = {
                  {name: 'schedule', to: '/schedule'},
                 {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
-                // {name: 'offers', to: '/offers'}
+                // {name: 'offers', to: '/offers'},
+                {name: 'vip', to: '/vip'}
               ]
             },
             {
@@ -977,6 +1059,33 @@ const settings = {
             //  {label: "Become a visitor", color: "primary",  href: "/visit", variant: "contained"}
         ],
     },
+
+
+    vipphotostream : {
+
+        wrapperProps: {
+            label : "vips.gallery.title"
+        },
+
+        cols: 12,
+
+        items : [
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965126/Website/VIP/ecommerce-berlin-2023-palej-pl-_AOG9078.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-DSC03345-palej-pl.jpg", cols: 6},
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01767.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-DSC03294-palej-pl.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-palej-pl-_AOG9086.jpg", cols: 4},
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965126/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01942.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1691145728/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01943.jpg", cols: 6},
+     
+        ]
+    },
+
+
+
 
     cfpphotostream : {
 
