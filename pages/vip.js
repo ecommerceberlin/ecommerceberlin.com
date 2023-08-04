@@ -24,21 +24,21 @@ const PageVip = () => (
 
 <div>
 
-<Wrapper first label="vip.programme.title">
-<Markdown label="vip.programme.description" />
+<Wrapper first label="vips.programme.title">
+<Markdown label="vips.programme.description" />
   
 </Wrapper>
 <WidgetIconGrid setting="vip.benefits" icons={{
 }} />
-<Wrapper first label="vip.apply.title">
+<Wrapper first label="vips.apply.title">
 <WidgetRegForm
   wrapperProps={{label: null}}
   setting="vip.registration"
 
   right={
     <>
-    <MyTypography template="subtitle1" label="vip.rules.title" /> 
-    <Markdown label="vip.rules.description" />
+    <MyTypography template="subtitle1" label="vips.rules.title" /> 
+    <Markdown label="vips.rules.description" />
     </>
   }
   />

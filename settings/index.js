@@ -461,10 +461,10 @@ const settings = {
 
         registration: {
         wrapperProps: {
-            label: "vip.form.title",
+            label: "vips.form.title",
         },
         
-        baseLabel: "vip",
+        baseLabel: "vips",
         fields: [
             {name: "fname", required: true},
             {name: "lname", required: true},
@@ -495,7 +495,7 @@ const settings = {
         wrapperProps: {
             label: "faq"
         },
-        baseLabel: "vip.faq",
+        baseLabel: "vips.faq",
         items: [
             { label: 'howtobecome' },
             { label: 'benefits' },
@@ -507,14 +507,14 @@ const settings = {
 
     benefits : {
 
-        label: "vip.steps.title",
-        baseLabel: "vip.steps",
+        label: "vips.benefits.title",
+        baseLabel: "vips.benefits",
 
         items: [
 
             {
                 icon : "FaSearch",
-                label :  'entry',
+                label :  'fastentry',
             },
         
             {
@@ -524,7 +524,7 @@ const settings = {
         
             {
                 icon : "FaPoll",
-                label : 'zone'
+                label : 'vipzone'
             },
 
             {
@@ -534,7 +534,7 @@ const settings = {
 
             {
                 icon : "FaPoll",
-                label : 'seating'
+                label : 'seats'
             },
 
             {
@@ -1064,7 +1064,7 @@ const settings = {
     vipphotostream : {
 
         wrapperProps: {
-            label : "vip.gallery.title"
+            label : "vips.gallery.title"
         },
 
         cols: 12,
