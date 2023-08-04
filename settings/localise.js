@@ -75,7 +75,8 @@ export default {
                     "specials": "Special offers",
                     "location": "STATION Berlin",
                     "offers": "Exhibitors' offers",
-                    "vote": "CFP - Vote for the speeches!"
+                    "vote": "CFP - Vote for the speeches!",
+                    "vip": "Become a VIP attendee"
                 },
                 "exhibitors": {
                     "title": "Exhibitor",
