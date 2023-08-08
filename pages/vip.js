@@ -12,6 +12,7 @@ import {
   TwoColsLayout as Section,
   MyTypography,
   Markdown,
+  WidgetVips,
   WidgetPhotostream,
   WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
@@ -43,6 +44,7 @@ const PageVip = () => (
   }
   />
 </Wrapper>
+<WidgetVips limit={12} mobile={4} />
 <WidgetPhotostream setting="vipphotostream" />
 <WidgetFaq setting="vip.faq" /> 
 

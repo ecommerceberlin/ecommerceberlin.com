@@ -258,7 +258,7 @@ const settings = {
 
     hero : {
 
-        videoSrc : "https://res.cloudinary.com/eventjuicer/video/upload/q_auto,f_auto/v1544572510/ebe_hero_final.mp4",
+        videoSrc : "https://res.cloudinary.com/ecommerceberlin/video/upload/v1689923579/Website/ebe24-website-video.mp4",
         background : "https://res.cloudinary.com/eventjuicer/image/upload/q_auto,f_auto/v1544572575/ebe_hero_final_poster.jpg",
         overlay : "black",
         template : "heroGold",
@@ -1002,7 +1002,7 @@ const settings = {
                 name: 'Gerome Yalim',
                 position : '',
                 langs : ["en"],
-                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/w_150,c_fit,f_auto/v1678187389/Website/gerome.jpg',
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1691403509/Website/gerome2.png',
                 phone: '+49 305 201 42 88',
                 email: 'hello@ecommerceberlin.com',
                 chatlio : true
