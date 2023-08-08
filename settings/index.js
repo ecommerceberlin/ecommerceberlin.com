@@ -258,8 +258,8 @@ const settings = {
 
     hero : {
 
-        videoSrc : "https://res.cloudinary.com/ecommerceberlin/video/upload/v1689923579/Website/ebe24-website-video.mp4",
-        background : "https://res.cloudinary.com/eventjuicer/image/upload/q_auto,f_auto/v1544572575/ebe_hero_final_poster.jpg",
+        videoSrc : "https://res.cloudinary.com/ecommerceberlin/video/upload/q_auto,f_auto/v1689923579/Website/ebe24-website-video.mp4",
+        background : "https://res.cloudinary.com/ecommerceberlin/image/upload/q_auto,f_auto/v1691504553/Website/ebe24_final_poster.png",
         overlay : "black",
         template : "heroGold",
         heading : "event.claim",
