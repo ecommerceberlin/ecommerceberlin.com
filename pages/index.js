@@ -16,7 +16,7 @@ import {
   // WidgetBanner
 } from 'eventjuicer-site-components';
 
-import {AllPartners} from '../compositions'
+import {AllPartners, WidgetVisitorWithVip} from '../compositions'
 
 // import VotingCategories from '../compositions/VotingCategories'
 
@@ -30,7 +30,7 @@ const PageIndex = (props) => (
   {/* <WidgetSchedule /> */}
   <WidgetVideoWithEventInfo />
 
-
+  {/* <WidgetVisitorWithVip /> */}
   {/* <WidgetVisitor setting="visitor.register" /> */}
 
   <WidgetSalesMap
