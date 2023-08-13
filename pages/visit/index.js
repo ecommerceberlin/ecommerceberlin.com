@@ -13,7 +13,7 @@ import {
   WidgetBanner
 } from 'eventjuicer-site-components';
 
-import { FilteredPresenters } from '../../compositions';
+import { FilteredPresenters, WidgetVisitorWithVip } from '../../compositions';
  
 const settings = require('../../settings').default;
 
@@ -21,9 +21,10 @@ const settings = require('../../settings').default;
 export const PageVisit = () => (
 
         <div>
-      
+          
+        <WidgetVisitorWithVip first />
 
-        <WidgetVisitor setting="visitor.register" first />
+        {/* <WidgetVisitor setting="visitor.register" first /> */}
 
         <WidgetSchedule />
 

@@ -59,54 +59,57 @@ However, exhibitors have no access to Guests’ email addresses. Emails are sent
 A response is sent only if a Guest expresses desire to contact a given exhibitor. 
 This communication is realized through private email of the Guest, without the Administrator’s knowledge (the Administrator has no access to this correspondence and is not involved in it).
 
+10. During the Event, exhibitors can scan the QR codes on Guests’ Tickets. 
+Scanning of the QR code takes place with the consent of the Guest, using a smartphone. After scanning, the Guest’s data provided during registration and listed in point 3 are made available to the Exhibitor in the application, from which they can be downloaded by him.
+
 ## Legal basis for personal data processing
 
-10. The Administrator informs that Guests’ personal data are processed for purposes mentioned in point 1, subpoints 1) – 4) above, under art. 6, sec. 1 (b) of GDPR, that is, exclusively to execute the agreement between the Administrator and the Guest that is concluded during registration at the Fair’s website ecommerceberlin.com. Terms of the agreement are specified by the Rules for Visitors.
+11. The Administrator informs that Guests’ personal data are processed for purposes mentioned in point 1, subpoints 1) – 4) above, under art. 6, sec. 1 (b) of GDPR, that is, exclusively to execute the agreement between the Administrator and the Guest that is concluded during registration at the Fair’s website ecommerceberlin.com. Terms of the agreement are specified by the Rules for Visitors.
 
-11. The Administrator informs that Guests’ personal data are processed for the purpose specified in point 5, subpoint 5) above, under art. 6, sec. 1 (f) of GDPR, that is, in legally justified interest of the data Administrator, which is direct marketing related to the current and subsequent editions of the Fair. 
+12. The Administrator informs that Guests’ personal data are processed for the purpose specified in point 5, subpoint 5) above, under art. 6, sec. 1 (f) of GDPR, that is, in legally justified interest of the data Administrator, which is direct marketing related to the current and subsequent editions of the Fair. 
 We hereby explain that direct marketing consists in providing information on the Fair via email, including subsequent editions of the event, especially information that encourages addressees to participate in the Fair. 
 
 ## The period of personal data processing
 
-12. Personal data of Guests will be processed for purposes mentioned in point 5, subpoints 1) – 4) above until the edition of the Fair that the Guest’s registration regarded is completed, for the purpose mentioned in point 5, subpoint 5) above – until the Guest opposes to data processing and for the purpose mentioned in point 5, subpoint 6) until te Contest is over. 
+13. Personal data of Guests will be processed for purposes mentioned in point 5, subpoints 1) – 4) above until the edition of the Fair that the Guest’s registration regarded is completed, for the purpose mentioned in point 5, subpoint 5) above – until the Guest opposes to data processing and for the purpose mentioned in point 5, subpoint 6) until te Contest is over. 
 
 ## The place of personal data storing 
 
-13. We hereby inform that the data we accumulate are stored on servers that are leased from Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany and located at [https://www.hetzner.com/rechtliches/impressum?country=us](https://www.hetzner.com/rechtliches/impressum?country=us)
+14. We hereby inform that the data we accumulate are stored on servers that are leased from Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany and located at [https://www.hetzner.com/rechtliches/impressum?country=us](https://www.hetzner.com/rechtliches/impressum?country=us)
 
 ## The rights of people whose data we process
 
-14. Every person whose personal data we process has the right to file a complaint about our actions or negligence to the supervising body, that is, the Inspector General for Personal Data Protection. 
+15. Every person whose personal data we process has the right to file a complaint about our actions or negligence to the supervising body, that is, the Inspector General for Personal Data Protection. 
 The Office of the Inspector General for Personal Data Protection is located at ul. Stawki 2, 00-193 Warsaw.
 
-15. Every person whose data we process has the right to obtain confirmation from us whether their personal data are processed and if this is the case, 
+16. Every person whose data we process has the right to obtain confirmation from us whether their personal data are processed and if this is the case, 
 they are entitled to acquire access to the data and obtain information included in this document.
 
-16. Every person whose personal data we process has the right to demand that we immediately correct the data that are incorrect. 
+17. Every person whose personal data we process has the right to demand that we immediately correct the data that are incorrect. 
 Besides, considering the purposes of processing, the person whom given data concern has the right to demand to complement incomplete personal data, including through presentation of an additional statement.
 
-17. Every person whom the data concern has the right to ‘be forgotten’. 
+18. Every person whom the data concern has the right to ‘be forgotten’. 
 It means that everybody whom the data concern may demand that we remove their personal data and we will do so immediately provided that:
 
 * the personal data are no longer essential for the purposes mentioned in point 5 above,
 * the person whom the data concern withdraws the permission on the basis of which we process the data,
-* the person whom the data concern opposed to our processing of the data (see point 18 below)
+* the person whom the data concern opposed to our processing of the data (see point 21 below)
 * the data are processed illegally,
 * the request to remove the data results from the fact that we have not fulfilled our legal obligation under the law of the European Union or the Polish law,
 * personal data have been acquired as a result of offering information society services to a person under 18.
 
-18. The person whom the data concern has the right to demand that we restrict processing in the following situations:
+19. The person whom the data concern has the right to demand that we restrict processing in the following situations:
 
 * the person whom the data concern questions correctness of personal data – for the period of time we need to verify these data,
 * the processing is illegal and the person whom the data concern opposes to their removing, demanding restriction of the use of the data instead,
 * we do not need the personal data for the purposes of processing anymore, but the person whom they concern needs them for formulating, pursuing or defending claims,
-* the person whom the data concern opposed to our processing of the data (see point 18) – for as long as it takes to determine whether legally justified grounds on the part of the Administrator are superior to the grounds of opposition of the person whom the data concern.
+* the person whom the data concern opposed to our processing of the data (see point 21) – for as long as it takes to determine whether legally justified grounds on the part of the Administrator are superior to the grounds of opposition of the person whom the data concern.
 
-19. The person whom the data concern has the right to receive from us – in a structured, commonly used, 
+20. The person whom the data concern has the right to receive from us – in a structured, commonly used, 
 machine-readable format – their personal data they have provided and they have the right to send these personal data to another administration as well as demand – if technically feasible – that we submit the data directly to another administrator, provided that:
 
 * the data are processed on the basis of a permission we have obtained or in order to execute an agreement that has been concluded with us,
 * the data are processed automatically.
 
-20. We process the accumulated personal data for the purpose of direct marketing so the person whom the data concern has the right to oppose – for reasons related to their particular situation – to processing of their personal data, to the scope within which the processing is made for the purpose of direct marketing. 
+21. We process the accumulated personal data for the purpose of direct marketing so the person whom the data concern has the right to oppose – for reasons related to their particular situation – to processing of their personal data, to the scope within which the processing is made for the purpose of direct marketing. 
 In such a case we will immediately cease to process their personal data for this purpose.

@@ -10,6 +10,8 @@ import {
   WidgetBanner
 } from 'eventjuicer-site-components';
 
+import { WidgetVisitorWithVip } from '../compositions';
+
 const settings = require('../settings').default;
 
 const PageSchedule = () => (
@@ -17,7 +19,8 @@ const PageSchedule = () => (
   <>
     <WidgetSchedule />
     {/* <WidgetBanner setting="metaverse" /> */}
-    <WidgetVisitor setting="visitor.register"  />
+    {/* <WidgetVisitor setting="visitor.register"  /> */}
+    <WidgetVisitorWithVip />
     <WidgetVideoWithEventInfo />
   </>
 

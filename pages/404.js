@@ -20,7 +20,7 @@ import {
  // WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
 
-import { AllPartners } from '../compositions';
+import { AllPartners, WidgetVisitorWithVip } from '../compositions';
 
 const settings = require('../settings').default;
 
@@ -32,7 +32,9 @@ const PageIndex = (props) => (
 
   {/* <WidgetSchedule /> */}
 
-<WidgetVisitor setting="visitor.register" first />
+  <WidgetVisitorWithVip first />
+
+{/* <WidgetVisitor setting="visitor.register" first /> */}
 
   <WidgetVideoWithEventInfo />
 

@@ -12,14 +12,14 @@ const VipInvite = () => {
     return (<Box mt={4} >
 
         <Box m={3} textAlign="center">
-        <Translatable label="jakis_label" variant="h5" />
-        <Translatable label="jakis_label" variant="body1" />
-        {/* <Markdown label="jakis_label" /> */}
+        <Translatable label="vips.invite.title" variant="h5" />
+        <Translatable label="vips.invite.subtitle" variant="body1" />
+        {/* <Markdown label="vips.invite.description" /> */}
         </Box>
 
      
         <Box textAlign="center" mt={1}>
-            <MyButton href="/vip" label="jakis_label"  variant="outlined" />
+            <MyButton href="/vip" label="vips.invite.button"  variant="outlined" />
         </Box>
         
     </Box>)
