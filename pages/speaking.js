@@ -25,7 +25,6 @@ import HowToVote from '@material-ui/icons/HowToVote'
 import Public from '@material-ui/icons/Public'
 import Mic from '@material-ui/icons/Mic'
 import Assessment from '@material-ui/icons/Assessment'
-import {  } from '../compositions';
 import SpeakersVideo from '../compositions/SpeakersVideo';
 
 
@@ -71,7 +70,6 @@ const PageSpeaking = () => (
       />
 
 
-      
 
 
 
@@ -144,7 +142,7 @@ New Developments in E-commerce
           filter={(item)=> parseInt(item.featured_cfp) } limit="24" 
           label="cfp.featured_presenters"
         />
-
+        </Wrapper>
         <WidgetVideoWithEventInfo
           //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"
           //  showEventDetails={false}
@@ -154,7 +152,7 @@ New Developments in E-commerce
         />
 
         <WidgetRoleButtons first={false} />
-        </Wrapper>
+       
   </div>
 )
 
