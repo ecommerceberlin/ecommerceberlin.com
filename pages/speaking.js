@@ -25,6 +25,7 @@ import HowToVote from '@material-ui/icons/HowToVote'
 import Public from '@material-ui/icons/Public'
 import Mic from '@material-ui/icons/Mic'
 import Assessment from '@material-ui/icons/Assessment'
+import SpeakersVideo from '../compositions/SpeakersVideo';
 
 
 
@@ -69,17 +70,16 @@ const PageSpeaking = () => (
       />
 
 
-      </Wrapper>
 
 
-  <WidgetPhotostream setting="cfpphotostream" />
 
   <WidgetSpeaking setting="speakers.callforpapers" options={{
         "categories": [
-          'conversion',
+          'fintech',
           'marketing',
+          'conversion',
+          'crossborder',
           'logistics',
-          'payments',
           'it',
           'trends',
         ]
@@ -125,22 +125,24 @@ New Developments in E-commerce
         
   
         <WidgetJurors minToShow={4} />
-
+        <WidgetPhotostream setting="cfpphotostream" />
         <WidgetFaq setting="speakers.faq" />
+        <Wrapper first label="speakers.cfpcategories.title">
+        <WidgetIconGrid setting="speakers.cfpcategories" icons={{
+        }}
+        />
 
+        {/* <WidgetIconGrid setting="speakers.benefits" icons={{
 
-    <WidgetIconGrid setting="speakers.benefits" icons={{
+        }}/> */}
 
-    }}/>
-
-
+        <SpeakersVideo />
+        </Wrapper>
         <WidgetPresentersAll 
           filter={(item)=> parseInt(item.featured_cfp) } limit="24" 
           label="cfp.featured_presenters"
         />
-
-
-
+        </Wrapper>
         <WidgetVideoWithEventInfo
           //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"
           //  showEventDetails={false}
@@ -150,7 +152,7 @@ New Developments in E-commerce
         />
 
         <WidgetRoleButtons first={false} />
-
+       
   </div>
 )
 

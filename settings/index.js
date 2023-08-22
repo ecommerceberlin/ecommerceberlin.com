@@ -619,7 +619,7 @@ const settings = {
                 'cname2'
             ],
 
-            ticket_id : 2220,
+            ticket_id : 2437,
             email_template : "ebe-presenters-application",
 
         },
@@ -656,22 +656,28 @@ const settings = {
             baseLabel: "cfp.faq",
             items: [
             {
+            //    baseLabel: 'exhibitors.faq.before_event',
+              label: 'fee',
+            },    
+            {
               label: 'exhibitor-status',
               important: true,
               buttons: [],
-            },
-            {
-          //    baseLabel: 'exhibitors.faq.before_event',
-              label: 'fee',
             },
             { label: 'submission-limits' },
             { label: 'co-presenter' },
             { label: 'ranking' },
             { label: 'fair-play' },
-            {
-            //  baseLabel: 'cfp.faq.before_event',
-              label: 'stage',
-            },
+            // {
+            // //  baseLabel: 'cfp.faq.before_event',
+            // //   label: 'stage',
+            // },
+            { label: 'after-win' },
+            { label: 'language' },
+            { label: 'recordings' },
+            { label: 'slot-duration' },
+            { label: 'non-winners' },
+            { label: 'masterclasses' },
             ]
 
         },
@@ -704,7 +710,52 @@ const settings = {
             ]
         },
 
-      
+        cfpcategories : {
+
+            label: "cfp.categories.title",
+            baseLabel: "cfp.categories",
+            typography: "subtitle",
+            dense: true,
+    
+            items: [
+    
+                {   icon : "FaPoll",
+                    label :  'fintech',
+                },
+            
+                {
+                    icon : "FaPoll",
+                    label : 'marketing'
+                },
+            
+                {
+                    icon : "FaPoll",
+                    label : 'conversion'
+                },
+    
+                {
+                    icon : "FaPoll",
+                    label : 'crossborder'
+                },
+    
+                {
+                    icon : "FaPoll",
+                    label : 'logistics'
+                },
+    
+                {
+                    icon : "FaPoll",
+                    label : 'it'
+                },
+
+                {
+                    icon : "FaTrophy",
+                    label : 'trends'
+                }
+    
+            ]
+        }, 
+
     },
 
     vips : {
@@ -806,8 +857,8 @@ const settings = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                 {name: 'schedule', to: '/schedule'},
-                {name: 'presenters', to: '/presenters'},
+                //  {name: 'schedule', to: '/schedule'},
+                // {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'},
                 {name: 'vip', to: '/vip'}
@@ -1097,16 +1148,16 @@ const settings = {
 
         items : [
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824810/Website/CFP%20-%20gallery/Conference2_MyTheresa.jpg", cols: 6},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824698/Website/CFP%20-%20gallery/Conference6_Facebook_Lisa.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1692363067/Website/CFP%20-%20gallery/cfp_gal_3.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824808/Website/CFP%20-%20gallery/Conference4_Nivea.jpg", cols: 6},
 
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1692363068/Website/CFP%20-%20gallery/cfp_gal_1.jpg", cols: 4},
             {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824722/Website/CFP%20-%20gallery/IMG_0782_copy.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824720/Website/CFP%20-%20gallery/IMG_0643.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824718/Website/CFP%20-%20gallery/Conference7_IBM_Isabelle.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1692363068/Website/CFP%20-%20gallery/cfp_gal_5.jpg", cols: 4},
 
             {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824707/Website/CFP%20-%20gallery/IMG_9984.jpg", cols: 6},
-          //  {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824699/Website/CFP%20-%20gallery/2SH07600.jpg", cols: 3},
-          {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824808/Website/CFP%20-%20gallery/Conference4_Nivea.jpg", cols: 6},
+          {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824698/Website/CFP%20-%20gallery/Conference6_Facebook_Lisa.jpg", cols: 6},
      
 
             // {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1597824698/Website/CFP%20-%20gallery/Conference10_Douglas.jpg", cols: 6},
@@ -1121,15 +1172,15 @@ const settings = {
         baseLabel: "cfp.timeline",
 
         items : [
-            {date: "2022-09-01", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
-            {date: "2022-10-03", name: "public-voting", icon:  "Public" },
-            {date: "2022-10-19", name: "qualification", icon:  "Assessment" },
-            {date: "2022-10-24", name: "jury-voting", icon:  "HowToVote" },
-            {date: "2022-10-31", name: "results", icon:  "Mic", active: false }
+            {date: "2023-09-04", name: "submissions", icon:  "NoteAdd", dotColor: 'primary', active: true },
+            {date: "2023-10-02", name: "public-voting", icon:  "Public" },
+            {date: "2023-10-23", name: "qualification", icon:  "Assessment" },
+            // {date: "2022-10-24", name: "jury-voting", icon:  "HowToVote" },
+            {date: "2023-10-30", name: "results", icon:  "Mic", active: false }
             
         ]
 
-    }
+    },
 };
 
 
