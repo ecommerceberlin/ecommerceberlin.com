@@ -26,7 +26,7 @@ providing the following personal data:
 * photo image and video image
 
 4. The Company is also the organizer of Call for Papers Contest, hereinafter referred to as ‘Contest’, 
-in which anyone who has an active profile on Facebook can give six votes. 
+in which anyone who has an active profile on LinkedIn can cast seven votes. 
 With regard to the Contest we process email address of the voter.
 
 5. Provision of personal data is voluntary. However, unless they are provided, 
@@ -42,11 +42,10 @@ However, unless they are provided, it will be impossible to vote in the Contest.
 
 * to generate individual admission ticket to enter the Fair as a guest in line with the Rules for Visitors, Terms and Conditions of Ordering Tickets, hereinafter referred to as ‘Rules for Visitors’,
 * to verify the Guest’s identity at the entry to the Fair to secure the safety of participants of the Fair, under the Rules for Visitors,
-* to realize communication-related to the Fair, under the Rules for Visitors,
-* to send emails as mentioned below, under the Rules for Visitors,
-* to realize direct marketing activities for Administrator’s services – email communication related to the current and subsequent editions of the Fair,
+* to realise communication related to the Fair, under the Rules for Visitors,
+* to realise direct marketing activities for Administrator’s services – email communication related to the current and subsequent editions of the Fair,
 * to verify if the voter has voted in the Contest.
-* to promote the event in social media
+* to promote the Fair in social media
 
 ## Handing over of personal data to exhibitors at the Fair
 
@@ -66,12 +65,12 @@ Scanning of the QR code takes place with the consent of the Guest, using a smart
 
 11. The Administrator informs that Guests’ personal data are processed for purposes mentioned in point 1, subpoints 1) – 4) above, under art. 6, sec. 1 (b) of GDPR, that is, exclusively to execute the agreement between the Administrator and the Guest that is concluded during registration at the Fair’s website ecommerceberlin.com. Terms of the agreement are specified by the Rules for Visitors.
 
-12. The Administrator informs that Guests’ personal data are processed for the purpose specified in point 5, subpoint 5) above, under art. 6, sec. 1 (f) of GDPR, that is, in legally justified interest of the data Administrator, which is direct marketing related to the current and subsequent editions of the Fair. 
-We hereby explain that direct marketing consists in providing information on the Fair via email, including subsequent editions of the event, especially information that encourages addressees to participate in the Fair. 
+12. The Administrator informs that Guests’ personal data are processed for the purposes mentioned, under art. 6, sec. 1 (f) of GDPR, that is, in the legally justified interest of the data Administrator, which is direct marketing related to the current and subsequent editions of the Fair.
+We hereby explain that direct marketing consists in providing information on the Fair via email, including subsequent editions of the event, especially information that encourages addressees to participate in the Fair.  
 
 ## The period of personal data processing
 
-13. Personal data of Guests will be processed for purposes mentioned in point 5, subpoints 1) – 4) above until the edition of the Fair that the Guest’s registration regarded is completed, for the purpose mentioned in point 5, subpoint 5) above – until the Guest opposes to data processing and for the purpose mentioned in point 5, subpoint 6) until te Contest is over. 
+13. Personal data of Guests will be processed for purposes mentioned until the Fair or/and Contest are concluded, or until the Guest opposes data processing.
 
 ## The place of personal data storing 
 

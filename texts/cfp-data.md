@@ -1,15 +1,13 @@
          
 ## General information and contact details of the Administrator
 
-1. Company under the business name E-Commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. seated in Poznań (Poland), ul. Botaniczna 26/2, 60‐586 Poznań (Poland), 
-entered into the Register of Entrepreneurs under the National Court Register number 0000592712, 
-whose files are kept by the District Court Poznań Nowe Miasto and Wilda in Poznań, 8th Economic Department of the National Court Register, that uses tax identification number (NIP): 7792423665 and REGON statistical number: 363746333, 
-hereinafter referred to as ‘Company’ or ‘Administrator’, fulfilling the obligation specified in art. 12, sec. 1 of the Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, 
-and repealing Directive 95/46/EC (General Data Protection Regulation), hereinafter referred to as ‘GDPR’, as personal data administrator, hereby presents this information, 
-asking whoever it may concern to get acquainted with it.
+1. E-commerce Capitals sp. z o.o. sp. k. (Limited Liability Company limited partnership) with its registered seat in Poznań 
+(postal code 60-766), ul. Jana Matejki 6/7, entered into the Register of Entrepreneurs under the National Court Register (number 0000592712) and the register of entrepreneurs under KRS (number 0000592712), whose registration files are kept by the District Court for Poznań - Nowe Miasto and Wilda in Poznań, VIII Commercial Division of the National Court Register using the given 7792439665 tax identification number and REGON number 36746333, hereinafter referred to as ‘Company’ or ‘Administrator’, is fulfilling the obligation specified in art. 12, sec. 1 of the Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016, on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), hereinafter referred to as ‘GDPR’, as personal data administrator, hereby presents this information, asking whoever it may concern to get acquainted with it. 
+
 
 2. The Administrator provides the following contact details for communication regarding personal data processing. 
-Email address: office@ecommercecapitals.com, address: ul. Botaniczna 26/2, 60‐586 Poznań (Poland).
+Email address: office@ecommercecapitals.com, address: ul. Jana Matejki 6/7, 60-766 Poznań (Poland). 
+
 
 ## Categories of personal data subject to processing and information on the freedom to provide them
 
@@ -18,12 +16,12 @@ hereinafter referred to as ‘Fair’. Whoever wants to participate in the Conte
 but first they have to submit a presentation and register as a Contest participant at the Fair’s website, providing the following personal data:
 
 * email address, 
-* first name, 
-* last name, 
-* telephone no,
-* brand name,
-* name of the speaker,
-* presentation proposition title
+* contact person’s and speaker’s first name,
+* contact person’s and speaker’s last name,
+* telephone number,
+* brand name and job titles,
+* presentation proposition title and description.
+
 
 Provision of personal data is voluntary. However, unless they are provided, it will be impossible to take a part in Contest. 
 
@@ -31,20 +29,19 @@ Provision of personal data is voluntary. However, unless they are provided, it w
 
 4. The personal data mentioned in point 3 above serve exclusively the following purposes:
 
-* to organize the Contest,
-* to announce the results of the Contest on Fair’s website. 
+* organising the Contest - contact between Company and contestant,
+* announcing the results of the Contest on Fair’s website - only speaker’s data without contact ones,
+* producing Fair’s program - agenda visible online, on site and presentation recordings.
+
 
 ## Legal basis for personal data processing
 
-5. The Administrator informs that Guests’ personal data are processed for purposes mentioned in point 3, subpoints 1 – 4 above, under art. 6, sec. 1 (b) of GDPR, that is, 
-exclusively to execute the agreement between the Administrator and the Contest participants that is concluded during registration. 
+5. The Administrator informs that data provided will be processed for purposes mentioned under art. 6, sec. 1 (b) of GDPR, that is,
+exclusively to execute the agreement between the Administrator and the Contest participants that is concluded during registration.
 
 ## The period of personal data processing
 
-6. Personal data of Contest participants will be processed for purposes mentioned in: 
-
-* point 4 subpoint 1 - until the Contest is over,
-* point 4 subpoint 2 – 6 months after the Fair is over.
+6. Personal data of Contest participants will be processed for purposes mentioned in 6 months after Fair’s end.
 
 ## The place of personal data storing
 

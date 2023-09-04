@@ -37,7 +37,7 @@ const PageSpeaking = () => (
 
   <div>
 
-      <MyHead image="https://res.cloudinary.com/eventjuicer/image/upload/v1631805700/og_ebe2022_speaking.png" url="/speaking">{(data) => <Head>{data}</Head>}</MyHead> 
+      <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693818763/Website/og_ebe24_speaking.png" url="/speaking">{(data) => <Head>{data}</Head>}</MyHead> 
 
        <Wrapper first label="cfp.hello.title">
        
@@ -125,7 +125,7 @@ New Developments in E-commerce
         
   
         <WidgetJurors minToShow={4} />
-        <WidgetPhotostream setting="cfpphotostream" />
+        
         <WidgetFaq setting="speakers.faq" />
         <Wrapper first label="speakers.cfpcategories.title">
         <WidgetIconGrid setting="speakers.cfpcategories" icons={{
@@ -143,13 +143,14 @@ New Developments in E-commerce
           label="cfp.featured_presenters"
         />
         </Wrapper>
-        <WidgetVideoWithEventInfo
-          //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"
+        <WidgetPhotostream setting="cfpphotostream" />
+        {/* <WidgetVideoWithEventInfo */}
+          {/* //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"
           //  showEventDetails={false}
           //  videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1552428525/teh_presenters_video.mp4"
           title="presenters.claim.title"
-          subtitle="presenters.claim.description"
-        />
+          subtitle="presenters.claim.description" */}
+        {/* /> */}
 
         <WidgetRoleButtons first={false} />
        
