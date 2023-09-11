@@ -880,7 +880,8 @@ const settings = {
 
     premium : {
 
-        ticketgroups : [403]
+        ticketgroups : [403],
+        soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png'
 
     },
 
