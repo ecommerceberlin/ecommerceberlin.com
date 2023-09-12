@@ -950,7 +950,30 @@ const settings = {
               {name: "cname2", required: true},
               {name: "position", required: true},
             //   {name: "nip", required: false},
-              {name: "phone", required: true}
+              {name: "phone", required: true},
+
+
+
+            // {
+            //     name: "profile_linkedin", 
+            //     required: false
+            // },
+            // { 
+            //     name: "participant_type", 
+            //     required: true,
+            //     options: "participant_type"},
+            // { 
+            //     name: "company_role", 
+            //     required: true,
+            //     options: "company_role"
+            // },
+            // {
+            //     name: "accept", 
+            //     required: true, 
+            //     type: "confirm"
+            // },
+
+               
             ],
 
             start : ['email', 'fname'],
