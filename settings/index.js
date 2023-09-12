@@ -954,24 +954,24 @@ const settings = {
 
 
 
-            // {
-            //     name: "profile_linkedin", 
-            //     required: false
-            // },
-            // { 
-            //     name: "participant_type", 
-            //     required: true,
-            //     options: "participant_type"},
-            // { 
-            //     name: "company_role", 
-            //     required: true,
-            //     options: "company_role"
-            // },
-            // {
-            //     name: "accept", 
-            //     required: true, 
-            //     type: "confirm"
-            // },
+            {
+                name: "profile_linkedin", 
+                required: false
+            },
+            { 
+                name: "participant_type", 
+                required: true,
+                options: "participant_type"},
+            { 
+                name: "company_role", 
+                required: true,
+                options: "company_role"
+            },
+            {
+                name: "accept", 
+                required: true, 
+                type: "confirm"
+            },
 
                
             ],

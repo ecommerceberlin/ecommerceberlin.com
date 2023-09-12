@@ -9,6 +9,8 @@ import {
   WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
+import { WidgetVisitorWithVip } from '../../compositions';
+
 const settings = require('../../settings').default;
 
 const PageExhibitors = () => (
@@ -23,7 +25,8 @@ const PageExhibitors = () => (
 
   <WidgetRoleButtons />
   
-  <WidgetVisitor setting="visitor.register" />
+  {/* <WidgetVisitor setting="visitor.register" /> */}
+  <WidgetVisitorWithVip />
 
   </>
 
