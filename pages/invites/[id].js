@@ -13,6 +13,7 @@ import {
 } from 'eventjuicer-site-components';
 
 import Head from 'next/head'
+import { WidgetVisitorNonVip } from '../../compositions';
 
 
 const settings = require('../../settings').default;
@@ -52,14 +53,17 @@ const PageInvite = ( { id, person, exhibitors } ) => {
      
     </Wrapper>
 
-   <WidgetVisitor setting="visitor.register"  right={
+   {/* <WidgetVisitor setting="visitor.register"   */}
+   <WidgetVisitorNonVip
+   right={
 
 <WidgetEventInfo  orientation="v" style={{ marginTop: 50 }} primaryStyle={null} secondaryStyle={null}  iconStyle="black" />
    }/>
 
     <WidgetSchedule />
 
- <WidgetVisitor setting="visitor.register"  right={
+ <WidgetVisitorNonVip
+ right={
 <WidgetEventInfo  orientation="v" style={{ marginTop: 50 }} primaryStyle={null} secondaryStyle={null}  iconStyle="black" />
 
    }/>

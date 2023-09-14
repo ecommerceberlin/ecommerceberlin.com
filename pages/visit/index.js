@@ -13,7 +13,7 @@ import {
   WidgetBanner
 } from 'eventjuicer-site-components';
 
-import { FilteredPresenters, WidgetVisitorWithVip } from '../../compositions';
+import { FilteredPresenters, WidgetVisitorNonVip, WidgetVisitorWithVip } from '../../compositions';
  
 const settings = require('../../settings').default;
 
@@ -40,7 +40,9 @@ export const PageVisit = () => (
 
         <WidgetIconGrid setting="visitor.benefits" />
 
-        <WidgetVisitor setting="visitor.register" />
+        {/* <WidgetVisitor setting="visitor.register" /> */}
+
+        <WidgetVisitorNonVip />
 
         {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
 

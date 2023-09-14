@@ -16,7 +16,7 @@ import {
   // WidgetBanner
 } from 'eventjuicer-site-components';
 
-import {AllPartners, WidgetVisitorWithVip} from '../compositions'
+import {AllPartners, WidgetVisitorNonVip, WidgetVisitorWithVip} from '../compositions'
 
 // import VotingCategories from '../compositions/VotingCategories'
 
@@ -54,6 +54,8 @@ const PageIndex = (props) => (
   {/* <WidgetRoleButtons first={false} /> */}
 
   {/* <WidgetVisitor setting="visitor.register" /> */}
+  
+  {/* <WidgetVisitorNonVip /> */}
 
 
   {/* <WidgetBanner setting="banner_cfp" /> */}
@@ -70,6 +72,7 @@ const PageIndex = (props) => (
 
 
   {/* <WidgetVisitor setting="visitor.register" /> */}
+  {/* <WidgetVisitorNonVip /> */}
 
 
   <WidgetAllOrCurrentExhibitorsColumnList />

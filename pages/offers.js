@@ -12,6 +12,8 @@ import {
   configure
 } from 'eventjuicer-site-components';
 
+import { WidgetVisitorNonVip } from '../compositions';
+
 
 const settings = require('../settings').default;
 
@@ -21,11 +23,11 @@ const PageOffers = () => (
 
        <WidgetOffers
           divider={
-            <WidgetVisitor setting="visitor.register" />
+            <WidgetVisitorNonVip />
           }
         />
 
-      <WidgetVisitor setting="visitor.register" />
+      <WidgetVisitorNonVip />
         <WidgetRoleButtons />
     </>
 )
