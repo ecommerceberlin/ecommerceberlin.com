@@ -18,6 +18,7 @@ import {
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
+import { WidgetVisitorNonVip } from '../../compositions';
 
   const settings = require('../../settings').default;
 
@@ -33,7 +34,8 @@ import {
 
       <WidgetCompany slug={slug} />
 
-      <WidgetVisitor setting="visitor.register" />
+      {/* <WidgetVisitor setting="visitor.register" /> */}
+      <WidgetVisitorNonVip />
   
       <WidgetSchedule />
   

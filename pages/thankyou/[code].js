@@ -11,6 +11,7 @@ import {
     reduxWrapper,
     configure
   } from 'eventjuicer-site-components';
+import { WidgetVisitorNonVip } from '../../compositions';
   
   const settings = require('../../settings').default;
   
@@ -44,7 +45,9 @@ import {
 
 
 
-  <WidgetVisitor setting="visitor.register" />
+  {/* <WidgetVisitor setting="visitor.register" /> */}
+
+  <WidgetVisitorNonVip />
 
   <WidgetSchedule />
   

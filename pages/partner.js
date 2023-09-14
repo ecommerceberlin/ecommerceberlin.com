@@ -8,12 +8,13 @@ import {
   reduxWrapper,
   configure,
 } from 'eventjuicer-site-components';
+import { WidgetVisitorWithVip } from '../compositions';
 
 const settings = require('../settings').default;
 
 const PagePartner = () => (
 
-<WidgetVisitor setting="visitor.register" />
+<WidgetVisitorWithVip />
 )
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {

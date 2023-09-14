@@ -9,6 +9,7 @@ import {
   fetch,
   tagsUsed
 } from 'eventjuicer-site-components';
+import { WidgetVisitorNonVip } from '../../compositions';
 
 const settings = require('../../settings').default;
 
@@ -19,7 +20,8 @@ const  PageExhibitorsByKeyword = ({keyword}) => {
     <>
       <WidgetExhibitorsByKeyword keyword={keyword} />
 
-    <WidgetVisitor setting="visitor.register" />
+    {/* <WidgetVisitor setting="visitor.register" /> */}
+    <WidgetVisitorNonVip />
 
       {/* <WidgetSalesMap
         label="exhibitors.map.title"

@@ -20,7 +20,7 @@ import {
  // WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
 
-import { AllPartners, WidgetVisitorWithVip } from '../compositions';
+import { AllPartners, WidgetVisitorWithVip, WidgetVisitorNonVip } from '../compositions';
 
 const settings = require('../settings').default;
 
@@ -59,7 +59,8 @@ const PageIndex = (props) => (
     videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
   /> */}
 
-  <WidgetVisitor setting="visitor.register" />
+  {/* <WidgetVisitor setting="visitor.register" /> */}
+  <WidgetVisitorNonVip />
 
    <WidgetAllExhibitorsColumnList />
 

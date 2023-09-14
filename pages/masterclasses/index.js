@@ -17,6 +17,7 @@ import {
 
 
 import settings from '../../settings';
+import { WidgetVisitorNonVip } from '../../compositions';
 
 
 const PageMasterclasses = () => (
@@ -31,7 +32,7 @@ const PageMasterclasses = () => (
 
 <WidgetSchedule setting="masterclasses.schedule" />
 
-<WidgetVisitor setting="visitor.register" wrapperProps={{
+<WidgetVisitorNonVip wrapperProps={{
   label: "masterclasses.public_registration.title"
   }} />
 <WidgetSchedule

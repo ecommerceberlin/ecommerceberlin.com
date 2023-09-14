@@ -14,6 +14,7 @@ import {
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import VotingCategories from '../../compositions/VotingCategories'
+import { WidgetVisitorWithVip } from '../../compositions';
 
 const settings = require('../../settings').default;
 
@@ -58,7 +59,9 @@ const PageVote  = ({id}) => (
  <WidgetSalesMap wrapperProps={{label: "exhibitors.map.title_cfp"}} />
 
  
-<WidgetVisitor setting="visitor.register" />
+{/* <WidgetVisitor setting="visitor.register" /> */}
+
+<WidgetVisitorWithVip />
 
  {/* <WidgetVips limit={12} mobile={4} /> */}
 
