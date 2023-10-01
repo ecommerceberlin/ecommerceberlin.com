@@ -9,7 +9,8 @@ import {
   Markdown,
   reduxWrapper,
   configure,
-  Centered
+  Centered,
+  MyHead
 } from 'eventjuicer-site-components';
 
 
@@ -18,19 +19,24 @@ import VotingCategories from '../../compositions/VotingCategories'
 const settings = require('../../settings').default;
 
 const PageVote  = () => (
+  <div> 
+
+  <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693818763/Website/og_ebe24_speaking.png" url="/vote">{(data) => <Head>{data}</Head>}</MyHead> 
 
   <VotingCategories intro={
     
     <Centered>
         <div style={{ maxWidth: 600, marginLeft: "auto", marginRight: "auto", marginBottom: 50}}>
-    <WidgetVoteStatus max_votes={20} />
+    {/* <WidgetVoteStatus max_votes={20} /> */}
       <Typography template="benefitsText">
         <Markdown label="callforpapers.voting.general-rules.description" />
       </Typography>
       </div>
       </Centered>
    
-  } />) 
+  } />
+  </div>
+  ) 
 
  
 

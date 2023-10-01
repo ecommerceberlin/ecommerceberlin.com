@@ -36,15 +36,15 @@ const PageVote  = ({id}) => (
   
   <div>
 
-  <HeadVote id={id} template="ebe_2024_cfp_template1">{(data) => <Head>{data}</Head>}</HeadVote> 
+  <HeadVote id={id} template="ebe24-cfp-vote">{(data) => <Head>{data}</Head>}</HeadVote> 
    
   <WidgetVotable
       id={id}
       asPath={`/vote/${id}`}
-    //  vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={20} onVoted={onVoted} />  }
-      vote={null} 
+     vote={<DynamicWidgetVoteWithLinkedIn id={id} max_votes={20} onVoted={onVoted} />  }
+      // vote={null} 
       status={null}
-      show_votes={true}
+      show_votes={false}
     />
 
 
