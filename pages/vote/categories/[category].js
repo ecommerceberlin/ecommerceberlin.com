@@ -37,7 +37,7 @@ const PageVote  = ({category}) => {
           intro={
             <Centered>
             <div style={{  maxWidth: 600, marginLeft: "auto", marginRight: "auto", marginBottom: 50 }}>
-              <WidgetVoteStatus max_votes={20} />
+              {/* <WidgetVoteStatus max_votes={20} /> */}
               <Typography template="benefitsText">
                 <Markdown label="callforpapers.voting.general-rules.description" />
               </Typography>
@@ -55,7 +55,7 @@ const PageVote  = ({category}) => {
           keyword_source="presentation_category"
           keyword={category}
           label="callforpapers.list.title"
-          show_votes={true}
+          show_votes={false}
           random={false}
           first={true}
           renderAs="table"
