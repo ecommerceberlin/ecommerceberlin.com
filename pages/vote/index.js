@@ -23,7 +23,7 @@ const PageVote  = () => (
     
     <Centered>
         <div style={{ maxWidth: 600, marginLeft: "auto", marginRight: "auto", marginBottom: 50}}>
-    <WidgetVoteStatus max_votes={6} />
+    <WidgetVoteStatus max_votes={20} />
       <Typography template="benefitsText">
         <Markdown label="callforpapers.voting.general-rules.description" />
       </Typography>

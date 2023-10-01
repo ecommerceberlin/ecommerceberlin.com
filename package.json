@@ -4,11 +4,11 @@
   "description": "site",
   "main": "pages/index.js",
   "scripts": {
-    "next": "next",
+    "next": "next --openssl-legacy-provider",
     "precommit": "lint-staged",
     "dev": "NODE_OPTIONS=--max_old_space_size=4192  NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "start": "NODE_ENV=production next start"
+    "start": "NODE_ENV=production next --openssl-legacy-provider start"
   },
   "repository": {
     "type": "git",
