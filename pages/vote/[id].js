@@ -14,7 +14,7 @@ import {
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import VotingCategories from '../../compositions/VotingCategories'
-import { WidgetVisitorWithVip } from '../../compositions';
+import { WidgetVisitorNonVip, WidgetVisitorWithVip } from '../../compositions';
 
 const settings = require('../../settings').default;
 
@@ -27,8 +27,8 @@ const DynamicWidgetVoteWithLinkedIn = dynamic(
 const onVoted = (canVote) => (<>
   {/* <WidgetVoteStatus max_votes={20} /> */}
   {canVote ? 
-    <div><VotingCategories label={null} secondaryLabel={null} /><WidgetRegForm setting="visitor.register" wrapperProps={{secondaryLabel: "visitors.register_question"}} /></div>: 
-    <WidgetRegForm setting="visitor.register" wrapperProps={{secondaryLabel: "visitors.register"}} />
+    <div><VotingCategories label={null} secondaryLabel={null} /><WidgetVisitorNonVip wrapperProps={{secondaryLabel: "visitors.register_question"}} /></div>: 
+    <WidgetVisitorNonVip wrapperProps={{secondaryLabel: "visitors.register"}} />
   }</>)
 
 const PageVote  = ({id}) => (
