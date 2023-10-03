@@ -10,7 +10,8 @@ import {
   reduxWrapper,
   configure,
   Centered,
-  MyHead
+  MyHead,
+  WidgetJurors
 } from 'eventjuicer-site-components';
 
 
@@ -35,6 +36,9 @@ const PageVote  = () => (
       </Centered>
    
   } />
+
+  <WidgetJurors minToShow={4} />
+
   </div>
   ) 
 
