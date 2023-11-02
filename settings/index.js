@@ -548,6 +548,64 @@ const settings = {
     },
 
 
+    ambassador : {
+
+        registration: {
+        wrapperProps: {
+            label: "ambassador.form.title",
+        },
+        
+        baseLabel: "ambassador",
+        fields: [
+            {name: "fname", required: true},
+            {name: "lname", required: true},
+            {name: "cname2", required: true},
+            {name: "company_website", required: true},
+            {name: "company_address", required: true},
+            {name: "email", required: true},
+            {name: "position", required: true},
+            {name: "phone", required: true}, 
+            {name: "profile_linkedin", required: true}, 
+        ],
+        
+        start: [
+            'email',
+            "fname",
+            'lname', 
+        ],
+
+        ticket_id : 2616,
+        email_template : "ecommerceberlin-ambassador-apply",
+    },
+
+
+    benefits : {
+
+        label: "ambassador.benefits.title",
+        baseLabel: "ambassador.benefits",
+
+        items: [
+
+            {
+                icon : "FaSearch",
+                label :  'networking',
+            },
+        
+            {
+                icon : "FaPoll",
+                label : 'promotion'
+            },
+        
+            {
+                icon : "FaPoll",
+                label : 'involvement'
+            },
+
+        ]
+    }, 
+
+    },
+
 
     exhibitor_registration: {
 
@@ -850,7 +908,7 @@ const settings = {
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
                 // {name: 'cfp', to: '/speaking'},
-                {name: 'vote', to: '/vote'},
+                // {name: 'vote', to: '/vote'},
               ]
             },
             {
@@ -861,7 +919,8 @@ const settings = {
                 // {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'},
-                {name: 'vip', to: '/vip'}
+                {name: 'vip', to: '/vip'},
+                // {name: 'ambassador', to: '/ambassador'}
               ]
             },
             {
