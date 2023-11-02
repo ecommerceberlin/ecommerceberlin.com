@@ -12,6 +12,8 @@ import {
   Markdown
 } from 'eventjuicer-site-components';
 
+import { WidgetAmbassadors } from '../compositions';
+
 import settings from '../settings';
 
 const PageAmbassador = () => (
@@ -20,10 +22,13 @@ const PageAmbassador = () => (
 
 <Wrapper first label="ambassador.title">
 <Markdown label="ambassador.description" />
-  
 </Wrapper>
 <WidgetIconGrid setting="ambassador.benefits" icons={{
 }} />
+
+
+<WidgetAmbassadors />
+
 <Wrapper first label="ambassador.apply.title">
 <WidgetRegForm
   wrapperProps={{label: null}}

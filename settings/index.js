@@ -550,6 +550,21 @@ const settings = {
 
     ambassador : {
 
+
+        people: [
+
+            {
+                name: "name",
+                cname2: "cname2",
+                position: "position",
+                avatar_cdn: "avatar_cdn",
+                logotype_cdn: "logotype_cdn"
+            }
+            
+
+        ],
+
+
         registration: {
         wrapperProps: {
             label: "ambassador.form.title",

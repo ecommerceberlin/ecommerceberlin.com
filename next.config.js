@@ -18,6 +18,9 @@ const SentryWebpackPluginOptions = {
 
 module.exports = withSentryConfig(withTM({
 
+    experimental: {
+    esmExternals: 'loose',
+   },
 
     async rewrites() { 
       return [
