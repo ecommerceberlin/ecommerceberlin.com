@@ -558,10 +558,43 @@ const settings = {
                 cname2: "cname2",
                 position: "position",
                 avatar_cdn: "avatar_cdn",
-                logotype_cdn: "logotype_cdn"
-            }
+            }, 
             
-
+            {
+                name: "name",
+                cname2: "cname2",
+                position: "position",
+                avatar_cdn: "avatar_cdn",
+            }, 
+            
+            {
+                name: "name",
+                cname2: "cname2",
+                position: "position",
+                avatar_cdn: "avatar_cdn",
+            }, 
+            
+            {
+                name: "name",
+                cname2: "cname2",
+                position: "position",
+                avatar_cdn: "avatar_cdn",
+            }, 
+            
+            {
+                name: "name",
+                cname2: "cname2",
+                position: "position",
+                avatar_cdn: "avatar_cdn",
+            }, 
+            
+            {
+                name: "name",
+                cname2: "cname2",
+                position: "position",
+                avatar_cdn: "avatar_cdn",
+            }, 
+            
         ],
 
 
