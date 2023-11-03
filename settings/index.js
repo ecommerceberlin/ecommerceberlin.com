@@ -554,46 +554,96 @@ const settings = {
         people: [
 
             {
-                name: "name",
-                cname2: "cname2",
-                position: "position",
-                avatar_cdn: "avatar_cdn",
+                name: "Thomas Ficht",
+                cname2: "MyToys Group",
+                position: "Head of Payment, Risk and Customer Accounts",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1549985234/MyToys_Thomas_ficht.jpg",
             }, 
             
             {
-                name: "name",
-                cname2: "cname2",
-                position: "position",
-                avatar_cdn: "avatar_cdn",
+                name: "Efe von Thenen",
+                cname2: "ePages",
+                position: "CMO",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1692879067/Website/CFP%20Advisory%20Board/efe-acunaz-square.jpg",
             }, 
             
             {
-                name: "name",
-                cname2: "cname2",
-                position: "position",
-                avatar_cdn: "avatar_cdn",
+                name: "Ralph Hünermann",
+                cname2: "Odoscope",
+                position: "CEO & Founder",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1698934214/ralph.jpg",
             }, 
             
             {
-                name: "name",
-                cname2: "cname2",
-                position: "position",
-                avatar_cdn: "avatar_cdn",
+                name: "Matthias	Genz",
+                cname2: "MediaMarktSaturn",
+                position: "Chief Customer Officer",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1646830314/Speakers/Matthias_Genz_2022_02333_web_copy.jpg",
             }, 
             
             {
-                name: "name",
-                cname2: "cname2",
-                position: "position",
-                avatar_cdn: "avatar_cdn",
+                name: "Dr. Pascal Volz",
+                cname2: "fischerAppelt",
+                position: "Managing Director Performance",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1618837908/Speakers/fischerAppelt_Pascal_Volz_web.jpg",
             }, 
             
             {
-                name: "name",
-                cname2: "cname2",
-                position: "position",
-                avatar_cdn: "avatar_cdn",
+                name: "Volker Harbrecht",
+                cname2: "Meta",
+                position: "Head of Disruptors eCommerce",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1673612408/Call%20for%20Papers%202022/Volker_Harbrecht.png",
             }, 
+
+            {
+                name: "Robert Hein",
+                cname2: "Olution Advisory Services",
+                position: "Advisory Board Member",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1672318255/Call%20for%20Papers%202022/Robert_Hein_Head_Shot_Square.jpg",
+            }, 
+
+            {
+                name: "Dominique Leikauf",
+                cname2: "DKB Service",
+                position: "Cluster Lead People and Culture",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1698934327/dominique%20leikauf.jpg",
+            }, 
+
+            {
+                name: "Alexander Holzknecht",
+                cname2: "Motatos",
+                position: "Chief Commercial Officer",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1672238551/Call%20for%20Papers%202022/CCO_Alexander_holzknecht.jpg",
+            }, 
+
+            {
+                name: "Anna Graf",
+                cname2: "Arvato",
+                position: "",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1692878567/Website/CFP%20Advisory%20Board/anna-graf-square.jpg",
+            }, 
+
+            {
+                name: "Arne Vogt",
+                cname2: "Artavo",
+                position: "Business Development",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1671446798/Jury/Arne_Vogt_ARTAVO_06_2022-315_WEB_SocialMedia.jpg",
+            }, 
+
+            {
+                name: "Daniel Wishnia",
+                cname2: "Aroundtown",
+                position: "",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1637335110/Jury/Daniel.Wishnia.jpg",
+            }, 
+
+            {
+                name: "Rad Jha",
+                cname2: "flaconi",
+                position: "",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1698934622/Jury/rad.jpg",
+            }, 
+
             
         ],
 
@@ -608,8 +658,8 @@ const settings = {
             {name: "fname", required: true},
             {name: "lname", required: true},
             {name: "cname2", required: true},
-            {name: "company_website", required: true},
-            {name: "company_address", required: true},
+            // {name: "company_website", required: true},
+            // {name: "company_address", required: true},
             {name: "email", required: true},
             {name: "position", required: true},
             {name: "phone", required: true}, 
@@ -968,7 +1018,7 @@ const settings = {
                 {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'offers', to: '/offers'},
                 {name: 'vip', to: '/vip'},
-                // {name: 'ambassador', to: '/ambassador'}
+                {name: 'ambassador', to: '/ambassador'}
               ]
             },
             {
