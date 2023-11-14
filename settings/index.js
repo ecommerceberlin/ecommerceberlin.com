@@ -563,7 +563,7 @@ const settings = {
             {
                 name: "Efe von Thenen",
                 cname2: "ePages",
-                position: "CMO",
+                position: "Chief Marketing Officer",
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1692879067/Website/CFP%20Advisory%20Board/efe-acunaz-square.jpg",
             }, 
             
@@ -619,7 +619,7 @@ const settings = {
             {
                 name: "Anna Graf",
                 cname2: "Arvato",
-                position: "",
+                position: "Innovation lead Web3",
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1692878567/Website/CFP%20Advisory%20Board/anna-graf-square.jpg",
             }, 
 
@@ -633,14 +633,14 @@ const settings = {
             {
                 name: "Daniel Wishnia",
                 cname2: "Aroundtown",
-                position: "",
+                position: "Chief Digital Transformation Officer",
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1637335110/Jury/Daniel.Wishnia.jpg",
             }, 
 
             {
                 name: "Rad Jha",
                 cname2: "flaconi",
-                position: "",
+                position: "Vice President Supply Chain ",
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1698934622/Jury/rad.jpg",
             }, 
 
