@@ -9,16 +9,20 @@ import {
   configure,
   TwoColsLayout as Section,
   MyTypography,
+  MyHead,
   Markdown
 } from 'eventjuicer-site-components';
 
 import { WidgetAmbassadors } from '../compositions';
 
 import settings from '../settings';
+import Head from 'next/head'
 
 const PageAmbassador = () => (
 
 <div>
+
+<MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693817519/Website/ebe24_og_home.jpg" url="/ambassador">{(data) => <Head>{data}</Head>}</MyHead> 
 
 <Wrapper first label="ambassador.title">
 <Markdown label="ambassador.description" />

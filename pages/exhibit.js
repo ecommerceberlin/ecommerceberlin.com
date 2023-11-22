@@ -12,14 +12,21 @@ import {
   Faq,
   configure,
   reduxWrapper,
-  WidgetAllOrCurrentExhibitorsColumnList
+  WidgetAllOrCurrentExhibitorsColumnList,
+  MyHead
 } from 'eventjuicer-site-components';
+
+import Head from 'next/head'
 
 const settings = require('../settings').default;
 
 const PageExhibit = () => (
 
  <>
+
+  <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693817519/Website/ebe24_og_home.jpg" url="/exhibit">
+      {(data) => <Head>{data}</Head>}
+    </MyHead>
 
   <WidgetSalesMap
     label="exhibitors.map.title"

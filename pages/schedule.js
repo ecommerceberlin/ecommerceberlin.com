@@ -7,16 +7,24 @@ import {
   WidgetSchedule,
   WidgetVideoWithEventInfo,
   WidgetVisitor,
+  MyHead,
   WidgetBanner
 } from 'eventjuicer-site-components';
 
 import { WidgetVisitorWithVip } from '../compositions';
+import Head from 'next/head'
 
 const settings = require('../settings').default;
 
 const PageSchedule = () => (
 
   <>
+  <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693818763/Website/og_ebe24_speaking.png" url="/schedule">
+      {(data) => <Head>{data}</Head>}
+    </MyHead>
+
+
+  
     <WidgetSchedule />
     {/* <WidgetBanner setting="metaverse" /> */}
     {/* <WidgetVisitor setting="visitor.register"  /> */}
