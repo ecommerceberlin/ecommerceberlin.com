@@ -1169,28 +1169,9 @@ const settings = {
         ]
     },
 
-    customer_support : {
+   
 
-    },
-
-    sales_support : {
-
-        title: 'event.support.hello',
-        description: 'event.support.description',
-
-        people : [
-           
-            {
-                name: 'Gerome Yalim',
-                position : '',
-                langs : ["en"],
-                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1691403509/Website/gerome2.png',
-                phone: '+49 305 201 42 88',
-                email: 'hello@ecommerceberlin.com',
-                chatlio : true
-            }
-          ]
-    },
+   
 
     schedule : {
         times : {
@@ -1220,6 +1201,28 @@ const settings = {
     },
 
     footer : {
+
+        title: 'event.support.hello',
+        description: 'event.support.description',
+
+        hideOrganizerDetails: true,
+
+
+        people : [
+           
+            {
+                name: 'Gerome Yalim',
+                position : '',
+                langs : ["en"],
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1691403509/Website/gerome2.png',
+                phone: '+49 305 201 42 88',
+                email: 'hello@ecommerceberlin.com',
+                chatlio : true
+            }
+        ],
+
+
+
         primaryStyle: null,
         secondaryStyle: null,
         iconStyle : "black",
