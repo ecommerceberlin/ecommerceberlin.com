@@ -949,15 +949,57 @@ const settings = {
                 first : true,
             },
             fields : [
-                // {name: "referral", required: true},
                 {name: "email", required: true},
                 {name: "fname", required: true},
                 {name: "lname", required: true},
                 {name: "cname2", required: true},
                 {name: "position", required: true},
-                {name: "phone", required: true}
+              //   {name: "nip", required: false},
+                {name: "phone", required: true},
+  
+  
+  
+              {
+                  name: "profile_linkedin", 
+                  required: false
+              },
+              {
+                name: "participant_type",
+                required: true,
+                options: [
+                    "retailer_wholesaler",
+                    "brand_manufacturer",
+                    "service_provider",
+                    "consultant",
+                    "developer",
+                    "media",
+                    "student"
+                ]
+            },
+            {
+                name: "company_role",
+                required: true,
+                options: [
+                    "student",
+                    "entry",
+                    "manager",
+                    "professional",
+                    "head_of_department",
+                    "director",
+                    "c_level",
+                    "board_member",
+                    "other"
+                ]
+            },
+              {
+                  name: "accept", 
+                  required: true, 
+                  type: "confirm"
+              },
+  
+                 
               ],
-            ticket_id : 2176,
+            ticket_id : 2426,
             start : ['email', 'fname'],
             template : "ecommerceberlin-vip-registration",
             background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",

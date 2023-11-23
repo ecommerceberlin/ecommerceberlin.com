@@ -14,7 +14,7 @@ import {
   MyHead
 } from 'eventjuicer-site-components';
 
-import { FilteredPresenters, WidgetVisitorNonVip, WidgetVisitorWithVip } from '../../compositions';
+import { FilteredPresenters, WidgetVisitorNonVip, WidgetVisitorWithVip, RegistrationPartner } from '../../compositions';
 import Head from 'next/head'
 
 const settings = require('../../settings').default;
@@ -27,6 +27,8 @@ export const PageVisit = () => (
         <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693817519/Website/ebe24_og_home.jpg" url="/visit">{(data) => <Head>{data}</Head>}</MyHead> 
   
         <WidgetVisitorWithVip first />
+
+        <RegistrationPartner />
 
         {/* <WidgetVisitor setting="visitor.register" first /> */}
 
