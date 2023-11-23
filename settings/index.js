@@ -1044,8 +1044,7 @@ const settings = {
 
     exhibitors : {
 
-
-     
+        disableMeetups: true,
 
         benefits : {
 
