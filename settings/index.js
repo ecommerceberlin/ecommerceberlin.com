@@ -476,6 +476,47 @@ const settings = {
             {name: "position", required: true},
             {name: "phone", required: true}, 
             {name: "profile_linkedin", required: true}, 
+            {
+                name: "participant_type",
+                required: true,
+                options: [
+                    "retailer_wholesaler",
+                    "brand_manufacturer",
+                    "service_provider",
+                    "consultant",
+                    "developer",
+                    "media",
+                    "student"
+                ]
+            },
+            {
+                name: "company_role",
+                required: true,
+                options: [
+                    "student",
+                    "entry",
+                    "manager",
+                    "professional",
+                    "head_of_department",
+                    "director",
+                    "c_level",
+                    "board_member",
+                    "other"
+                ]
+            },
+            {
+                name: "location", 
+                required: true, 
+                options: [
+                    "yes",
+                    "no"
+                ]
+            },
+              {
+                  name: "accept", 
+                  required: true, 
+                  type: "confirm"
+              },
         ],
         
         start: [
@@ -991,6 +1032,14 @@ const settings = {
                     "other"
                 ]
             },
+            {
+                name: "location", 
+                required: true, 
+                options: [
+                    "yes",
+                    "no"
+                ]
+            },
               {
                   name: "accept", 
                   required: true, 
@@ -1165,6 +1214,13 @@ const settings = {
                 required: true,
                 options: "company_role"
             },
+            
+            {
+                name: "location", 
+                required: true, 
+                options: "location"      
+            },
+
             {
                 name: "accept", 
                 required: true, 
@@ -1181,7 +1237,39 @@ const settings = {
             api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
 
         },
-
+        
+        update: {
+            wrapperProps: {
+            label: "visitor.update.title",
+            // secondaryLabel: ""
+            },
+            legend: "",
+            baseLabel: "visitor.update",
+            fields: [
+                {
+                    name: "profile_linkedin", 
+                    required: false
+                },
+                { 
+                    name: "participant_type", 
+                    required: true,
+                    options: "participant_type"},
+                { 
+                    name: "company_role", 
+                    required: true,
+                    options: "company_role"
+                },
+                {
+                    name: "location", 
+                    required: false, 
+                    options: "location"
+                },
+    
+            ],
+    
+            start: [],
+    
+       },
         benefits : {
 
             label: "visitors.benefits.title",
