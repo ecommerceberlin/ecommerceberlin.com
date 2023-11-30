@@ -48,6 +48,10 @@ const WidgetVisitorWithVip = ({setting="visitor.register", ...restProps}) => {
                 "c_level",
                 "board_member",
                 "other"
+            ],
+            location: [
+                "yes",
+                "no",
             ]
         }} right={ <VipInvite /> } />);
 
