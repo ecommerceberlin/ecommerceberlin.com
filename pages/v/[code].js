@@ -6,7 +6,7 @@ import {
   configure,
 } from 'eventjuicer-site-components';
 
-import { PageVisit } from '.';
+import { PageVisit } from '../visit';
  
 const settings = require('../../settings').default;
 
