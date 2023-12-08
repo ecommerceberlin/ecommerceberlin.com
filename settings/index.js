@@ -247,7 +247,7 @@ const settings = {
         lang_api_endpoint : 'https://api.eventjuicer.workers.dev/?url=https%3A%2F%2Flocalise.biz%2Fapi%2Fexport%2Fall.json%3Fformat%3Dmulti%26pretty%26key%3DtWMy1RRHuiW6DD9T7AyYtFlQzAeztbBK',
 
         api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com",
-        proxy: "",
+        proxy: "https://api.eventjuicer.workers.dev?url=",
 
         post_api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
         service_api : "https://api.eventjuicer.com/v1/services",
