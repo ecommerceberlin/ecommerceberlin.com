@@ -12,6 +12,8 @@ import {
   WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
+import WidgetVideo from '../../compositions/WidgetVideo';
+
 const settings  = require('../../settings').default;
 
 
@@ -22,6 +24,7 @@ const PageVip = ({code}) => (
   <WidgetOrganizerVip code={code} setting="vips.register" />
 
   <WidgetIconGrid  setting="vips.benefits" />
+  <WidgetVideo videoId="szdcNPfVAlc" />
   <WidgetVips limit={12} mobile={4} />
   <WidgetVideoWithEventInfo />
   <WidgetSchedule />
