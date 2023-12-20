@@ -64,7 +64,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     props : {
       name : "name" in params ? params.name : ""
     },
-    revalidate: 10
+    revalidate: 600
   }
 
 })
