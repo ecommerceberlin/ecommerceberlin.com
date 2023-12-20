@@ -57,7 +57,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   await configure(props, {
     settings : settings,
-    preload: ['tickets', 'ticketgroups'],
+    preload: ['tickets'],
   })
 
   return {
