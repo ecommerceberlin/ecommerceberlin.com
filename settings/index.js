@@ -1334,7 +1334,7 @@ const settings = {
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
         event_date : '22nd FEBRUARY 2024',
-        event_hours : '10:00-17:00',
+        event_hours : '9:00-18:00',
 
     },
 
@@ -1404,6 +1404,15 @@ const settings = {
                 avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1691403509/Website/gerome2.png',
                 phone: '+49 305 201 42 88',
                 email: 'hello@ecommerceberlin.com',
+                chatlio : true
+            },
+            {
+                name: 'Lucas Zarna',
+                position : '',
+                langs : ["en"],
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1698226649/Newsletters/lucas-zarna.png',
+                phone: '+49 176 316 244 92',
+                email: 'sales@ecommerceberlin.com',
                 chatlio : true
             }
         ],

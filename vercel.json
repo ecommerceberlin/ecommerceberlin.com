@@ -7,6 +7,7 @@
   { "source": "/legal-exhibitors", "destination": "/legal/exhibitors", "permanent": true },
   { "source": "/legal-imprint", "destination": "/legal/imprint", "permanent": true },
   { "source": "/legal-visitors-data", "destination": "/legal/visitors-data", "permanent": true },
-  { "source": "/legal-visitors", "destination": "/legal/visitors", "permanent": true }
+  { "source": "/legal-visitors", "destination": "/legal/visitors", "permanent": true },
+  { "source": "/legal-privacy-policy", "destination": "/legal/privacy-policy", "permanent": true }
   ]
 }
