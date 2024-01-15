@@ -1111,8 +1111,8 @@ const settings = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                //  {name: 'schedule', to: '/schedule'},
-                // {name: 'presenters', to: '/presenters'},
+                 {name: 'schedule', to: '/schedule'},
+                {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 {name: 'speakers', to: '/speakers'},
                 // {name: 'offers', to: '/offers'},
@@ -1362,18 +1362,18 @@ const settings = {
 
     schedule : {
         times : {
-            '10:30': 'presentation',
-            '11:10': 'presentation',
-            '11:50': 'presentation',
-            '12:30': 'presentation',
+            '10:00': 'presentation',
+            '10:45': 'presentation',
+            '11:30': 'presentation',
+            '12:15': 'presentation',
             // '13:00': 'break_20',
-            '13:10': 'presentation',
-            '13:50': 'presentation',
+            '13:00': 'presentation',
+            '13:45': 'presentation',
             '14:30': 'presentation',
-            '15:10': 'presentation',
-            '15:50': 'presentation',
-            '16:10': 'presentation',
+            '15:15': 'presentation',
+            '16:00': 'presentation',
             '16:30': 'presentation',
+            '17:00': 'presentation',
         
           },    
           venues : {
