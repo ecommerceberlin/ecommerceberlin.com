@@ -83,8 +83,13 @@ module.exports = withSentryConfig(withTM({
         source: '/agenda',
         destination: '/schedule',
         permanent: true,
-      }
+      },
 
+      {
+        source: '/haendlerbund',
+        destination: '/visit?utm_source=haendlerbund&utm_medium=partner&utm_campaign=haendlerbund_partner',
+        permanent: false,
+      }
 
     ]
     },
