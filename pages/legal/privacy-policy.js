@@ -9,11 +9,11 @@ Markdown
 
 const settings = require('../../settings').default;
 
-// import contents from '../../texts/visitors.md'
+import contents from '../../texts/privacy-policy.md'
 
 const PageLegalPrivacyPolicy = () => (
 <Wrapper first label="visitors.privacy-policy.title">
-{/* <Markdown>{contents}</Markdown> */}
+<Markdown>{contents}</Markdown>
 </Wrapper>
 )
 

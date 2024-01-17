@@ -11,6 +11,8 @@ import {
     WidgetSchedule,
     WidgetSalesMap
   } from 'eventjuicer-site-components';
+
+  import { WidgetVisitorWithVip, WidgetVisitorNonVip } from '../../compositions';
   
   import Head from 'next/head'
 
@@ -26,13 +28,13 @@ import {
 
       <WidgetVideoWithEventInfo  />
 
-      <WidgetRegForm setting="visitor.register" />
+      <WidgetVisitorWithVip />
 
       <WidgetSchedule />
 
       <WidgetPresenters setting="speakers" link={(item) => `/speakers/${item.id}` } />
 
-      <WidgetRegForm setting="visitor.register" />
+      <WidgetVisitorNonVip />
 
   </>
 )
