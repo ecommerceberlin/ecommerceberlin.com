@@ -6,7 +6,7 @@
   "scripts": {
     "next": "next --openssl-legacy-provider",
     "precommit": "lint-staged",
-    "dev": "NODE_OPTIONS=--max_old_space_size=4192  NODE_OPTIONS='--inspect' next dev",
+    "dev": "NODE_OPTIONS=--max_old_space_size=8192 NODE_OPTIONS=--openssl-legacy-provider next dev",
     "build": "next build",
     "start": "NODE_ENV=production next --openssl-legacy-provider start"
   },
@@ -30,7 +30,7 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@sentry/nextjs": "^6.18.1",
-    "eventjuicer-site-components": "4.5.49",
+    "eventjuicer-site-components": "4.5.51",
     "next": "11.1.2",
     "next-transpile-modules": "^8.0.0",
     "raw-loader": "^4.0.2",
