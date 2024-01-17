@@ -314,12 +314,15 @@ const settings = {
             // 15+10+10 = 35!!!
             // 
             // '10:25': 'presentation',
-            '10:20': 'presentation',
-            '11:30': 'presentation',
-            '12:40': 'presentation',
-            '13:50': 'presentation',
+            '10:30': 'presentation',
+            '11:15': 'presentation',
+            '12:00': 'presentation',
+            '12:45': 'presentation',
+            '13:30': 'presentation',
+            '14:15': 'presentation',
             '15:00': 'presentation',
-            '16:10': 'presentation',
+            '15:45': 'presentation',
+            '16:30': 'presentation',
           }, 
           venues : {
             M1: { company_id: 0 },
