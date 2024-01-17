@@ -10,11 +10,12 @@ import {
   reduxWrapper,
   configure,
   // WidgetBanner,
-  // WidgetPresenters,
-  WidgetSalesMap,
+  WidgetPresenters,
+  // WidgetSalesMap,
   // WidgetSchedule,
   // WidgetBanner,
-  MyHead
+  MyHead,
+  WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
 
 import {AllPartners, WidgetVisitorNonVip, WidgetVisitorWithVip} from '../compositions'
@@ -36,13 +37,13 @@ const PageIndex = (props) => (
   {/* <WidgetSchedule /> */}
   <WidgetVideoWithEventInfo />
 
-  {/* <WidgetVisitorWithVip /> */}
+  <WidgetVisitorWithVip />
   {/* <WidgetVisitor setting="visitor.register" /> */}
 
-  <WidgetSalesMap
+  {/* <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  />
+  /> */}
 
 
   {/* <WidgetBanner setting="metaverse" /> */}
@@ -51,9 +52,9 @@ const PageIndex = (props) => (
 
   {/* <WidgetFeaturedPresenters limit={8}/> */}
 
-  {/* <WidgetPresenters filter={(p)=>p.featured} limt={8} wrapperProps={{
+  <WidgetPresenters filter={(p)=>p.featured} limt={8} wrapperProps={{
     label: "presenters.list_featured"
-  }}/> */}
+  }}/>
 
 
 
@@ -61,7 +62,6 @@ const PageIndex = (props) => (
 
   {/* <WidgetVisitor setting="visitor.register" /> */}
   
-  {/* <WidgetVisitorNonVip /> */}
 
 
   {/* <WidgetBanner setting="banner_cfp" /> */}
@@ -82,6 +82,8 @@ const PageIndex = (props) => (
 
 
   <WidgetAllOrCurrentExhibitorsColumnList />
+
+  <WidgetVisitorNonVip />
 
   <AllPartners />
 
