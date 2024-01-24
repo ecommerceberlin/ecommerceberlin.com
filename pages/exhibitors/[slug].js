@@ -14,7 +14,8 @@ import {
     fetch,
     HeadCompany,
     WidgetCompanyMeetup,
-    WidgetCompanyVip
+    WidgetCompanyVip,
+    Promoninja
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
@@ -48,6 +49,9 @@ import { WidgetVisitorNonVip } from '../../compositions';
       
       <WidgetRoleButtons /> 
      
+      <Promoninja id={slug} />
+
+
       <WidgetAllExhibitorsColumnList />
     </div>
   );
