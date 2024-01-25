@@ -786,6 +786,8 @@ const settings = {
 
     speakers : {
 
+        og_template: "ebe24-speaker-template",
+
         callforpapers: {
 
             wrapperProps: {
