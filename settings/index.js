@@ -1119,7 +1119,7 @@ const settings = {
               items: [
                 {name: 'visit', to: '/visit'},
                  {name: 'schedule', to: '/schedule'},
-                {name: 'presenters', to: '/presenters'},
+                // {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 {name: 'speakers', to: '/speakers'},
                 // {name: 'offers', to: '/offers'},
@@ -1150,7 +1150,7 @@ const settings = {
 
     exhibitors : {
 
-        disableMeetups: true,
+        disableMeetups: false,
 
         benefits : {
 
