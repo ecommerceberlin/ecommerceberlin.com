@@ -86,6 +86,30 @@ module.exports = withSentryConfig(withTM({
       },
 
       {
+        source: '/lucas',
+        destination: '/visit?utm_source=email&utm_medium=email&utm_campaign=lucas_email_magic_link',
+        permanent: true,
+      },
+
+      {
+        source: '/gerome',
+        destination: '/visit?utm_source=email&utm_medium=email&utm_campaign=gerome_email_magic_link',
+        permanent: true,
+      },
+
+      {
+        source: '/noel',
+        destination: '/visit?utm_source=email&utm_medium=email&utm_campaign=noel_email_magic_link',
+        permanent: true,
+      },
+
+      {
+        source: '/ebefriends',
+        destination: '/visit?utm_source=linkedin&utm_medium=ebefriends_post&utm_campaign=ebefriends_post',
+        permanent: true,
+      },
+
+      {
         source: '/haendlerbund',
         destination: '/visit?utm_source=haendlerbund&utm_medium=partner&utm_campaign=haendlerbund_partner',
         permanent: false,
