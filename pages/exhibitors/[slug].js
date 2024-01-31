@@ -19,9 +19,12 @@ import {
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
-import { WidgetVisitorNonVip } from '../../compositions';
+import { WidgetVisitorNonVip, regFormProps } from '../../compositions';
 
   const settings = require('../../settings').default;
+
+
+
 
   const PageCompany = ({slug, dispatch}) => {
     
@@ -30,61 +33,8 @@ import { WidgetVisitorNonVip } from '../../compositions';
 
       <HeadCompany slug={slug}>{(data) => <Head>{data}</Head>}</HeadCompany> 
  
-      <WidgetCompanyMeetup regFormProps={{
-        options: {
-          participant_type: [
-              "retailer_wholesaler",
-              "brand_manufacturer",
-              "service_provider",
-              "consultant",
-              "developer",
-              "media",
-              "student"
-          ],
-          company_role: [
-              "student",
-              "entry",
-              "manager",
-              "professional",
-              "head_of_department",
-              "director",
-              "c_level",
-              "board_member",
-              "other"
-          ],
-          location: [
-              "yes",
-              "no",
-          ]}
-      }}/>
-      
-      <WidgetCompanyVip regFormProps={{
-        options: {
-          participant_type: [
-              "retailer_wholesaler",
-              "brand_manufacturer",
-              "service_provider",
-              "consultant",
-              "developer",
-              "media",
-              "student"
-          ],
-          company_role: [
-              "student",
-              "entry",
-              "manager",
-              "professional",
-              "head_of_department",
-              "director",
-              "c_level",
-              "board_member",
-              "other"
-          ],
-          location: [
-              "yes",
-              "no",
-          ]}
-      }}/>
+      <WidgetCompanyMeetup regFormProps={{options: regFormProps}} />
+      <WidgetCompanyVip regFormProps={{options: regFormProps}} />
 
       <WidgetCompany slug={slug} />
 
