@@ -41,7 +41,7 @@ right={
 
 />
 
-<Invite person={person} text="CU!" from="from" template="ebe7_template_visitor" color="000000"/>
+<Invite person={person} text="Join me!" from="from" template="ebe8_template_visitor" color="000000"/>
 </Wrapper>
 
 <WidgetSchedule />
