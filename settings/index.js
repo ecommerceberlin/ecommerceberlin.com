@@ -328,7 +328,8 @@ const settings = {
     workshops : {
 
         apply: {
-            disabled: 0
+            disabled: 0,
+            disabledTreshold: 70
         },
     },
 
