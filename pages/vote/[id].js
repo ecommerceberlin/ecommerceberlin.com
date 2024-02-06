@@ -8,7 +8,6 @@ import {
   reduxWrapper,
   configure,
   HeadVote,
-  WidgetRegForm,
   WidgetSalesMap
 } from 'eventjuicer-site-components';
 import dynamic from 'next/dynamic'

@@ -17,7 +17,8 @@ import {
   WidgetVerticalTimeline,
   TwoColsLayout as Section,
   MyTypography,
-  MyHead
+  MyHead,
+  RecentSubmissions
 } from 'eventjuicer-site-components';
 import Head from 'next/head'
 import NoteAdd from '@material-ui/icons/NoteAdd'
@@ -26,7 +27,6 @@ import Public from '@material-ui/icons/Public'
 import Mic from '@material-ui/icons/Mic'
 import Assessment from '@material-ui/icons/Assessment'
 import SpeakersVideo from '../compositions/SpeakersVideo';
-
 
 
 const settings = require('../settings').default;
@@ -51,6 +51,7 @@ const PageSpeaking = () => (
   
           <Markdown label="cfp.hello.details" />
   
+    <RecentSubmissions />
   
           </div> }
         right={ 
