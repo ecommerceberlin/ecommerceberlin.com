@@ -1106,6 +1106,7 @@ const settings = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
+                {name: 'masterclasses', to: '/masterclasses'},
                  {name: 'schedule', to: '/schedule'},
                 // {name: 'presenters', to: '/presenters'},
                 {name: 'exhibitors', to: '/exhibitors'},
