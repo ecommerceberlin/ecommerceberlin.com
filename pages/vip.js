@@ -19,7 +19,6 @@ import {
 
 import settings from '../settings';
 
-import { Search, Poll } from '@material-ui/icons';
 
 const PageVip = () => (
 
@@ -35,7 +34,6 @@ const PageVip = () => (
 <WidgetRegForm
   wrapperProps={{label: null}}
   setting="vip.registration"
-
   right={
     <>
     <MyTypography template="subtitle1" label="vips.rules.title" /> 

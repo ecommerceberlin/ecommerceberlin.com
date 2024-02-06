@@ -1,3 +1,30 @@
+const regFormOptions = {
+    participant_type: [
+        "retailer_wholesaler",
+        "brand_manufacturer",
+        "service_provider",
+        "consultant",
+        "developer",
+        "media",
+        "student"
+    ],
+    company_role: [
+        "student",
+        "entry",
+        "manager",
+        "professional",
+        "head_of_department",
+        "director",
+        "c_level",
+        "board_member",
+        "other"
+    ],
+    location: [
+        "yes",
+        "no",
+    ]
+ }
+
 const sharedBenefits = [
     // {
     //     icon : "A",
@@ -486,44 +513,23 @@ const settings = {
             {
                 name: "participant_type",
                 required: true,
-                options: [
-                    "retailer_wholesaler",
-                    "brand_manufacturer",
-                    "service_provider",
-                    "consultant",
-                    "developer",
-                    "media",
-                    "student"
-                ]
+                options: regFormOptions.participant_type
             },
             {
                 name: "company_role",
                 required: true,
-                options: [
-                    "student",
-                    "entry",
-                    "manager",
-                    "professional",
-                    "head_of_department",
-                    "director",
-                    "c_level",
-                    "board_member",
-                    "other"
-                ]
+                options: regFormOptions.company_role
             },
             {
                 name: "location", 
                 required: true, 
-                options: [
-                    "yes",
-                    "no"
-                ]
+                options: regFormOptions.location
             },
-              {
+            {
                   name: "accept", 
                   required: true, 
                   type: "confirm"
-              },
+            },
         ],
         
         start: [
@@ -1013,8 +1019,7 @@ const settings = {
                 {name: "position", required: true},
               //   {name: "nip", required: false},
                 {name: "phone", required: true},
-  
-  
+
   
               {
                   name: "profile_linkedin", 
@@ -1023,38 +1028,18 @@ const settings = {
               {
                 name: "participant_type",
                 required: true,
-                options: [
-                    "retailer_wholesaler",
-                    "brand_manufacturer",
-                    "service_provider",
-                    "consultant",
-                    "developer",
-                    "media",
-                    "student"
-                ]
+                options: regFormOptions.participant_type
             },
             {
                 name: "company_role",
                 required: true,
-                options: [
-                    "student",
-                    "entry",
-                    "manager",
-                    "professional",
-                    "head_of_department",
-                    "director",
-                    "c_level",
-                    "board_member",
-                    "other"
-                ]
+                options: regFormOptions.company_role
+
             },
             {
                 name: "location", 
-                required: true, 
-                options: [
-                    "yes",
-                    "no"
-                ]
+                required: true,
+                options: regFormOptions.location
             },
               {
                   name: "accept", 
@@ -1225,17 +1210,18 @@ const settings = {
             { 
                 name: "participant_type", 
                 required: true,
-                options: "participant_type"},
+                options: regFormOptions.participant_type
+            },
             { 
                 name: "company_role", 
                 required: true,
-                options: "company_role"
+                options: regFormOptions.company_role
             },
             
             {
                 name: "location", 
                 required: true, 
-                options: "location"      
+                options: regFormOptions.location 
             },
 
             {
@@ -1270,16 +1256,17 @@ const settings = {
                 { 
                     name: "participant_type", 
                     required: true,
-                    options: "participant_type"},
+                    options: regFormOptions.participant_type
+                },
                 { 
                     name: "company_role", 
                     required: true,
-                    options: "company_role"
+                    options: regFormOptions.company_role
                 },
                 {
                     name: "location", 
                     required: true, 
-                    options: "location"
+                    options: regFormOptions.location
                 },
     
             ],

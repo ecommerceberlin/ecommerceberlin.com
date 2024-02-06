@@ -6,7 +6,7 @@ import {
     // Markdown
  } from "eventjuicer-site-components";
 
-import regFormProps from "./regFormProps";
+
 
 const VipInvite = () => {
 
@@ -29,7 +29,7 @@ const VipInvite = () => {
 
 const WidgetVisitorWithVip = ({setting="visitor.register", ...restProps}) => {
 
-        return (<WidgetVisitor setting={setting} {...restProps} options={regFormProps} right={ <VipInvite /> } />);
+        return (<WidgetVisitor setting={setting} {...restProps} right={ <VipInvite /> } />);
 
 }
 

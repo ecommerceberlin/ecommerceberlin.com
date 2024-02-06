@@ -13,7 +13,6 @@ import {
     TextSection
   } from 'eventjuicer-site-components';
   
-import { regFormProps } from '../../compositions';
 
 import settings from '../../settings';
   
@@ -25,7 +24,6 @@ const PageAccount = () => {
     return (<Wrapper>
         <WidgetRegForm 
             setting="visitor.update"
-            options={regFormProps}
             data={user.fields} 
             token={user.token}
             right={null}

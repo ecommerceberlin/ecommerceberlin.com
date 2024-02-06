@@ -19,7 +19,7 @@ import {
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
-import { WidgetVisitorNonVip, regFormProps } from '../../compositions';
+import { WidgetVisitorNonVip } from '../../compositions';
 
   const settings = require('../../settings').default;
 
@@ -33,8 +33,8 @@ import { WidgetVisitorNonVip, regFormProps } from '../../compositions';
 
       <HeadCompany slug={slug}>{(data) => <Head>{data}</Head>}</HeadCompany> 
  
-      <WidgetCompanyMeetup regFormProps={{options: regFormProps}} />
-      <WidgetCompanyVip regFormProps={{options: regFormProps}} />
+      <WidgetCompanyMeetup />
+      <WidgetCompanyVip />
 
       <WidgetCompany slug={slug} />
 
