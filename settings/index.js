@@ -329,7 +329,7 @@ const settings = {
 
         apply: {
             disabled: 0,
-            disabledTreshold: 70
+            disabledTreshold: 200
         },
     },
 
