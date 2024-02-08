@@ -699,7 +699,26 @@ const settings = {
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1698934622/Jury/rad.jpg",
             }, 
 
-            
+            {
+                name: "Anamika Datta",
+                cname2: "ex-Zalando",
+                position: "Senior Product Manager",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1672239736/Call%20for%20Papers%202022/ANAMIKA_PORTRAIT_CURLY.jpg",
+            }, 
+
+            {
+                name: "Oke Harms",
+                cname2: "Kickerkult",
+                position: "Founder & Owner",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1707310034/oke.jpg",
+            }, 
+
+            {
+                name: "Ioannis Salavopoulos",
+                cname2: "Viva.com",
+                position: "Acting Branch Gen. Manager Germany & Regional VP Bus. Dev.",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1707309859/Jury/ioannis-salavopoulos.jpg",
+            }, 
         ],
 
 
@@ -1399,7 +1418,7 @@ const settings = {
                 name: 'Gerome Yalim',
                 position : '',
                 langs : ["en"],
-                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1691403509/Website/gerome2.png',
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1707310440/Website/gerome-200-200.png',
                 phone: '+49 305 201 42 88',
                 email: 'hello@ecommerceberlin.com',
                 chatlio : true
