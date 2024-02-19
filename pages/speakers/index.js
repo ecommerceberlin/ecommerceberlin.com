@@ -6,14 +6,14 @@ import {
   configure
 } from 'eventjuicer-site-components';
 
-import { FilteredPresenters, WidgetVisitorWithVip } from '../../compositions';
+import { FilteredPresenters, WidgetVisitorNonVip } from '../../compositions';
 
 const settings = require('../../settings').default;
 
 const PagePresenters = () => (
   <>
   <FilteredPresenters />
-  <WidgetVisitorWithVip />
+  <WidgetVisitorNonVip />
   <WidgetVideoWithEventInfo />
   </>
 )

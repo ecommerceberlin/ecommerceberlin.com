@@ -28,7 +28,7 @@ import {
 
       <WidgetVideoWithEventInfo  />
 
-      <WidgetVisitorWithVip />
+      <WidgetVisitorNonVip />
 
       <WidgetSchedule />
 
