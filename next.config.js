@@ -113,6 +113,12 @@ module.exports = withSentryConfig(withTM({
         source: '/haendlerbund',
         destination: '/visit?utm_source=haendlerbund&utm_medium=partner&utm_campaign=haendlerbund_partner',
         permanent: false,
+      },
+
+      {
+        source: '/plan',
+        destination: 'https://drive.google.com/file/d/1SXVn5vLfHls-LoJYiWPnSrj0cB47pgcE/view',
+        permanent: true,
       }
 
     ]
