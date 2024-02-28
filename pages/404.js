@@ -32,7 +32,7 @@ const PageIndex = (props) => (
 
   {/* <WidgetSchedule /> */}
 
-  <WidgetVisitorWithVip first />
+  {/* <WidgetVisitorWithVip first /> */}
 
 {/* <WidgetVisitor setting="visitor.register" first /> */}
 
@@ -60,7 +60,7 @@ const PageIndex = (props) => (
   /> */}
 
   {/* <WidgetVisitor setting="visitor.register" /> */}
-  <WidgetVisitorNonVip />
+  {/* <WidgetVisitorNonVip /> */}
 
    <WidgetAllExhibitorsColumnList />
 

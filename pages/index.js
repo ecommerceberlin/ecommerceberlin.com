@@ -37,7 +37,7 @@ const PageIndex = (props) => (
   {/* <WidgetSchedule /> */}
   <WidgetVideoWithEventInfo />
 
-  <WidgetVisitorNonVip />
+  {/* <WidgetVisitorNonVip /> */}
   {/* <WidgetVisitor setting="visitor.register" /> */}
 
   {/* <WidgetSalesMap
@@ -81,9 +81,9 @@ const PageIndex = (props) => (
   {/* <WidgetVisitorNonVip /> */}
 
 
-  <WidgetAllOrCurrentExhibitorsColumnList />
+  {/* <WidgetAllOrCurrentExhibitorsColumnList /> */}
 
-  <WidgetVisitorNonVip />
+  {/* <WidgetVisitorNonVip /> */}
 
   <AllPartners />
 

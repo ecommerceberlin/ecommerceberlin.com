@@ -39,9 +39,9 @@ import { WidgetVisitorNonVip } from '../../compositions';
       <WidgetCompany slug={slug} />
 
       {/* <WidgetVisitor setting="visitor.register" /> */}
-      <WidgetVisitorNonVip />
+      {/* <WidgetVisitorNonVip /> */}
   
-      <WidgetSchedule />
+      {/* <WidgetSchedule /> */}
   
       <WidgetVideoWithEventInfo />
 

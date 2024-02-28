@@ -13,7 +13,7 @@ const settings = require('../../settings').default;
 const PagePresenters = () => (
   <>
   <FilteredPresenters />
-  <WidgetVisitorNonVip />
+  {/* <WidgetVisitorNonVip /> */}
   <WidgetVideoWithEventInfo />
   </>
 )
