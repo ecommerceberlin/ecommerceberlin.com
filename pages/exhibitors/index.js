@@ -18,15 +18,15 @@ const PageExhibitors = () => (
   <>
 
   <WidgetAllOrCurrentExhibitorsColumnList />
-
+{/* 
   <WidgetSalesMap
     label="exhibitors.map.title"
-  />
+  /> */}
 
   <WidgetRoleButtons />
   
   {/* <WidgetVisitor setting="visitor.register" /> */}
-  <WidgetVisitorNonVip />
+  {/* <WidgetVisitorNonVip /> */}
 
   </>
 

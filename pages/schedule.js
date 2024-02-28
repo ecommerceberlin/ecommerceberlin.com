@@ -28,7 +28,7 @@ const PageSchedule = () => (
     <WidgetSchedule />
     {/* <WidgetBanner setting="metaverse" /> */}
     {/* <WidgetVisitor setting="visitor.register"  /> */}
-    <WidgetVisitorNonVip />
+    {/* <WidgetVisitorNonVip /> */}
     <WidgetVideoWithEventInfo />
   </>
 

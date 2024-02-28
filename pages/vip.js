@@ -30,7 +30,7 @@ const PageVip = () => (
 </Wrapper>
 <WidgetIconGrid setting="vip.benefits" icons={{
 }} />
-<Wrapper first label="vips.apply.title">
+{/* <Wrapper first label="vips.apply.title">
 <WidgetRegForm
   wrapperProps={{label: null}}
   setting="vip.registration"
@@ -41,7 +41,7 @@ const PageVip = () => (
     </>
   }
   />
-</Wrapper>
+</Wrapper> */}
 <WidgetVips limit={12} mobile={4} />
 <WidgetPhotostream setting="vipphotostream" />
 <WidgetFaq setting="vip.faq" /> 

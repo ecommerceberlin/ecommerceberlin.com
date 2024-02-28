@@ -719,6 +719,13 @@ const settings = {
                 position: "Acting Branch Gen. Manager Germany & Regional VP Bus. Dev.",
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1707309859/Jury/ioannis-salavopoulos.jpg",
             }, 
+
+            {
+                name: "Anil Altas Brug",
+                cname2: "Turboslow; Yopaat",
+                position: "Co-founder & Operations Director ",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1708081202/Website/anil-atlas-brug.jpg",
+            }, 
         ],
 
 
@@ -1124,12 +1131,12 @@ const settings = {
             {
               name: 'visitors',
               items: [
-                {name: 'visit', to: '/visit'},
-                {name: 'masterclasses', to: '/masterclasses'},
-                 {name: 'schedule', to: '/schedule'},
+                // {name: 'visit', to: '/visit'},
+                // {name: 'masterclasses', to: '/masterclasses'},
+                //  {name: 'schedule', to: '/schedule'},
                 // {name: 'presenters', to: '/presenters'},
-                {name: 'exhibitors', to: '/exhibitors'},
-                {name: 'speakers', to: '/speakers'},
+                // {name: 'exhibitors', to: '/exhibitors'},
+                // {name: 'speakers', to: '/speakers'},
                 // {name: 'offers', to: '/offers'},
                 {name: 'vip', to: '/vip'},
                 {name: 'ambassador', to: '/ambassador'}
@@ -1138,10 +1145,10 @@ const settings = {
             {
               name: 'exhibitors',
               items: [
-                {name: 'exhibit', to: '/exhibit'},
+                // {name: 'exhibit', to: '/exhibit'},
                 {name: 'sample-visitors', to: '/sample-visitors'},
                 {name: 'exhibitors', to: '/exhibitors'},
-                {name: 'premium-services', to: '/premium'},
+                // {name: 'premium-services', to: '/premium'},
                 {name: 'faq', to: '/faq'},
               
               ]
@@ -1350,8 +1357,8 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '22nd FEBRUARY 2024',
-        event_hours : '9:00-18:00',
+        event_date : '19 & 20th FEBRUARY 2025',
+        event_hours : '9:00-17:00',
 
     },
 
