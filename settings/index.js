@@ -124,6 +124,16 @@ const hotBenefits = [...standardBenefits,
     // },
 ]
 
+const grandBenefits =    [{
+    icon : "Space", 
+    primary : "space_grand"
+    },
+    {
+    icon : "Electricity", 
+    primary : "electricity_grand"
+    },
+...sharedBenefits]
+
 const premiumBenefits =    [{
     icon : "Space", 
     primary : "space_premium"
@@ -174,42 +184,42 @@ const bookingmapShared = {
         "pay",
         "access"
     ],
-    allowedGroupIds : [398, 399, 400, 401, 402, 403, 407, 413],
+    allowedGroupIds : [443, 442, 444, 451, 445, 446, 455],
     venueLayout: "https://res.cloudinary.com/eventjuicer/image/upload/v1678744350/ebe8/ebe8_venueplan.png",
     boothStyleMapping: {
-        399: "light", //STD
-        398: "standard", //HOT
-        400: "hot", //SUPER HOT
-        407: "superHot", //ULTRA
+        443: "light", //STD
+        442: "standard", //HOT
+        444: "hot", //SUPER HOT
+        451: "superHot", //ULTRA
 
-        406: "boothSold", //BUFFER - LAST MINUTE
+        450: "boothSold", //BUFFER - LAST MINUTE
 
-        401: "grand", //GRAND
-        402: "premiumGrand", //PREMIUM GRAND
+        445: "grand", //GRAND
+        446: "premiumGrand", //PREMIUM GRAND
 
-        404: "stage", //STAGE KEYNOTE
-        405: "stage", //STAGE OPEN
-        413: "stage", //STAGE STANDARD
-        410: "networking", //VIPZONE
-        409: "networking", //NETWORKING
+        448: "stage", //STAGE KEYNOTE
+        449: "stage", //STAGE OPEN
+        455: "stage", //STAGE STANDARD
+        452: "networking", //VIPZONE
+        453: "networking", //NETWORKING
         // 321: "boothSold"
     },
     api : "https://order.ecommerceberlin.com/preorder",
     benefits: {
        
 
-        399: standardBenefits, //STD
-        398: standardBenefits, //HOT
-        400: standardBenefits, //SUPER HOT
-        407: standardBenefits, //ULTRA
-        406: standardBenefits, //BUFFER - LAST MINUTE
-        401: premiumBenefits, //GRAND
-        402: premiumBenefits, //PREMIUM GRAND
-        410: networkingBenefits, //VIPZONE
-        409: networkingBenefits, //NETWORKING
-        404: stageBenefits, //STAGE KEYNOTE
-        405: stageBenefits, //STAGE OPEN
-        413: stageBenefits, //STAGE STANDARD
+        443: standardBenefits, //STD
+        442: standardBenefits, //HOT
+        444: standardBenefits, //SUPER HOT
+        451: standardBenefits, //ULTRA
+        450: standardBenefits, //BUFFER - LAST MINUTE
+        445: grandBenefits, //GRAND
+        446: premiumBenefits, //PREMIUM GRAND
+        452: networkingBenefits, //VIPZONE
+        453: networkingBenefits, //NETWORKING
+        448: stageBenefits, //STAGE KEYNOTE
+        449: stageBenefits, //STAGE OPEN
+        455: stageBenefits, //STAGE STANDARD
 
         // 357: hotBenefits, //SUPER HOT
         // 378: hotBenefits, //ULTRA
