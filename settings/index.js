@@ -323,15 +323,29 @@ const settings = {
         ],
     },
 
+    bookingmap_exposales : {
+        ...bookingmapShared,
+        disabledTicketIds : [
+
+             //STD
+             //HOT
+             //SH
+             //ULTRA
+             //GRAND
+             //P GRAND
+
+        ],
+    },
+
     bookingmap : {
         ...bookingmapShared,
         disabledTicketIds : [
-            2383, 2465, //STD
-            2380, 2467, //HOT
-            2412, 2456, //SH
-            2417, 2469, //ULTRA
-            2400, 2468, //GRAND
-            2393, 2466, //P GRAND
+            2810, //STD
+            2819, //HOT
+            2820, //SH
+            2821, //ULTRA
+            2822, //GRAND
+            2823, //P GRAND
         ],
     },
 
