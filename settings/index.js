@@ -1169,10 +1169,10 @@ const settings = {
             {
               name: 'exhibitors',
               items: [
-                // {name: 'exhibit', to: '/exhibit'},
+                {name: 'exhibit', to: '/exhibit'},
                 {name: 'sample-visitors', to: '/sample-visitors'},
                 {name: 'exhibitors', to: '/exhibitors'},
-                // {name: 'premium-services', to: '/premium'},
+                {name: 'premium-services', to: '/premium'},
                 {name: 'faq', to: '/faq'},
               
               ]
