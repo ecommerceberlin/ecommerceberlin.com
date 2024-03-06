@@ -11,7 +11,7 @@ import {
   configure,
   // WidgetBanner,
   WidgetPresenters,
-  // WidgetSalesMap,
+  WidgetSalesMap,
   // WidgetSchedule,
   // WidgetBanner,
   MyHead,
@@ -40,10 +40,10 @@ const PageIndex = (props) => (
   {/* <WidgetVisitorNonVip /> */}
   {/* <WidgetVisitor setting="visitor.register" /> */}
 
-  {/* <WidgetSalesMap
+  <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  /> */}
+  />
 
 
   {/* <WidgetBanner setting="metaverse" /> */}
