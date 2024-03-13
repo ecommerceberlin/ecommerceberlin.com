@@ -6,7 +6,7 @@
 1.2. The terms used herein, capitalized mean:
 
 * 1.2.1. Organizer - E-commerce Capitals spółka z ograniczoną odpowiedzialnością sp. k. (Limited Liability Company limited partnership) with its registered seat in Poznań (postal code 60-766), ul. Matejki 6/7, entered into the register of associations, other social and professional organizations, foundations and independent public health care facilities of the National Court Register and the register of entrepreneurs under KRS number 0000592712 whose registration files are kept by the District Court for Poznań - Nowe Miasto and Wilda in Poznań, VIII Commercial Division of the National Court Register using the given 7792439665 tax identification number and REGON number 36746333; Address for correspondence with the Organizer: ul. Matejki 6/7, 60-766 Poznań; Email Address: hello@ecommerceberlin.com 
-* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 22nd February 2024, from 10:00 AM to 5:00 PM;
+* 1.2.2. Fair - held by the Organizer of E-commerce Berlin Expo, which will take place in Berlin at the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin, Germany, on 19-20th February 2025, from 9:00 AM to 6:00 PM first day and 9:00 AM to 5:00 PM on the second day;
 * 1.2.3. Regulations - the present document constituting the general conditions of the Agreement;
 * 1.2.4. Exhibitor - a natural person, legal person or entity without legal personality, which conducts business activity: related to e-commerce, in particular providing electronic services, whose offer is addressed to operators of online shops or who in the course of its business intends to start running or managing an online store or making offers to entities engaged in these activities; 
 * 1.2.5. Pavilion - "Pavilion" in the STATION BERLIN, St. Luckenwalder Str. 4–6, 10963 Berlin
@@ -59,7 +59,7 @@
 
 5.1. Each Exhibitor may, without giving any reason, terminate the Agreement in writing, without notice.
 
-5.2. Referring to the exhibitors who booked the Exhibition space after March 8th 2023:
+5.2. Referring to the exhibitors who booked the Exhibition space after March 7th 2024:
 
 5.2.1. In the event of termination of Agreement by the Exhibitor up to 90 days before the event the Organizer returns 100% of the Exhibition space fee. Payment for services included in the Registration fee already provided (including partial performance) shall not be returned. Payment for other services will be refunded in accordance with the provisions of paragraph 5.4 and 5.5.
 
@@ -87,7 +87,7 @@
 
 5.5.1. up to 40 days before the event, 90% of the amount paid shall be returned to the Exhibitor,
 
-5.5.2. after 30 December 2023, the Organizer does not return the payment made as a Full print stand booth fee.
+5.5.2. after 30 December 2024, the Organizer does not return the payment made as a Full print stand booth fee.
 
 5.6. In case of the postponement of the Fair:
 
@@ -97,13 +97,13 @@
 
 5.6.2.1. Terminate the Agreement in writing or by email, and receive refund of 100% of the Exhibition space fee; the refund shall be made within 30 days after receiving by the Organizer the acceptance of corrective invoice; Reservation fee shall not be returned;
 
-5.6.2.2. Cancel (by email send at: hello@ecommerceberlin.com) his participation in upcoming edition of the Fair (on a new date of postponed Fair) and apply for the participation in next year's edition (all payments made are credited towards services related to next year’s edition), subject to payment of additional fee of 10% of payments made within term of February 1st 2024; Exhibition space category remains the same;
+5.6.2.2. Cancel (by email send at: hello@ecommerceberlin.com) his participation in upcoming edition of the Fair (on a new date of postponed Fair) and apply for the participation in next year's edition (all payments made are credited towards services related to next year’s edition), subject to payment of additional fee of 10% of payments made within term of February 1st 2025; Exhibition space category remains the same;
 
 5.6.2.3. Leave the Postponement notice with no reply;
 
 5.6.3. No reply to the Postponement notice within 14 days term mentioned in section 5.6.2. is considered as a declaration of participation in the Fair on the day (new date) of postponed Fair; no additional payment shall be made;
 
-5.6.4. If additional payment mentioned in section 5.6.2.2. is not made by February 1st 2024,  it shall be considered as termination of the Agreement; payments already made shall be settled as follows: the Organizer returns 30% (thirty percent) of Exhibition space fee, while retaining all other payments as handling fee;
+5.6.4. If additional payment mentioned in section 5.6.2.2. is not made by February 1st 2025,  it shall be considered as termination of the Agreement; payments already made shall be settled as follows: the Organizer returns 30% (thirty percent) of Exhibition space fee, while retaining all other payments as handling fee;
 
 5.6.5. The Exhibitor which decided to cancel his participation in upcoming edition of the Fair (on a new date of postponed Fair), and apply for the participation in next year's edition  and paid the additional fee mentioned in section 5.6.2.2 is entitled to terminate the Agreement; payments already made shall be settled as follows: the Organizer returns 10% (ten percent) of Exhibition space fee, while retaining all other payments as handling fee.
 
@@ -135,9 +135,9 @@
 
 7.1. Exhibitor may not use the Exhibition space in a manner inconsistent with their purpose, in particular the Exhibitor may not: use devices with a joint total power consumption greater than the power connections made available for the Exhibition space, place a roll-up or advertising wall with dimensions larger than those fixed for the Exhibition space of a given category within said Exhibition space. Advertising wall can be placed only in the back of the Exhibition space. It is prohibited to use coffee machines without notifying the Organizer and without Organizer's confirmation that the ordered power connection is sufficient to safely operate the device in question
 
-7.2. In order to arrange the Exhibition space Organizer provides the Exhibitor with the Exhibition space on 21st February 2024 from 12:00 PM and on the day of the event at 2 (two) hours before the time of commencement of the Fair.
+7.2. In order to arrange the Exhibition space Organizer provides the Exhibitor with the Exhibition space on 18th February 2025 from 12:00 PM and on the day of the event at 2 (two) hours before the time of commencement of the Fair.
 
-7.3. The Exhibitor cannot proceed with the removal of the equipment placed in the Exhibition space before 5:00 PM on the 22nd February 2024.
+7.3. The Exhibitor cannot proceed with the removal of the equipment placed in the Exhibition space before 5:00 PM on the 20th February 2025.
 
 7.4. The Exhibitor may use any number of Exhibition spaces stipulated in the Agreement.
 
@@ -151,7 +151,7 @@
 
 7.9. Upon completion of Fair the Exhibitor is obliged to return all items that constitute the provided by the Organizer equipment of Exhibition space without deterioration exceeding the effects of normal use.
 
-7.10. No elements of the booth arrangement / exhibition space design are allowed to protrude beyond the designated borders of the exhibition space (3m x 3m for 9m2 space and 6m x 3m for 18m2 respectively. The corners of the exhibition space will be marked).
+7.10. No elements of the booth arrangement / exhibition space design are allowed to protrude beyond the designated borders of the exhibition space (3m x 3m for 9m2 space, 6m x 3m for 18m2 and 6m x 6m for 36m2 respectively. The corners of the exhibition space will be marked).
 
 7.11. The elements of exhibition space design (walls, banners, etc.) can be up to 3 meters tall unless discussed and granted a direct permission by the Organizer
 beforehand. No objects taller than 1,2 meters (120 centimeters) creating physical barriers and limiting the view of adjoining/neighbouring exhibition spaces are allowed.
@@ -187,9 +187,9 @@ beforehand. No objects taller than 1,2 meters (120 centimeters) creating physica
 
 9.5. The data submitted by the Exhibitor as part of the profile, ie. name, logo and description of the activities will be presented by the Organizer in the Virtual Catalogue of Exhibitors accessible on the Fair Website.
 
-9.6. The Exhibitor, upon the conclusion of the Agreement, grants the Organizer free, territorially unlimited license for the period from the date of conclusion of the Agreement until 1st March 2024 to use the materials placed within Exhibitor’s profile to promote Fair, including its further editions, the media, in particular in the press, radio, television, within the Fair Website, in transmissions directed to the general Internet users by any means of communication within the network, in email messages, as well as to promote the activities of the Organizer within the scope described above.
+9.6. The Exhibitor, upon the conclusion of the Agreement, grants the Organizer free, territorially unlimited license for the period from the date of conclusion of the Agreement until 1st March 2025 to use the materials placed within Exhibitor’s profile to promote Fair, including its further editions, the media, in particular in the press, radio, television, within the Fair Website, in transmissions directed to the general Internet users by any means of communication within the network, in email messages, as well as to promote the activities of the Organizer within the scope described above.
 
-9.7. The Organizer, upon the conclusion of the Agreement, grants the Exhibitor, within Registration fee, territorially unlimited license for the period from the date of conclusion of the Agreement until May 31, 2025 to use the trade mark “E-Commerce Berlin Expo” to promote Exhibitors participation in Fair, in any media, in particular in the press, radio, television, in transmissions directed to the general Internet users by any means of communication within the network, in email messages
+9.7. The Organizer, upon the conclusion of the Agreement, grants the Exhibitor, within Registration fee, territorially unlimited license for the period from the date of conclusion of the Agreement until May 31, 2026 to use the trade mark “E-Commerce Berlin Expo” to promote Exhibitors participation in Fair, in any media, in particular in the press, radio, television, in transmissions directed to the general Internet users by any means of communication within the network, in email messages
 
 9.8. In any case related to the Agreement or Fair the Exhibitor may contact an account manager, who shall provide any information or support needed.
 
@@ -213,7 +213,7 @@ beforehand. No objects taller than 1,2 meters (120 centimeters) creating physica
 
 ## 13. Entry into force and amendments to the Regulations
 
-13.1. Regulations come into force on 8th March, 2023.
+13.1. Regulations come into force on 7th March, 2024.
 
 13.2. The Organizer reserves the right to change the Regulations, the revised Regulations will apply to contracts concluded before the amendments’ date of entry into force.
 
