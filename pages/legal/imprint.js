@@ -22,8 +22,8 @@ const PageLegalImprint = () => (
         <div>
         <h3>Company:</h3>
         <p>E-commerce Capitals Sp. z o.o. Sp. k.</p>
-        <p>Botaniczna 26/2</p>
-        <p>60-586, Poznan, Poland</p>
+        <p>Matejki 6/7</p>
+        <p>60-766, Poznan, Poland</p>
         <h3>Place of administration</h3>
         <p>STATION BERLIN</p>
         <p>Luckenwalder Str. 4–6</p>
