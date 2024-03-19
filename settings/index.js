@@ -417,7 +417,7 @@ const settings = {
 
         ],
 
-        ticket_id : 2175,
+        ticket_id : 2782,
         email_template : "en-masterclasses-application",
    },
 
@@ -565,7 +565,7 @@ const settings = {
 
         ],
 
-        ticket_id : 2575,
+        ticket_id : 2830,
         email_template : "ecommerceberlin-vip-apply",
     },
 
@@ -777,7 +777,7 @@ const settings = {
             'lname', 
         ],
 
-        ticket_id : 2616,
+        ticket_id : 2831,
         email_template : "ecommerceberlin-ambassador-apply",
     },
 
@@ -1100,7 +1100,7 @@ const settings = {
   
                  
               ],
-            ticket_id : 2426,
+            ticket_id : 2783,
             start : ['email', 'fname'],
             template : "ecommerceberlin-vip-registration",
             background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
@@ -1286,7 +1286,7 @@ const settings = {
             ],
 
             start : ['email', 'fname'],
-            ticket_id : 2426,
+            ticket_id : 2783,
             email_template : "ecommerceberlin-visitor-registration",
             background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
             api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
@@ -1500,20 +1500,41 @@ const settings = {
 
         items : [
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965126/Website/VIP/ecommerce-berlin-2023-palej-pl-_AOG9078.jpg", cols: 6},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-DSC03345-palej-pl.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421416/Website/vip%20photos/ebe25-website-vipzone2.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421427/Website/vip%20photos/ebe25-website-vipzone1.jpg", cols: 6},
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01767.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-DSC03294-palej-pl.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-palej-pl-_AOG9086.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421379/Website/vip%20photos/ebe25-website-vipzone6.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421383/Website/vip%20photos/ebe25-website-vipzone4.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421411/Website/vip%20photos/ebe25-website-vipzone5.jpg", cols: 4},
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965126/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01942.jpg", cols: 6},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1691145728/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01943.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421422/Website/vip%20photos/ebe25-website-vipzone3.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421389/Website/vip%20photos/ebe25-website-vipzone7.jpg", cols: 6},
      
         ]
     },
 
+    ambassadorphotostream : {
 
+        wrapperProps: {
+            label : "ambassador.gallery.title"
+        },
+
+        cols: 12,
+
+        items : [
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest6.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest2.jpg", cols: 6},
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest3.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest4.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest5.jpg", cols: 4},
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest1.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest7.jpg", cols: 6},
+     
+        ]
+    },
 
 
     cfpphotostream : {
