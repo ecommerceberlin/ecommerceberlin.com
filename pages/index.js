@@ -15,10 +15,12 @@ import {
   // WidgetSchedule,
   // WidgetBanner,
   MyHead,
+  Wrapper,
   WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
 
 import {AllPartners, WidgetVisitorNonVip, WidgetVisitorWithVip} from '../compositions'
+import RecapVideo from '../compositions/RecapVideo';
 import Head from 'next/head'
 
 // import VotingCategories from '../compositions/VotingCategories'
@@ -39,7 +41,7 @@ const PageIndex = (props) => (
 
   {/* <WidgetVisitorNonVip /> */}
   {/* <WidgetVisitor setting="visitor.register" /> */}
-
+  <Wrapper>
   <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
@@ -49,6 +51,10 @@ const PageIndex = (props) => (
   {/* <WidgetBanner setting="metaverse" /> */}
 
   <WidgetFeaturedCompanies />
+
+  <RecapVideo />
+
+  </Wrapper>
 
   {/* <WidgetFeaturedPresenters limit={8}/> */}
 
