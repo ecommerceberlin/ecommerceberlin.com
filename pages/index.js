@@ -22,6 +22,7 @@ import {
 import {AllPartners, WidgetVisitorNonVip, WidgetVisitorWithVip} from '../compositions'
 import RecapVideo from '../compositions/RecapVideo';
 import Head from 'next/head'
+import WidgetOffer from '../compositions/WidgetOffer';
 
 // import VotingCategories from '../compositions/VotingCategories'
 
@@ -46,7 +47,7 @@ const PageIndex = (props) => (
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
   />
-
+  <WidgetOffer />
 
   {/* <WidgetBanner setting="metaverse" /> */}
 

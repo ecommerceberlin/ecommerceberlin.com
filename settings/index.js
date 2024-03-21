@@ -844,6 +844,30 @@ const settings = {
         
     },
 
+    exhibitor_offer: {
+    registration: {
+        wrapperProps: {
+            label: "exhibitor.offer.title",
+        },
+        
+        baseLabel: "exhibitor_offer",
+        fields: [
+            {name: "fname", required: true},
+            {name: "lname", required: true},
+            {name: "cname2", required: true},
+            {name: "email", required: true},
+            {name: "phone", required: true}, 
+        ],
+        
+        start: [
+            'email',
+            "fname",
+            'lname', 
+        ],
+  
+        ticket_id : 2753,
+        }
+    },
 
     speakers : {
 
@@ -1483,7 +1507,7 @@ const settings = {
 
 
     appbar : {
-        logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1633022810/EBE_WH.png",
+        logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1710940958/Logo_b_y_expo.png",
         links: [
             //  {label: "Become a visitor", color: "primary",  href: "/visit", variant: "contained"}
         ],
