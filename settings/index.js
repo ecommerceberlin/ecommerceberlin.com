@@ -124,6 +124,16 @@ const hotBenefits = [...standardBenefits,
     // },
 ]
 
+const grandBenefits =    [{
+    icon : "Space", 
+    primary : "space_grand"
+    },
+    {
+    icon : "Electricity", 
+    primary : "electricity_grand"
+    },
+...sharedBenefits]
+
 const premiumBenefits =    [{
     icon : "Space", 
     primary : "space_premium"
@@ -174,42 +184,42 @@ const bookingmapShared = {
         "pay",
         "access"
     ],
-    allowedGroupIds : [398, 399, 400, 401, 402, 403, 407, 413],
+    allowedGroupIds : [443, 442, 444, 451, 445, 446, 455],
     venueLayout: "https://res.cloudinary.com/eventjuicer/image/upload/v1678744350/ebe8/ebe8_venueplan.png",
     boothStyleMapping: {
-        399: "light", //STD
-        398: "standard", //HOT
-        400: "hot", //SUPER HOT
-        407: "superHot", //ULTRA
+        443: "light", //STD
+        442: "standard", //HOT
+        444: "hot", //SUPER HOT
+        451: "superHot", //ULTRA
 
-        406: "boothSold", //BUFFER - LAST MINUTE
+        450: "boothSold", //BUFFER - LAST MINUTE
 
-        401: "grand", //GRAND
-        402: "premiumGrand", //PREMIUM GRAND
+        445: "grand", //GRAND
+        446: "premiumGrand", //PREMIUM GRAND
 
-        404: "stage", //STAGE KEYNOTE
-        405: "stage", //STAGE OPEN
-        413: "stage", //STAGE STANDARD
-        410: "networking", //VIPZONE
-        409: "networking", //NETWORKING
+        448: "stage", //STAGE KEYNOTE
+        449: "stage", //STAGE OPEN
+        455: "stage", //STAGE STANDARD
+        452: "networking", //VIPZONE
+        453: "networking", //NETWORKING
         // 321: "boothSold"
     },
     api : "https://order.ecommerceberlin.com/preorder",
     benefits: {
        
 
-        399: standardBenefits, //STD
-        398: standardBenefits, //HOT
-        400: standardBenefits, //SUPER HOT
-        407: standardBenefits, //ULTRA
-        406: standardBenefits, //BUFFER - LAST MINUTE
-        401: premiumBenefits, //GRAND
-        402: premiumBenefits, //PREMIUM GRAND
-        410: networkingBenefits, //VIPZONE
-        409: networkingBenefits, //NETWORKING
-        404: stageBenefits, //STAGE KEYNOTE
-        405: stageBenefits, //STAGE OPEN
-        413: stageBenefits, //STAGE STANDARD
+        443: standardBenefits, //STD
+        442: standardBenefits, //HOT
+        444: standardBenefits, //SUPER HOT
+        451: standardBenefits, //ULTRA
+        450: standardBenefits, //BUFFER - LAST MINUTE
+        445: grandBenefits, //GRAND
+        446: premiumBenefits, //PREMIUM GRAND
+        452: networkingBenefits, //VIPZONE
+        453: networkingBenefits, //NETWORKING
+        448: stageBenefits, //STAGE KEYNOTE
+        449: stageBenefits, //STAGE OPEN
+        455: stageBenefits, //STAGE STANDARD
 
         // 357: hotBenefits, //SUPER HOT
         // 378: hotBenefits, //ULTRA
@@ -313,22 +323,36 @@ const settings = {
         ],
     },
 
+    bookingmap_exposales : {
+        ...bookingmapShared,
+        disabledTicketIds : [
+
+             //STD
+             //HOT
+             //SH
+             //ULTRA
+             //GRAND
+             //P GRAND
+
+        ],
+    },
+
     bookingmap : {
         ...bookingmapShared,
         disabledTicketIds : [
-            2383, 2465, //STD
-            2380, 2467, //HOT
-            2412, 2456, //SH
-            2417, 2469, //ULTRA
-            2400, 2468, //GRAND
-            2393, 2466, //P GRAND
+            2810, 2741, //STD
+            2819, //HOT
+            2820, 2745, //SH
+            2821, 2776, 2772, 2777, //ULTRA
+            2822, 2756, //GRAND
+            2823, //P GRAND
         ],
     },
 
     workshops : {
 
         apply: {
-            disabled: 0,
+            disabled: 1,
             disabledTreshold: 200
         },
     },
@@ -393,7 +417,7 @@ const settings = {
 
         ],
 
-        ticket_id : 2175,
+        ticket_id : 2782,
         email_template : "en-masterclasses-application",
    },
 
@@ -541,7 +565,7 @@ const settings = {
 
         ],
 
-        ticket_id : 2575,
+        ticket_id : 2830,
         email_template : "ecommerceberlin-vip-apply",
     },
 
@@ -699,7 +723,33 @@ const settings = {
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1698934622/Jury/rad.jpg",
             }, 
 
-            
+            {
+                name: "Anamika Datta",
+                cname2: "ex-Zalando",
+                position: "Senior Product Manager",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1672239736/Call%20for%20Papers%202022/ANAMIKA_PORTRAIT_CURLY.jpg",
+            }, 
+
+            {
+                name: "Oke Harms",
+                cname2: "Kickerkult",
+                position: "Founder & Owner",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1707310034/oke.jpg",
+            }, 
+
+            {
+                name: "Ioannis Salavopoulos",
+                cname2: "Viva.com",
+                position: "Acting Branch Gen. Manager Germany & Regional VP Bus. Dev.",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1707309859/Jury/ioannis-salavopoulos.jpg",
+            }, 
+
+            {
+                name: "Anil Altas Brug",
+                cname2: "Turboslow; Yopaat",
+                position: "Co-founder & Operations Director ",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1708081202/Website/anil-atlas-brug.jpg",
+            }, 
         ],
 
 
@@ -727,7 +777,7 @@ const settings = {
             'lname', 
         ],
 
-        ticket_id : 2616,
+        ticket_id : 2831,
         email_template : "ecommerceberlin-ambassador-apply",
     },
 
@@ -794,6 +844,30 @@ const settings = {
         
     },
 
+    exhibitor_offer: {
+    registration: {
+        wrapperProps: {
+            label: "exhibitor.offer.title",
+        },
+        
+        baseLabel: "exhibitor_offer",
+        fields: [
+            {name: "fname", required: true},
+            {name: "lname", required: true},
+            {name: "cname2", required: true},
+            {name: "email", required: true},
+            {name: "phone", required: true}, 
+        ],
+        
+        start: [
+            'email',
+            "fname",
+            'lname', 
+        ],
+  
+        ticket_id : 2753,
+        }
+    },
 
     speakers : {
 
@@ -1050,7 +1124,7 @@ const settings = {
   
                  
               ],
-            ticket_id : 2426,
+            ticket_id : 2783,
             start : ['email', 'fname'],
             template : "ecommerceberlin-vip-registration",
             background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
@@ -1105,11 +1179,12 @@ const settings = {
             {
               name: 'visitors',
               items: [
-                {name: 'visit', to: '/visit'},
-                 {name: 'schedule', to: '/schedule'},
+                // {name: 'visit', to: '/visit'},
+                // {name: 'masterclasses', to: '/masterclasses'},
+                //  {name: 'schedule', to: '/schedule'},
                 // {name: 'presenters', to: '/presenters'},
-                {name: 'exhibitors', to: '/exhibitors'},
-                {name: 'speakers', to: '/speakers'},
+                // {name: 'exhibitors', to: '/exhibitors'},
+                // {name: 'speakers', to: '/speakers'},
                 // {name: 'offers', to: '/offers'},
                 {name: 'vip', to: '/vip'},
                 {name: 'ambassador', to: '/ambassador'}
@@ -1131,7 +1206,7 @@ const settings = {
 
     premium : {
 
-        ticketgroups : [403],
+        ticketgroups : [447],
         soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png'
 
     },
@@ -1235,7 +1310,7 @@ const settings = {
             ],
 
             start : ['email', 'fname'],
-            ticket_id : 2426,
+            ticket_id : 2783,
             email_template : "ecommerceberlin-visitor-registration",
             background : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit,h_500,w_500/v1546813408/ebe_lanyard1.jpg",
             api : "https://api.eventjuicer.com/v1/public/hosts/ecommerceberlin.com/register",
@@ -1330,8 +1405,8 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '22nd FEBRUARY 2024',
-        event_hours : '9:00-18:00',
+        event_date : '19 & 20th FEBRUARY 2025',
+        event_hours : '9:00-17:00',
 
     },
 
@@ -1398,7 +1473,7 @@ const settings = {
                 name: 'Gerome Yalim',
                 position : '',
                 langs : ["en"],
-                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1691403509/Website/gerome2.png',
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1707310440/Website/gerome-200-200.png',
                 phone: '+49 305 201 42 88',
                 email: 'hello@ecommerceberlin.com',
                 chatlio : true
@@ -1432,7 +1507,7 @@ const settings = {
 
 
     appbar : {
-        logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1633022810/EBE_WH.png",
+        logotype: "https://res.cloudinary.com/eventjuicer/image/upload/h_30,c_fit,f_auto/v1710940958/Logo_b_y_expo.png",
         links: [
             //  {label: "Become a visitor", color: "primary",  href: "/visit", variant: "contained"}
         ],
@@ -1449,20 +1524,41 @@ const settings = {
 
         items : [
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965126/Website/VIP/ecommerce-berlin-2023-palej-pl-_AOG9078.jpg", cols: 6},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-DSC03345-palej-pl.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421416/Website/vip%20photos/ebe25-website-vipzone2.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421427/Website/vip%20photos/ebe25-website-vipzone1.jpg", cols: 6},
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01767.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-DSC03294-palej-pl.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965125/Website/VIP/ecommerce-berlin-2023-palej-pl-_AOG9086.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421379/Website/vip%20photos/ebe25-website-vipzone6.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421383/Website/vip%20photos/ebe25-website-vipzone4.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421411/Website/vip%20photos/ebe25-website-vipzone5.jpg", cols: 4},
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1690965126/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01942.jpg", cols: 6},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1691145728/Website/VIP/ecommerce-berlin-2023-palej-pl-DSC01943.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421422/Website/vip%20photos/ebe25-website-vipzone3.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421389/Website/vip%20photos/ebe25-website-vipzone7.jpg", cols: 6},
      
         ]
     },
 
+    ambassadorphotostream : {
 
+        wrapperProps: {
+            label : "ambassador.gallery.title"
+        },
+
+        cols: 12,
+
+        items : [
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest6.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest2.jpg", cols: 6},
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest3.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest4.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest5.jpg", cols: 4},
+
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest1.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421467/Website/ambassador%20photos/ebe25-website-ebefest7.jpg", cols: 6},
+     
+        ]
+    },
 
 
     cfpphotostream : {

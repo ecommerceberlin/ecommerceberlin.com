@@ -17,6 +17,7 @@ import {
 } from 'eventjuicer-site-components';
 
 import Head from 'next/head'
+import WidgetOffer from '../compositions/WidgetOffer';
 
 const settings = require('../settings').default;
 
@@ -27,17 +28,17 @@ const PageExhibit = () => (
   <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693817519/Website/ebe24_og_home.jpg" url="/exhibit">
       {(data) => <Head>{data}</Head>}
     </MyHead>
-
+  <Wrapper>
   <WidgetSalesMap
     label="exhibitors.map.title"
     secondaryLabel="exhibitors.map.opensales"
  
     first
   />
-
+  <WidgetOffer />
   <WidgetIconGrid setting="exhibitors.benefits" icons={{
-
   }}/>
+    </Wrapper>
 
   {/* <WidgetVideoWithReviews /> */}
 

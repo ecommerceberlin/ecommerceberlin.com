@@ -6,7 +6,7 @@ import {
     WidgetVisitor,
     WidgetCompany,
     WidgetAllExhibitorsColumnList,
-    // WidgetSalesMap,
+    WidgetSalesMap,
     WidgetSchedule,
     WidgetRoleButtons,
     configure,
@@ -39,16 +39,16 @@ import { WidgetVisitorNonVip } from '../../compositions';
       <WidgetCompany slug={slug} />
 
       {/* <WidgetVisitor setting="visitor.register" /> */}
-      <WidgetVisitorNonVip />
+      {/* <WidgetVisitorNonVip /> */}
   
-      <WidgetSchedule />
+      {/* <WidgetSchedule /> */}
   
       <WidgetVideoWithEventInfo />
 
-       {/* <WidgetSalesMap
+       <WidgetSalesMap
         label="exhibitors.map.title2"
         secondaryLabel="exhibitors.map.opensales"
-      />  */}
+      /> 
       
       <WidgetRoleButtons /> 
      

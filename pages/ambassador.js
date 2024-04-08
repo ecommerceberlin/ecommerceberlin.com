@@ -10,7 +10,8 @@ import {
   TwoColsLayout as Section,
   MyTypography,
   MyHead,
-  Markdown
+  Markdown,
+  WidgetPhotostream
 } from 'eventjuicer-site-components';
 
 import { WidgetAmbassadors } from '../compositions';
@@ -46,6 +47,8 @@ const PageAmbassador = () => (
   }
   />
 </Wrapper>
+
+<WidgetPhotostream setting="ambassadorphotostream" />
 
 </div>
 

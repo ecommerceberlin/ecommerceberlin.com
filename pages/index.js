@@ -11,15 +11,18 @@ import {
   configure,
   // WidgetBanner,
   WidgetPresenters,
-  // WidgetSalesMap,
+  WidgetSalesMap,
   // WidgetSchedule,
   // WidgetBanner,
   MyHead,
+  Wrapper,
   WidgetFeaturedPresenters
 } from 'eventjuicer-site-components';
 
 import {AllPartners, WidgetVisitorNonVip, WidgetVisitorWithVip} from '../compositions'
+import RecapVideo from '../compositions/RecapVideo';
 import Head from 'next/head'
+import WidgetOffer from '../compositions/WidgetOffer';
 
 // import VotingCategories from '../compositions/VotingCategories'
 
@@ -37,18 +40,22 @@ const PageIndex = (props) => (
   {/* <WidgetSchedule /> */}
   <WidgetVideoWithEventInfo />
 
-  <WidgetVisitorWithVip />
+  {/* <WidgetVisitorNonVip /> */}
   {/* <WidgetVisitor setting="visitor.register" /> */}
-
-  {/* <WidgetSalesMap
+  <Wrapper>
+  <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  /> */}
-
+  />
+  <WidgetOffer />
 
   {/* <WidgetBanner setting="metaverse" /> */}
 
   <WidgetFeaturedCompanies />
+
+  <RecapVideo />
+
+  </Wrapper>
 
   {/* <WidgetFeaturedPresenters limit={8}/> */}
 
@@ -81,9 +88,9 @@ const PageIndex = (props) => (
   {/* <WidgetVisitorNonVip /> */}
 
 
-  <WidgetAllOrCurrentExhibitorsColumnList />
+  {/* <WidgetAllOrCurrentExhibitorsColumnList /> */}
 
-  <WidgetVisitorNonVip />
+  {/* <WidgetVisitorNonVip /> */}
 
   <AllPartners />
 

@@ -25,11 +25,11 @@ const PageSampleVisitors = () => (
   <div>
   <WidgetVips first limit={10000} include={<div />} />
 
-  {/* <WidgetSalesMap
+  <WidgetSalesMap
     label="exhibitors.map.title"
     secondaryLabel="exhibitors.map.opensales"
  
-  /> */}
+  />
 
   {/* <WidgetVideoWithReviews /> */}
 

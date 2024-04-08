@@ -26,9 +26,9 @@ export const PageVisit = () => (
 
         <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693817519/Website/ebe24_og_home.jpg" url="/visit">{(data) => <Head>{data}</Head>}</MyHead> 
   
-        <WidgetVisitorWithVip first />
+        {/* <WidgetVisitorNonVip first /> */}
 
-        <RegistrationPartner />
+        {/* <RegistrationPartner /> */}
 
         {/* <WidgetVisitor setting="visitor.register" first /> */}
 
@@ -48,7 +48,7 @@ export const PageVisit = () => (
 
         {/* <WidgetVisitor setting="visitor.register" /> */}
 
-        <WidgetVisitorNonVip />
+        {/* <WidgetVisitorNonVip /> */}
 
         {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
 

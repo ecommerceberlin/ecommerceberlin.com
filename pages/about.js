@@ -79,11 +79,11 @@ const PageAbout = () => (
     ))}
   </Wrapper>
 
-  {/* <WidgetSalesMap
+  <WidgetSalesMap
     label="exhibitors.map.title"
     secondaryLabel="exhibitors.map.opensales"
  
-  /> */}
+  />
 
   <WidgetVips limit={12} mobile={4} />
 
