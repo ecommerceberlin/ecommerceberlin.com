@@ -32,9 +32,9 @@ const PageMasterclasses = () => (
 
 <WidgetSchedule setting="masterclasses.schedule" />
 
-<WidgetVisitorNonVip wrapperProps={{
+{/* <WidgetVisitorNonVip wrapperProps={{
   label: "masterclasses.public_registration.title"
-  }} />
+  }} /> */}
 <WidgetSchedule
   wrapperProps={{
   label: "masterclasses.public_schedule.title"

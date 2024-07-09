@@ -481,10 +481,10 @@ const settings = {
     cols: 12,
 
     items : [
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404744/vipzone/strefaVIP_01.jpg", cols: 3},
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404741/vipzone/strefaVIP_02.jpg", cols: 3},
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404740/vipzone/strefaVIP_04.jpg", cols: 3},
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1665404740/vipzone/strefaVIP_03.jpg", cols: 3},
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk2.jpg", cols: 3},
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk1.jpg", cols: 3},
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk5.jpg", cols: 3},
+        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk3.jpg", cols: 3},
       
     ]
     },
@@ -1470,11 +1470,11 @@ const settings = {
         people : [
            
             {
-                name: 'Gerome Yalim',
+                name: 'Noel Graf',
                 position : '',
                 langs : ["en"],
-                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1707310440/Website/gerome-200-200.png',
-                phone: '+49 305 201 42 88',
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1720517876/noel.png',
+                phone: '+49 305 201 51 10',
                 email: 'hello@ecommerceberlin.com',
                 chatlio : true
             },
