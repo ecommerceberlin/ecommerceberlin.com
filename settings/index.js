@@ -402,10 +402,10 @@ const settings = {
             {name: "lname", required: true},
             {name: "cname2", required: true},
             {name: "phone", required: true},
-            {name: "presenter", required: true},  
+            // {name: "presenter", required: true},  
             // {name: "bio", required: true},  
             // {name: "profile_linkedin", required: true},  
-            {name: "presentation_title", required: false},
+            // {name: "presentation_title", required: false},
             // {name: "presentation_description", required: true}
         ],
         
@@ -413,6 +413,8 @@ const settings = {
             'presenter',
             "profile_linkedin",
             'presentation_title', 
+            'fname',
+            'email',
 
 
         ],
@@ -451,10 +453,10 @@ const settings = {
         },
         baseLabel: "masterclasses.faq",
         items: [
+            { label: 'format' },
+            { label: 'booking' },
             { label: 'cost' },
-            { label: 'offering' },
-            { label: 'participation' },
-            { label: 'toolset' }
+            { label: 'attendees' }
         ]
     },
 
@@ -463,30 +465,40 @@ const settings = {
         // showTitle: false,
         baseLabel: "masterclasses.participants.faq",
         items: [
-            { label: 'formula' },
+            { label: 'format' },
             { label: 'application' },
-            { label: 'cost' },
-            { label: 'vip' }
+            { label: 'selection' },
+            { label: 'hosting' }
         ]
     },
 
-   photostream : {
+    photostream : {
 
-    wrapperProps: {
-        label : "masterclasses.gallery.title"
-    },
+        wrapperProps: {
+            label : "masterclasses.gallery.title"
+        },
+    
+        overlay: "none",
+    
+        cols: 12,
+    
+        items : [
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass1-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass2-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass3-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass4-min.jpg", cols: 3},
 
-    overlay: "red",
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass5-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass6-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass7-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass8-min.jpg", cols: 3},
 
-    cols: 12,
-
-    items : [
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk2.jpg", cols: 3},
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk1.jpg", cols: 3},
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk5.jpg", cols: 3},
-        {src: "https://res.cloudinary.com/eventjuicer/image/upload/v1718702856/mk3.jpg", cols: 3},
-      
-    ]
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass9-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass10-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass11-min.jpg", cols: 3},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_800,h_600,c_fit/v1723113276/Website/Masterclasses/masterclass12-min.jpg", cols: 3},
+            
+        ]
     },
 
     benefits : {
@@ -1179,8 +1191,8 @@ const settings = {
             {
               name: 'visitors',
               items: [
-                // {name: 'visit', to: '/visit'},
-                // {name: 'masterclasses', to: '/masterclasses'},
+                {name: 'visit', to: '/visit'},
+                {name: 'masterclasses', to: '/masterclasses'},
                 //  {name: 'schedule', to: '/schedule'},
                 // {name: 'presenters', to: '/presenters'},
                 // {name: 'exhibitors', to: '/exhibitors'},
@@ -1194,6 +1206,7 @@ const settings = {
               name: 'exhibitors',
               items: [
                 {name: 'exhibit', to: '/exhibit'},
+                {name: 'masterclasses-organizer', to: '/masterclasses/organizer'},
                 {name: 'sample-visitors', to: '/sample-visitors'},
                 {name: 'exhibitors', to: '/exhibitors'},
                 {name: 'premium-services', to: '/premium'},

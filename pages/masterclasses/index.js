@@ -5,6 +5,7 @@ import {
   Wrapper,
   WidgetVisitor,
   WidgetFaq,
+  WidgetPhotostream,
   reduxWrapper,
   configure,
   WidgetSchedule,
@@ -27,6 +28,7 @@ const PageMasterclasses = () => (
 <Wrapper first label="masterclasses.apply.title">
 <Markdown label="masterclasses.apply.description" />
 <WidgetFaq setting="masterclasses.faq_participant" />    
+<WidgetPhotostream setting="masterclasses.photostream" />
 </Wrapper>
 
 
