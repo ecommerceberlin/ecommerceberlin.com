@@ -51,7 +51,7 @@ const PageSpeaking = () => (
   
           <Markdown label="cfp.hello.details" />
   
-    <RecentSubmissions />
+    {/* <RecentSubmissions /> */}
   
           </div> }
         right={ 
@@ -76,13 +76,15 @@ const PageSpeaking = () => (
 
   <WidgetSpeaking setting="speakers.callforpapers" options={{
         "categories": [
+          'ai',
+          'futuretech',
+          'shopsystems',
+          'logistics',
+          'crossborder',
           'fintech',
           'marketing',
-          'conversion',
-          'crossborder',
-          'logistics',
-          'it',
-          'trends',
+          'customerjourney',
+          'leadership',
         ]
       }} 
 
@@ -125,25 +127,24 @@ New Developments in E-commerce
       
         
   
-        <WidgetJurors minToShow={4} />
-        
-        <WidgetFaq setting="speakers.faq" />
         <Wrapper first label="speakers.cfpcategories.title">
         <WidgetIconGrid setting="speakers.cfpcategories" icons={{
         }}
         />
+        <WidgetFaq setting="speakers.faq" />
 
         {/* <WidgetIconGrid setting="speakers.benefits" icons={{
 
         }}/> */}
 
-        <SpeakersVideo />
+        {/* <SpeakersVideo /> */}
         </Wrapper>
         <WidgetPresentersAll 
           filter={(item)=> parseInt(item.featured_cfp) } limit="24" 
           label="cfp.featured_presenters"
         />
         </Wrapper>
+        <WidgetJurors minToShow={4} />
         <WidgetPhotostream setting="cfpphotostream" />
         {/* <WidgetVideoWithEventInfo */}
           {/* //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"
