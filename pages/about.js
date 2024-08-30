@@ -9,12 +9,14 @@ import {
   //DatasourceExhibitors,
   WidgetVips,
   DatasourcePhotos,
+  Markdown,
   Wrapper,
  
   Faq,
   reduxWrapper,
   configure
 } from 'eventjuicer-site-components';
+import WidgetReportRequest from '../compositions/WidgetReportRequest';
 
 
 const settings = require('../settings').default;
@@ -23,48 +25,14 @@ const PageAbout = () => (
 
   <div>
 
-  <Wrapper>
+<Wrapper>
+  <Wrapper first label="about.title">
+  <Markdown label="about.description" />
+  </Wrapper>
     {[
       {
         image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485646/about/ABOUT%202023/INFOGRAFIKA-pocieta-01.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/visitor_growth.svg',
-      },
-      {
-        image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485646/about/ABOUT%202023/INFOGRAFIKA-pocieta-02.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566475962/about/visitors-profile.svg',
-      },
-      {
-        image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485648/about/ABOUT%202023/INFOGRAFIKA-pocieta-03.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/visitors-branches.svg',
-      },
-      {
-        image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485646/about/ABOUT%202023/INFOGRAFIKA-pocieta-04.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597739548/about/theDivisionIntoJobPosition.svg',
-      },
-      {
-        image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485646/about/ABOUT%202023/INFOGRAFIKA-pocieta-05.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1597392552/about/top_10_nationalities.svg',
-      },
-
-      {
-        image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485648/about/ABOUT%202023/INFOGRAFIKA-pocieta-06.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1566476431/about/exhibitors-nationality.svg',
-      },
-      {
-        image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485646/about/ABOUT%202023/INFOGRAFIKA-pocieta-07.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/exhibitor_growth.svg',
-      },
-      {
-        image:
-          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1688485646/about/ABOUT%202023/INFOGRAFIKA-pocieta-08.svg'
-          // 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1595594477/about/promotion.svg',
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1725014399/Website/about/www_visitor_profile.svg'
       },
     ].map(item => (
       <img
@@ -73,31 +41,58 @@ const PageAbout = () => (
         style={{
           width: '100%',
           maxWidth: 1200,
+          display: 'block', 
           margin: '0 auto',
         }}
       />
     ))}
+
+    <WidgetReportRequest />
+
+    {[
+      {
+        image:
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1725014398/Website/about/www_visitor_feedback.svg'
+      },
+      {
+        image:
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1725014425/Website/about/www_exhb_voices.svg'
+      },
+    ].map(item => (
+      <img
+        key={item.image}
+        src={item.image}
+        style={{
+          width: '100%',
+          maxWidth: 1200,
+          display: 'block', 
+          margin: '0 auto',
+        }}
+      />
+    ))}
+    <WidgetReportRequest />
   </Wrapper>
 
-  <WidgetSalesMap
+
+  {/* <WidgetSalesMap
     label="exhibitors.map.title"
     secondaryLabel="exhibitors.map.opensales"
  
-  />
+  /> */}
 
-  <WidgetVips limit={12} mobile={4} />
+  {/* <WidgetVips limit={12} mobile={4} /> */}
 
 
 
-  <WidgetIconGrid setting="exhibitors.benefits" icons={{
+  {/* <WidgetIconGrid setting="exhibitors.benefits" icons={{
 
-  }}/>
+  }}/> */}
 
 
 
   {/* <WidgetVideoWithReviews /> */}
 
-  <Wrapper label="exhibitors.faq.name">
+  {/* <Wrapper label="exhibitors.faq.name">
     
     <Faq
       url="/about"
@@ -122,9 +117,9 @@ const PageAbout = () => (
         },
       ]}
     />
-  </Wrapper>
+  </Wrapper> */}
 
-  <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" />
+  {/* <WidgetAllExhibitorsAvatarlist label="exhibitors.list_full" /> */}
 
  
   </div>

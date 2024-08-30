@@ -119,7 +119,49 @@ module.exports = withSentryConfig(withTM({
         source: '/plan',
         destination: 'https://drive.google.com/file/d/1SXVn5vLfHls-LoJYiWPnSrj0cB47pgcE/view',
         permanent: true,
-      }
+      },
+
+      {
+        source: '/speaking_marianna',
+        destination: '/speaking?utm_source=email&utm_medium=email&utm_campaign=magic_link_mb',
+        permanent: true,
+      },
+
+      {
+        source: '/speaking_dominik',
+        destination: '/speaking?utm_source=email&utm_medium=email&utm_campaign=magic_link_dk',
+        permanent: true,
+      },
+
+      {
+        source: '/speaking_noel',
+        destination: '/speaking?utm_source=email&utm_medium=email&utm_campaign=magic_link_ng',
+        permanent: true,
+      },
+
+      {
+        source: '/speaking_lucas',
+        destination: '/speaking?utm_source=email&utm_medium=email&utm_campaign=magic_link_lz',
+        permanent: true,
+      },
+
+      {
+        source: '/speaking_monika',
+        destination: '/speaking?utm_source=email&utm_medium=email&utm_campaign=magic_link_me',
+        permanent: true,
+      },
+
+      {
+        source: '/speaking_peter',
+        destination: '/speaking?utm_source=email&utm_medium=email&utm_campaign=magic_link_psz',
+        permanent: true,
+      },
+
+      {
+        source: '/speaking_mark',
+        destination: '/speaking?utm_source=email&utm_medium=email&utm_campaign=magic_link_mt',
+        permanent: true,
+      },
 
     ]
     },
