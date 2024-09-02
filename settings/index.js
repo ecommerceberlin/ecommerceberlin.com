@@ -881,6 +881,31 @@ const settings = {
         }
     },
 
+    report_request: {
+        registration: {
+            wrapperProps: {
+                label: "report.request.title",
+            },
+            
+            baseLabel: "report_request",
+            fields: [
+                {name: "fname", required: true},
+                {name: "lname", required: true},
+                {name: "cname2", required: true},
+                {name: "email", required: true},
+                {name: "phone", required: true}, 
+            ],
+            
+            start: [
+                'email',
+                "fname",
+                'lname', 
+            ],
+      
+            ticket_id : 2990,
+            }
+        },
+
     speakers : {
 
         og_template: "ebe24-speaker-template",
@@ -895,12 +920,8 @@ const settings = {
             legend: "speakers.callforpapers.legend",
             
             fields: [
-                {name: "email", required: true},
-                {name: "fname", required: true},
-                {name: "lname", required: true},
-                {name: "cname2", required: true},
-                {name: "phone", required: true},
                 {name: "presenter", required: true},  
+                {name: "cname2", required: true},
                 {name: "profile_linkedin", required: true}, 
                 {
                   name: "presentation_category", 
@@ -908,14 +929,15 @@ const settings = {
                   options : "categories"
                 },
                 {name: "presentation_title", required: true},
-                {name: "presentation_description", required: true}
+                {name: "presentation_description", required: true},
+                {name: "fname", required: true},
+                {name: "lname", required: true},
+                {name: "email", required: true},
+                {name: "phone", required: true},
             ],
             
               start: [
                 'presenter',
-                'presentation_title', 
-                'presentation_description',
-                'presentation_category',
                 'cname2'
             ],
 
