@@ -32,6 +32,10 @@ const PageAbout = () => (
     {[
       {
         image:
+          'https://res.cloudinary.com/ecommerceberlin/image/upload/v1725263707/Website/about/www_previous_edition.svg'
+      },
+      {
+        image:
           'https://res.cloudinary.com/ecommerceberlin/image/upload/v1725014399/Website/about/www_visitor_profile.svg'
       },
     ].map(item => (
