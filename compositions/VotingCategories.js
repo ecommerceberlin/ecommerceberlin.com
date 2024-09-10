@@ -1,12 +1,14 @@
 import React from 'react'
 import { WidgetContestantCategories } from 'eventjuicer-site-components';  
-import TrendingUp from '@material-ui/icons/TrendingUp';
 import EuroSymbol from '@material-ui/icons/EuroSymbol';
 import EmojiObjects from '@material-ui/icons/EmojiObjects';
 import VolumeUp from '@material-ui/icons/VolumeUp';
-import Power from '@material-ui/icons/Power';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import LanguageIcon from '@material-ui/icons/Language';
+import MemoryIcon from '@material-ui/icons/Memory';
+import AppsIcon from '@material-ui/icons/Apps';
+import TimelineIcon from '@material-ui/icons/Timeline';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 
 const settings = require('../settings').default;
   
@@ -16,13 +18,15 @@ const VotingCategories  = (props) => ( <WidgetContestantCategories
     label='callforpapers.categories.title'
     show_votes={false}
     icons={{
-      conversion: TrendingUp,
+      ai: MemoryIcon,
+      futuretech: EmojiObjects,
+      shopsystems: AppsIcon,
       logistics: LocalShippingIcon,
-      fintech: EuroSymbol,
-      trends: EmojiObjects,
-      marketing: VolumeUp,
-      it: Power,
       crossborder: LanguageIcon,
+      fintech: EuroSymbol,
+      marketing: VolumeUp,
+      customerjourney: TimelineIcon,
+      leadership: SupervisorAccountIcon,
     }}
     {...props}
   />) 

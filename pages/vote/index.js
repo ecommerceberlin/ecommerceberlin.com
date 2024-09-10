@@ -37,7 +37,7 @@ const PageVote  = () => (
    
   } />
 
-  <WidgetJurors minToShow={4} />
+  <WidgetJurors minToShow={4} limit={30} />
 
   </div>
   ) 
