@@ -144,7 +144,7 @@ New Developments in E-commerce
           label="cfp.featured_presenters"
         />
         </Wrapper>
-        <WidgetJurors minToShow={4} limit={30} />
+        <WidgetJurors minToShow={4} limit={50} />
         <WidgetPhotostream setting="cfpphotostream" />
         {/* <WidgetVideoWithEventInfo */}
           {/* //  background="https://res.cloudinary.com/eventjuicer/image/upload/v1552428524/teh_presenters_video.png"
