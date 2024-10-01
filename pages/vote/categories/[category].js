@@ -55,7 +55,7 @@ const PageVote  = ({category}) => {
           keyword_source="presentation_category"
           keyword={category}
           label="callforpapers.list.title"
-          show_votes={false}
+          show_votes={true}
           random={false}
           first={true}
           renderAs="table"
