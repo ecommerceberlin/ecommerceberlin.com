@@ -340,9 +340,9 @@ const settings = {
     bookingmap : {
         ...bookingmapShared,
         disabledTicketIds : [
-            2810, 2741, 2740, //STD
-            2819, 2737, 2768, 2736, //HOT
-            2820, 2745, 2747, //SH
+            2810, 2741, 2740, 2808, //STD
+            2819, 2737, 2768, 2736, 2734, //HOT
+            2820, 2745, 2747, 2748, //SH
             2821, 2776, 2772, 2777, 2779, 2780, //ULTRA
             2822, 2756, 2812, 2813, //GRAND
             2823, 2757, 2754, //P GRAND
@@ -759,8 +759,15 @@ const settings = {
             {
                 name: "Anil Altas Brug",
                 cname2: "Turboslow; Yopaat",
-                position: "Co-founder & Operations Director ",
+                position: "Co-founder & Operations Director",
                 avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1708081202/Website/anil-atlas-brug.jpg",
+            }, 
+
+            {
+                name: "Raluca Bujoreanu",
+                cname2: "Zalando",
+                position: "Product Lead",
+                avatar_cdn: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1727685365/Call%20for%20Papers%202024/raluca-bujoreanu.jpg",
             }, 
         ],
 
