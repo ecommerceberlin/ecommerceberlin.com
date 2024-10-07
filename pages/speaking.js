@@ -74,7 +74,7 @@ const PageSpeaking = () => (
 
 
 
-  <WidgetSpeaking setting="speakers.callforpapers" options={{
+  {/* <WidgetSpeaking setting="speakers.callforpapers" options={{
         "categories": [
           'ai',
           'futuretech',
@@ -97,7 +97,7 @@ const PageSpeaking = () => (
 
       summary={<div>asd</div>}
 
-      />
+      /> */}
 
 
    
@@ -132,6 +132,11 @@ New Developments in E-commerce
         }}
         />
         <WidgetFaq setting="speakers.faq" />
+
+        <>
+        <MyTypography template="subtitle1" label="presenters.contest-rules.title" /> 
+        <Markdown label="presenters.contest-rules.description" />
+        </>
 
         {/* <WidgetIconGrid setting="speakers.benefits" icons={{
 
