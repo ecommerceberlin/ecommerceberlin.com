@@ -1226,7 +1226,7 @@ const settings = {
                 {name: 'home', to: '/'},
                 {name: 'about', to: '/about'},
                 // {name: 'cfp', to: '/speaking'},
-                {name: 'vote', to: '/vote'},
+                // {name: 'vote', to: '/vote'},
               ]
             },
             {
@@ -1273,6 +1273,15 @@ const settings = {
             label: "vipticket.title",
             secondaryLabel: ""
             }
+    },
+
+    vipticket_alt : {
+        ticketgroups : [471],
+        soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png',
+        wrapperProps: {
+            label: "vipticket_alt.title",
+            secondaryLabel: ""
+        }
     },
 
     exhibitors : {
