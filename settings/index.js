@@ -1268,7 +1268,7 @@ const settings = {
     vipticket : {
 
         ticketgroups : [471],
-        soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png',
+        soldout: 'https://res.cloudinary.com/eventjuicer/image/upload/v1731596333/sales_coming_soon.png',
         wrapperProps: {
             label: "vipticket.title",
             secondaryLabel: ""
@@ -1277,7 +1277,7 @@ const settings = {
 
     vipticket_alt : {
         ticketgroups : [471],
-        soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png',
+        soldout: 'https://res.cloudinary.com/eventjuicer/image/upload/v1731596333/sales_coming_soon.png',
         wrapperProps: {
             label: "vipticket_alt.title",
             secondaryLabel: ""
