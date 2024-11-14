@@ -1265,6 +1265,16 @@ const settings = {
 
     },
 
+    vipticket : {
+
+        ticketgroups : [471],
+        soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png',
+        wrapperProps: {
+            label: "vipticket.title",
+            secondaryLabel: ""
+            }
+    },
+
     exhibitors : {
 
         disableMeetups: false,
@@ -1578,15 +1588,15 @@ const settings = {
 
         items : [
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421416/Website/vip%20photos/ebe25-website-vipzone2.jpg", cols: 6},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421427/Website/vip%20photos/ebe25-website-vipzone1.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit/v1730980806/VIP%20zone/3407_ecommerce-berlin-berlin-tomek-DSC02435-eventshooters--2048px.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit/v1730980798/VIP%20zone/2036_ecommerce-berlin-berlin-patryk-P2088315-eventshooters--2048px.jpg", cols: 6},
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421379/Website/vip%20photos/ebe25-website-vipzone6.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421383/Website/vip%20photos/ebe25-website-vipzone4.jpg", cols: 4},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421411/Website/vip%20photos/ebe25-website-vipzone5.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit/v1730980803/VIP%20zone/3279_ecommerce-berlin-berlin-tomek-DSC02389-eventshooters--2048px.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit/v1709117066/ebe8_photos/2218/757_ecommerce-berlin-berlin-michal-NEW03137-eventshooters-elementy-2048px.jpg", cols: 4},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit/v1730980804/VIP%20zone/3285_ecommerce-berlin-berlin-tomek-DSC02392-eventshooters--2048px.jpg", cols: 4},
 
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421422/Website/vip%20photos/ebe25-website-vipzone3.jpg", cols: 6},
-            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1710421389/Website/vip%20photos/ebe25-website-vipzone7.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit/v1730980798/VIP%20zone/2106_ecommerce-berlin-berlin-tomek-DSC01726-eventshooters-elementy-2048px.jpg", cols: 6},
+            {src: "https://res.cloudinary.com/ecommerceberlin/image/upload/c_fit/v1730980796/VIP%20zone/1254_ecommerce-berlin-berlin-tomek-DSC01233-eventshooters-elementy-2048px.jpg", cols: 6},
      
         ]
     },
