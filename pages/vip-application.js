@@ -49,7 +49,8 @@ const PageVipApplication = () => (
   }
   />
 </Wrapper>
-<WidgetPremiumTickets setting="vipticket" />
+<WidgetPremiumTickets setting="vipticket_alt" />
+
 <WidgetPartners
       label="partners.vips.title"
       filter={item =>
