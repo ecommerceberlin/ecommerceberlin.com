@@ -25,7 +25,16 @@ const PageSchedule = () => (
 
 
   
-    <WidgetSchedule />
+    {/* <WidgetSchedule /> */}
+    <WidgetSchedule 
+      day="day1" 
+      wrapperProps={{label:"schedule.day1.title"}} 
+    />
+
+    <WidgetSchedule 
+      day="day2" 
+      wrapperProps={{label:"schedule.day2.title"}} 
+    />
     {/* <WidgetBanner setting="metaverse" /> */}
     {/* <WidgetVisitor setting="visitor.register"  /> */}
     {/* <WidgetVisitorNonVip /> */}
