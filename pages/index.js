@@ -40,14 +40,15 @@ const PageIndex = (props) => (
   {/* <WidgetSchedule /> */}
   <WidgetVideoWithEventInfo />
 
-  {/* <WidgetVisitorNonVip /> */}
+  <WidgetVisitorWithVip />
+  <WidgetFeaturedPresenters limit={8}/>
   {/* <WidgetVisitor setting="visitor.register" /> */}
   <Wrapper>
-  <WidgetSalesMap
+  {/* <WidgetSalesMap
    label="exhibitors.map.title"
    secondaryLabel="exhibitors.map.opensales"
-  />
-  <WidgetOffer />
+  /> */}
+  {/* <WidgetOffer /> */}
 
   {/* <WidgetBanner setting="metaverse" /> */}
 
