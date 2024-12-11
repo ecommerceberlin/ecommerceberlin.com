@@ -8,7 +8,8 @@ import {
   WidgetVideoWithEventInfo,
   WidgetVisitor,
   MyHead,
-  WidgetBanner
+  WidgetBanner,
+  BottomNavi
 } from 'eventjuicer-site-components';
 
 import { WidgetVisitorNonVip } from '../compositions';
@@ -26,19 +27,33 @@ const PageSchedule = () => (
 
   
     {/* <WidgetSchedule /> */}
+
     <WidgetSchedule 
       day="day1" 
-      wrapperProps={{label:"schedule.day1.title"}} 
+      wrapperProps={{
+        id: "schedule-day1",
+        label:"schedule.day1.title"
+      }} 
     />
 
     <WidgetSchedule 
       day="day2" 
-      wrapperProps={{label:"schedule.day2.title"}} 
+      wrapperProps={{
+        id: "schedule-day2",
+        label:"schedule.day2.title"
+      }} 
     />
+
+
     {/* <WidgetBanner setting="metaverse" /> */}
     {/* <WidgetVisitor setting="visitor.register"  /> */}
     {/* <WidgetVisitorNonVip /> */}
     <WidgetVideoWithEventInfo />
+
+    <BottomNavi targets={[
+      {target: "schedule-day1", label: "schedule.day1.title"},
+      {target: "schedule-day2", label: "schedule.day2.title"}
+    ]} />
   </>
 
 )
