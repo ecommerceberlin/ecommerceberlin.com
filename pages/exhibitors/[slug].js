@@ -108,7 +108,7 @@ import { WidgetVisitorNonVip } from '../../compositions';
             slug :slug,
             resource: resource
         },
-        revalidate : 60
+        revalidate : 300
     }
   
   })
