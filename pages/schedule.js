@@ -32,7 +32,8 @@ const PageSchedule = () => (
       day="day1" 
       wrapperProps={{
         id: "schedule-day1",
-        label:"schedule.day1.title"
+        label:"schedule.day1.title",
+        secondaryLabel: "schedule.day1.subtitle"
       }} 
     />
 
@@ -51,8 +52,8 @@ const PageSchedule = () => (
     <WidgetVideoWithEventInfo />
 
     <BottomNavi targets={[
-      {target: "schedule-day1", label: "schedule.day1.title"},
-      {target: "schedule-day2", label: "schedule.day2.title"}
+      {target: "schedule-day1", label: "schedule.day1.bottomnavi.title"},
+      {target: "schedule-day2", label: "schedule.day2.bottomnavi.title"}
     ]} />
   </>
 

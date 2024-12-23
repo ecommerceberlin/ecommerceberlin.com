@@ -1522,17 +1522,16 @@ const settings = {
     schedule : {
         times : {
             '10:00': 'presentation',
-            '10:45': 'presentation',
-            '11:30': 'presentation',
-            '12:15': 'presentation',
-            // '13:00': 'break_20',
-            '13:00': 'presentation',
-            '13:45': 'presentation',
-            '14:30': 'presentation',
-            '15:15': 'presentation',
-            '16:00': 'presentation',
-            '16:30': 'presentation',
-            '17:00': 'presentation',
+            '10:15': 'presentation',
+            '11:00': 'presentation',
+            '11:45': 'presentation',
+            '12:30': 'presentation',
+            '13:15': 'presentation',
+            '14:00': 'presentation',
+            '14:45': 'presentation',
+            '15:30': 'presentation',
+            '16:15': 'presentation',
+            '16:45': 'presentation',
         
           },    
           venues : {
