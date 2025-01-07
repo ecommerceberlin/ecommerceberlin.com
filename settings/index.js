@@ -1248,10 +1248,10 @@ const settings = {
               items: [
                 {name: 'visit', to: '/visit'},
                 {name: 'masterclasses', to: '/masterclasses'},
-                //  {name: 'schedule', to: '/schedule'},
+                 {name: 'schedule', to: '/schedule'},
                 // {name: 'presenters', to: '/presenters'},
                 // {name: 'exhibitors', to: '/exhibitors'},
-                // {name: 'speakers', to: '/speakers'},
+                {name: 'speakers', to: '/speakers'},
                 // {name: 'offers', to: '/offers'},
                 {name: 'vip', to: '/vip'},
                 {name: 'ambassador', to: '/ambassador'}
