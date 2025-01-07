@@ -12,6 +12,7 @@ import {
   TwoColsLayout as Section,
   MyTypography,
   Markdown,
+  BottomNavi,
   WidgetAllOrCurrentExhibitorsColumnList
 } from 'eventjuicer-site-components';
 
@@ -32,17 +33,48 @@ const PageMasterclasses = () => (
 </Wrapper>
 
 
-<WidgetSchedule setting="masterclasses.schedule" />
+<WidgetSchedule setting="masterclasses.schedule" 
+      day="day1" 
+      wrapperProps={{
+        id: "masterclasses-day1",
+        label:"masterclasses.schedule.day1.title",
+        secondaryLabel: "masterclasses.day1.subtitle"
+      }} 
+/>
+<WidgetSchedule setting="masterclasses.schedule" 
+      day="day2" 
+      wrapperProps={{
+        id: "masterclasses-day2",
+        label:"masterclasses.schedule.day2.title",
+        secondaryLabel: "masterclasses.day2.subtitle"
+      }} 
+/>
 
 {/* <WidgetVisitorNonVip wrapperProps={{
   label: "masterclasses.public_registration.title"
   }} /> */}
-<WidgetSchedule
-  wrapperProps={{
-  label: "masterclasses.public_schedule.title"
-  }}
- />
+<WidgetSchedule 
+      day="day1" 
+      wrapperProps={{
+        id: "schedule-day1",
+        label:"masterclasses.public_schedule.title",
+        secondaryLabel: "masterclasses.public_schedule.subtitle"
+      }} 
+    />
+
+<WidgetSchedule 
+      day="day2" 
+      wrapperProps={{
+        id: "schedule-day2",
+        label:"schedule.day2.title"
+      }} 
+    />
 <WidgetAllOrCurrentExhibitorsColumnList />
+
+<BottomNavi targets={[
+      {target: "masterclasses-day1", label: "masterclasses.day1.bottomnavi.title"},
+      {target: "masterclasses-day2", label: "masterclasses.day2.bottomnavi.title"}
+    ]} />
 
 </div>
 
