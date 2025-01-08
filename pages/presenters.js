@@ -21,7 +21,7 @@ const PageIndex = (props) => (
    
   <React.Fragment>
 
-  <FilteredPresenters />
+  <FilteredPresenters link={(presenter)=>`presenters/${presenter.id}`} />
   
   <WidgetVideoWithEventInfo />
 
