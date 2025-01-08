@@ -6,7 +6,9 @@ const FilteredPresenters = ({limit=100, ...props}) => {
 
     const filter = (item) => !("limited" in item) || !item.limited > 0
 
-    return  <WidgetPresenters limit={limit} {...props} filter={filter} />
+    const link= (presenter)=>`presenters/${presenter.id}` 
+
+    return  <WidgetPresenters limit={limit} {...props} link={link} filter={filter} />
 
 }
 

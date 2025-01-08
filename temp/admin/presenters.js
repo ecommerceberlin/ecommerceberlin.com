@@ -11,7 +11,7 @@ const settings = require('../../settings').default;
 
 
 const PageAgendaPreview = () => (
-  <FilteredPresenters limit={null} filter={null} link={true} />
+  <FilteredPresenters limit={null} filter={null} />
 )
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
