@@ -47,7 +47,7 @@ const PageIndex = (props) => (
   <Box textAlign="center" mt={2}>
         <MyButton
           href="/speakers"
-          label="speakers.button"
+          label="allspeakers.button"
           variant="outlined"
           style={{ width: "300px", height: "50px" }}
         />
