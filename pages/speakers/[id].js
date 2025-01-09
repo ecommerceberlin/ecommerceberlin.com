@@ -30,7 +30,22 @@ import {
 
       <WidgetVisitorNonVip />
 
-      <WidgetSchedule />
+      <WidgetSchedule 
+        day="day1" 
+        wrapperProps={{
+        id: "schedule-day1",
+        label:"schedule.day1.title",
+        secondaryLabel: "schedule.day1.subtitle"
+        }} 
+        />
+
+      <WidgetSchedule 
+        day="day2" 
+        wrapperProps={{
+        id: "schedule-day2",
+        label:"schedule.day2.title"
+        }} 
+        />
 
       <WidgetPresenters setting="speakers" link={(item) => `/speakers/${item.id}` } />
 
