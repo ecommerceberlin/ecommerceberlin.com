@@ -16,7 +16,9 @@ import {
   // WidgetBanner,
   MyHead,
   Wrapper,
-  WidgetFeaturedPresenters
+  WidgetFeaturedPresenters,
+  Box,
+  MyButton,
 } from 'eventjuicer-site-components';
 
 import {AllPartners, WidgetVisitorNonVip, WidgetVisitorWithVip} from '../compositions'
@@ -29,7 +31,7 @@ import WidgetOffer from '../compositions/WidgetOffer';
 const settings = require('../settings').default;
 
 const PageIndex = (props) => (
-
+<div style={{ backgroundColor: "white" }}>
    
   <React.Fragment>
 
@@ -41,7 +43,15 @@ const PageIndex = (props) => (
   <WidgetVideoWithEventInfo />
 
   <WidgetVisitorWithVip />
-  <WidgetFeaturedPresenters limit={8}/>
+  <WidgetFeaturedPresenters filter={(p)=>p.featured} limit={8}/>
+  <Box textAlign="center" mt={2}>
+        <MyButton
+          href="/speakers"
+          label="speakers.button"
+          variant="outlined"
+          style={{ width: "300px", height: "50px" }}
+        />
+  </Box>
   {/* <WidgetVisitor setting="visitor.register" /> */}
   <Wrapper>
   {/* <WidgetSalesMap
@@ -60,9 +70,9 @@ const PageIndex = (props) => (
 
   {/* <WidgetFeaturedPresenters limit={8}/> */}
 
-  <WidgetPresenters filter={(p)=>p.featured} limt={8} wrapperProps={{
+  {/* <WidgetPresenters filter={(p)=>p.featured} limt={8} wrapperProps={{
     label: "presenters.list_featured"
-  }}/>
+  }}/> */}
 
 
 
@@ -97,6 +107,7 @@ const PageIndex = (props) => (
 
 
   </React.Fragment>
+  </div>
  
 ) 
 
