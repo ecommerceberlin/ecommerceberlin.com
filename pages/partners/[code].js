@@ -27,7 +27,22 @@ const PageVip = ({code}) => (
   {/* <WidgetVideo videoId="szdcNPfVAlc" /> */}
   <WidgetVips limit={12} mobile={4} />
   <WidgetVideoWithEventInfo />
-  <WidgetSchedule />
+  <WidgetSchedule 
+        day="day1" 
+        wrapperProps={{
+        id: "schedule-day1",
+        label:"schedule.day1.title",
+        secondaryLabel: "schedule.day1.subtitle"
+        }} 
+        />
+
+  <WidgetSchedule 
+        day="day2" 
+        wrapperProps={{
+        id: "schedule-day2",
+        label:"schedule.day2.title"
+        }} 
+        />
   <WidgetAllOrCurrentExhibitorsColumnList />
   </>
 

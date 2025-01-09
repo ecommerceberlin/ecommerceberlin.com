@@ -11,7 +11,9 @@ import {
   configure,
   WidgetFeaturedPresenters,
   WidgetBanner,
-  MyHead
+  MyHead,
+  Box,
+  MyButton
 } from 'eventjuicer-site-components';
 
 import { FilteredPresenters, WidgetVisitorNonVip, WidgetVisitorWithVip, RegistrationPartner } from '../../compositions';
@@ -22,7 +24,7 @@ const settings = require('../../settings').default;
 
 export const PageVisit = () => (
 
-        <div>
+    <div style={{ backgroundColor: "white" }}>
 
         <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693817519/Website/ebe24_og_home.jpg" url="/visit">{(data) => <Head>{data}</Head>}</MyHead> 
   
@@ -33,11 +35,34 @@ export const PageVisit = () => (
 
         {/* <WidgetVisitor setting="visitor.register" first /> */}
 
-        <WidgetSchedule />
+        <WidgetSchedule 
+        day="day1" 
+        wrapperProps={{
+        id: "schedule-day1",
+        label:"schedule.day1.title",
+        secondaryLabel: "schedule.day1.subtitle"
+        }} 
+        />
+
+        <WidgetSchedule 
+        day="day2" 
+        wrapperProps={{
+        id: "schedule-day2",
+        label:"schedule.day2.title"
+        }} 
+        />
 
         {/* <WidgetBanner setting="metaverse" /> */}
 
-        <WidgetFeaturedPresenters bio={false} />
+        <WidgetFeaturedPresenters filter={(p)=>p.featured} limit={8}/>
+        <Box textAlign="center" mt={2}>
+          <MyButton
+            href="/speakers"
+            label="allspeakers.button"
+            variant="outlined"
+            style={{ width: "300px", height: "50px" }}
+          />
+        </Box>
 
         <WidgetVips limit={12} mobile={4} />
 
