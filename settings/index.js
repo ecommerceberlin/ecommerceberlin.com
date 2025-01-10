@@ -299,7 +299,7 @@ const settings = {
 
     hero : {
 
-        videoSrc : "https://res.cloudinary.com/ecommerceberlin/video/upload/q_auto,f_auto/v1689923579/Website/ebe24-website-video.mp4",
+        videoSrc : "https://res.cloudinary.com/ecommerceberlin/video/upload/q_auto,f_auto/v1736504778/Visitors%20registration%20form/ebe24-website-video_small.mp4",
         background : "https://res.cloudinary.com/ecommerceberlin/image/upload/q_auto,f_auto/v1691504553/Website/ebe24_final_poster.png",
         overlay : "black",
         template : "heroGold",
@@ -1559,7 +1559,7 @@ const settings = {
                 name: 'Noel Graf',
                 position : '',
                 langs : ["en"],
-                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1720517876/noel.png',
+                avatar: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1736502955/Website/noel-graf.png',
                 phone: '+49 305 201 51 10',
                 email: 'hello@ecommerceberlin.com',
                 chatlio : true
