@@ -22,6 +22,29 @@ const regFormOptions = {
     location: [
         "yes",
         "no",
+    ],
+    objective: [
+        "solutions",
+        "conference",
+        "networking"
+    ],
+    business_model: [
+        "b2b_model",
+        "b2c_model",
+        "d2c_model",
+        "wholesale",
+        "other_model"
+    ],
+    employee: [
+        "1_20_ppl",
+        "21_100_ppl",
+        "101_500_ppl",
+        "501_ppl"
+    ],
+    revenue: [
+        "0_5_revenue",
+        "5_50_revenue",
+        "50_revenue"
     ]
  }
 
@@ -561,6 +584,26 @@ const settings = {
                 name: "location", 
                 required: true, 
                 options: regFormOptions.location
+            },
+            {
+                name: "objective", 
+                required: true, 
+                options: regFormOptions.objective
+            },
+            {
+                name: "business_model", 
+                required: true, 
+                options: regFormOptions.business_model
+            },
+            {
+                name: "employee", 
+                required: false, 
+                options: regFormOptions.employee
+            },
+            {
+                name: "revenue", 
+                required: false, 
+                options: regFormOptions.revenue
             },
             {
                   name: "accept", 
@@ -1183,11 +1226,31 @@ const settings = {
                 required: true,
                 options: regFormOptions.location
             },
-              {
-                  name: "accept", 
-                  required: true, 
-                  type: "confirm"
-              },
+            {
+                name: "objective", 
+                required: true, 
+                options: regFormOptions.objective
+            },
+            {
+                name: "business_model", 
+                required: true, 
+                options: regFormOptions.business_model
+            },
+            {
+                name: "employee", 
+                required: false, 
+                options: regFormOptions.employee
+            },
+            {
+                name: "revenue", 
+                required: false, 
+                options: regFormOptions.revenue
+            },
+            {
+                name: "accept", 
+                required: true, 
+                type: "confirm"
+            },
   
                  
               ],
@@ -1247,11 +1310,11 @@ const settings = {
               name: 'visitors',
               items: [
                 {name: 'visit', to: '/visit'},
-                {name: 'masterclasses', to: '/masterclasses'},
-                 {name: 'schedule', to: '/schedule'},
-                // {name: 'presenters', to: '/presenters'},
-                // {name: 'exhibitors', to: '/exhibitors'},
+                {name: 'schedule', to: '/schedule'},
                 {name: 'speakers', to: '/speakers'},
+                {name: 'exhibitors', to: '/exhibitors'},
+                {name: 'masterclasses', to: '/masterclasses'},
+                // {name: 'presenters', to: '/presenters'},
                 // {name: 'offers', to: '/offers'},
                 {name: 'vip', to: '/vip'},
                 {name: 'ambassador', to: '/ambassador'}
@@ -1386,7 +1449,26 @@ const settings = {
                 required: true, 
                 options: regFormOptions.location 
             },
-
+            {
+                name: "objective", 
+                required: true, 
+                options: regFormOptions.objective
+            },
+            {
+                name: "business_model", 
+                required: true, 
+                options: regFormOptions.business_model
+            },
+            {
+                name: "employee", 
+                required: false, 
+                options: regFormOptions.employee
+            },
+            {
+                name: "revenue", 
+                required: false, 
+                options: regFormOptions.revenue
+            },
             {
                 name: "accept", 
                 required: true, 
