@@ -1575,7 +1575,7 @@ const settings = {
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
         event_date : '19 & 20th FEBRUARY 2025',
-        event_hours : '9:00-17:00',
+        event_hours : '1st day 9:00-18:00 | 2nd day 9:00-17:00',
 
     },
 

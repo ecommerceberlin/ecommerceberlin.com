@@ -163,6 +163,18 @@ module.exports = withSentryConfig(withTM({
         permanent: true,
       },
 
+      {
+        source: '/agenda_mobile',
+        destination: '/schedule',
+        permanent: true,
+      },
+
+      {
+        source: '/map_mobile',
+        destination: '/exhibit',
+        permanent: true,
+      },
+
     ]
     },
 
