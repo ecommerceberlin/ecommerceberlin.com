@@ -80,9 +80,10 @@ const PageVote  = ({id}) => (
 
 export const getStaticPaths = () => {
 
-  return {paths: [
-
-  ], fallback: "blocking"}
+  return {
+    paths: [], // Let less common paths be generated at runtime
+    fallback: 'blocking'
+  }
 
 }
  
@@ -100,7 +101,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     props : {
       id : id
     },
-    revalidate: 30
+    revalidate: 3600
   }
 
 })

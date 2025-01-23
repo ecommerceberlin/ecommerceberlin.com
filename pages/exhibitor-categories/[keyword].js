@@ -37,16 +37,10 @@ const  PageExhibitorsByKeyword = ({keyword}) => {
 
 export async function getStaticPaths() {
 
-  const request = await fetch(`${settings.system.api}/companies`)
-  const companies = await request.json();
-
-  const cats = tagsUsed(companies.data, "profile.keywords")
-  const paths = cats.map(c => ({params: {keyword: String(c) }}))
-
   return {
-      paths: paths,
-      fallback: true 
-    };
+    paths: [], // Let less common paths be generated at runtime
+    fallback: 'blocking'
+  }
 }  
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
@@ -62,7 +56,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
       props : {
           keyword : "keyword" in params? params.keyword : ""
       },
-      revalidate: 30
+      revalidate: 3600
   }
 
 })

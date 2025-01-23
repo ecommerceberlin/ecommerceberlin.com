@@ -79,11 +79,12 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     preload : ["events"]
   })
 
-  // return {
-  //   props : {
-  //     eventId : "XXXXX"
-  //   }
-  // }
+  return {
+    props: {
+      // ... props
+    },
+    revalidate: 3600 // 1 minute
+  }
 
 })
 

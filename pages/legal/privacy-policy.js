@@ -20,7 +20,7 @@ const PageLegalPrivacyPolicy = () => (
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 return await configure(props, {
 settings: settings,
-cache: 600
+cache: 36000
 });
 })
 

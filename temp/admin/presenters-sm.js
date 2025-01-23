@@ -105,6 +105,12 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
   //     keyword : "keyword" in params ? params.keyword : ""
   //   }
   // }
+  return {
+    props: {
+      // ... props
+    },
+    revalidate: 3600 // 1 minute
+  }
 
 })
 

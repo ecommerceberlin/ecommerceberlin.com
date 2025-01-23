@@ -83,16 +83,10 @@ const PageVote  = ({category}) => {
 
 export async function getStaticPaths() {
 
-  const request = await fetch(`${settings.system.api}/callforpapers`)
-  const callforpapers = await request.json();
-
-  const cats = tagsUsed(callforpapers.data, "presentation_category")
-  const paths = cats.map(c => ({params: {category: String(c) }}))
-
   return {
-      paths: paths,
-      fallback: true 
-    };
+    paths: [], // Let less common paths be generated at runtime
+    fallback: 'blocking'
+  }
 }  
 
 
@@ -110,7 +104,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     props : {
         category : category
     },
-    revalidate: 15
+    revalidate: 3600
   }
 
 })
