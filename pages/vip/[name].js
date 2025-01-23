@@ -46,23 +46,10 @@ const PagePremiumSingle = ({name}) => {
 
  export async function getStaticPaths() {
   
-  // const request = await fetch(`${settings.system.api}/tickets`)
-  // const tickets = await request.json();
-
-  // const scope = get(settings, "premium.ticketgroups", []);
-
-  // const filtered = tickets.data.filter(t => scope.includes(t.group_id) );
- 
-  // const paths = filtered.map(row => ({ 
-  //   params: {
-  //     name : row.translation_asset_id.replace('resources.upgrades.misc.', '')
-  //   }
-  // }))
-
   return {
-    paths: [], //paths
-    fallback: true 
-  };
+    paths: [], // Let less common paths be generated at runtime
+    fallback: 'blocking'
+  }
    
 }
 
@@ -80,7 +67,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     props : {
       name : "name" in params ? params.name : ""
     },
-    revalidate: 600
+    revalidate: 3600
   }
 
 })

@@ -68,25 +68,10 @@ import { WidgetVisitorNonVip } from '../../compositions';
 
   export async function getStaticPaths() {
   
-    // const request = await fetch(`${settings.system.api}/company-slugs`)
-    // const slugs = await request.json();
-
-    // if(!"data" in slugs){
-    //   return
-    // }
-
-
-    // const filtered = slugs.data.filter(item => item.featured)
-
     return {
-      // paths: filtered.map(row => ({ 
-      //     params: {
-      //       slug : row.slug
-      //     }
-      //   })),
-      paths: [],
-      fallback: "blocking" //do not throw 404 when not cached....
-    };
+      paths: [], // Let less common paths be generated at runtime
+      fallback: 'blocking'
+    }
      
   }
 
@@ -108,7 +93,7 @@ import { WidgetVisitorNonVip } from '../../compositions';
             slug :slug,
             resource: resource
         },
-        revalidate : 300
+        revalidate : 3600
     }
   
   })

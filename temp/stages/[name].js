@@ -38,7 +38,8 @@ export async function getStaticPaths() {
     return {
         props : {
             name : params.name
-        }
+        },
+        revalidate: 3600
     }
   
   })
