@@ -4,11 +4,11 @@
   "description": "site",
   "main": "pages/index.js",
   "scripts": {
-    "next": "next --openssl-legacy-provider",
+    "next": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next",
     "precommit": "lint-staged",
-    "dev": "NODE_OPTIONS=--max_old_space_size=8192 NODE_OPTIONS=--openssl-legacy-provider next dev",
-    "build": "next build",
-    "start": "NODE_ENV=production next start"
+    "dev": "cross-env NODE_OPTIONS='--max_old_space_size=8192 --openssl-legacy-provider' next dev",
+    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next build",
+    "start": "cross-env NODE_ENV=production NODE_OPTIONS='--openssl-legacy-provider' next start"
   },
   "repository": {
     "type": "git",
@@ -45,7 +45,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "prettier": "^2.5.0"
+    "prettier": "^2.5.0",
+    "cross-env": "^7.0.3"
   },
   "browserslist": [
     ">0.2%",
