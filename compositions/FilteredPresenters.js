@@ -6,6 +6,8 @@ const FilteredPresenters = ({limit=150, ...props}) => {
     const excluded_id = [
         250095,
         250489,
+        253267,
+        250487,
     ]
 
     const filter = (item) =>
