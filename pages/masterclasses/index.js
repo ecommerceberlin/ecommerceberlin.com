@@ -29,7 +29,6 @@ const PageMasterclasses = () => (
 <Wrapper first label="masterclasses.apply.title">
 <Markdown label="masterclasses.apply.description" />
 <WidgetFaq setting="masterclasses.faq_participant" />    
-<WidgetPhotostream setting="masterclasses.photostream" />
 </Wrapper>
 
 
@@ -49,7 +48,7 @@ const PageMasterclasses = () => (
         secondaryLabel: "masterclasses.day2.subtitle"
       }} 
 />
-
+<WidgetPhotostream setting="masterclasses.photostream" />
 {/* <WidgetVisitorNonVip wrapperProps={{
   label: "masterclasses.public_registration.title"
   }} /> */}
