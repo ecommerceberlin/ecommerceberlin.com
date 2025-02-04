@@ -375,7 +375,7 @@ const settings = {
     workshops : {
 
         apply: {
-            disabled: 1,
+            disabled: 0,
             disabledTreshold: 200
         },
     },
@@ -491,7 +491,7 @@ const settings = {
             { label: 'format' },
             { label: 'application' },
             { label: 'selection' },
-            { label: 'hosting' }
+            // { label: 'hosting' }
         ]
     },
 
