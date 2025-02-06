@@ -314,7 +314,7 @@ const settings = {
         og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
 
         fingerprint: {
-            apiKey: "DX6tMYsW74dcjf3JGHcg",
+            apiKey: "OWW4rlCshv8k9OqaljFK",
             subdomain: "metrics."
         },
     },
