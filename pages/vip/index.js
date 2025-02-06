@@ -34,7 +34,7 @@ const PageVip = () => (
   setting="vip"
   items={[
     { label: "vip.application.button", url: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1730980806/VIP%20zone/3426_ecommerce-berlin-berlin-tomek-DSC02456-eventshooters--2048px.jpg", target: "/vip-application", width: "50%" },
-    { label: "vip.registration.button", url: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1730980803/VIP%20zone/3279_ecommerce-berlin-berlin-tomek-DSC02389-eventshooters--2048px.jpg", target: "/vip/earlybird", width: "50%" },
+    { label: "vip.registration.button", url: "https://res.cloudinary.com/ecommerceberlin/image/upload/v1730980803/VIP%20zone/3279_ecommerce-berlin-berlin-tomek-DSC02389-eventshooters--2048px.jpg", target: "/vip/regular", width: "50%" },
   ]}
 />
 {/* <WidgetIconGrid setting="vip.benefits" icons={{
