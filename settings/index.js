@@ -375,7 +375,7 @@ const settings = {
     workshops : {
 
         apply: {
-            disabled: 1,
+            disabled: 0,
             disabledTreshold: 200
         },
     },
@@ -491,7 +491,7 @@ const settings = {
             { label: 'format' },
             { label: 'application' },
             { label: 'selection' },
-            { label: 'hosting' }
+            // { label: 'hosting' }
         ]
     },
 
@@ -1345,7 +1345,7 @@ const settings = {
     vipticket : {
 
         ticketgroups : [471],
-        soldout: 'https://res.cloudinary.com/eventjuicer/image/upload/v1731596333/sales_coming_soon.png',
+        soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png',
         wrapperProps: {
             label: "vipticket.title",
             secondaryLabel: ""
@@ -1354,7 +1354,7 @@ const settings = {
 
     vipticket_alt : {
         ticketgroups : [471],
-        soldout: 'https://res.cloudinary.com/eventjuicer/image/upload/v1731596333/sales_coming_soon.png',
+        soldout: 'https://res.cloudinary.com/ecommerceberlin/image/upload/v1684149426/Website/PREMIUM%20SERVICES/sold-out.png',
         wrapperProps: {
             label: "vipticket_alt.title",
             secondaryLabel: ""
