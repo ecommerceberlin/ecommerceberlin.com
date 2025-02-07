@@ -33,7 +33,7 @@ import { WidgetVisitorNonVip } from '../../compositions';
 
       <HeadCompany slug={slug}>{(data) => <Head>{data}</Head>}</HeadCompany> 
  
-      <WidgetCompanyMeetup />
+      {/* <WidgetCompanyMeetup /> */}
       <WidgetCompanyVip />
 
       <WidgetCompany slug={slug} />
