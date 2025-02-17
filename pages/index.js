@@ -42,7 +42,8 @@ const PageIndex = (props) => (
   {/* <WidgetSchedule /> */}
   <WidgetVideoWithEventInfo />
 
-  <WidgetVisitorWithVip />
+  {/* <WidgetVisitorWithVip /> */}
+  <WidgetVisitorNonVip />
   <WidgetFeaturedPresenters filter={(p)=>p.featured} limit={8}/>
   <Box textAlign="center" mt={2}>
         <MyButton
