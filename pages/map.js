@@ -25,7 +25,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     preload : ["exhibitors"]
   })
 
-  return {props: {}, revalidate: 3600}
+  return {props: {}, revalidate: 3600000}
 
 
 })
