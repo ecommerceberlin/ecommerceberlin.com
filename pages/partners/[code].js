@@ -59,10 +59,15 @@ export async function getStaticPaths() {
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  return await configure(props, {
+  await configure(props, {
     settings : settings,
     preload : []
   })
+
+  return {
+    props: {},
+    revalidate: 36000000
+  }
 
 })
 
