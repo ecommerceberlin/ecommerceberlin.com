@@ -157,6 +157,26 @@ const grandBenefits =    [{
     },
 ...sharedBenefits]
 
+const startupBenefits =    [{
+    icon : "Space", 
+    primary : "space_startup"
+    },
+    {
+    icon : "Electricity", 
+    primary : "electricity_startup"
+    },
+...sharedBenefits]
+
+const islandBenefits =    [{
+    icon : "Space", 
+    primary : "space_island"
+    },
+    {
+    icon : "Electricity", 
+    primary : "electricity_island"
+    },
+...sharedBenefits]
+
 const premiumBenefits =    [{
     icon : "Space", 
     primary : "space_premium"
@@ -207,42 +227,45 @@ const bookingmapShared = {
         "pay",
         "access"
     ],
-    allowedGroupIds : [443, 442, 444, 451, 445, 446, 455],
-    venueLayout: "https://res.cloudinary.com/eventjuicer/image/upload/v1678744350/ebe8/ebe8_venueplan.png",
+    // allowedGroupIds : [499, 488, 487, 489, 496, 490, 491, 502],
+    // venueLayout: "https://res.cloudinary.com/eventjuicer/image/upload/v1678744350/ebe8/ebe8_venueplan.png",
     boothStyleMapping: {
-        443: "light", //STD
-        442: "standard", //HOT
-        444: "hot", //SUPER HOT
-        451: "superHot", //ULTRA
+        499: "light", 
+        488: "standard", 
+        487: "hot", 
+        489: "superHot", 
+        496: "ultra", 
 
-        450: "boothSold", //BUFFER - LAST MINUTE
+        495: "boothSold", 
 
-        445: "grand", //GRAND
-        446: "premiumGrand", //PREMIUM GRAND
+        490: "grand", 
+        491: "premiumGrand", 
 
-        448: "stage", //STAGE KEYNOTE
-        449: "stage", //STAGE OPEN
-        455: "stage", //STAGE STANDARD
-        452: "networking", //VIPZONE
-        453: "networking", //NETWORKING
+        494: "stage", 
+        493: "stage", 
+        500: "stage", 
+        497: "networking", 
+        502: "networking", //ISLAND
         // 321: "boothSold"
     },
     api : "https://order.ecommerceberlin.com/preorder",
     benefits: {
        
 
-        443: standardBenefits, //STD
-        442: standardBenefits, //HOT
-        444: standardBenefits, //SUPER HOT
-        451: standardBenefits, //ULTRA
-        450: standardBenefits, //BUFFER - LAST MINUTE
-        445: grandBenefits, //GRAND
-        446: premiumBenefits, //PREMIUM GRAND
-        452: networkingBenefits, //VIPZONE
-        453: networkingBenefits, //NETWORKING
-        448: stageBenefits, //STAGE KEYNOTE
-        449: stageBenefits, //STAGE OPEN
-        455: stageBenefits, //STAGE STANDARD
+        499: startupBenefits, //STARTUP
+        488: standardBenefits, //HOT
+        487: standardBenefits, //SUPER HOT
+        489: standardBenefits, //PRIME
+        496: standardBenefits, //ULTRA
+        495: standardBenefits, //BUFFER - LAST MINUTE
+        490: grandBenefits, //GRAND
+        491: premiumBenefits, //PREMIUM GRAND
+        502: islandBenefits, //ISLAND
+        497: networkingBenefits, //VIPZONE
+        // 453: networkingBenefits, //NETWORKING
+        494: stageBenefits, //STAGE KEYNOTE
+        493: stageBenefits, //STAGE OPEN
+        500: stageBenefits, //STAGE MAIN
 
         // 357: hotBenefits, //SUPER HOT
         // 378: hotBenefits, //ULTRA
@@ -363,12 +386,14 @@ const settings = {
     bookingmap : {
         ...bookingmapShared,
         disabledTicketIds : [
-            2810, 2741, 2740, 2808, //STD
-            2819, 2737, 2768, 2736, 2734, 2786, 3113, //HOT
-            2820, 2745, 2747, 2748, 2749, //SH
-            2821, 2776, 2772, 2777, 2779, 2780, 2761, 2992, //ULTRA
-            2822, 2756, 2812, 2813, 2814, //GRAND
-            2823, 2757, 2754, //P GRAND
+            3154, //STARTUP
+            3133, //HOT
+            3209, //SH
+            3210, //PRIME
+            3211, //ULTRA
+            3212, //GRAND
+            3213, //P GRAND
+            3143, //ISLAND
         ],
     },
 
@@ -927,7 +952,7 @@ const settings = {
             'lname', 
         ],
   
-        ticket_id : 2753,
+        ticket_id : 3145,
         }
     },
 
@@ -1306,29 +1331,29 @@ const settings = {
                 // {name: 'vote', to: '/vote'},
               ]
             },
-            {
-              name: 'visitors',
-              items: [
-                {name: 'visit', to: '/visit'},
-                {name: 'schedule', to: '/schedule'},
-                {name: 'speakers', to: '/speakers'},
-                {name: 'exhibitors', to: '/exhibitors'},
-                {name: 'masterclasses', to: '/masterclasses'},
+            // {
+            //   name: 'visitors',
+            //   items: [
+                // {name: 'visit', to: '/visit'},
+                // {name: 'schedule', to: '/schedule'},
+                // {name: 'speakers', to: '/speakers'},
+                // {name: 'exhibitors', to: '/exhibitors'},
+                // {name: 'masterclasses', to: '/masterclasses'},
                 // {name: 'presenters', to: '/presenters'},
                 // {name: 'offers', to: '/offers'},
                 // {name: 'vip', to: '/vip'},
-                {name: 'ambassador', to: '/ambassador'}
-              ]
-            },
+                // {name: 'ambassador', to: '/ambassador'}
+            //   ]
+            // },
             {
               name: 'exhibitors',
               items: [
                 {name: 'exhibit', to: '/exhibit'},
-                {name: 'masterclasses-organizer', to: '/masterclasses/organizer'},
-                {name: 'sample-visitors', to: '/sample-visitors'},
-                {name: 'exhibitors', to: '/exhibitors'},
-                {name: 'premium-services', to: '/premium'},
-                {name: 'faq', to: '/faq'},
+                // {name: 'masterclasses-organizer', to: '/masterclasses/organizer'},
+                // {name: 'sample-visitors', to: '/sample-visitors'},
+                // {name: 'exhibitors', to: '/exhibitors'},
+                // {name: 'premium-services', to: '/premium'},
+                // {name: 'faq', to: '/faq'},
               
               ]
             }
