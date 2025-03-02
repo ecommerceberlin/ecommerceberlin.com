@@ -29,7 +29,7 @@ export const PageVisit = () => (
         <MyHead image="https://res.cloudinary.com/ecommerceberlin/image/upload/v1693817519/Website/ebe24_og_home.jpg" url="/visit">{(data) => <Head>{data}</Head>}</MyHead> 
   
         {/* <WidgetVisitorWithVip first /> */}
-        <WidgetVisitorNonVip first />
+        {/* <WidgetVisitorNonVip first /> */}
 
         {/* <RegistrationPartner /> */}
 
@@ -55,14 +55,14 @@ export const PageVisit = () => (
         {/* <WidgetBanner setting="metaverse" /> */}
 
         <WidgetFeaturedPresenters filter={(p)=>p.featured} limit={8}/>
-        <Box textAlign="center" mt={2}>
+        {/* <Box textAlign="center" mt={2}>
           <MyButton
             href="/speakers"
             label="allspeakers.button"
             variant="outlined"
             style={{ width: "300px", height: "50px" }}
           />
-        </Box>
+        </Box> */}
 
         <WidgetVips limit={12} mobile={4} />
 
