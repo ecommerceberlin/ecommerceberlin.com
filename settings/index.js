@@ -1345,18 +1345,18 @@ const settings = {
                 // {name: 'ambassador', to: '/ambassador'}
             //   ]
             // },
-            {
-              name: 'exhibitors',
-              items: [
-                {name: 'exhibit', to: '/exhibit'},
+            // {
+            //   name: 'exhibitors',
+            //   items: [
+                // {name: 'exhibit', to: '/exhibit'},
                 // {name: 'masterclasses-organizer', to: '/masterclasses/organizer'},
                 // {name: 'sample-visitors', to: '/sample-visitors'},
                 // {name: 'exhibitors', to: '/exhibitors'},
                 // {name: 'premium-services', to: '/premium'},
                 // {name: 'faq', to: '/faq'},
               
-              ]
-            }
+            //   ]
+            // }
         ]
     },
 
@@ -1599,8 +1599,8 @@ const settings = {
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
         event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
-        event_date : '19 & 20th FEBRUARY 2025',
-        event_hours : '1st day 9:00-18:00 | 2nd day 9:00-17:00',
+        event_date : '17 & 18th FEBRUARY 2026',
+        // event_hours : '1st day 9:00-18:00 | 2nd day 9:00-17:00',
 
     },
 
