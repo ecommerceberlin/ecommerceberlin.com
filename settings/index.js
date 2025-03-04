@@ -1598,7 +1598,7 @@ const settings = {
         organizer_address : 'POLAND, 60‐586 Poznań, ul. Botaniczna 26/2',
         organizer_regno : 'VAT ID 7792439665',
         event_name : 'E-commerce Berlin Expo',
-        event_location : 'STATION Berlin, Luckenwalder Str. 4-6',
+        event_location : 'Messe Berlin',
         event_date : '17 & 18th FEBRUARY 2026',
         event_hours : '9:00-17:00',
 
