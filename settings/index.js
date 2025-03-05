@@ -390,9 +390,9 @@ const settings = {
             3133, //HOT
             3209, //SH
             3210, //PRIME
-            3211, //ULTRA
+            3211, 3168, //ULTRA
             3212, //GRAND
-            3213, //P GRAND
+            3213, 3149, //P GRAND
             3143, //ISLAND
         ],
     },
