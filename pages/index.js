@@ -120,8 +120,10 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
   })
 
   return {
-    props: {},
-    revalidate: 3600000
+    redirect: {
+      destination: 'https://ecommerceberlin.com',  // Replace with your target URL
+      permanent: false,  // true for 308, false for 307
+    }
   }
   
 })
