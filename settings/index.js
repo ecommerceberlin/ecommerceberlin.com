@@ -386,12 +386,12 @@ const settings = {
     bookingmap : {
         ...bookingmapShared,
         disabledTicketIds : [
-            3154, //STARTUP
+            3154, 3131, //STARTUP
             3133, //HOT
-            3209, //SH
+            3209, 3160, //SH
             3210, //PRIME
-            3211, 3168, //ULTRA
-            3212, //GRAND
+            3211, 3168, 3164, //ULTRA
+            3212, 3148, 3202, //GRAND
             3213, 3149, //P GRAND
             3143, //ISLAND
         ],
