@@ -1326,9 +1326,10 @@ const settings = {
               name: 'general',
               items: [
                 {name: 'home', to: '/'},
-                {name: 'about', to: '/about'},
+                {name: 'about', to: 'https://ecommerceberlin.com/about'},
                 // {name: 'cfp', to: '/speaking'},
                 // {name: 'vote', to: '/vote'},
+                {name: 'premium-services', to: 'https://ecommerceberlin.com/premium'},
               ]
             },
             // {

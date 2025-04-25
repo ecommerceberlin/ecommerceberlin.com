@@ -36,15 +36,15 @@ const PageExhibit = () => (
     first
   />
   <WidgetOffer />
-  <WidgetIconGrid setting="exhibitors.benefits" icons={{
-  }}/>
+  {/* <WidgetIconGrid setting="exhibitors.benefits" icons={{
+  }}/> */}
     </Wrapper>
 
   {/* <WidgetVideoWithReviews /> */}
 
   <WidgetVips limit={12} mobile={4} />
 
-  <Wrapper label="exhibitors.faq.name">
+  {/* <Wrapper label="exhibitors.faq.name">
     <Faq
       baseLabel="exhibitors.faq.become"
       items={[
@@ -67,11 +67,11 @@ const PageExhibit = () => (
         },
       ]}
     />
-  </Wrapper>
+  </Wrapper> */}
 
   <WidgetFeaturedCompanies />
 
-  <WidgetAllOrCurrentExhibitorsColumnList/>
+  {/* <WidgetAllOrCurrentExhibitorsColumnList/> */}
 
 </>
 
