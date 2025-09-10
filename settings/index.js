@@ -386,12 +386,12 @@ const settings = {
     bookingmap : {
         ...bookingmapShared,
         disabledTicketIds : [
-            3154, 3131, //STARTUP
-            3133, //HOT
+            3154, 3131, 3224, //STARTUP
+            3133, 3129, //HOT
             3209, 3160, //SH
             3210, //PRIME
-            3211, 3168, 3164, //ULTRA
-            3212, 3148, 3202, //GRAND
+            3211, 3168, 3164, 3169, //ULTRA
+            3212, 3148, 3202, 3203, 3204, //GRAND
             3213, 3149, //P GRAND
             3143, //ISLAND
         ],
@@ -1326,9 +1326,10 @@ const settings = {
               name: 'general',
               items: [
                 {name: 'home', to: '/'},
-                {name: 'about', to: '/about'},
+                {name: 'about', to: 'https://ecommerceberlin.com/about'},
                 // {name: 'cfp', to: '/speaking'},
                 // {name: 'vote', to: '/vote'},
+                {name: 'premium-services', to: 'https://ecommerceberlin.com/premium'},
               ]
             },
             // {
